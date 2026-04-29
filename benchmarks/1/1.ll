@@ -7,7 +7,24 @@ target triple = "x86_64-unknown-linux-gnu"
 
 ; Function Attrs: nofree noinline nounwind uwtable
 define dso_local void @benchmark_transitivity(i32 noundef %0, i32 noundef %1, i32 noundef %2, i32 noundef %3) local_unnamed_addr #0 {
-  %5 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, i32 noundef 0)
+  %5 = icmp sgt i32 %0, %1
+  %6 = icmp sgt i32 %1, -1
+  %7 = and i1 %5, %6
+  br i1 %7, label %8, label %14
+
+8:                                                ; preds = %4
+  %9 = mul nsw i32 %0, %0
+  %10 = mul nuw nsw i32 %1, %1
+  %11 = icmp samesign ult i32 %9, %10
+  br i1 %11, label %12, label %14
+
+12:                                               ; preds = %8
+  %13 = sdiv i32 %3, 155
+  br label %14
+
+14:                                               ; preds = %8, %12, %4
+  %15 = phi i32 [ %13, %12 ], [ 0, %8 ], [ 0, %4 ]
+  %16 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, i32 noundef %15)
   ret void
 }
 
