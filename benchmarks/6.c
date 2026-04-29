@@ -13,8 +13,3 @@ void benchmark_transitivity(double a, double b, double c, double j) {
     }
     printf("%f", i);
 }
-
-int main(int argc, char** argv) {
-    benchmark_transitivity(argc, argc + 1, argc + 2, 100);
-    return 0;
-}

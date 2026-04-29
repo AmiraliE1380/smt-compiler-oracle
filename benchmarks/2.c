@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-void test_hoist(int a, 
+__attribute__((noinline))
+void test_hoist_le(int a, 
                 int b,
                 int c,
                 int j) {
