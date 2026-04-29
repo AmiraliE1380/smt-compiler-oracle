@@ -11,9 +11,6 @@ void test_loop_postcondition_float(int a, int b, int c, int x) {
             result += b;
         }
 
-        if (c - a > b*b) {
-            result = 100 / x; 
-        }
     }
     printf("%d", result);
 }

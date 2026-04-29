@@ -1,5 +1,5 @@
-; ModuleID = 'benchmarks/3/3.c'
-source_filename = "benchmarks/3/3.c"
+; ModuleID = 'benchmarks/3/3_idealized.c'
+source_filename = "benchmarks/3/3_idealized.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
@@ -8,16 +8,14 @@ target triple = "x86_64-unknown-linux-gnu"
 ; Function Attrs: nofree noinline nounwind uwtable
 define dso_local void @test_loop_postcondition_float(double noundef %0, double noundef %1, double noundef %2, i32 noundef %3) local_unnamed_addr #0 {
   %5 = fcmp olt double %2, 1.000000e+03
-  br i1 %5, label %6, label %25
-
-6:                                                ; preds = %4
-  %7 = fadd double %1, %0
-  %8 = fcmp olt double %7, %2
+  %6 = fadd double %1, %0
+  %7 = fcmp olt double %6, %2
+  %8 = and i1 %5, %7
   br i1 %8, label %9, label %17
 
-9:                                                ; preds = %6, %9
-  %10 = phi i32 [ %14, %9 ], [ 0, %6 ]
-  %11 = phi double [ %12, %9 ], [ %0, %6 ]
+9:                                                ; preds = %4, %9
+  %10 = phi i32 [ %14, %9 ], [ 0, %4 ]
+  %11 = phi double [ %12, %9 ], [ %0, %4 ]
   %12 = fadd double %11, 1.500000e+00
   %13 = fptosi double %12 to i32
   %14 = add nsw i32 %10, %13
@@ -25,21 +23,9 @@ define dso_local void @test_loop_postcondition_float(double noundef %0, double n
   %16 = fcmp olt double %15, %2
   br i1 %16, label %9, label %17, !llvm.loop !8
 
-17:                                               ; preds = %9, %6
-  %18 = phi double [ %0, %6 ], [ %12, %9 ]
-  %19 = phi i32 [ 0, %6 ], [ %14, %9 ]
-  %20 = fsub double %2, %18
-  %21 = fadd double %1, 1.000000e-02
-  %22 = fcmp ogt double %20, %21
-  br i1 %22, label %23, label %25
-
-23:                                               ; preds = %17
-  %24 = sdiv i32 100, %3
-  br label %25
-
-25:                                               ; preds = %17, %23, %4
-  %26 = phi i32 [ %24, %23 ], [ %19, %17 ], [ 0, %4 ]
-  %27 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, i32 noundef %26)
+17:                                               ; preds = %9, %4
+  %18 = phi i32 [ 0, %4 ], [ %14, %9 ]
+  %19 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, i32 noundef %18)
   ret void
 }
 
