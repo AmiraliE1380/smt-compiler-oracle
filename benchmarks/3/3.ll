@@ -1,33 +1,41 @@
-; ModuleID = 'benchmarks/3.c'
-source_filename = "benchmarks/3.c"
+; ModuleID = 'benchmarks/3/3.c'
+source_filename = "benchmarks/3/3.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
 @.str = private unnamed_addr constant [3 x i8] c"%d\00", align 1
 
 ; Function Attrs: nofree noinline nounwind uwtable
-define dso_local void @test_hoist_lt(i32 noundef %0, i32 noundef %1, i32 noundef %2, i32 noundef %3) local_unnamed_addr #0 {
-  %5 = srem i32 %3, 1000
-  %6 = icmp sgt i32 %5, 0
-  br i1 %6, label %7, label %17
+define dso_local void @test_loop_postcondition_float(double noundef %0, double noundef %1, double noundef %2, i32 noundef %3) local_unnamed_addr #0 {
+  %5 = fcmp olt double %2, 1.000000e+03
+  br i1 %5, label %6, label %21
 
-7:                                                ; preds = %4
-  %8 = add nsw i32 %5, -1
-  %9 = zext nneg i32 %8 to i33
-  %10 = add nsw i32 %5, -2
-  %11 = zext i32 %10 to i33
-  %12 = mul i33 %9, %11
-  %13 = lshr i33 %12, 1
-  %14 = trunc nuw i33 %13 to i32
-  %15 = add i32 %5, %14
-  %16 = add i32 %15, -1
-  br label %17
+6:                                                ; preds = %4
+  %7 = fadd double %1, %0
+  %8 = fcmp olt double %7, %2
+  br i1 %8, label %9, label %14
 
-17:                                               ; preds = %7, %4
-  %18 = phi i32 [ 0, %4 ], [ %16, %7 ]
-  %19 = srem i32 %1, 155
-  %20 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, i32 noundef %19)
-  %21 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, i32 noundef %18)
+9:                                                ; preds = %6, %9
+  %10 = phi double [ %11, %9 ], [ %0, %6 ]
+  %11 = fadd double %10, 1.500000e+00
+  %12 = fadd double %1, %11
+  %13 = fcmp olt double %12, %2
+  br i1 %13, label %9, label %14, !llvm.loop !8
+
+14:                                               ; preds = %9, %6
+  %15 = phi double [ %0, %6 ], [ %11, %9 ]
+  %16 = fsub double %2, %15
+  %17 = fadd double %1, 1.000000e-02
+  %18 = fcmp ogt double %16, %17
+  br i1 %18, label %19, label %21
+
+19:                                               ; preds = %14
+  %20 = sdiv i32 100, %3
+  br label %21
+
+21:                                               ; preds = %14, %19, %4
+  %22 = phi i32 [ %20, %19 ], [ 0, %14 ], [ 0, %4 ]
+  %23 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, i32 noundef %22)
   ret void
 }
 
@@ -49,3 +57,5 @@ attributes #1 = { nofree nounwind "no-trapping-math"="true" "stack-protector-buf
 !5 = !{!"int", !6, i64 0}
 !6 = !{!"omnipotent char", !7, i64 0}
 !7 = !{!"Simple C/C++ TBAA"}
+!8 = distinct !{!8, !9}
+!9 = !{!"llvm.loop.mustprogress"}

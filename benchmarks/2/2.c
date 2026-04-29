@@ -1,26 +1,18 @@
 #include <stdio.h>
 
 __attribute__((noinline))
-void test_hoist_le(int a, 
-                int b,
-                int c,
-                int j) {
-    int i=0;
-    
-    int sum = 0;
+void test_loop_postcondition_float(int a, int b, int c, int x) {
+    int result = 0;
 
-    j = j % 1000;
-    while (i <= j) {
-        sum += i;
-        i++;
+    if (c < 1000) {
+        
+        while (a + b < c) {
+            a += 4; 
+        }
+
+        if (c - a > b*b) {
+            result = 100 / x; 
+        }
     }
-
-    if (i - j + 1) {
-        j = b % 155;
-    } else {
-        j = b / 133;
-    }
-
-    printf("%d", j);
-    printf("%d", sum);
+    printf("%d", result);
 }
