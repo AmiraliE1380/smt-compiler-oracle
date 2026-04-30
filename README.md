@@ -42,7 +42,7 @@ CC=clang CXX=clang++ cmake -G Ninja ..
 ninja
 ```
 
-Usage
+### Usage
 Use LLVM's opt tool to load the shared object and fire it at an LLVM IR file.
 
 ```Bash
