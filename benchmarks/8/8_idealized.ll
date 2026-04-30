@@ -1,29 +1,13 @@
-; ModuleID = 'benchmarks/10/10.c'
-source_filename = "benchmarks/10/10.c"
+; ModuleID = 'benchmarks/8/8_idealized.c'
+source_filename = "benchmarks/8/8_idealized.c"
 target datalayout = "e-m:e-p270:32:32-p271:32:32-p272:64:64-i64:64-i128:128-f80:128-n8:16:32:64-S128"
 target triple = "x86_64-unknown-linux-gnu"
 
-@.str = private unnamed_addr constant [3 x i8] c"%f\00", align 1
+@.str = private unnamed_addr constant [3 x i8] c"%d\00", align 1
 
 ; Function Attrs: nofree noinline nounwind uwtable
-define dso_local void @benchmark_linear_math(double noundef %0, double noundef %1, double noundef %2) local_unnamed_addr #0 {
-  %4 = fadd double %0, %1
-  %5 = fcmp olt double %4, %2
-  br i1 %5, label %6, label %12
-
-6:                                                ; preds = %3
-  %7 = fsub double %2, %0
-  %8 = fadd double %1, -1.000000e-02
-  %9 = fcmp olt double %7, %8
-  br i1 %9, label %10, label %12
-
-10:                                               ; preds = %6
-  %11 = fdiv double 1.000000e+02, %0
-  br label %12
-
-12:                                               ; preds = %6, %10, %3
-  %13 = phi double [ %11, %10 ], [ 0.000000e+00, %6 ], [ 0.000000e+00, %3 ]
-  %14 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, double noundef %13)
+define dso_local void @benchmark_bitwise_math(i32 noundef %0, i32 noundef %1) local_unnamed_addr #0 {
+  %3 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, i32 noundef 0)
   ret void
 }
 

@@ -7,73 +7,73 @@ target triple = "x86_64-unknown-linux-gnu"
 
 ; Function Attrs: nofree noinline nounwind uwtable
 define dso_local void @test_hoist_float(float noundef %0, float noundef %1, float noundef %2, i32 noundef %3) local_unnamed_addr #0 {
-  %5 = fsub float %0, %2
-  %6 = tail call float @logf(float noundef %5) #4, !tbaa !4
-  %7 = fcmp ogt float %0, %1
-  %8 = fcmp ogt float %1, %2
-  %9 = and i1 %7, %8
-  %10 = icmp sgt i32 %3, 0
-  %11 = and i1 %9, %10
-  br i1 %11, label %12, label %54
+  %5 = fcmp ogt float %0, %1
+  %6 = fcmp ogt float %1, %2
+  %7 = and i1 %5, %6
+  br i1 %7, label %8, label %52
 
-12:                                               ; preds = %4
-  %13 = fptosi float %6 to i32
-  %14 = fadd float %0, %2
-  %15 = fadd float %14, 1.990000e+02
-  %16 = sitofp i32 %13 to float
-  %17 = and i32 %3, 1
-  %18 = icmp eq i32 %3, 1
-  br i1 %18, label %39, label %19
+8:                                                ; preds = %4
+  %9 = fsub float %0, %2
+  %10 = tail call float @logf(float noundef %9) #4, !tbaa !4
+  %11 = fadd float %0, %2
+  %12 = fadd float %11, 1.990000e+02
+  %13 = icmp sgt i32 %3, 0
+  br i1 %13, label %14, label %52
 
-19:                                               ; preds = %12
-  %20 = and i32 %3, 2147483646
-  br label %21
+14:                                               ; preds = %8
+  %15 = and i32 %3, 1
+  %16 = icmp eq i32 %3, 1
+  br i1 %16, label %37, label %17
 
-21:                                               ; preds = %21, %19
-  %22 = phi i32 [ 0, %19 ], [ %34, %21 ]
-  %23 = phi float [ 0.000000e+00, %19 ], [ %33, %21 ]
-  %24 = phi i32 [ 0, %19 ], [ %35, %21 ]
-  %25 = uitofp nneg i32 %22 to float
-  %26 = fadd float %16, %25
-  %27 = fadd float %15, %26
-  %28 = fadd float %23, %27
-  %29 = or disjoint i32 %22, 1
-  %30 = uitofp nneg i32 %29 to float
-  %31 = fadd float %16, %30
-  %32 = fadd float %15, %31
-  %33 = fadd float %28, %32
-  %34 = add nuw nsw i32 %22, 2
-  %35 = add i32 %24, 2
-  %36 = icmp eq i32 %35, %20
-  br i1 %36, label %37, label %21, !llvm.loop !8
+17:                                               ; preds = %14
+  %18 = and i32 %3, 2147483646
+  br label %19
 
-37:                                               ; preds = %21
-  %38 = icmp eq i32 %17, 0
-  br i1 %38, label %51, label %39
+19:                                               ; preds = %19, %17
+  %20 = phi i32 [ 0, %17 ], [ %32, %19 ]
+  %21 = phi float [ 0.000000e+00, %17 ], [ %31, %19 ]
+  %22 = phi i32 [ 0, %17 ], [ %33, %19 ]
+  %23 = uitofp nneg i32 %20 to float
+  %24 = fadd float %10, %23
+  %25 = fadd float %12, %24
+  %26 = fadd float %21, %25
+  %27 = or disjoint i32 %20, 1
+  %28 = uitofp nneg i32 %27 to float
+  %29 = fadd float %10, %28
+  %30 = fadd float %12, %29
+  %31 = fadd float %26, %30
+  %32 = add nuw nsw i32 %20, 2
+  %33 = add i32 %22, 2
+  %34 = icmp eq i32 %33, %18
+  br i1 %34, label %35, label %19, !llvm.loop !8
 
-39:                                               ; preds = %37, %12
-  %40 = phi i32 [ 0, %12 ], [ %34, %37 ]
-  %41 = phi float [ 0.000000e+00, %12 ], [ %16, %37 ]
-  %42 = phi float [ 0.000000e+00, %12 ], [ %33, %37 ]
-  %43 = trunc i32 %3 to i1
-  tail call void @llvm.assume(i1 %43)
-  %44 = and i32 %40, 1
-  %45 = icmp eq i32 %44, 0
-  %46 = select i1 %45, float %16, float %41
-  %47 = uitofp nneg i32 %40 to float
-  %48 = fadd float %46, %47
-  %49 = fadd float %15, %48
-  %50 = fadd float %42, %49
-  br label %51
+35:                                               ; preds = %19
+  %36 = icmp eq i32 %15, 0
+  br i1 %36, label %49, label %37
 
-51:                                               ; preds = %37, %39
-  %52 = phi float [ %33, %37 ], [ %50, %39 ]
-  %53 = fpext float %52 to double
-  br label %54
+37:                                               ; preds = %35, %14
+  %38 = phi i32 [ 0, %14 ], [ %32, %35 ]
+  %39 = phi float [ 0.000000e+00, %14 ], [ %31, %35 ]
+  %40 = phi float [ 0.000000e+00, %14 ], [ %10, %35 ]
+  %41 = trunc i32 %3 to i1
+  tail call void @llvm.assume(i1 %41)
+  %42 = and i32 %38, 1
+  %43 = icmp eq i32 %42, 0
+  %44 = select i1 %43, float %10, float %40
+  %45 = uitofp nneg i32 %38 to float
+  %46 = fadd float %44, %45
+  %47 = fadd float %12, %46
+  %48 = fadd float %39, %47
+  br label %49
 
-54:                                               ; preds = %51, %4
-  %55 = phi double [ 0.000000e+00, %4 ], [ %53, %51 ]
-  %56 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, double noundef %55)
+49:                                               ; preds = %35, %37
+  %50 = phi float [ %31, %35 ], [ %48, %37 ]
+  %51 = fpext float %50 to double
+  br label %52
+
+52:                                               ; preds = %8, %49, %4
+  %53 = phi double [ 0.000000e+00, %4 ], [ 0.000000e+00, %8 ], [ %51, %49 ]
+  %54 = tail call i32 (ptr, ...) @printf(ptr noundef nonnull dereferenceable(1) @.str, double noundef %53)
   ret void
 }
 
