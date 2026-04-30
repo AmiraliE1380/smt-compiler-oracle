@@ -10,20 +10,35 @@ Z3Encoder::Z3Encoder() : Solver(Ctx) {}
 z3::expr Z3Encoder::getOrCreateZ3Expr(Value *Val) {
     auto it = ValueMap.find(Val);
     if (it != ValueMap.end()) {
-        return it->second; // SAFE: avoids operator[]
+        return it->second; 
     }
 
-    // Handle hardcoded integer constants
     if (auto *CI = dyn_cast<ConstantInt>(Val)) {
+        // If LLVM gives us a hardcoded true/false (i1)
+        if (CI->getType()->isIntegerTy(1)) {
+            z3::expr z3_bool = Ctx.bool_val(CI->getZExtValue() != 0);
+            ValueMap.insert({Val, z3_bool});
+            return z3_bool;
+        }
+        // Otherwise, standard 32-bit integer
         uint64_t val = CI->getZExtValue();
         z3::expr z3_const = Ctx.bv_val((unsigned)val, 32); 
-        ValueMap.insert({Val, z3_const}); // SAFE: insert directly
+        ValueMap.insert({Val, z3_const});
         return z3_const;
     }
 
-    // Handle function arguments or unmapped variables
+    std::string unique_name = "val_" + std::to_string(reinterpret_cast<uintptr_t>(Val));
+
+    // If LLVM gives us a boolean variable
+    if (Val->getType()->isIntegerTy(1)) {
+        z3::expr new_bool = Ctx.bool_const(Val->getName().str().c_str());
+        ValueMap.insert({Val, new_bool});
+        return new_bool;
+    }
+
+    // Otherwise, standard 32-bit integer variable
     z3::expr new_var = Ctx.bv_const(Val->getName().str().c_str(), 32);
-    ValueMap.insert({Val, new_var}); // SAFE
+    ValueMap.insert({Val, new_var});
     return new_var;
 }
 
@@ -41,9 +56,17 @@ void Z3Encoder::encodeInstruction(Instruction *Inst) {
             case Instruction::UDiv: res = z3::udiv(op1, op2); break;
             case Instruction::SRem: res = z3::srem(op1, op2); break;
             case Instruction::URem: res = z3::urem(op1, op2); break;
-            case Instruction::And:  res = op1 & op2; break;
-            case Instruction::Or:   res = op1 | op2; break;
-            case Instruction::Xor:  res = op1 ^ op2; break;
+            
+            // Context-Aware Bitwise/Logical Operations!
+            case Instruction::And:  
+                res = op1.is_bool() ? (op1 && op2) : (op1 & op2); 
+                break;
+            case Instruction::Or:   
+                res = op1.is_bool() ? (op1 || op2) : (op1 | op2); 
+                break;
+            case Instruction::Xor:  
+                res = op1.is_bool() ? (op1 != op2) : (op1 ^ op2); // Logical XOR is Inequality
+                break;
             default: return; 
         }
         ValueMap.insert({Inst, res}); // SAFE

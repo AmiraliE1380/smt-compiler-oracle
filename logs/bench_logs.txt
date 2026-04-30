@@ -1,0 +1,163 @@
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/1/1.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_transitivity
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 7.324964 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 9.470683 ms]
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 10.239502 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 11.051626 ms]
+  => Total SMT Query Latency for Function: 3.808677e+01 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/1/1.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_transitivity
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 9.722207 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 10.162177 ms]
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 9.127890 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 9.007253 ms]
+  => Total SMT Query Latency for Function: 3.801953e+01 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/8/8.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_bitwise_math
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 21.297780 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 8.037413 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 9.204922 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 8.700094 ms]
+  => Total SMT Query Latency for Function: 4.724021e+01 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/8/8.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_bitwise_math
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 13.306540 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 14.038221 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 7.083288 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 6.009373 ms]
+  => Total SMT Query Latency for Function: 4.043742e+01 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ 
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ 
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/1/1.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_transitivity
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 9.633410 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 13.431302 ms]
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 7.249907 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 11.611850 ms]
+  => Total SMT Query Latency for Function: 4.192647e+01 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes=
+"oracle-pass" ../benchmarks/2/2.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: test_loop_postcondition_float
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 13.767896 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 13.560043 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 11.484242 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 11.779200 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 37.760343 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 26.329334 ms]
+  => Total SMT Query Latency for Function: 1.146811e+02 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/3/3.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: test_loop_postcondition_float
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 11.914116 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 19.991976 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 22.631949 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 14.130033 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 16.386189 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 10.920143 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 11.339895 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 17.502314 ms]
+  => Total SMT Query Latency for Function: 1.248166e+02 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/4/4.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: test_hoist_trap
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 9.168386 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 7.900589 ms]
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 5.449632 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 5.800219 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 12.640975 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 7.404312 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 8.698527 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 7.900940 ms]
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 12.924611 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 9.075657 ms]
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 10.540933 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 10.141217 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 8.016798 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 10.006874 ms]
+  => Total SMT Query Latency for Function: 1.256697e+02 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/5/5.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: test_hoist_float
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 9.466038 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 9.581234 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 9.831158 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 11.503815 ms]
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 7.654660 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 10.236284 ms]
+  => Total SMT Query Latency for Function: 5.827319e+01 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/6/6.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_transitivity
+  => Total SMT Query Latency for Function: 0.000000e+00 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes=
+"oracle-pass" ../benchmarks/7/7.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_modulo
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 72.426053 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 8540.517919 ms]
+  => Total SMT Query Latency for Function: 8.612944e+03 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/8/8.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_bitwise_math
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 12.203445 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 8.223032 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 7.619583 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 6.545536 ms]
+  => Total SMT Query Latency for Function: 3.459160e+01 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/9/9.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_div_rem_prime
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 18.380709 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 7.756095 ms]
+  -> Branch found in block:
+     Testing TRUE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 48.756871 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 56.450168 ms]
+  => Total SMT Query Latency for Function: 1.313438e+02 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ opt -load-pass-plugin=./OraclePass.so -passes="oracle-pass" ../benchmarks/10/10.ll -disable-output
+
+[Z3 Oracle] Analyzing Function: benchmark_linear_math
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 16.826514 ms]
+     Testing FALSE path... SAT (Reachable Path) [Query Latency: 9.166858 ms]
+  -> Branch found in block:
+     Testing TRUE path... SAT (Reachable Path) [Query Latency: 6.440409 ms]
+     Testing FALSE path... UNSAT (Dead Code / Impossible Path) [Query Latency: 8.884889 ms]
+  => Total SMT Query Latency for Function: 4.131867e+01 ms
+amiralie1380@DESKTOP-HIUHQ8A:~/michigan/pl/smt-compiler-oracle/build$ 
