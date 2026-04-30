@@ -28,23 +28,26 @@ def analyze_ir(filepath):
             if not in_function:
                 continue
                 
-            # Ignore comments and metadata inside the function
+            # Ignore full-line comments and metadata inside the function
             if line.startswith(';') or line.startswith('!'):
                 continue
                 
-            # Count Basic Blocks (lines ending in a colon like "14:")
-            if line.endswith(':'):
+            # Strip inline comments to correctly identify Basic Blocks
+            code_part = line.split(';')[0].strip()
+            
+            # Count Basic Blocks (e.g., "14:" or "entry:")
+            if code_part.endswith(':'):
                 stats['blocks'] += 1
                 continue
                 
-            # If it's not a block label, metadata, or brace, it's an instruction
-            if line:
+            # If it's not a block label, metadata, or empty line, it's an instruction
+            if code_part:
                 stats['instructions'] += 1
                 
                 # Track specific expensive/dangerous operations
-                if ' sdiv ' in line or ' udiv ' in line or ' fdiv ' in line or '@logf' in line:
+                if ' sdiv ' in code_part or ' udiv ' in code_part or ' fdiv ' in code_part or '@logf' in code_part:
                     stats['divisions'] += 1
-                if ' br ' in line:
+                if ' br ' in code_part:
                     stats['branches'] += 1
                     
     return stats
@@ -54,7 +57,7 @@ def main():
     print("-" * 75)
     
     # Iterate through folders 1 to 10
-    for i in range(1, 6):
+    for i in range(1, 11):
         folder = f"benchmarks/{i}"
         if not os.path.exists(folder):
             continue
