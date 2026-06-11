@@ -69,7 +69,7 @@ define dso_local range(i64 1, 0) i64 @ZSTD_compressBound(i64 noundef %0) local_u
   br i1 %12, label %13, label %14, !prof !9, !nosanitize !8
 
 13:                                               ; preds = %3
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 14:                                               ; preds = %3
@@ -442,7 +442,7 @@ define dso_local i64 @ZSTD_sizeof_CCtx(ptr noundef readonly captures(address) %0
   br i1 %14, label %15, label %16, !prof !9, !nosanitize !8
 
 15:                                               ; preds = %3
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 16:                                               ; preds = %3
@@ -473,7 +473,7 @@ define dso_local i64 @ZSTD_sizeof_CCtx(ptr noundef readonly captures(address) %0
   br i1 %38, label %39, label %40, !prof !9, !nosanitize !8
 
 39:                                               ; preds = %27
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 40:                                               ; preds = %27
@@ -487,7 +487,7 @@ define dso_local i64 @ZSTD_sizeof_CCtx(ptr noundef readonly captures(address) %0
   br i1 %45, label %46, label %47, !prof !9, !nosanitize !8
 
 46:                                               ; preds = %42
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 47:                                               ; preds = %42
@@ -497,7 +497,7 @@ define dso_local i64 @ZSTD_sizeof_CCtx(ptr noundef readonly captures(address) %0
   br i1 %50, label %51, label %52, !prof !9, !nosanitize !8
 
 51:                                               ; preds = %47
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 52:                                               ; preds = %47
@@ -529,7 +529,7 @@ define dso_local i64 @ZSTD_sizeof_CStream(ptr noundef readonly captures(address)
   br i1 %14, label %15, label %16, !prof !9, !nosanitize !8
 
 15:                                               ; preds = %3
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 16:                                               ; preds = %3
@@ -560,7 +560,7 @@ define dso_local i64 @ZSTD_sizeof_CStream(ptr noundef readonly captures(address)
   br i1 %38, label %39, label %40, !prof !9, !nosanitize !8
 
 39:                                               ; preds = %27
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 40:                                               ; preds = %27
@@ -574,7 +574,7 @@ define dso_local i64 @ZSTD_sizeof_CStream(ptr noundef readonly captures(address)
   br i1 %45, label %46, label %47, !prof !9, !nosanitize !8
 
 46:                                               ; preds = %42
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 47:                                               ; preds = %42
@@ -584,7 +584,7 @@ define dso_local i64 @ZSTD_sizeof_CStream(ptr noundef readonly captures(address)
   br i1 %50, label %51, label %52, !prof !9, !nosanitize !8
 
 51:                                               ; preds = %47
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 52:                                               ; preds = %47
@@ -1965,7 +1965,7 @@ define dso_local range(i64 -60, 1) i64 @ZSTD_CCtx_setPledgedSrcSize(ptr noundef 
   br i1 %8, label %9, label %10, !prof !9, !nosanitize !8
 
 9:                                                ; preds = %6
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 10:                                               ; preds = %6
@@ -2353,7 +2353,7 @@ define dso_local noundef i32 @ZSTD_cycleLog(i32 noundef %0, i32 noundef %1) loca
   br i1 %6, label %7, label %8, !prof !9, !nosanitize !8
 
 7:                                                ; preds = %2
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 8:                                                ; preds = %2
@@ -2370,23 +2370,23 @@ define dso_local void @ZSTD_adjustCParams(ptr dead_on_unwind noalias readnone sr
   br i1 %5, label %6, label %7
 
 6:                                                ; preds = %4
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 7:                                                ; preds = %4
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local void @ZSTD_getCParamsFromCCtxParams(ptr dead_on_unwind noalias readnone sret(%struct.ZSTD_compressionParameters) align 4 captures(none) %0, ptr noundef readnone captures(none) %1, i64 noundef %2, i64 noundef %3, i32 noundef %4) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_estimateCCtxSize_usingCCtxParams(ptr noundef readnone captures(none) %0) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -2456,17 +2456,17 @@ define dso_local noundef i64 @ZSTD_estimateCCtxSize_usingCParams(ptr noundef rea
   br i1 %36, label %38, label %37
 
 37:                                               ; preds = %30
-  call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 38:                                               ; preds = %30
-  call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_estimateCCtxSize(i32 noundef %0) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -2481,7 +2481,7 @@ define dso_local noundef i64 @ZSTD_estimateCStreamSize_usingCCtxParams(ptr nound
   br i1 %4, label %6, label %5
 
 5:                                                ; preds = %1
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 6:                                                ; preds = %1
@@ -2558,14 +2558,14 @@ define dso_local noundef i64 @ZSTD_estimateCStreamSize_usingCParams(ptr noundef 
   br i1 %39, label %44, label %41
 
 41:                                               ; preds = %40
-  call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 42:                                               ; preds = %30
   br i1 %39, label %44, label %43
 
 43:                                               ; preds = %42
-  call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 44:                                               ; preds = %40, %42
@@ -2575,7 +2575,7 @@ define dso_local noundef i64 @ZSTD_estimateCStreamSize_usingCParams(ptr noundef 
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_estimateCStreamSize(i32 noundef %0) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -2597,7 +2597,7 @@ define dso_local void @ZSTD_getFrameProgression(ptr dead_on_unwind noalias writa
   br i1 %13, label %14, label %15, !prof !9, !nosanitize !8
 
 14:                                               ; preds = %6
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 15:                                               ; preds = %6, %2
@@ -2609,7 +2609,7 @@ define dso_local void @ZSTD_getFrameProgression(ptr dead_on_unwind noalias writa
   br i1 %20, label %21, label %22, !prof !9, !nosanitize !8
 
 21:                                               ; preds = %15
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 22:                                               ; preds = %15
@@ -2665,11 +2665,11 @@ define dso_local noundef i64 @ZSTD_copyCCtx(ptr noundef readnone captures(none) 
   br i1 %4, label %5, label %6
 
 5:                                                ; preds = %3
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 6:                                                ; preds = %3
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -2788,65 +2788,23 @@ define dso_local noundef i32 @ZSTD_seqToCodes(ptr noundef readonly captures(none
 ; Function Attrs: mustprogress nocallback nocreateundeforpoison nofree nosync nounwind speculatable willreturn memory(none)
 declare { i32, i1 } @llvm.uadd.with.overflow.i32(i32, i32) #3
 
-; Function Attrs: nounwind memory(inaccessiblemem: write) uwtable
-define dso_local ptr @ZSTD_selectBlockCompressor(i32 noundef %0, i32 noundef %1, i32 noundef %2) local_unnamed_addr #0 {
+; Function Attrs: mustprogress nofree norecurse nosync nounwind willreturn memory(none) uwtable
+define dso_local ptr @ZSTD_selectBlockCompressor(i32 noundef %0, i32 noundef %1, i32 noundef %2) local_unnamed_addr #8 {
   %4 = add i32 %0, -6
   %5 = icmp ult i32 %4, -3
   %6 = icmp ne i32 %1, 1
   %7 = or i1 %5, %6
-  %8 = icmp ult i32 %2, 4
-  br i1 %7, label %20, label %9
-
-9:                                                ; preds = %3
-  br i1 %8, label %11, label %10, !prof !169, !nosanitize !8
-
-10:                                               ; preds = %20, %9
-  tail call void @llvm.ubsantrap(i8 18) #39, !nosanitize !8
-  unreachable, !nosanitize !8
-
-11:                                               ; preds = %9
-  %12 = add nsw i32 %0, -3
-  %13 = zext nneg i32 %2 to i64
-  %14 = mul nuw nsw i64 %13, 24
-  %15 = getelementptr inbounds nuw [24 x i8], ptr @ZSTD_selectBlockCompressor.rowBasedBlockCompressors, i64 %13
-  %16 = zext nneg i32 %12 to i64
-  %17 = shl nuw nsw i64 %16, 3
-  %18 = add nuw nsw i64 %14, %17
-  %19 = getelementptr inbounds nuw [8 x i8], ptr %15, i64 %16
-  br label %31
-
-20:                                               ; preds = %3
-  %21 = icmp ult i32 %0, 10
-  %22 = and i1 %21, %8
-  br i1 %22, label %23, label %10, !prof !170, !nosanitize !8
-
-23:                                               ; preds = %20
-  %24 = zext nneg i32 %0 to i64
-  %25 = zext nneg i32 %2 to i64
-  %26 = mul nuw nsw i64 %25, 80
-  %27 = getelementptr inbounds nuw [80 x i8], ptr @ZSTD_selectBlockCompressor.blockCompressor, i64 %25
-  %28 = shl nuw nsw i64 %24, 3
-  %29 = add nuw nsw i64 %26, %28
-  %30 = getelementptr inbounds nuw [8 x i8], ptr %27, i64 %24
-  br label %31
-
-31:                                               ; preds = %23, %11
-  %32 = phi i64 [ 96, %11 ], [ 320, %23 ]
-  %33 = phi i64 [ %18, %11 ], [ %29, %23 ]
-  %34 = phi ptr [ %19, %11 ], [ %30, %23 ]
-  %35 = sub nsw i64 %32, %33, !nosanitize !8
-  %36 = icmp ult i64 %32, %33, !nosanitize !8
-  %37 = icmp ult i64 %35, 8, !nosanitize !8
-  %38 = or i1 %36, %37, !nosanitize !8
-  br i1 %38, label %41, label %39
-
-39:                                               ; preds = %31
-  %40 = load ptr, ptr %34, align 8, !tbaa !51
-  ret ptr %40
-
-41:                                               ; preds = %31
-  tail call void @llvm.ubsantrap(i8 9) #34, !nosanitize !8
-  unreachable, !nosanitize !8
+  %8 = sext i32 %2 to i64
+  %9 = getelementptr inbounds [24 x i8], ptr @ZSTD_selectBlockCompressor.rowBasedBlockCompressors, i64 %8
+  %10 = zext nneg i32 %0 to i64
+  %11 = getelementptr [8 x i8], ptr %9, i64 %10
+  %12 = getelementptr i8, ptr %11, i64 -24
+  %13 = getelementptr inbounds [80 x i8], ptr @ZSTD_selectBlockCompressor.blockCompressor, i64 %8
+  %14 = sext i32 %0 to i64
+  %15 = getelementptr inbounds [8 x i8], ptr %13, i64 %14
+  %16 = select i1 %7, ptr %15, ptr %12
+  %17 = load ptr, ptr %16, align 8, !tbaa !51
+  ret ptr %17
 }
 
 declare i64 @ZSTD_compressBlock_fast(ptr noundef, ptr noundef, ptr noundef, ptr noundef, i64 noundef) #16
@@ -2932,9 +2890,9 @@ declare i64 @ZSTD_compressBlock_lazy2_dedicatedDictSearch_row(ptr noundef, ptr n
 ; Function Attrs: mustprogress nofree norecurse nosync nounwind willreturn memory(argmem: readwrite) uwtable
 define dso_local void @ZSTD_resetSeqStore(ptr noundef captures(none) initializes((8, 16), (24, 32), (72, 76)) %0) local_unnamed_addr #11 {
   %2 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  %3 = load ptr, ptr %2, align 8, !tbaa !171
+  %3 = load ptr, ptr %2, align 8, !tbaa !169
   %4 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  store ptr %3, ptr %4, align 8, !tbaa !172
+  store ptr %3, ptr %4, align 8, !tbaa !170
   %5 = load ptr, ptr %0, align 8, !tbaa !154
   %6 = getelementptr inbounds nuw i8, ptr %0, i64 8
   store ptr %5, ptr %6, align 8, !tbaa !158
@@ -2972,7 +2930,7 @@ define dso_local i64 @ZSTD_generateSequences(ptr noundef %0, ptr noundef %1, i64
   br i1 %18, label %19, label %20, !prof !9, !nosanitize !8
 
 19:                                               ; preds = %9
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 20:                                               ; preds = %9
@@ -3019,21 +2977,21 @@ define dso_local i64 @ZSTD_generateSequences(ptr noundef %0, ptr noundef %1, i64
   store i64 0, ptr %45, align 8, !tbaa !119
   call void @llvm.lifetime.start.p0(ptr nonnull %6) #36
   call void @llvm.lifetime.start.p0(ptr nonnull %7) #36
-  store ptr %35, ptr %6, align 8, !tbaa !173
+  store ptr %35, ptr %6, align 8, !tbaa !171
   %46 = getelementptr inbounds nuw i8, ptr %6, i64 8
-  store i64 %25, ptr %46, align 8, !tbaa !175
+  store i64 %25, ptr %46, align 8, !tbaa !173
   %47 = getelementptr inbounds nuw i8, ptr %6, i64 16
-  store i64 0, ptr %47, align 8, !tbaa !176
-  store ptr %3, ptr %7, align 8, !tbaa !177
+  store i64 0, ptr %47, align 8, !tbaa !174
+  store ptr %3, ptr %7, align 8, !tbaa !175
   %48 = getelementptr inbounds nuw i8, ptr %7, i64 8
-  store i64 %4, ptr %48, align 8, !tbaa !178
+  store i64 %4, ptr %48, align 8, !tbaa !176
   %49 = getelementptr inbounds nuw i8, ptr %7, i64 16
-  store i64 0, ptr %49, align 8, !tbaa !179
+  store i64 0, ptr %49, align 8, !tbaa !177
   %50 = load <2 x i32>, ptr %42, align 4, !tbaa !4
-  store i32 1, ptr %42, align 4, !tbaa !180
-  store i32 1, ptr %43, align 8, !tbaa !181
+  store i32 1, ptr %42, align 4, !tbaa !178
+  store i32 1, ptr %43, align 8, !tbaa !179
   %51 = call i64 @ZSTD_compressStream2(ptr noundef nonnull %0, ptr noundef nonnull %6, ptr noundef nonnull %7, i32 noundef 2)
-  %52 = load i64, ptr %47, align 8, !tbaa !176
+  %52 = load i64, ptr %47, align 8, !tbaa !174
   call void @llvm.lifetime.end.p0(ptr nonnull %7) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %6) #36
   store <2 x i32> %50, ptr %42, align 4, !tbaa !4
@@ -3046,7 +3004,7 @@ define dso_local i64 @ZSTD_generateSequences(ptr noundef %0, ptr noundef %1, i64
   br i1 %57, label %58, label %60
 
 58:                                               ; preds = %37
-  %59 = load i64, ptr %40, align 8, !tbaa !182
+  %59 = load i64, ptr %40, align 8, !tbaa !180
   br label %60
 
 60:                                               ; preds = %34, %37, %30, %24, %58
@@ -3066,21 +3024,21 @@ define dso_local i64 @ZSTD_compress2(ptr noundef initializes((784, 792), (3640, 
   store i64 0, ptr %11, align 8, !tbaa !119
   call void @llvm.lifetime.start.p0(ptr nonnull %6) #36
   call void @llvm.lifetime.start.p0(ptr nonnull %7) #36
-  store ptr %1, ptr %6, align 8, !tbaa !173
+  store ptr %1, ptr %6, align 8, !tbaa !171
   %12 = getelementptr inbounds nuw i8, ptr %6, i64 8
-  store i64 %2, ptr %12, align 8, !tbaa !175
+  store i64 %2, ptr %12, align 8, !tbaa !173
   %13 = getelementptr inbounds nuw i8, ptr %6, i64 16
-  store i64 0, ptr %13, align 8, !tbaa !176
-  store ptr %3, ptr %7, align 8, !tbaa !177
+  store i64 0, ptr %13, align 8, !tbaa !174
+  store ptr %3, ptr %7, align 8, !tbaa !175
   %14 = getelementptr inbounds nuw i8, ptr %7, i64 8
-  store i64 %4, ptr %14, align 8, !tbaa !178
+  store i64 %4, ptr %14, align 8, !tbaa !176
   %15 = getelementptr inbounds nuw i8, ptr %7, i64 16
-  store i64 0, ptr %15, align 8, !tbaa !179
+  store i64 0, ptr %15, align 8, !tbaa !177
   %16 = load <2 x i32>, ptr %8, align 4, !tbaa !4
-  store i32 1, ptr %8, align 4, !tbaa !180
-  store i32 1, ptr %9, align 8, !tbaa !181
+  store i32 1, ptr %8, align 4, !tbaa !178
+  store i32 1, ptr %9, align 8, !tbaa !179
   %17 = call i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef nonnull %6, ptr noundef nonnull %7, i32 noundef 2)
-  %18 = load i64, ptr %13, align 8, !tbaa !176
+  %18 = load i64, ptr %13, align 8, !tbaa !174
   call void @llvm.lifetime.end.p0(ptr nonnull %7) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %6) #36
   store <2 x i32> %16, ptr %8, align 4, !tbaa !4
@@ -3104,13 +3062,13 @@ define dso_local i64 @ZSTD_mergeBlockDelimiters(ptr noundef captures(none) %0, i
   %7 = phi i64 [ 0, %4 ], [ %36, %35 ]
   %8 = phi i64 [ 0, %4 ], [ %37, %35 ]
   %9 = getelementptr inbounds nuw [16 x i8], ptr %0, i64 %8
-  %10 = load i32, ptr %9, align 4, !tbaa !183
+  %10 = load i32, ptr %9, align 4, !tbaa !181
   %11 = icmp eq i32 %10, 0
   br i1 %11, label %12, label %28
 
 12:                                               ; preds = %6
   %13 = getelementptr inbounds nuw i8, ptr %9, i64 8
-  %14 = load i32, ptr %13, align 4, !tbaa !185
+  %14 = load i32, ptr %13, align 4, !tbaa !183
   %15 = icmp eq i32 %14, 0
   br i1 %15, label %16, label %28
 
@@ -3120,31 +3078,31 @@ define dso_local i64 @ZSTD_mergeBlockDelimiters(ptr noundef captures(none) %0, i
 
 18:                                               ; preds = %16
   %19 = getelementptr inbounds nuw i8, ptr %9, i64 4
-  %20 = load i32, ptr %19, align 4, !tbaa !186
+  %20 = load i32, ptr %19, align 4, !tbaa !184
   %21 = getelementptr inbounds nuw i8, ptr %9, i64 20
-  %22 = load i32, ptr %21, align 4, !tbaa !186
+  %22 = load i32, ptr %21, align 4, !tbaa !184
   %23 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %22, i32 %20), !nosanitize !8
   %24 = extractvalue { i32, i1 } %23, 1, !nosanitize !8
   br i1 %24, label %25, label %26, !prof !9, !nosanitize !8
 
 25:                                               ; preds = %18
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 26:                                               ; preds = %18
   %27 = extractvalue { i32, i1 } %23, 0, !nosanitize !8
-  store i32 %27, ptr %21, align 4, !tbaa !186
+  store i32 %27, ptr %21, align 4, !tbaa !184
   br label %35
 
 28:                                               ; preds = %12, %6
   %29 = getelementptr inbounds nuw [16 x i8], ptr %0, i64 %7
-  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(16) %29, ptr noundef nonnull align 4 dereferenceable(16) %9, i64 16, i1 false), !tbaa.struct !187
+  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(16) %29, ptr noundef nonnull align 4 dereferenceable(16) %9, i64 16, i1 false), !tbaa.struct !185
   %30 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %7, i64 1), !nosanitize !8
   %31 = extractvalue { i64, i1 } %30, 1, !nosanitize !8
   br i1 %31, label %32, label %33, !prof !9, !nosanitize !8
 
 32:                                               ; preds = %28
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 33:                                               ; preds = %28
@@ -3155,7 +3113,7 @@ define dso_local i64 @ZSTD_mergeBlockDelimiters(ptr noundef captures(none) %0, i
   %36 = phi i64 [ %7, %26 ], [ %7, %16 ], [ %34, %33 ]
   %37 = add nuw i64 %8, 1
   %38 = icmp eq i64 %37, %1
-  br i1 %38, label %39, label %6, !llvm.loop !188
+  br i1 %38, label %39, label %6, !llvm.loop !186
 
 39:                                               ; preds = %35, %2
   %40 = phi i64 [ 0, %2 ], [ %36, %35 ]
@@ -3167,9 +3125,9 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   %8 = alloca %struct.ZSTD_symbolEncodingTypeStats_t, align 8
   %9 = alloca i32, align 4
   %10 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  %11 = load ptr, ptr %10, align 8, !tbaa !172
+  %11 = load ptr, ptr %10, align 8, !tbaa !170
   %12 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  %13 = load ptr, ptr %12, align 8, !tbaa !171
+  %13 = load ptr, ptr %12, align 8, !tbaa !169
   %14 = ptrtoint ptr %11 to i64
   %15 = ptrtoint ptr %13 to i64
   %16 = sub i64 %14, %15
@@ -3198,7 +3156,7 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   call void @llvm.lifetime.start.p0(ptr nonnull %9) #36
   store i32 255, ptr %9, align 4, !tbaa !4
   %27 = getelementptr inbounds nuw i8, ptr %1, i64 2056
-  %28 = load i32, ptr %27, align 8, !tbaa !189
+  %28 = load i32, ptr %27, align 8, !tbaa !187
   tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(2064) %2, ptr noundef nonnull align 8 dereferenceable(2064) %1, i64 2064, i1 false)
   br label %35
 
@@ -3209,7 +3167,7 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   call void @llvm.lifetime.start.p0(ptr nonnull %9) #36
   store i32 255, ptr %9, align 4, !tbaa !4
   %33 = getelementptr inbounds nuw i8, ptr %1, i64 2056
-  %34 = load i32, ptr %33, align 8, !tbaa !189
+  %34 = load i32, ptr %33, align 8, !tbaa !187
   tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(2064) %2, ptr noundef nonnull align 8 dereferenceable(2064) %1, i64 2064, i1 false)
   br i1 %32, label %35, label %102
 
@@ -3218,7 +3176,7 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   %37 = phi ptr [ %27, %26 ], [ %33, %29 ]
   %38 = getelementptr inbounds nuw i8, ptr %5, i64 1024
   %39 = add nsw i64 %6, -1024
-  %40 = load i32, ptr %37, align 8, !tbaa !189
+  %40 = load i32, ptr %37, align 8, !tbaa !187
   %41 = icmp eq i32 %40, 2
   %42 = select i1 %41, i64 6, i64 63
   %43 = icmp ugt i64 %16, %42
@@ -3282,7 +3240,7 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   br i1 %81, label %82, label %83, !prof !9, !nosanitize !8
 
 82:                                               ; preds = %79
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 83:                                               ; preds = %79
@@ -3296,7 +3254,7 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   br i1 %88, label %89, label %90, !prof !9, !nosanitize !8
 
 89:                                               ; preds = %86
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 90:                                               ; preds = %86
@@ -3314,7 +3272,7 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   br i1 %96, label %97, label %98, !prof !9, !nosanitize !8
 
 97:                                               ; preds = %94
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 98:                                               ; preds = %94
@@ -3328,26 +3286,26 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
 
 102:                                              ; preds = %49, %47, %35, %29, %23, %93, %101
   %103 = phi i32 [ 0, %35 ], [ 0, %29 ], [ 3, %93 ], [ 0, %101 ], [ 1, %47 ], [ 0, %23 ], [ 0, %49 ]
-  store i32 %103, ptr %4, align 8, !tbaa !190
+  store i32 %103, ptr %4, align 8, !tbaa !188
   call void @llvm.lifetime.end.p0(ptr nonnull %9) #36
   %104 = getelementptr inbounds nuw i8, ptr %4, i64 136
-  store i64 0, ptr %104, align 8, !tbaa !191
+  store i64 0, ptr %104, align 8, !tbaa !189
   br label %112
 
 105:                                              ; preds = %44, %60
   %106 = phi i64 [ %65, %60 ], [ %45, %44 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %9) #36
   %107 = getelementptr inbounds nuw i8, ptr %4, i64 136
-  store i64 %106, ptr %107, align 8, !tbaa !191
+  store i64 %106, ptr %107, align 8, !tbaa !189
   br label %158
 
 108:                                              ; preds = %98
-  store i32 2, ptr %4, align 8, !tbaa !190
+  store i32 2, ptr %4, align 8, !tbaa !188
   %109 = getelementptr inbounds nuw i8, ptr %2, i64 2056
-  store i32 1, ptr %109, align 8, !tbaa !189
+  store i32 1, ptr %109, align 8, !tbaa !187
   call void @llvm.lifetime.end.p0(ptr nonnull %9) #36
   %110 = getelementptr inbounds nuw i8, ptr %4, i64 136
-  store i64 %73, ptr %110, align 8, !tbaa !191
+  store i64 %73, ptr %110, align 8, !tbaa !189
   %111 = icmp ult i64 %73, -119
   br i1 %111, label %112, label %158
 
@@ -3372,7 +3330,7 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   br i1 %129, label %130, label %131, !prof !9, !nosanitize !8
 
 130:                                              ; preds = %112
-  call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 131:                                              ; preds = %112
@@ -3381,11 +3339,11 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
 
 133:                                              ; preds = %131
   %134 = getelementptr inbounds nuw i8, ptr %2, i64 5612
-  store i32 0, ptr %134, align 4, !tbaa !192, !noalias !193
+  store i32 0, ptr %134, align 4, !tbaa !190, !noalias !191
   %135 = getelementptr inbounds nuw i8, ptr %2, i64 5604
-  store i32 0, ptr %135, align 4, !tbaa !196, !noalias !193
+  store i32 0, ptr %135, align 4, !tbaa !194, !noalias !191
   %136 = getelementptr inbounds nuw i8, ptr %2, i64 5608
-  store i32 0, ptr %136, align 4, !tbaa !197, !noalias !193
+  store i32 0, ptr %136, align 4, !tbaa !195, !noalias !191
   br label %146
 
 137:                                              ; preds = %131
@@ -3409,15 +3367,15 @@ define dso_local i64 @ZSTD_buildBlockEntropyStats(ptr noundef readonly captures(
   %150 = phi <2 x i32> [ zeroinitializer, %133 ], [ %138, %137 ]
   store <2 x i32> %150, ptr %115, align 8, !tbaa !4
   %151 = getelementptr inbounds nuw i8, ptr %4, i64 152
-  store i32 %147, ptr %151, align 8, !tbaa !198
+  store i32 %147, ptr %151, align 8, !tbaa !196
   %152 = getelementptr inbounds nuw i8, ptr %4, i64 304
-  store i64 %149, ptr %152, align 8, !tbaa !199
+  store i64 %149, ptr %152, align 8, !tbaa !197
   br label %153
 
 153:                                              ; preds = %137, %146
   %154 = phi i64 [ %142, %137 ], [ %148, %146 ]
   %155 = getelementptr inbounds nuw i8, ptr %4, i64 296
-  store i64 %154, ptr %155, align 8, !tbaa !200
+  store i64 %154, ptr %155, align 8, !tbaa !198
   %156 = icmp ult i64 %154, -119
   %157 = select i1 %156, i64 0, i64 %154
   br label %158
@@ -3435,7 +3393,7 @@ define dso_local noundef i64 @ZSTD_writeSkippableFrame(ptr noundef writeonly cap
   br i1 %8, label %9, label %10, !prof !9, !nosanitize !8
 
 9:                                                ; preds = %5
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 10:                                               ; preds = %5
@@ -3471,7 +3429,7 @@ define dso_local range(i64 -70, 4) i64 @ZSTD_writeLastEmptyBlock(ptr noundef wri
   br i1 %3, label %6, label %4
 
 4:                                                ; preds = %2
-  store i16 1, ptr %0, align 1, !tbaa !201
+  store i16 1, ptr %0, align 1, !tbaa !199
   %5 = getelementptr inbounds nuw i8, ptr %0, i64 2
   store i8 0, ptr %5, align 1, !tbaa !164
   br label %6
@@ -3484,11 +3442,11 @@ define dso_local range(i64 -70, 4) i64 @ZSTD_writeLastEmptyBlock(ptr noundef wri
 ; Function Attrs: mustprogress nofree norecurse nosync nounwind willreturn memory(argmem: write) uwtable
 define dso_local void @ZSTD_referenceExternalSequences(ptr noundef writeonly captures(none) initializes((3184, 3224)) %0, ptr noundef %1, i64 noundef %2) local_unnamed_addr #10 {
   %4 = getelementptr inbounds nuw i8, ptr %0, i64 3184
-  store ptr %1, ptr %4, align 8, !tbaa !202
+  store ptr %1, ptr %4, align 8, !tbaa !200
   %5 = getelementptr inbounds nuw i8, ptr %0, i64 3208
-  store i64 %2, ptr %5, align 8, !tbaa !203
+  store i64 %2, ptr %5, align 8, !tbaa !201
   %6 = getelementptr inbounds nuw i8, ptr %0, i64 3216
-  store i64 %2, ptr %6, align 8, !tbaa !204
+  store i64 %2, ptr %6, align 8, !tbaa !202
   %7 = getelementptr inbounds nuw i8, ptr %0, i64 3192
   tail call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(16) %7, i8 0, i64 16, i1 false)
   ret void
@@ -3506,9 +3464,9 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   %9 = alloca %struct.repcodes_s, align 4
   %10 = alloca %struct.repcodes_s, align 4
   %11 = getelementptr inbounds nuw i8, ptr %0, i64 3240
-  %12 = load i32, ptr %0, align 8, !tbaa !205
+  %12 = load i32, ptr %0, align 8, !tbaa !203
   %13 = icmp eq i32 %12, 0
-  br i1 %13, label %748, label %14
+  br i1 %13, label %745, label %14
 
 14:                                               ; preds = %7
   %15 = icmp ne i32 %5, 0
@@ -3524,17 +3482,17 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   br i1 %22, label %23, label %24, !prof !9, !nosanitize !8
 
 23:                                               ; preds = %18
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 24:                                               ; preds = %18
   %25 = extractvalue { i64, i1 } %21, 0, !nosanitize !8
   %26 = getelementptr inbounds nuw i8, ptr %0, i64 240
   %27 = getelementptr inbounds nuw i8, ptr %0, i64 688
-  %28 = load i32, ptr %27, align 8, !tbaa !206
+  %28 = load i32, ptr %27, align 8, !tbaa !204
   %29 = tail call fastcc i64 @ZSTD_writeFrameHeader(ptr noundef %1, i64 noundef %2, ptr noundef nonnull %26, i64 noundef %25, i32 noundef %28)
   %30 = icmp ult i64 %29, -119
-  br i1 %30, label %31, label %748
+  br i1 %30, label %31, label %745
 
 31:                                               ; preds = %24
   %32 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %2, i64 %29), !nosanitize !8
@@ -3542,13 +3500,13 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   br i1 %33, label %34, label %35, !prof !9, !nosanitize !8
 
 34:                                               ; preds = %31
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 35:                                               ; preds = %31
   %36 = extractvalue { i64, i1 } %32, 0, !nosanitize !8
   %37 = getelementptr inbounds nuw i8, ptr %1, i64 %29
-  store i32 2, ptr %0, align 8, !tbaa !205
+  store i32 2, ptr %0, align 8, !tbaa !203
   br label %38
 
 38:                                               ; preds = %35, %14
@@ -3556,12 +3514,12 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   %40 = phi i64 [ %36, %35 ], [ %2, %14 ]
   %41 = phi ptr [ %37, %35 ], [ %1, %14 ]
   %42 = icmp eq i64 %4, 0
-  br i1 %42, label %748, label %43
+  br i1 %42, label %745, label %43
 
 43:                                               ; preds = %38
   %44 = getelementptr inbounds nuw i8, ptr %0, i64 3376
-  %45 = load i32, ptr %44, align 8, !tbaa !207
-  %46 = load ptr, ptr %11, align 8, !tbaa !208
+  %45 = load i32, ptr %44, align 8, !tbaa !205
+  %46 = load ptr, ptr %11, align 8, !tbaa !206
   %47 = icmp ne ptr %3, %46
   %48 = icmp ne i32 %45, 0
   %49 = or i1 %48, %47
@@ -3569,36 +3527,36 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
 
 50:                                               ; preds = %43
   %51 = getelementptr inbounds nuw i8, ptr %0, i64 3256
-  %52 = load ptr, ptr %51, align 8, !tbaa !209
+  %52 = load ptr, ptr %51, align 8, !tbaa !207
   %53 = getelementptr inbounds nuw i8, ptr %0, i64 3268
-  %54 = load i32, ptr %53, align 4, !tbaa !210
+  %54 = load i32, ptr %53, align 4, !tbaa !208
   %55 = getelementptr inbounds nuw i8, ptr %0, i64 3264
-  %56 = load i32, ptr %55, align 8, !tbaa !211
+  %56 = load i32, ptr %55, align 8, !tbaa !209
   br label %77
 
 57:                                               ; preds = %43
   %58 = getelementptr inbounds nuw i8, ptr %0, i64 3248
-  %59 = load ptr, ptr %58, align 8, !tbaa !212
+  %59 = load ptr, ptr %58, align 8, !tbaa !210
   %60 = ptrtoint ptr %46 to i64
   %61 = ptrtoint ptr %59 to i64
   %62 = sub i64 %60, %61
   %63 = getelementptr inbounds nuw i8, ptr %0, i64 3264
-  %64 = load i32, ptr %63, align 8, !tbaa !211
+  %64 = load i32, ptr %63, align 8, !tbaa !209
   %65 = getelementptr inbounds nuw i8, ptr %0, i64 3268
-  store i32 %64, ptr %65, align 4, !tbaa !210
+  store i32 %64, ptr %65, align 4, !tbaa !208
   %66 = trunc i64 %62 to i32
-  store i32 %66, ptr %63, align 8, !tbaa !211
+  store i32 %66, ptr %63, align 8, !tbaa !209
   %67 = getelementptr inbounds nuw i8, ptr %0, i64 3256
-  store ptr %59, ptr %67, align 8, !tbaa !209
+  store ptr %59, ptr %67, align 8, !tbaa !207
   %68 = sub i64 0, %62
   %69 = getelementptr inbounds i8, ptr %3, i64 %68
-  store ptr %69, ptr %58, align 8, !tbaa !212
+  store ptr %69, ptr %58, align 8, !tbaa !210
   %70 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %66, i32 %64), !nosanitize !8
   %71 = extractvalue { i32, i1 } %70, 1, !nosanitize !8
   br i1 %71, label %72, label %73, !prof !9, !nosanitize !8
 
 72:                                               ; preds = %57
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 73:                                               ; preds = %57
@@ -3607,7 +3565,7 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   br i1 %75, label %76, label %77
 
 76:                                               ; preds = %73
-  store i32 %66, ptr %65, align 4, !tbaa !210
+  store i32 %66, ptr %65, align 4, !tbaa !208
   br label %77
 
 77:                                               ; preds = %76, %73, %50
@@ -3615,7 +3573,7 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   %79 = phi i32 [ %54, %50 ], [ %64, %73 ], [ %66, %76 ]
   %80 = phi ptr [ %52, %50 ], [ %59, %73 ], [ %59, %76 ]
   %81 = getelementptr inbounds nuw i8, ptr %3, i64 %4
-  store ptr %81, ptr %11, align 8, !tbaa !208
+  store ptr %81, ptr %11, align 8, !tbaa !206
   %82 = zext i32 %79 to i64
   %83 = getelementptr inbounds nuw i8, ptr %80, i64 %82
   %84 = icmp ugt ptr %81, %83
@@ -3632,63 +3590,63 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   %93 = sub i64 %91, %92
   %94 = tail call i64 @llvm.umin.i64(i64 %93, i64 %85)
   %95 = trunc nuw i64 %94 to i32
-  store i32 %95, ptr %90, align 4, !tbaa !210
+  store i32 %95, ptr %90, align 4, !tbaa !208
   br label %96
 
 96:                                               ; preds = %77, %89
   br i1 %49, label %97, label %99
 
 97:                                               ; preds = %96
-  store i32 0, ptr %44, align 8, !tbaa !207
+  store i32 0, ptr %44, align 8, !tbaa !205
   %98 = getelementptr inbounds nuw i8, ptr %0, i64 3284
-  store i32 %78, ptr %98, align 4, !tbaa !213
+  store i32 %78, ptr %98, align 4, !tbaa !211
   br label %99
 
 99:                                               ; preds = %97, %96
   %100 = getelementptr inbounds nuw i8, ptr %0, i64 240
   %101 = getelementptr inbounds nuw i8, ptr %0, i64 336
-  %102 = load i32, ptr %101, align 8, !tbaa !214
+  %102 = load i32, ptr %101, align 8, !tbaa !212
   %103 = icmp eq i32 %102, 1
   br i1 %103, label %104, label %153
 
 104:                                              ; preds = %99
   %105 = getelementptr inbounds nuw i8, ptr %0, i64 1056
-  %106 = load ptr, ptr %105, align 8, !tbaa !208
+  %106 = load ptr, ptr %105, align 8, !tbaa !206
   %107 = icmp eq ptr %3, %106
   br i1 %107, label %108, label %115
 
 108:                                              ; preds = %104
   %109 = getelementptr inbounds nuw i8, ptr %0, i64 1072
-  %110 = load ptr, ptr %109, align 8, !tbaa !209
+  %110 = load ptr, ptr %109, align 8, !tbaa !207
   %111 = getelementptr inbounds nuw i8, ptr %0, i64 1084
-  %112 = load i32, ptr %111, align 4, !tbaa !210
+  %112 = load i32, ptr %111, align 4, !tbaa !208
   %113 = getelementptr inbounds nuw i8, ptr %0, i64 1080
-  %114 = load i32, ptr %113, align 8, !tbaa !211
+  %114 = load i32, ptr %113, align 8, !tbaa !209
   br label %135
 
 115:                                              ; preds = %104
   %116 = getelementptr inbounds nuw i8, ptr %0, i64 1064
-  %117 = load ptr, ptr %116, align 8, !tbaa !212
+  %117 = load ptr, ptr %116, align 8, !tbaa !210
   %118 = ptrtoint ptr %106 to i64
   %119 = ptrtoint ptr %117 to i64
   %120 = sub i64 %118, %119
   %121 = getelementptr inbounds nuw i8, ptr %0, i64 1080
-  %122 = load i32, ptr %121, align 8, !tbaa !211
+  %122 = load i32, ptr %121, align 8, !tbaa !209
   %123 = getelementptr inbounds nuw i8, ptr %0, i64 1084
-  store i32 %122, ptr %123, align 4, !tbaa !210
+  store i32 %122, ptr %123, align 4, !tbaa !208
   %124 = trunc i64 %120 to i32
-  store i32 %124, ptr %121, align 8, !tbaa !211
+  store i32 %124, ptr %121, align 8, !tbaa !209
   %125 = getelementptr inbounds nuw i8, ptr %0, i64 1072
-  store ptr %117, ptr %125, align 8, !tbaa !209
+  store ptr %117, ptr %125, align 8, !tbaa !207
   %126 = sub i64 0, %120
   %127 = getelementptr inbounds i8, ptr %3, i64 %126
-  store ptr %127, ptr %116, align 8, !tbaa !212
+  store ptr %127, ptr %116, align 8, !tbaa !210
   %128 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %124, i32 %122), !nosanitize !8
   %129 = extractvalue { i32, i1 } %128, 1, !nosanitize !8
   br i1 %129, label %130, label %131, !prof !9, !nosanitize !8
 
 130:                                              ; preds = %115
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 131:                                              ; preds = %115
@@ -3697,14 +3655,14 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   br i1 %133, label %134, label %135
 
 134:                                              ; preds = %131
-  store i32 %124, ptr %123, align 4, !tbaa !210
+  store i32 %124, ptr %123, align 4, !tbaa !208
   br label %135
 
 135:                                              ; preds = %134, %131, %108
   %136 = phi i32 [ %114, %108 ], [ %124, %131 ], [ %124, %134 ]
   %137 = phi i32 [ %112, %108 ], [ %122, %131 ], [ %124, %134 ]
   %138 = phi ptr [ %110, %108 ], [ %117, %131 ], [ %117, %134 ]
-  store ptr %81, ptr %105, align 8, !tbaa !208
+  store ptr %81, ptr %105, align 8, !tbaa !206
   %139 = zext i32 %137 to i64
   %140 = getelementptr inbounds nuw i8, ptr %138, i64 %139
   %141 = icmp ugt ptr %81, %140
@@ -3721,7 +3679,7 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   %150 = sub i64 %148, %149
   %151 = tail call i64 @llvm.umin.i64(i64 %150, i64 %142)
   %152 = trunc nuw i64 %151 to i32
-  store i32 %152, ptr %147, align 4, !tbaa !210
+  store i32 %152, ptr %147, align 4, !tbaa !208
   br label %153
 
 153:                                              ; preds = %146, %135, %99
@@ -3731,18 +3689,18 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   %155 = getelementptr inbounds nuw i8, ptr %0, i64 704
   tail call fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef nonnull %11, ptr noundef nonnull %155, ptr noundef nonnull %100, ptr noundef %3, ptr noundef nonnull %81)
   %156 = tail call fastcc i64 @ZSTD_compressBlock_internal(ptr noundef nonnull %0, ptr noundef %41, i64 noundef %40, ptr noundef %3, i64 noundef %4, i32 noundef 0)
-  br label %718
+  br label %715
 
 157:                                              ; preds = %153
   %158 = getelementptr inbounds nuw i8, ptr %0, i64 776
-  %159 = load i64, ptr %158, align 8, !tbaa !215
+  %159 = load i64, ptr %158, align 8, !tbaa !213
   %160 = getelementptr inbounds nuw i8, ptr %0, i64 244
-  %161 = load i32, ptr %160, align 4, !tbaa !216
+  %161 = load i32, ptr %160, align 4, !tbaa !214
   %162 = icmp ult i32 %161, 32
-  br i1 %162, label %164, label %163, !prof !169, !nosanitize !8
+  br i1 %162, label %164, label %163, !prof !215, !nosanitize !8
 
 163:                                              ; preds = %157
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 164:                                              ; preds = %157
@@ -3756,12 +3714,12 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   br i1 %171, label %172, label %173, !prof !9, !nosanitize !8
 
 172:                                              ; preds = %164
-  tail call void @llvm.ubsantrap(i8 21) #39, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #39, !nosanitize !8
   unreachable, !nosanitize !8
 
 173:                                              ; preds = %164
   %174 = getelementptr inbounds nuw i8, ptr %0, i64 276
-  %175 = load i32, ptr %174, align 4, !tbaa !217
+  %175 = load i32, ptr %174, align 4, !tbaa !216
   %176 = icmp eq i32 %175, 0
   br i1 %176, label %180, label %177
 
@@ -3805,963 +3763,955 @@ define internal fastcc i64 @ZSTD_compressContinue_internal(ptr noundef %0, ptr n
   %212 = getelementptr inbounds nuw i8, ptr %0, i64 936
   br label %213
 
-213:                                              ; preds = %705, %180
-  %214 = phi { i64, i1 } [ %170, %180 ], [ %694, %705 ]
-  %215 = phi i64 [ %40, %180 ], [ %706, %705 ]
-  %216 = phi i64 [ %4, %180 ], [ %698, %705 ]
-  %217 = phi ptr [ %3, %180 ], [ %253, %705 ]
-  %218 = phi ptr [ %41, %180 ], [ %707, %705 ]
+213:                                              ; preds = %702, %180
+  %214 = phi { i64, i1 } [ %170, %180 ], [ %691, %702 ]
+  %215 = phi i64 [ %40, %180 ], [ %703, %702 ]
+  %216 = phi i64 [ %4, %180 ], [ %695, %702 ]
+  %217 = phi ptr [ %3, %180 ], [ %250, %702 ]
+  %218 = phi ptr [ %41, %180 ], [ %704, %702 ]
   %219 = extractvalue { i64, i1 } %214, 0
-  %220 = load i32, ptr %181, align 8, !tbaa !218
-  %221 = load i32, ptr %182, align 4, !tbaa !219
+  %220 = load i32, ptr %181, align 8, !tbaa !217
+  %221 = load i32, ptr %182, align 4, !tbaa !218
   %222 = icmp ult i64 %216, 131072
   %223 = or i1 %183, %222
   br i1 %223, label %224, label %226
 
 224:                                              ; preds = %213
   %225 = tail call i64 @llvm.umin.i64(i64 range(i64 1, 0) %216, i64 %159)
-  br label %247
+  br label %244
 
 226:                                              ; preds = %213
   %227 = icmp slt i64 %219, 3
-  br i1 %227, label %247, label %228
+  br i1 %227, label %244, label %228
 
 228:                                              ; preds = %226
-  switch i32 %220, label %236 [
-    i32 1, label %247
+  switch i32 %220, label %233 [
+    i32 1, label %244
     i32 0, label %229
   ]
 
 229:                                              ; preds = %228
-  %230 = icmp ult i32 %221, 10
-  br i1 %230, label %232, label %231, !prof !169, !nosanitize !8
+  %230 = zext i32 %221 to i64
+  %231 = getelementptr inbounds nuw [4 x i8], ptr @ZSTD_optimalBlockSize.splitLevels, i64 %230
+  %232 = load i32, ptr %231, align 4, !tbaa !4
+  br label %239
 
-231:                                              ; preds = %229
-  tail call void @llvm.ubsantrap(i8 18) #39, !nosanitize !8
+233:                                              ; preds = %228
+  %234 = tail call { i32, i1 } @llvm.sadd.with.overflow.i32(i32 %220, i32 -2)
+  %235 = extractvalue { i32, i1 } %234, 1, !nosanitize !8
+  br i1 %235, label %236, label %237, !prof !9, !nosanitize !8
+
+236:                                              ; preds = %233
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #39, !nosanitize !8
   unreachable, !nosanitize !8
 
-232:                                              ; preds = %229
-  %233 = zext nneg i32 %221 to i64, !nosanitize !8
-  %234 = getelementptr inbounds nuw [4 x i8], ptr @ZSTD_optimalBlockSize.splitLevels, i64 %233
-  %235 = load i32, ptr %234, align 4, !tbaa !4
-  br label %242
+237:                                              ; preds = %233
+  %238 = extractvalue { i32, i1 } %234, 0, !nosanitize !8
+  br label %239
 
-236:                                              ; preds = %228
-  %237 = tail call { i32, i1 } @llvm.sadd.with.overflow.i32(i32 %220, i32 -2)
-  %238 = extractvalue { i32, i1 } %237, 1, !nosanitize !8
-  br i1 %238, label %239, label %240, !prof !9, !nosanitize !8
+239:                                              ; preds = %237, %229
+  %240 = phi i32 [ %232, %229 ], [ %238, %237 ]
+  %241 = load ptr, ptr %184, align 8, !tbaa !59
+  %242 = load i64, ptr %185, align 8, !tbaa !60
+  %243 = tail call i64 @ZSTD_splitBlock(ptr noundef %217, i64 noundef %159, i32 noundef %240, ptr noundef %241, i64 noundef %242) #36
+  br label %244
 
-239:                                              ; preds = %236
-  tail call void @llvm.ubsantrap(i8 21) #39, !nosanitize !8
+244:                                              ; preds = %239, %228, %226, %224
+  %245 = phi i64 [ %225, %224 ], [ %243, %239 ], [ 131072, %226 ], [ 131072, %228 ]
+  %246 = icmp eq i64 %245, %216
+  %247 = select i1 %246, i32 %6, i32 0
+  %248 = icmp ult i64 %215, 6
+  br i1 %248, label %745, label %249
+
+249:                                              ; preds = %244
+  %250 = getelementptr inbounds nuw i8, ptr %217, i64 %245
+  tail call fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef nonnull %11, ptr noundef nonnull %186, ptr noundef nonnull %100, ptr noundef %217, ptr noundef %250)
+  %251 = load i32, ptr %187, align 4, !tbaa !4
+  %252 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %251, i32 range(i32 1, -2147483647) %165), !nosanitize !8
+  %253 = extractvalue { i32, i1 } %252, 1, !nosanitize !8
+  br i1 %253, label %254, label %255, !prof !9, !nosanitize !8
+
+254:                                              ; preds = %249
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-240:                                              ; preds = %236
-  %241 = extractvalue { i32, i1 } %237, 0, !nosanitize !8
-  br label %242
+255:                                              ; preds = %249
+  %256 = extractvalue { i32, i1 } %252, 0, !nosanitize !8
+  %257 = ptrtoint ptr %250 to i64
+  %258 = load ptr, ptr %189, align 8, !tbaa !210
+  %259 = ptrtoint ptr %258 to i64
+  %260 = sub i64 %257, %259
+  %261 = trunc i64 %260 to i32
+  %262 = icmp ult i32 %256, %261
+  br i1 %262, label %266, label %263
 
-242:                                              ; preds = %240, %232
-  %243 = phi i32 [ %235, %232 ], [ %241, %240 ]
-  %244 = load ptr, ptr %184, align 8, !tbaa !59
-  %245 = load i64, ptr %185, align 8, !tbaa !60
-  %246 = tail call i64 @ZSTD_splitBlock(ptr noundef %217, i64 noundef %159, i32 noundef %243, ptr noundef %244, i64 noundef %245) #36
-  br label %247
+263:                                              ; preds = %255
+  %264 = load i32, ptr %190, align 8, !tbaa !209
+  %265 = icmp eq i32 %251, %264
+  br i1 %265, label %267, label %266
 
-247:                                              ; preds = %242, %228, %226, %224
-  %248 = phi i64 [ %225, %224 ], [ %246, %242 ], [ 131072, %226 ], [ 131072, %228 ]
-  %249 = icmp eq i64 %248, %216
-  %250 = select i1 %249, i32 %6, i32 0
-  %251 = icmp ult i64 %215, 6
-  br i1 %251, label %748, label %252
-
-252:                                              ; preds = %247
-  %253 = getelementptr inbounds nuw i8, ptr %217, i64 %248
-  tail call fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef nonnull %11, ptr noundef nonnull %186, ptr noundef nonnull %100, ptr noundef %217, ptr noundef %253)
-  %254 = load i32, ptr %187, align 4, !tbaa !4
-  %255 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %254, i32 range(i32 1, -2147483647) %165), !nosanitize !8
-  %256 = extractvalue { i32, i1 } %255, 1, !nosanitize !8
-  br i1 %256, label %257, label %258, !prof !9, !nosanitize !8
-
-257:                                              ; preds = %252
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-258:                                              ; preds = %252
-  %259 = extractvalue { i32, i1 } %255, 0, !nosanitize !8
-  %260 = ptrtoint ptr %253 to i64
-  %261 = load ptr, ptr %189, align 8, !tbaa !212
-  %262 = ptrtoint ptr %261 to i64
-  %263 = sub i64 %260, %262
-  %264 = trunc i64 %263 to i32
-  %265 = icmp ult i32 %259, %264
-  br i1 %265, label %269, label %266
-
-266:                                              ; preds = %258
-  %267 = load i32, ptr %190, align 8, !tbaa !211
-  %268 = icmp eq i32 %254, %267
-  br i1 %268, label %270, label %269
-
-269:                                              ; preds = %266, %258
+266:                                              ; preds = %263, %255
   store i32 0, ptr %187, align 4, !tbaa !4
-  store ptr null, ptr %188, align 8, !tbaa !220
-  br label %270
+  store ptr null, ptr %188, align 8, !tbaa !219
+  br label %267
 
-270:                                              ; preds = %269, %266
-  %271 = phi i32 [ %254, %266 ], [ 0, %269 ]
-  %272 = ptrtoint ptr %217 to i64
-  %273 = sub i64 %272, %262
-  %274 = trunc i64 %273 to i32
-  %275 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 range(i32 1, -2147483647) %165, i32 %271), !nosanitize !8
-  %276 = extractvalue { i32, i1 } %275, 1, !nosanitize !8
-  br i1 %276, label %277, label %278, !prof !9, !nosanitize !8
+267:                                              ; preds = %266, %263
+  %268 = phi i32 [ %251, %263 ], [ 0, %266 ]
+  %269 = ptrtoint ptr %217 to i64
+  %270 = sub i64 %269, %259
+  %271 = trunc i64 %270 to i32
+  %272 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 range(i32 1, -2147483647) %165, i32 %268), !nosanitize !8
+  %273 = extractvalue { i32, i1 } %272, 1, !nosanitize !8
+  br i1 %273, label %274, label %275, !prof !9, !nosanitize !8
 
-277:                                              ; preds = %270
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+274:                                              ; preds = %267
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-278:                                              ; preds = %270
-  %279 = extractvalue { i32, i1 } %275, 0, !nosanitize !8
-  %280 = icmp ult i32 %279, %274
-  br i1 %280, label %283, label %281
+275:                                              ; preds = %267
+  %276 = extractvalue { i32, i1 } %272, 0, !nosanitize !8
+  %277 = icmp ult i32 %276, %271
+  br i1 %277, label %280, label %278
 
-281:                                              ; preds = %278
-  %282 = load i32, ptr %191, align 4, !tbaa !221
-  br label %298
+278:                                              ; preds = %275
+  %279 = load i32, ptr %191, align 4, !tbaa !220
+  br label %295
 
-283:                                              ; preds = %278
-  %284 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %274, i32 range(i32 1, -2147483647) %165), !nosanitize !8
-  %285 = extractvalue { i32, i1 } %284, 0, !nosanitize !8
-  %286 = extractvalue { i32, i1 } %284, 1, !nosanitize !8
-  br i1 %286, label %287, label %288, !prof !9, !nosanitize !8
+280:                                              ; preds = %275
+  %281 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %271, i32 range(i32 1, -2147483647) %165), !nosanitize !8
+  %282 = extractvalue { i32, i1 } %281, 0, !nosanitize !8
+  %283 = extractvalue { i32, i1 } %281, 1, !nosanitize !8
+  br i1 %283, label %284, label %285, !prof !9, !nosanitize !8
 
-287:                                              ; preds = %283
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+284:                                              ; preds = %280
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-288:                                              ; preds = %283
-  %289 = load i32, ptr %191, align 4, !tbaa !210
-  %290 = icmp ult i32 %289, %285
-  br i1 %290, label %291, label %292
+285:                                              ; preds = %280
+  %286 = load i32, ptr %191, align 4, !tbaa !208
+  %287 = icmp ult i32 %286, %282
+  br i1 %287, label %288, label %289
 
-291:                                              ; preds = %288
-  store i32 %285, ptr %191, align 4, !tbaa !210
-  br label %292
+288:                                              ; preds = %285
+  store i32 %282, ptr %191, align 4, !tbaa !208
+  br label %289
 
-292:                                              ; preds = %291, %288
-  %293 = phi i32 [ %285, %291 ], [ %289, %288 ]
-  %294 = load i32, ptr %190, align 8, !tbaa !211
-  %295 = icmp ult i32 %294, %293
-  br i1 %295, label %296, label %297
+289:                                              ; preds = %288, %285
+  %290 = phi i32 [ %282, %288 ], [ %286, %285 ]
+  %291 = load i32, ptr %190, align 8, !tbaa !209
+  %292 = icmp ult i32 %291, %290
+  br i1 %292, label %293, label %294
 
-296:                                              ; preds = %292
-  store i32 %293, ptr %190, align 8, !tbaa !211
-  br label %297
+293:                                              ; preds = %289
+  store i32 %290, ptr %190, align 8, !tbaa !209
+  br label %294
 
-297:                                              ; preds = %296, %292
+294:                                              ; preds = %293, %289
   store i32 0, ptr %187, align 4, !tbaa !4
-  store ptr null, ptr %188, align 8, !tbaa !220
-  br label %298
+  store ptr null, ptr %188, align 8, !tbaa !219
+  br label %295
 
-298:                                              ; preds = %297, %281
-  %299 = phi i32 [ %282, %281 ], [ %293, %297 ]
-  %300 = load i32, ptr %192, align 4, !tbaa !213
-  %301 = icmp ult i32 %300, %299
-  br i1 %301, label %302, label %303
+295:                                              ; preds = %294, %278
+  %296 = phi i32 [ %279, %278 ], [ %290, %294 ]
+  %297 = load i32, ptr %192, align 4, !tbaa !211
+  %298 = icmp ult i32 %297, %296
+  br i1 %298, label %299, label %300
 
-302:                                              ; preds = %298
-  store i32 %299, ptr %192, align 4, !tbaa !213
-  br label %303
+299:                                              ; preds = %295
+  store i32 %296, ptr %192, align 4, !tbaa !211
+  br label %300
 
-303:                                              ; preds = %302, %298
-  %304 = load i64, ptr %193, align 8, !tbaa !105
-  %305 = icmp eq i64 %304, 0
-  br i1 %305, label %398, label %306
+300:                                              ; preds = %299, %295
+  %301 = load i64, ptr %193, align 8, !tbaa !105
+  %302 = icmp eq i64 %301, 0
+  br i1 %302, label %395, label %303
+
+303:                                              ; preds = %300
+  %304 = tail call fastcc i64 @ZSTD_buildSeqStore(ptr noundef nonnull %0, ptr noundef %217, i64 noundef %245)
+  %305 = icmp ult i64 %304, -119
+  br i1 %305, label %306, label %745
 
 306:                                              ; preds = %303
-  %307 = tail call fastcc i64 @ZSTD_buildSeqStore(ptr noundef nonnull %0, ptr noundef %217, i64 noundef %248)
-  %308 = icmp ult i64 %307, -119
-  br i1 %308, label %309, label %748
+  %307 = icmp eq i64 %304, 0
+  br i1 %307, label %308, label %373
 
-309:                                              ; preds = %306
-  %310 = icmp eq i64 %307, 0
-  br i1 %310, label %311, label %376
+308:                                              ; preds = %306
+  %309 = load i32, ptr %194, align 8, !tbaa !221
+  %310 = icmp eq i32 %309, 0
+  br i1 %310, label %311, label %342
 
-311:                                              ; preds = %309
-  %312 = load i32, ptr %194, align 8, !tbaa !222
-  %313 = icmp eq i32 %312, 0
-  br i1 %313, label %314, label %345
+311:                                              ; preds = %308
+  %312 = load ptr, ptr %196, align 8, !tbaa !158
+  %313 = load ptr, ptr %195, align 8, !tbaa !154
+  %314 = ptrtoint ptr %312 to i64
+  %315 = ptrtoint ptr %313 to i64
+  %316 = sub i64 %314, %315
+  %317 = load ptr, ptr %197, align 8, !tbaa !170
+  %318 = load ptr, ptr %198, align 8, !tbaa !169
+  %319 = ptrtoint ptr %317 to i64
+  %320 = ptrtoint ptr %318 to i64
+  %321 = sub i64 %319, %320
+  %322 = icmp ugt i64 %316, 31
+  %323 = icmp ugt i64 %321, 9
+  %324 = select i1 %322, i1 true, i1 %323
+  br i1 %324, label %342, label %325
 
-314:                                              ; preds = %311
-  %315 = load ptr, ptr %196, align 8, !tbaa !158
-  %316 = load ptr, ptr %195, align 8, !tbaa !154
-  %317 = ptrtoint ptr %315 to i64
-  %318 = ptrtoint ptr %316 to i64
-  %319 = sub i64 %317, %318
-  %320 = load ptr, ptr %197, align 8, !tbaa !172
-  %321 = load ptr, ptr %198, align 8, !tbaa !171
-  %322 = ptrtoint ptr %320 to i64
-  %323 = ptrtoint ptr %321 to i64
-  %324 = sub i64 %322, %323
-  %325 = icmp ugt i64 %319, 31
-  %326 = icmp ugt i64 %324, 9
-  %327 = select i1 %325, i1 true, i1 %326
-  br i1 %327, label %345, label %328
+325:                                              ; preds = %311
+  %326 = tail call fastcc i32 @ZSTD_isRLE(ptr noundef %217, i64 noundef %245)
+  %327 = icmp eq i32 %326, 0
+  br i1 %327, label %342, label %328
 
-328:                                              ; preds = %314
-  %329 = tail call fastcc i32 @ZSTD_isRLE(ptr noundef %217, i64 noundef %248)
-  %330 = icmp eq i32 %329, 0
-  br i1 %330, label %345, label %331
+328:                                              ; preds = %325
+  %329 = icmp ult i64 %245, 2305843009213693952
+  br i1 %329, label %331, label %330, !prof !215, !nosanitize !8
+
+330:                                              ; preds = %328
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+  unreachable, !nosanitize !8
 
 331:                                              ; preds = %328
-  %332 = icmp ult i64 %248, 2305843009213693952
-  br i1 %332, label %334, label %333, !prof !169, !nosanitize !8
+  %332 = load i8, ptr %217, align 1, !tbaa !164
+  %333 = trunc i64 %245 to i32
+  %334 = shl i32 %333, 3
+  %335 = or disjoint i32 %334, %247
+  %336 = trunc i32 %335 to i16
+  %337 = or disjoint i16 %336, 2
+  store i16 %337, ptr %218, align 1, !tbaa !199
+  %338 = lshr i32 %334, 16
+  %339 = trunc i32 %338 to i8
+  %340 = getelementptr inbounds nuw i8, ptr %218, i64 2
+  store i8 %339, ptr %340, align 1, !tbaa !164
+  %341 = getelementptr inbounds nuw i8, ptr %218, i64 3
+  store i8 %332, ptr %341, align 1, !tbaa !164
+  br label %388
 
-333:                                              ; preds = %331
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
-  unreachable, !nosanitize !8
+342:                                              ; preds = %325, %311, %308
+  %343 = tail call i64 @ZSTD_compressSuperBlock(ptr noundef nonnull %0, ptr noundef %218, i64 noundef range(i64 6, 0) %215, ptr noundef %217, i64 noundef %245, i32 noundef range(i32 0, 2) %247) #36
+  %344 = icmp eq i64 %343, -70
+  br i1 %344, label %373, label %345
 
-334:                                              ; preds = %331
-  %335 = load i8, ptr %217, align 1, !tbaa !164
-  %336 = trunc i64 %248 to i32
-  %337 = shl i32 %336, 3
-  %338 = or disjoint i32 %337, %250
-  %339 = trunc i32 %338 to i16
-  %340 = or disjoint i16 %339, 2
-  store i16 %340, ptr %218, align 1, !tbaa !201
-  %341 = lshr i32 %337, 16
-  %342 = trunc i32 %341 to i8
-  %343 = getelementptr inbounds nuw i8, ptr %218, i64 2
-  store i8 %342, ptr %343, align 1, !tbaa !164
-  %344 = getelementptr inbounds nuw i8, ptr %218, i64 3
-  store i8 %335, ptr %344, align 1, !tbaa !164
-  br label %391
-
-345:                                              ; preds = %328, %314, %311
-  %346 = tail call i64 @ZSTD_compressSuperBlock(ptr noundef nonnull %0, ptr noundef %218, i64 noundef range(i64 6, 0) %215, ptr noundef %217, i64 noundef %248, i32 noundef range(i32 0, 2) %250) #36
-  %347 = icmp eq i64 %346, -70
-  br i1 %347, label %376, label %348
+345:                                              ; preds = %342
+  %346 = load i32, ptr %182, align 4, !tbaa !218
+  %347 = icmp ult i32 %346, 65
+  br i1 %347, label %349, label %348, !prof !215, !nosanitize !8
 
 348:                                              ; preds = %345
-  %349 = load i32, ptr %182, align 4, !tbaa !219
-  %350 = icmp ult i32 %349, 65
-  br i1 %350, label %352, label %351, !prof !169, !nosanitize !8
-
-351:                                              ; preds = %348
-  tail call void @llvm.ubsantrap(i8 20) #39, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #39, !nosanitize !8
   unreachable, !nosanitize !8
 
-352:                                              ; preds = %348
-  %353 = tail call i32 @llvm.umax.i32(i32 %349, i32 7)
-  %354 = add nsw i32 %353, -1
-  %355 = zext nneg i32 %354 to i64
-  %356 = lshr i64 %248, %355
-  %357 = add nuw nsw i64 %356, 2
-  %358 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %248, i64 %357), !nosanitize !8
-  %359 = extractvalue { i64, i1 } %358, 0, !nosanitize !8
-  %360 = extractvalue { i64, i1 } %358, 1, !nosanitize !8
-  br i1 %360, label %361, label %362, !prof !9, !nosanitize !8
+349:                                              ; preds = %345
+  %350 = tail call i32 @llvm.umax.i32(i32 %346, i32 7)
+  %351 = add nsw i32 %350, -1
+  %352 = zext nneg i32 %351 to i64
+  %353 = lshr i64 %245, %352
+  %354 = add nuw nsw i64 %353, 2
+  %355 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %245, i64 %354), !nosanitize !8
+  %356 = extractvalue { i64, i1 } %355, 0, !nosanitize !8
+  %357 = extractvalue { i64, i1 } %355, 1, !nosanitize !8
+  br i1 %357, label %358, label %359, !prof !9, !nosanitize !8
 
-361:                                              ; preds = %352
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+358:                                              ; preds = %349
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-362:                                              ; preds = %352
-  %363 = icmp ult i64 %346, -119
-  br i1 %363, label %364, label %748
+359:                                              ; preds = %349
+  %360 = icmp ult i64 %343, -119
+  br i1 %360, label %361, label %745
 
-364:                                              ; preds = %362
-  %365 = icmp eq i64 %346, 0
-  br i1 %365, label %376, label %366
+361:                                              ; preds = %359
+  %362 = icmp eq i64 %343, 0
+  br i1 %362, label %373, label %363
 
-366:                                              ; preds = %364
-  %367 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %359, i64 3), !nosanitize !8
-  %368 = extractvalue { i64, i1 } %367, 1, !nosanitize !8
-  br i1 %368, label %369, label %370, !prof !9, !nosanitize !8
+363:                                              ; preds = %361
+  %364 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %356, i64 3), !nosanitize !8
+  %365 = extractvalue { i64, i1 } %364, 1, !nosanitize !8
+  br i1 %365, label %366, label %367, !prof !9, !nosanitize !8
 
-369:                                              ; preds = %366
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+366:                                              ; preds = %363
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-370:                                              ; preds = %366
-  %371 = extractvalue { i64, i1 } %367, 0, !nosanitize !8
-  %372 = icmp ult i64 %346, %371
-  br i1 %372, label %373, label %376
+367:                                              ; preds = %363
+  %368 = extractvalue { i64, i1 } %364, 0, !nosanitize !8
+  %369 = icmp ult i64 %343, %368
+  br i1 %369, label %370, label %373
 
-373:                                              ; preds = %370
-  %374 = load <2 x ptr>, ptr %199, align 8, !tbaa !51
-  %375 = shufflevector <2 x ptr> %374, <2 x ptr> poison, <2 x i32> <i32 1, i32 0>
-  store <2 x ptr> %375, ptr %199, align 8, !tbaa !51
-  br label %391
+370:                                              ; preds = %367
+  %371 = load <2 x ptr>, ptr %199, align 8, !tbaa !51
+  %372 = shufflevector <2 x ptr> %371, <2 x ptr> poison, <2 x i32> <i32 1, i32 0>
+  store <2 x ptr> %372, ptr %199, align 8, !tbaa !51
+  br label %388
 
-376:                                              ; preds = %370, %364, %345, %309
-  %377 = icmp ult i64 %248, 2305843009213693952
-  br i1 %377, label %379, label %378, !prof !169, !nosanitize !8
+373:                                              ; preds = %367, %361, %342, %306
+  %374 = icmp ult i64 %245, 2305843009213693952
+  br i1 %374, label %376, label %375, !prof !215, !nosanitize !8
 
-378:                                              ; preds = %376
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+375:                                              ; preds = %373
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
+
+376:                                              ; preds = %373
+  %377 = add nuw nsw i64 %245, 3
+  %378 = icmp ugt i64 %377, %215
+  br i1 %378, label %745, label %379
 
 379:                                              ; preds = %376
-  %380 = add nuw nsw i64 %248, 3
-  %381 = icmp ugt i64 %380, %215
-  br i1 %381, label %748, label %382
+  %380 = trunc i64 %245 to i32
+  %381 = shl i32 %380, 3
+  %382 = or disjoint i32 %381, %247
+  %383 = trunc i32 %382 to i16
+  store i16 %383, ptr %218, align 1, !tbaa !199
+  %384 = lshr i32 %381, 16
+  %385 = trunc i32 %384 to i8
+  %386 = getelementptr inbounds nuw i8, ptr %218, i64 2
+  store i8 %385, ptr %386, align 1, !tbaa !164
+  %387 = getelementptr inbounds nuw i8, ptr %218, i64 3
+  tail call void @llvm.memcpy.p0.p0.i64(ptr nonnull align 1 %387, ptr readonly align 1 %217, i64 %245, i1 false)
+  br label %388
 
-382:                                              ; preds = %379
-  %383 = trunc i64 %248 to i32
-  %384 = shl i32 %383, 3
-  %385 = or disjoint i32 %384, %250
-  %386 = trunc i32 %385 to i16
-  store i16 %386, ptr %218, align 1, !tbaa !201
-  %387 = lshr i32 %384, 16
-  %388 = trunc i32 %387 to i8
-  %389 = getelementptr inbounds nuw i8, ptr %218, i64 2
-  store i8 %388, ptr %389, align 1, !tbaa !164
-  %390 = getelementptr inbounds nuw i8, ptr %218, i64 3
-  tail call void @llvm.memcpy.p0.p0.i64(ptr nonnull align 1 %390, ptr readonly align 1 %217, i64 %248, i1 false)
-  br label %391
+388:                                              ; preds = %379, %370, %331
+  %389 = phi i64 [ %377, %379 ], [ %343, %370 ], [ 4, %331 ]
+  %390 = load ptr, ptr %199, align 8, !tbaa !57
+  %391 = getelementptr inbounds nuw i8, ptr %390, i64 5604
+  %392 = load i32, ptr %391, align 4, !tbaa !151
+  %393 = icmp eq i32 %392, 2
+  br i1 %393, label %394, label %685
 
-391:                                              ; preds = %382, %373, %334
-  %392 = phi i64 [ %380, %382 ], [ %346, %373 ], [ 4, %334 ]
-  %393 = load ptr, ptr %199, align 8, !tbaa !57
-  %394 = getelementptr inbounds nuw i8, ptr %393, i64 5604
-  %395 = load i32, ptr %394, align 4, !tbaa !151
-  %396 = icmp eq i32 %395, 2
-  br i1 %396, label %397, label %688
+394:                                              ; preds = %388
+  store i32 1, ptr %391, align 4, !tbaa !151
+  br label %685
 
-397:                                              ; preds = %391
-  store i32 1, ptr %394, align 4, !tbaa !151
-  br label %688
+395:                                              ; preds = %300
+  %396 = load i32, ptr %200, align 4, !tbaa !81
+  %397 = icmp eq i32 %396, 1
+  br i1 %397, label %398, label %641
 
-398:                                              ; preds = %303
-  %399 = load i32, ptr %200, align 4, !tbaa !81
-  %400 = icmp eq i32 %399, 1
-  br i1 %400, label %401, label %644
+398:                                              ; preds = %395
+  %399 = tail call fastcc i64 @ZSTD_buildSeqStore(ptr noundef nonnull %0, ptr noundef %217, i64 noundef %245)
+  %400 = icmp ult i64 %399, -119
+  br i1 %400, label %401, label %745
 
 401:                                              ; preds = %398
-  %402 = tail call fastcc i64 @ZSTD_buildSeqStore(ptr noundef nonnull %0, ptr noundef %217, i64 noundef %248)
-  %403 = icmp ult i64 %402, -119
-  br i1 %403, label %404, label %748
+  %402 = icmp eq i64 %399, 1
+  br i1 %402, label %403, label %427
 
-404:                                              ; preds = %401
-  %405 = icmp eq i64 %402, 1
-  br i1 %405, label %406, label %430
+403:                                              ; preds = %401
+  %404 = load ptr, ptr %199, align 8, !tbaa !57
+  %405 = getelementptr inbounds nuw i8, ptr %404, i64 5604
+  %406 = load i32, ptr %405, align 4, !tbaa !151
+  %407 = icmp eq i32 %406, 2
+  br i1 %407, label %408, label %409
 
-406:                                              ; preds = %404
-  %407 = load ptr, ptr %199, align 8, !tbaa !57
-  %408 = getelementptr inbounds nuw i8, ptr %407, i64 5604
-  %409 = load i32, ptr %408, align 4, !tbaa !151
-  %410 = icmp eq i32 %409, 2
-  br i1 %410, label %411, label %412
+408:                                              ; preds = %403
+  store i32 1, ptr %405, align 4, !tbaa !151
+  br label %409
 
-411:                                              ; preds = %406
-  store i32 1, ptr %408, align 4, !tbaa !151
-  br label %412
+409:                                              ; preds = %408, %403
+  %410 = load i32, ptr %212, align 8, !tbaa !222
+  %411 = icmp eq i32 %410, 0
+  br i1 %411, label %412, label %745
 
-412:                                              ; preds = %411, %406
-  %413 = load i32, ptr %212, align 8, !tbaa !223
-  %414 = icmp eq i32 %413, 0
-  br i1 %414, label %415, label %748
+412:                                              ; preds = %409
+  %413 = icmp ult i64 %245, 2305843009213693952
+  br i1 %413, label %415, label %414, !prof !215, !nosanitize !8
 
-415:                                              ; preds = %412
-  %416 = icmp ult i64 %248, 2305843009213693952
-  br i1 %416, label %418, label %417, !prof !169, !nosanitize !8
-
-417:                                              ; preds = %415
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+414:                                              ; preds = %412
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
+415:                                              ; preds = %412
+  %416 = add nuw nsw i64 %245, 3
+  %417 = icmp ugt i64 %416, %215
+  br i1 %417, label %745, label %418
+
 418:                                              ; preds = %415
-  %419 = add nuw nsw i64 %248, 3
-  %420 = icmp ugt i64 %419, %215
-  br i1 %420, label %748, label %421
+  %419 = trunc i64 %245 to i32
+  %420 = shl i32 %419, 3
+  %421 = or disjoint i32 %420, %247
+  %422 = trunc i32 %421 to i16
+  store i16 %422, ptr %218, align 1, !tbaa !199
+  %423 = lshr i32 %420, 16
+  %424 = trunc i32 %423 to i8
+  %425 = getelementptr inbounds nuw i8, ptr %218, i64 2
+  store i8 %424, ptr %425, align 1, !tbaa !164
+  %426 = getelementptr inbounds nuw i8, ptr %218, i64 3
+  tail call void @llvm.memcpy.p0.p0.i64(ptr nonnull align 1 %426, ptr readonly align 1 %217, i64 %245, i1 false)
+  br label %685
 
-421:                                              ; preds = %418
-  %422 = trunc i64 %248 to i32
-  %423 = shl i32 %422, 3
-  %424 = or disjoint i32 %423, %250
-  %425 = trunc i32 %424 to i16
-  store i16 %425, ptr %218, align 1, !tbaa !201
-  %426 = lshr i32 %423, 16
-  %427 = trunc i32 %426 to i8
-  %428 = getelementptr inbounds nuw i8, ptr %218, i64 2
-  store i8 %427, ptr %428, align 1, !tbaa !164
-  %429 = getelementptr inbounds nuw i8, ptr %218, i64 3
-  tail call void @llvm.memcpy.p0.p0.i64(ptr nonnull align 1 %429, ptr readonly align 1 %217, i64 %248, i1 false)
-  br label %688
-
-430:                                              ; preds = %404
-  %431 = load ptr, ptr %196, align 8, !tbaa !224
-  %432 = load ptr, ptr %195, align 8, !tbaa !225
-  %433 = ptrtoint ptr %431 to i64
-  %434 = ptrtoint ptr %432 to i64
-  %435 = sub i64 %433, %434
-  %436 = lshr exact i64 %435, 3
-  %437 = trunc i64 %436 to i32
+427:                                              ; preds = %401
+  %428 = load ptr, ptr %196, align 8, !tbaa !223
+  %429 = load ptr, ptr %195, align 8, !tbaa !224
+  %430 = ptrtoint ptr %428 to i64
+  %431 = ptrtoint ptr %429 to i64
+  %432 = sub i64 %430, %431
+  %433 = lshr exact i64 %432, 3
+  %434 = trunc i64 %433 to i32
   call void @llvm.lifetime.start.p0(ptr nonnull %8) #36
-  store ptr %201, ptr %8, align 8, !tbaa !226
-  store i64 0, ptr %204, align 8, !tbaa !228
-  %438 = icmp ult i32 %437, 5
-  br i1 %438, label %444, label %439
+  store ptr %201, ptr %8, align 8, !tbaa !225
+  store i64 0, ptr %204, align 8, !tbaa !227
+  %435 = icmp ult i32 %434, 5
+  br i1 %435, label %441, label %436
 
-439:                                              ; preds = %430
-  %440 = and i64 %436, 4294967295
-  call fastcc void @ZSTD_deriveBlockSplitsHelper(ptr noundef %8, i64 noundef 0, i64 noundef %440, ptr noundef nonnull %0, ptr noundef nonnull %195)
-  %441 = load ptr, ptr %8, align 8, !tbaa !226
-  %442 = load i64, ptr %204, align 8, !tbaa !228
-  %443 = getelementptr inbounds nuw [4 x i8], ptr %441, i64 %442
-  store i32 %437, ptr %443, align 4, !tbaa !4
-  br label %444
+436:                                              ; preds = %427
+  %437 = and i64 %433, 4294967295
+  call fastcc void @ZSTD_deriveBlockSplitsHelper(ptr noundef %8, i64 noundef 0, i64 noundef %437, ptr noundef nonnull %0, ptr noundef nonnull %195)
+  %438 = load ptr, ptr %8, align 8, !tbaa !225
+  %439 = load i64, ptr %204, align 8, !tbaa !227
+  %440 = getelementptr inbounds nuw [4 x i8], ptr %438, i64 %439
+  store i32 %434, ptr %440, align 4, !tbaa !4
+  br label %441
 
-444:                                              ; preds = %439, %430
-  %445 = phi i64 [ %442, %439 ], [ 0, %430 ]
+441:                                              ; preds = %436, %427
+  %442 = phi i64 [ %439, %436 ], [ 0, %427 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %8) #36
   call void @llvm.lifetime.start.p0(ptr nonnull %9) #36
   call void @llvm.lifetime.start.p0(ptr nonnull %10) #36
-  %446 = load ptr, ptr %199, align 8, !tbaa !57
-  %447 = getelementptr inbounds nuw i8, ptr %446, i64 5616
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %9, ptr noundef nonnull align 8 dereferenceable(12) %447, i64 12, i1 false)
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %10, ptr noundef nonnull align 8 dereferenceable(12) %447, i64 12, i1 false)
+  %443 = load ptr, ptr %199, align 8, !tbaa !57
+  %444 = getelementptr inbounds nuw i8, ptr %443, i64 5616
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %9, ptr noundef nonnull align 8 dereferenceable(12) %444, i64 12, i1 false)
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %10, ptr noundef nonnull align 8 dereferenceable(12) %444, i64 12, i1 false)
   tail call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(80) %202, i8 0, i64 80, i1 false)
-  %448 = icmp eq i64 %445, 0
-  br i1 %448, label %449, label %451
+  %445 = icmp eq i64 %442, 0
+  br i1 %445, label %446, label %448
 
-449:                                              ; preds = %444
-  %450 = call fastcc i64 @ZSTD_compressSeqStore_singleBlock(ptr noundef nonnull %0, ptr noundef nonnull %195, ptr noundef %9, ptr noundef %10, ptr noundef %218, i64 noundef range(i64 6, 0) %215, ptr noundef %217, i64 noundef %248, i32 noundef range(i32 0, 2) %250, i32 noundef 0)
-  br label %640
+446:                                              ; preds = %441
+  %447 = call fastcc i64 @ZSTD_compressSeqStore_singleBlock(ptr noundef nonnull %0, ptr noundef nonnull %195, ptr noundef %9, ptr noundef %10, ptr noundef %218, i64 noundef range(i64 6, 0) %215, ptr noundef %217, i64 noundef %245, i32 noundef range(i32 0, 2) %247, i32 noundef 0)
+  br label %637
 
-451:                                              ; preds = %444
-  %452 = load i32, ptr %201, align 4, !tbaa !4
-  %453 = zext i32 %452 to i64
-  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(80) %203, ptr noundef nonnull readonly align 8 dereferenceable(80) %195, i64 80, i1 false), !tbaa.struct !229
-  %454 = load i32, ptr %205, align 8, !tbaa !167
-  %455 = icmp eq i32 %454, 0
-  br i1 %455, label %460, label %456
+448:                                              ; preds = %441
+  %449 = load i32, ptr %201, align 4, !tbaa !4
+  %450 = zext i32 %449 to i64
+  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(80) %203, ptr noundef nonnull readonly align 8 dereferenceable(80) %195, i64 80, i1 false), !tbaa.struct !228
+  %451 = load i32, ptr %205, align 8, !tbaa !167
+  %452 = icmp eq i32 %451, 0
+  br i1 %452, label %457, label %453
 
-456:                                              ; preds = %451
-  %457 = load i32, ptr %206, align 4, !tbaa !168
-  %458 = icmp ult i32 %452, %457
-  br i1 %458, label %459, label %460
+453:                                              ; preds = %448
+  %454 = load i32, ptr %206, align 4, !tbaa !168
+  %455 = icmp ult i32 %449, %454
+  br i1 %455, label %456, label %457
 
-459:                                              ; preds = %456
+456:                                              ; preds = %453
   store i32 0, ptr %207, align 8, !tbaa !167
-  br label %460
+  br label %457
 
-460:                                              ; preds = %459, %456, %451
-  %461 = load ptr, ptr %195, align 8, !tbaa !154
-  store ptr %461, ptr %203, align 8, !tbaa !154
-  %462 = shl nuw nsw i64 %453, 3
-  %463 = getelementptr inbounds nuw i8, ptr %461, i64 %462
-  store ptr %463, ptr %208, align 8, !tbaa !158
-  %464 = load ptr, ptr %196, align 8, !tbaa !158
-  %465 = ptrtoint ptr %464 to i64
-  %466 = ptrtoint ptr %461 to i64
-  %467 = sub i64 %465, %466
-  %468 = ashr exact i64 %467, 3
-  %469 = icmp eq i64 %468, %453
-  br i1 %469, label %504, label %470
+457:                                              ; preds = %456, %453, %448
+  %458 = load ptr, ptr %195, align 8, !tbaa !154
+  store ptr %458, ptr %203, align 8, !tbaa !154
+  %459 = shl nuw nsw i64 %450, 3
+  %460 = getelementptr inbounds nuw i8, ptr %458, i64 %459
+  store ptr %460, ptr %208, align 8, !tbaa !158
+  %461 = load ptr, ptr %196, align 8, !tbaa !158
+  %462 = ptrtoint ptr %461 to i64
+  %463 = ptrtoint ptr %458 to i64
+  %464 = sub i64 %462, %463
+  %465 = ashr exact i64 %464, 3
+  %466 = icmp eq i64 %465, %450
+  br i1 %466, label %501, label %467
 
-470:                                              ; preds = %460
-  %471 = icmp eq i32 %452, 0
-  br i1 %471, label %500, label %472
+467:                                              ; preds = %457
+  %468 = icmp eq i32 %449, 0
+  br i1 %468, label %497, label %469
 
-472:                                              ; preds = %470, %496
-  %473 = phi i64 [ %497, %496 ], [ 0, %470 ]
-  %474 = phi i64 [ %498, %496 ], [ 0, %470 ]
-  %475 = getelementptr inbounds nuw [8 x i8], ptr %461, i64 %474
-  %476 = getelementptr inbounds nuw i8, ptr %475, i64 4
-  %477 = load i16, ptr %476, align 4, !tbaa !201
-  %478 = zext i16 %477 to i64
-  %479 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %473, i64 %478), !nosanitize !8
-  %480 = extractvalue { i64, i1 } %479, 0, !nosanitize !8
-  %481 = extractvalue { i64, i1 } %479, 1, !nosanitize !8
-  br i1 %481, label %482, label %483, !prof !9, !nosanitize !8
+469:                                              ; preds = %467, %493
+  %470 = phi i64 [ %494, %493 ], [ 0, %467 ]
+  %471 = phi i64 [ %495, %493 ], [ 0, %467 ]
+  %472 = getelementptr inbounds nuw [8 x i8], ptr %458, i64 %471
+  %473 = getelementptr inbounds nuw i8, ptr %472, i64 4
+  %474 = load i16, ptr %473, align 4, !tbaa !199
+  %475 = zext i16 %474 to i64
+  %476 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %470, i64 %475), !nosanitize !8
+  %477 = extractvalue { i64, i1 } %476, 0, !nosanitize !8
+  %478 = extractvalue { i64, i1 } %476, 1, !nosanitize !8
+  br i1 %478, label %479, label %480, !prof !9, !nosanitize !8
 
-482:                                              ; preds = %472
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+479:                                              ; preds = %469
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-483:                                              ; preds = %472
-  %484 = load i32, ptr %209, align 4, !tbaa !168
-  %485 = zext i32 %484 to i64
-  %486 = icmp eq i64 %474, %485
-  br i1 %486, label %487, label %496
+480:                                              ; preds = %469
+  %481 = load i32, ptr %209, align 4, !tbaa !168
+  %482 = zext i32 %481 to i64
+  %483 = icmp eq i64 %471, %482
+  br i1 %483, label %484, label %493
 
-487:                                              ; preds = %483
-  %488 = load i32, ptr %207, align 8, !tbaa !167
-  %489 = icmp eq i32 %488, 1
-  br i1 %489, label %490, label %496
+484:                                              ; preds = %480
+  %485 = load i32, ptr %207, align 8, !tbaa !167
+  %486 = icmp eq i32 %485, 1
+  br i1 %486, label %487, label %493
+
+487:                                              ; preds = %484
+  %488 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %477, i64 65536), !nosanitize !8
+  %489 = extractvalue { i64, i1 } %488, 1, !nosanitize !8
+  br i1 %489, label %490, label %491, !prof !9, !nosanitize !8
 
 490:                                              ; preds = %487
-  %491 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %480, i64 65536), !nosanitize !8
-  %492 = extractvalue { i64, i1 } %491, 1, !nosanitize !8
-  br i1 %492, label %493, label %494, !prof !9, !nosanitize !8
-
-493:                                              ; preds = %490
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-494:                                              ; preds = %490
-  %495 = extractvalue { i64, i1 } %491, 0, !nosanitize !8
-  br label %496
+491:                                              ; preds = %487
+  %492 = extractvalue { i64, i1 } %488, 0, !nosanitize !8
+  br label %493
 
-496:                                              ; preds = %494, %487, %483
-  %497 = phi i64 [ %495, %494 ], [ %480, %487 ], [ %480, %483 ]
-  %498 = add nuw nsw i64 %474, 1
-  %499 = icmp eq i64 %498, %453
-  br i1 %499, label %500, label %472, !llvm.loop !232
+493:                                              ; preds = %491, %484, %480
+  %494 = phi i64 [ %492, %491 ], [ %477, %484 ], [ %477, %480 ]
+  %495 = add nuw nsw i64 %471, 1
+  %496 = icmp eq i64 %495, %450
+  br i1 %496, label %497, label %469, !llvm.loop !231
 
-500:                                              ; preds = %496, %470
-  %501 = phi i64 [ 0, %470 ], [ %497, %496 ]
-  %502 = load ptr, ptr %210, align 8, !tbaa !171
-  %503 = getelementptr inbounds nuw i8, ptr %502, i64 %501
-  store ptr %503, ptr %211, align 8, !tbaa !172
-  br label %504
+497:                                              ; preds = %493, %467
+  %498 = phi i64 [ 0, %467 ], [ %494, %493 ]
+  %499 = load ptr, ptr %210, align 8, !tbaa !169
+  %500 = getelementptr inbounds nuw i8, ptr %499, i64 %498
+  store ptr %500, ptr %211, align 8, !tbaa !170
+  br label %501
 
-504:                                              ; preds = %500, %460
-  br label %505
+501:                                              ; preds = %497, %457
+  br label %502
 
-505:                                              ; preds = %504, %633
-  %506 = phi i64 [ %622, %633 ], [ %215, %504 ]
-  %507 = phi i64 [ %634, %633 ], [ 0, %504 ]
-  %508 = phi ptr [ %619, %633 ], [ %217, %504 ]
-  %509 = phi ptr [ %620, %633 ], [ %218, %504 ]
-  %510 = phi i64 [ %635, %633 ], [ 0, %504 ]
-  %511 = phi i64 [ %585, %633 ], [ 0, %504 ]
-  %512 = icmp eq i64 %510, %445
-  %513 = load ptr, ptr %208, align 8, !tbaa !158
-  %514 = load ptr, ptr %203, align 8, !tbaa !154
-  %515 = icmp eq ptr %513, %514
-  br i1 %515, label %578, label %516
+502:                                              ; preds = %501, %630
+  %503 = phi i64 [ %619, %630 ], [ %215, %501 ]
+  %504 = phi i64 [ %631, %630 ], [ 0, %501 ]
+  %505 = phi ptr [ %616, %630 ], [ %217, %501 ]
+  %506 = phi ptr [ %617, %630 ], [ %218, %501 ]
+  %507 = phi i64 [ %632, %630 ], [ 0, %501 ]
+  %508 = phi i64 [ %582, %630 ], [ 0, %501 ]
+  %509 = icmp eq i64 %507, %442
+  %510 = load ptr, ptr %208, align 8, !tbaa !158
+  %511 = load ptr, ptr %203, align 8, !tbaa !154
+  %512 = icmp eq ptr %510, %511
+  br i1 %512, label %575, label %513
 
-516:                                              ; preds = %505
-  %517 = ptrtoint ptr %513 to i64
-  %518 = ptrtoint ptr %514 to i64
-  %519 = sub i64 %517, %518
-  %520 = ashr exact i64 %519, 3
-  br label %521
+513:                                              ; preds = %502
+  %514 = ptrtoint ptr %510 to i64
+  %515 = ptrtoint ptr %511 to i64
+  %516 = sub i64 %514, %515
+  %517 = ashr exact i64 %516, 3
+  br label %518
 
-521:                                              ; preds = %545, %516
-  %522 = phi i64 [ 0, %516 ], [ %546, %545 ]
-  %523 = phi i64 [ 0, %516 ], [ %547, %545 ]
-  %524 = getelementptr inbounds nuw [8 x i8], ptr %514, i64 %523
-  %525 = getelementptr inbounds nuw i8, ptr %524, i64 4
-  %526 = load i16, ptr %525, align 4, !tbaa !201
-  %527 = zext i16 %526 to i64
-  %528 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %522, i64 %527), !nosanitize !8
-  %529 = extractvalue { i64, i1 } %528, 0, !nosanitize !8
-  %530 = extractvalue { i64, i1 } %528, 1, !nosanitize !8
-  br i1 %530, label %531, label %532, !prof !9, !nosanitize !8
+518:                                              ; preds = %542, %513
+  %519 = phi i64 [ 0, %513 ], [ %543, %542 ]
+  %520 = phi i64 [ 0, %513 ], [ %544, %542 ]
+  %521 = getelementptr inbounds nuw [8 x i8], ptr %511, i64 %520
+  %522 = getelementptr inbounds nuw i8, ptr %521, i64 4
+  %523 = load i16, ptr %522, align 4, !tbaa !199
+  %524 = zext i16 %523 to i64
+  %525 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %519, i64 %524), !nosanitize !8
+  %526 = extractvalue { i64, i1 } %525, 0, !nosanitize !8
+  %527 = extractvalue { i64, i1 } %525, 1, !nosanitize !8
+  br i1 %527, label %528, label %529, !prof !9, !nosanitize !8
 
-531:                                              ; preds = %521
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+528:                                              ; preds = %518
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-532:                                              ; preds = %521
-  %533 = load i32, ptr %209, align 4, !tbaa !168
-  %534 = zext i32 %533 to i64
-  %535 = icmp eq i64 %523, %534
-  br i1 %535, label %536, label %545
+529:                                              ; preds = %518
+  %530 = load i32, ptr %209, align 4, !tbaa !168
+  %531 = zext i32 %530 to i64
+  %532 = icmp eq i64 %520, %531
+  br i1 %532, label %533, label %542
 
-536:                                              ; preds = %532
-  %537 = load i32, ptr %207, align 8, !tbaa !167
-  %538 = icmp eq i32 %537, 1
-  br i1 %538, label %539, label %545
+533:                                              ; preds = %529
+  %534 = load i32, ptr %207, align 8, !tbaa !167
+  %535 = icmp eq i32 %534, 1
+  br i1 %535, label %536, label %542
+
+536:                                              ; preds = %533
+  %537 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %526, i64 65536), !nosanitize !8
+  %538 = extractvalue { i64, i1 } %537, 1, !nosanitize !8
+  br i1 %538, label %539, label %540, !prof !9, !nosanitize !8
 
 539:                                              ; preds = %536
-  %540 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %529, i64 65536), !nosanitize !8
-  %541 = extractvalue { i64, i1 } %540, 1, !nosanitize !8
-  br i1 %541, label %542, label %543, !prof !9, !nosanitize !8
-
-542:                                              ; preds = %539
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-543:                                              ; preds = %539
-  %544 = extractvalue { i64, i1 } %540, 0, !nosanitize !8
-  br label %545
+540:                                              ; preds = %536
+  %541 = extractvalue { i64, i1 } %537, 0, !nosanitize !8
+  br label %542
 
-545:                                              ; preds = %543, %536, %532
-  %546 = phi i64 [ %544, %543 ], [ %529, %536 ], [ %529, %532 ]
-  %547 = add nuw i64 %523, 1
-  %548 = icmp eq i64 %547, %520
-  br i1 %548, label %549, label %521, !llvm.loop !232
+542:                                              ; preds = %540, %533, %529
+  %543 = phi i64 [ %541, %540 ], [ %526, %533 ], [ %526, %529 ]
+  %544 = add nuw i64 %520, 1
+  %545 = icmp eq i64 %544, %517
+  br i1 %545, label %546, label %518, !llvm.loop !231
 
-549:                                              ; preds = %545, %572
-  %550 = phi i64 [ %573, %572 ], [ 0, %545 ]
-  %551 = phi i64 [ %574, %572 ], [ 0, %545 ]
-  %552 = getelementptr inbounds nuw [8 x i8], ptr %514, i64 %551
-  %553 = getelementptr inbounds nuw i8, ptr %552, i64 6
-  %554 = load i16, ptr %553, align 2, !tbaa !201
-  %555 = zext i16 %554 to i64
-  %556 = add nuw nsw i64 %555, 3
-  %557 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %550, i64 %556), !nosanitize !8
-  %558 = extractvalue { i64, i1 } %557, 0, !nosanitize !8
-  %559 = extractvalue { i64, i1 } %557, 1, !nosanitize !8
-  br i1 %559, label %560, label %561, !prof !9, !nosanitize !8
+546:                                              ; preds = %542, %569
+  %547 = phi i64 [ %570, %569 ], [ 0, %542 ]
+  %548 = phi i64 [ %571, %569 ], [ 0, %542 ]
+  %549 = getelementptr inbounds nuw [8 x i8], ptr %511, i64 %548
+  %550 = getelementptr inbounds nuw i8, ptr %549, i64 6
+  %551 = load i16, ptr %550, align 2, !tbaa !199
+  %552 = zext i16 %551 to i64
+  %553 = add nuw nsw i64 %552, 3
+  %554 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %547, i64 %553), !nosanitize !8
+  %555 = extractvalue { i64, i1 } %554, 0, !nosanitize !8
+  %556 = extractvalue { i64, i1 } %554, 1, !nosanitize !8
+  br i1 %556, label %557, label %558, !prof !9, !nosanitize !8
 
-560:                                              ; preds = %549
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+557:                                              ; preds = %546
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-561:                                              ; preds = %549
-  %562 = icmp eq i64 %551, %534
-  br i1 %562, label %563, label %572
+558:                                              ; preds = %546
+  %559 = icmp eq i64 %548, %531
+  br i1 %559, label %560, label %569
 
-563:                                              ; preds = %561
-  %564 = load i32, ptr %207, align 8, !tbaa !167
-  %565 = icmp eq i32 %564, 2
-  br i1 %565, label %566, label %572
+560:                                              ; preds = %558
+  %561 = load i32, ptr %207, align 8, !tbaa !167
+  %562 = icmp eq i32 %561, 2
+  br i1 %562, label %563, label %569
+
+563:                                              ; preds = %560
+  %564 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %555, i64 65536), !nosanitize !8
+  %565 = extractvalue { i64, i1 } %564, 1, !nosanitize !8
+  br i1 %565, label %566, label %567, !prof !9, !nosanitize !8
 
 566:                                              ; preds = %563
-  %567 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %558, i64 65536), !nosanitize !8
-  %568 = extractvalue { i64, i1 } %567, 1, !nosanitize !8
-  br i1 %568, label %569, label %570, !prof !9, !nosanitize !8
-
-569:                                              ; preds = %566
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-570:                                              ; preds = %566
-  %571 = extractvalue { i64, i1 } %567, 0, !nosanitize !8
-  br label %572
+567:                                              ; preds = %563
+  %568 = extractvalue { i64, i1 } %564, 0, !nosanitize !8
+  br label %569
 
-572:                                              ; preds = %570, %563, %561
-  %573 = phi i64 [ %571, %570 ], [ %558, %563 ], [ %558, %561 ]
-  %574 = add nuw i64 %551, 1
-  %575 = icmp eq i64 %574, %520
-  br i1 %575, label %576, label %549, !llvm.loop !233
+569:                                              ; preds = %567, %560, %558
+  %570 = phi i64 [ %568, %567 ], [ %555, %560 ], [ %555, %558 ]
+  %571 = add nuw i64 %548, 1
+  %572 = icmp eq i64 %571, %517
+  br i1 %572, label %573, label %546, !llvm.loop !232
 
-576:                                              ; preds = %572
-  %577 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %546, i64 %573)
-  br label %578
+573:                                              ; preds = %569
+  %574 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %543, i64 %570)
+  br label %575
 
-578:                                              ; preds = %576, %505
-  %579 = phi { i64, i1 } [ zeroinitializer, %505 ], [ %577, %576 ]
-  %580 = extractvalue { i64, i1 } %579, 0, !nosanitize !8
-  %581 = extractvalue { i64, i1 } %579, 1, !nosanitize !8
-  br i1 %581, label %582, label %583, !prof !9, !nosanitize !8
+575:                                              ; preds = %573, %502
+  %576 = phi { i64, i1 } [ zeroinitializer, %502 ], [ %574, %573 ]
+  %577 = extractvalue { i64, i1 } %576, 0, !nosanitize !8
+  %578 = extractvalue { i64, i1 } %576, 1, !nosanitize !8
+  br i1 %578, label %579, label %580, !prof !9, !nosanitize !8
 
-582:                                              ; preds = %578
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+579:                                              ; preds = %575
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-583:                                              ; preds = %578
-  %584 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %511, i64 %580), !nosanitize !8
-  %585 = extractvalue { i64, i1 } %584, 0, !nosanitize !8
-  %586 = extractvalue { i64, i1 } %584, 1, !nosanitize !8
-  br i1 %586, label %587, label %588, !prof !9, !nosanitize !8
+580:                                              ; preds = %575
+  %581 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %508, i64 %577), !nosanitize !8
+  %582 = extractvalue { i64, i1 } %581, 0, !nosanitize !8
+  %583 = extractvalue { i64, i1 } %581, 1, !nosanitize !8
+  br i1 %583, label %584, label %585, !prof !9, !nosanitize !8
 
-587:                                              ; preds = %583
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+584:                                              ; preds = %580
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-588:                                              ; preds = %583
-  br i1 %512, label %589, label %600
+585:                                              ; preds = %580
+  br i1 %509, label %586, label %597
 
-589:                                              ; preds = %588
-  %590 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %248, i64 %585), !nosanitize !8
-  %591 = extractvalue { i64, i1 } %590, 1, !nosanitize !8
-  br i1 %591, label %592, label %593, !prof !9, !nosanitize !8
+586:                                              ; preds = %585
+  %587 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %245, i64 %582), !nosanitize !8
+  %588 = extractvalue { i64, i1 } %587, 1, !nosanitize !8
+  br i1 %588, label %589, label %590, !prof !9, !nosanitize !8
 
-592:                                              ; preds = %589
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+589:                                              ; preds = %586
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-593:                                              ; preds = %589
-  %594 = extractvalue { i64, i1 } %590, 0, !nosanitize !8
-  %595 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %580, i64 %594), !nosanitize !8
-  %596 = extractvalue { i64, i1 } %595, 1, !nosanitize !8
-  br i1 %596, label %597, label %598, !prof !9, !nosanitize !8
+590:                                              ; preds = %586
+  %591 = extractvalue { i64, i1 } %587, 0, !nosanitize !8
+  %592 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %577, i64 %591), !nosanitize !8
+  %593 = extractvalue { i64, i1 } %592, 1, !nosanitize !8
+  br i1 %593, label %594, label %595, !prof !9, !nosanitize !8
 
-597:                                              ; preds = %593
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+594:                                              ; preds = %590
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-598:                                              ; preds = %593
-  %599 = extractvalue { i64, i1 } %595, 0, !nosanitize !8
-  br label %612
+595:                                              ; preds = %590
+  %596 = extractvalue { i64, i1 } %592, 0, !nosanitize !8
+  br label %609
 
-600:                                              ; preds = %588
-  %601 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %510, i64 1), !nosanitize !8
-  %602 = extractvalue { i64, i1 } %601, 1, !nosanitize !8
-  br i1 %602, label %603, label %604, !prof !9, !nosanitize !8
+597:                                              ; preds = %585
+  %598 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %507, i64 1), !nosanitize !8
+  %599 = extractvalue { i64, i1 } %598, 1, !nosanitize !8
+  br i1 %599, label %600, label %601, !prof !9, !nosanitize !8
 
-603:                                              ; preds = %600
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+600:                                              ; preds = %597
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-604:                                              ; preds = %600
-  %605 = extractvalue { i64, i1 } %601, 0, !nosanitize !8
-  %606 = getelementptr inbounds nuw [4 x i8], ptr %201, i64 %510
+601:                                              ; preds = %597
+  %602 = extractvalue { i64, i1 } %598, 0, !nosanitize !8
+  %603 = getelementptr inbounds nuw [4 x i8], ptr %201, i64 %507
+  %604 = load i32, ptr %603, align 4, !tbaa !4
+  %605 = zext i32 %604 to i64
+  %606 = getelementptr inbounds nuw [4 x i8], ptr %201, i64 %602
   %607 = load i32, ptr %606, align 4, !tbaa !4
   %608 = zext i32 %607 to i64
-  %609 = getelementptr inbounds nuw [4 x i8], ptr %201, i64 %605
-  %610 = load i32, ptr %609, align 4, !tbaa !4
-  %611 = zext i32 %610 to i64
-  tail call fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef nonnull %202, ptr noundef nonnull %195, i64 noundef %608, i64 noundef %611)
-  br label %612
+  tail call fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef nonnull %202, ptr noundef nonnull %195, i64 noundef %605, i64 noundef %608)
+  br label %609
 
-612:                                              ; preds = %604, %598
-  %613 = phi i32 [ %250, %598 ], [ 0, %604 ]
-  %614 = phi i64 [ %599, %598 ], [ %580, %604 ]
-  %615 = call fastcc i64 @ZSTD_compressSeqStore_singleBlock(ptr noundef nonnull %0, ptr noundef nonnull %203, ptr noundef %9, ptr noundef %10, ptr noundef %509, i64 noundef %506, ptr noundef %508, i64 noundef %614, i32 noundef %613, i32 noundef 1)
-  %616 = icmp ult i64 %615, -119
-  br i1 %616, label %618, label %617
+609:                                              ; preds = %601, %595
+  %610 = phi i32 [ %247, %595 ], [ 0, %601 ]
+  %611 = phi i64 [ %596, %595 ], [ %577, %601 ]
+  %612 = call fastcc i64 @ZSTD_compressSeqStore_singleBlock(ptr noundef nonnull %0, ptr noundef nonnull %203, ptr noundef %9, ptr noundef %10, ptr noundef %506, i64 noundef %503, ptr noundef %505, i64 noundef %611, i32 noundef %610, i32 noundef 1)
+  %613 = icmp ult i64 %612, -119
+  br i1 %613, label %615, label %614
 
-617:                                              ; preds = %612
+614:                                              ; preds = %609
   call void @llvm.lifetime.end.p0(ptr nonnull %10) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %9) #36
-  br label %748
+  br label %745
 
-618:                                              ; preds = %612
-  %619 = getelementptr inbounds nuw i8, ptr %508, i64 %614
-  %620 = getelementptr inbounds nuw i8, ptr %509, i64 %615
-  %621 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %506, i64 %615), !nosanitize !8
-  %622 = extractvalue { i64, i1 } %621, 0, !nosanitize !8
-  %623 = extractvalue { i64, i1 } %621, 1, !nosanitize !8
-  br i1 %623, label %624, label %625, !prof !9, !nosanitize !8
+615:                                              ; preds = %609
+  %616 = getelementptr inbounds nuw i8, ptr %505, i64 %611
+  %617 = getelementptr inbounds nuw i8, ptr %506, i64 %612
+  %618 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %503, i64 %612), !nosanitize !8
+  %619 = extractvalue { i64, i1 } %618, 0, !nosanitize !8
+  %620 = extractvalue { i64, i1 } %618, 1, !nosanitize !8
+  br i1 %620, label %621, label %622, !prof !9, !nosanitize !8
 
-624:                                              ; preds = %618
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+621:                                              ; preds = %615
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-625:                                              ; preds = %618
-  %626 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %507, i64 %615), !nosanitize !8
-  %627 = extractvalue { i64, i1 } %626, 1, !nosanitize !8
-  br i1 %627, label %628, label %629, !prof !9, !nosanitize !8
+622:                                              ; preds = %615
+  %623 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %504, i64 %612), !nosanitize !8
+  %624 = extractvalue { i64, i1 } %623, 1, !nosanitize !8
+  br i1 %624, label %625, label %626, !prof !9, !nosanitize !8
 
-628:                                              ; preds = %625
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+625:                                              ; preds = %622
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-629:                                              ; preds = %625
-  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(80) %203, ptr noundef nonnull align 8 dereferenceable(80) %202, i64 80, i1 false), !tbaa.struct !229
-  %630 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %510, i64 1), !nosanitize !8
-  %631 = extractvalue { i64, i1 } %630, 1, !nosanitize !8
-  br i1 %631, label %632, label %633, !prof !9, !nosanitize !8
+626:                                              ; preds = %622
+  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(80) %203, ptr noundef nonnull align 8 dereferenceable(80) %202, i64 80, i1 false), !tbaa.struct !228
+  %627 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %507, i64 1), !nosanitize !8
+  %628 = extractvalue { i64, i1 } %627, 1, !nosanitize !8
+  br i1 %628, label %629, label %630, !prof !9, !nosanitize !8
 
-632:                                              ; preds = %629
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+629:                                              ; preds = %626
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-633:                                              ; preds = %629
-  %634 = extractvalue { i64, i1 } %626, 0, !nosanitize !8
-  %635 = extractvalue { i64, i1 } %630, 0, !nosanitize !8
-  %636 = icmp ugt i64 %635, %445
-  br i1 %636, label %637, label %505, !llvm.loop !234
+630:                                              ; preds = %626
+  %631 = extractvalue { i64, i1 } %623, 0, !nosanitize !8
+  %632 = extractvalue { i64, i1 } %627, 0, !nosanitize !8
+  %633 = icmp ugt i64 %632, %442
+  br i1 %633, label %634, label %502, !llvm.loop !233
 
-637:                                              ; preds = %633
-  %638 = load ptr, ptr %199, align 8, !tbaa !57
-  %639 = getelementptr inbounds nuw i8, ptr %638, i64 5616
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(12) %639, ptr noundef nonnull align 4 dereferenceable(12) %9, i64 12, i1 false)
-  br label %640
+634:                                              ; preds = %630
+  %635 = load ptr, ptr %199, align 8, !tbaa !57
+  %636 = getelementptr inbounds nuw i8, ptr %635, i64 5616
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(12) %636, ptr noundef nonnull align 4 dereferenceable(12) %9, i64 12, i1 false)
+  br label %637
 
-640:                                              ; preds = %637, %449
-  %641 = phi i64 [ %450, %449 ], [ %634, %637 ]
+637:                                              ; preds = %634, %446
+  %638 = phi i64 [ %447, %446 ], [ %631, %634 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %10) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %9) #36
-  %642 = icmp ult i64 %641, -119
-  br i1 %642, label %688, label %748
+  %639 = icmp ult i64 %638, -119
+  br i1 %639, label %685, label %745
 
-643:                                              ; preds = %688
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+640:                                              ; preds = %685
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-644:                                              ; preds = %398
-  %645 = add i64 %215, -3
-  %646 = getelementptr inbounds nuw i8, ptr %218, i64 3
-  %647 = tail call fastcc i64 @ZSTD_compressBlock_internal(ptr noundef nonnull %0, ptr noundef nonnull %646, i64 noundef %645, ptr noundef %217, i64 noundef %248, i32 noundef 1)
-  %648 = icmp ult i64 %647, -119
-  br i1 %648, label %649, label %748
+641:                                              ; preds = %395
+  %642 = add i64 %215, -3
+  %643 = getelementptr inbounds nuw i8, ptr %218, i64 3
+  %644 = tail call fastcc i64 @ZSTD_compressBlock_internal(ptr noundef nonnull %0, ptr noundef nonnull %643, i64 noundef %642, ptr noundef %217, i64 noundef %245, i32 noundef 1)
+  %645 = icmp ult i64 %644, -119
+  br i1 %645, label %646, label %745
 
-649:                                              ; preds = %644
-  switch i64 %647, label %672 [
-    i64 0, label %650
-    i64 1, label %664
+646:                                              ; preds = %641
+  switch i64 %644, label %669 [
+    i64 0, label %647
+    i64 1, label %661
   ]
 
-650:                                              ; preds = %649
-  %651 = icmp ult i64 %248, 2305843009213693952
-  br i1 %651, label %653, label %652, !prof !169, !nosanitize !8
+647:                                              ; preds = %646
+  %648 = icmp ult i64 %245, 2305843009213693952
+  br i1 %648, label %650, label %649, !prof !215, !nosanitize !8
 
-652:                                              ; preds = %650
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+649:                                              ; preds = %647
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
+
+650:                                              ; preds = %647
+  %651 = add nuw nsw i64 %245, 3
+  %652 = icmp ugt i64 %651, %215
+  br i1 %652, label %745, label %653
 
 653:                                              ; preds = %650
-  %654 = add nuw nsw i64 %248, 3
-  %655 = icmp ugt i64 %654, %215
-  br i1 %655, label %748, label %656
+  %654 = trunc i64 %245 to i32
+  %655 = shl i32 %654, 3
+  %656 = or disjoint i32 %655, %247
+  %657 = trunc i32 %656 to i16
+  store i16 %657, ptr %218, align 1, !tbaa !199
+  %658 = lshr i32 %655, 16
+  %659 = trunc i32 %658 to i8
+  %660 = getelementptr inbounds nuw i8, ptr %218, i64 2
+  store i8 %659, ptr %660, align 1, !tbaa !164
+  tail call void @llvm.memcpy.p0.p0.i64(ptr nonnull align 1 %643, ptr readonly align 1 %217, i64 %245, i1 false)
+  br label %685
 
-656:                                              ; preds = %653
-  %657 = trunc i64 %248 to i32
-  %658 = shl i32 %657, 3
-  %659 = or disjoint i32 %658, %250
-  %660 = trunc i32 %659 to i16
-  store i16 %660, ptr %218, align 1, !tbaa !201
-  %661 = lshr i32 %658, 16
-  %662 = trunc i32 %661 to i8
-  %663 = getelementptr inbounds nuw i8, ptr %218, i64 2
-  store i8 %662, ptr %663, align 1, !tbaa !164
-  tail call void @llvm.memcpy.p0.p0.i64(ptr nonnull align 1 %646, ptr readonly align 1 %217, i64 %248, i1 false)
-  br label %688
+661:                                              ; preds = %646
+  %662 = icmp ult i64 %245, 2305843009213693952
+  br i1 %662, label %664, label %663, !prof !215, !nosanitize !8
 
-664:                                              ; preds = %649
-  %665 = icmp ult i64 %248, 2305843009213693952
-  br i1 %665, label %667, label %666, !prof !169, !nosanitize !8
-
-666:                                              ; preds = %664
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+663:                                              ; preds = %661
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-667:                                              ; preds = %664
-  %668 = trunc i64 %248 to i32
-  %669 = shl i32 %668, 3
-  %670 = or disjoint i32 %250, %669
-  %671 = or disjoint i32 %670, 2
-  br label %680
+664:                                              ; preds = %661
+  %665 = trunc i64 %245 to i32
+  %666 = shl i32 %665, 3
+  %667 = or disjoint i32 %247, %666
+  %668 = or disjoint i32 %667, 2
+  br label %677
 
-672:                                              ; preds = %649
-  %673 = icmp ult i64 %647, 2305843009213693952
-  br i1 %673, label %675, label %674, !prof !169, !nosanitize !8
+669:                                              ; preds = %646
+  %670 = icmp ult i64 %644, 2305843009213693952
+  br i1 %670, label %672, label %671, !prof !215, !nosanitize !8
 
-674:                                              ; preds = %672
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+671:                                              ; preds = %669
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-675:                                              ; preds = %672
-  %676 = trunc i64 %647 to i32
-  %677 = shl i32 %676, 3
-  %678 = or disjoint i32 %677, %250
-  %679 = or disjoint i32 %678, 4
-  br label %680
+672:                                              ; preds = %669
+  %673 = trunc i64 %644 to i32
+  %674 = shl i32 %673, 3
+  %675 = or disjoint i32 %674, %247
+  %676 = or disjoint i32 %675, 4
+  br label %677
 
-680:                                              ; preds = %675, %667
-  %681 = phi i32 [ %671, %667 ], [ %679, %675 ]
-  %682 = trunc i32 %681 to i16
-  store i16 %682, ptr %218, align 1, !tbaa !201
-  %683 = lshr i32 %681, 16
-  %684 = trunc i32 %683 to i8
-  %685 = getelementptr inbounds nuw i8, ptr %218, i64 2
-  store i8 %684, ptr %685, align 1, !tbaa !164
-  %686 = add nuw nsw i64 %647, 3
-  br label %688
+677:                                              ; preds = %672, %664
+  %678 = phi i32 [ %668, %664 ], [ %676, %672 ]
+  %679 = trunc i32 %678 to i16
+  store i16 %679, ptr %218, align 1, !tbaa !199
+  %680 = lshr i32 %678, 16
+  %681 = trunc i32 %680 to i8
+  %682 = getelementptr inbounds nuw i8, ptr %218, i64 2
+  store i8 %681, ptr %682, align 1, !tbaa !164
+  %683 = add nuw nsw i64 %644, 3
+  br label %685
 
-687:                                              ; preds = %692
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+684:                                              ; preds = %689
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-688:                                              ; preds = %680, %656, %640, %421, %397, %391
-  %689 = phi i64 [ %419, %421 ], [ %641, %640 ], [ %654, %656 ], [ %686, %680 ], [ %392, %391 ], [ %392, %397 ]
-  %690 = tail call { i64, i1 } @llvm.ssub.with.overflow.i64(i64 %248, i64 %689), !nosanitize !8
-  %691 = extractvalue { i64, i1 } %690, 1, !nosanitize !8
-  br i1 %691, label %643, label %692, !prof !9, !nosanitize !8
+685:                                              ; preds = %677, %653, %637, %418, %394, %388
+  %686 = phi i64 [ %416, %418 ], [ %638, %637 ], [ %651, %653 ], [ %683, %677 ], [ %389, %388 ], [ %389, %394 ]
+  %687 = tail call { i64, i1 } @llvm.ssub.with.overflow.i64(i64 %245, i64 %686), !nosanitize !8
+  %688 = extractvalue { i64, i1 } %687, 1, !nosanitize !8
+  br i1 %688, label %640, label %689, !prof !9, !nosanitize !8
 
-692:                                              ; preds = %688
-  %693 = extractvalue { i64, i1 } %690, 0, !nosanitize !8
-  %694 = tail call { i64, i1 } @llvm.sadd.with.overflow.i64(i64 %219, i64 %693), !nosanitize !8
-  %695 = extractvalue { i64, i1 } %694, 1, !nosanitize !8
-  br i1 %695, label %687, label %696, !prof !9, !nosanitize !8
+689:                                              ; preds = %685
+  %690 = extractvalue { i64, i1 } %687, 0, !nosanitize !8
+  %691 = tail call { i64, i1 } @llvm.sadd.with.overflow.i64(i64 %219, i64 %690), !nosanitize !8
+  %692 = extractvalue { i64, i1 } %691, 1, !nosanitize !8
+  br i1 %692, label %684, label %693, !prof !9, !nosanitize !8
 
-696:                                              ; preds = %692
-  %697 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %216, i64 %248), !nosanitize !8
-  %698 = extractvalue { i64, i1 } %697, 0, !nosanitize !8
-  %699 = extractvalue { i64, i1 } %697, 1, !nosanitize !8
-  br i1 %699, label %700, label %701, !prof !9, !nosanitize !8
+693:                                              ; preds = %689
+  %694 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %216, i64 %245), !nosanitize !8
+  %695 = extractvalue { i64, i1 } %694, 0, !nosanitize !8
+  %696 = extractvalue { i64, i1 } %694, 1, !nosanitize !8
+  br i1 %696, label %697, label %698, !prof !9, !nosanitize !8
 
-700:                                              ; preds = %696
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+697:                                              ; preds = %693
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-701:                                              ; preds = %696
-  %702 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %215, i64 %689), !nosanitize !8
-  %703 = extractvalue { i64, i1 } %702, 1, !nosanitize !8
-  br i1 %703, label %704, label %705, !prof !9, !nosanitize !8
+698:                                              ; preds = %693
+  %699 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %215, i64 %686), !nosanitize !8
+  %700 = extractvalue { i64, i1 } %699, 1, !nosanitize !8
+  br i1 %700, label %701, label %702, !prof !9, !nosanitize !8
 
-704:                                              ; preds = %701
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+701:                                              ; preds = %698
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-705:                                              ; preds = %701
-  %706 = extractvalue { i64, i1 } %702, 0, !nosanitize !8
-  %707 = getelementptr inbounds nuw i8, ptr %218, i64 %689
-  store i32 0, ptr %194, align 8, !tbaa !222
-  %708 = icmp eq i64 %698, 0
-  br i1 %708, label %709, label %213, !llvm.loop !235
+702:                                              ; preds = %698
+  %703 = extractvalue { i64, i1 } %699, 0, !nosanitize !8
+  %704 = getelementptr inbounds nuw i8, ptr %218, i64 %686
+  store i32 0, ptr %194, align 8, !tbaa !221
+  %705 = icmp eq i64 %695, 0
+  br i1 %705, label %706, label %213, !llvm.loop !234
 
-709:                                              ; preds = %705
-  %710 = icmp ne i32 %6, 0
-  %711 = icmp ugt ptr %707, %41
-  %712 = select i1 %710, i1 %711, i1 false
-  br i1 %712, label %713, label %714
+706:                                              ; preds = %702
+  %707 = icmp ne i32 %6, 0
+  %708 = icmp ugt ptr %704, %41
+  %709 = select i1 %707, i1 %708, i1 false
+  br i1 %709, label %710, label %711
 
-713:                                              ; preds = %709
-  store i32 3, ptr %0, align 8, !tbaa !205
-  br label %714
+710:                                              ; preds = %706
+  store i32 3, ptr %0, align 8, !tbaa !203
+  br label %711
 
-714:                                              ; preds = %713, %709
-  %715 = ptrtoint ptr %707 to i64
-  %716 = ptrtoint ptr %41 to i64
-  %717 = sub i64 %715, %716
-  br label %718
+711:                                              ; preds = %710, %706
+  %712 = ptrtoint ptr %704 to i64
+  %713 = ptrtoint ptr %41 to i64
+  %714 = sub i64 %712, %713
+  br label %715
 
-718:                                              ; preds = %714, %154
-  %719 = phi i64 [ %156, %154 ], [ %717, %714 ]
-  %720 = icmp ult i64 %719, -119
-  br i1 %720, label %721, label %748
+715:                                              ; preds = %711, %154
+  %716 = phi i64 [ %156, %154 ], [ %714, %711 ]
+  %717 = icmp ult i64 %716, -119
+  br i1 %717, label %718, label %745
 
-721:                                              ; preds = %718
-  %722 = getelementptr inbounds nuw i8, ptr %0, i64 792
-  %723 = load i64, ptr %722, align 8, !tbaa !141
-  %724 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %723, i64 %4), !nosanitize !8
-  %725 = extractvalue { i64, i1 } %724, 1, !nosanitize !8
-  br i1 %725, label %726, label %727, !prof !9, !nosanitize !8
+718:                                              ; preds = %715
+  %719 = getelementptr inbounds nuw i8, ptr %0, i64 792
+  %720 = load i64, ptr %719, align 8, !tbaa !141
+  %721 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %720, i64 %4), !nosanitize !8
+  %722 = extractvalue { i64, i1 } %721, 1, !nosanitize !8
+  br i1 %722, label %723, label %724, !prof !9, !nosanitize !8
 
-726:                                              ; preds = %721
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+723:                                              ; preds = %718
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-727:                                              ; preds = %721
-  %728 = extractvalue { i64, i1 } %724, 0, !nosanitize !8
-  store i64 %728, ptr %722, align 8, !tbaa !141
-  %729 = add i64 %719, %39
-  %730 = getelementptr inbounds nuw i8, ptr %0, i64 800
-  %731 = load i64, ptr %730, align 8, !tbaa !145
-  %732 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %731, i64 %729), !nosanitize !8
-  %733 = extractvalue { i64, i1 } %732, 1, !nosanitize !8
-  br i1 %733, label %734, label %735, !prof !9, !nosanitize !8
+724:                                              ; preds = %718
+  %725 = extractvalue { i64, i1 } %721, 0, !nosanitize !8
+  store i64 %725, ptr %719, align 8, !tbaa !141
+  %726 = add i64 %716, %39
+  %727 = getelementptr inbounds nuw i8, ptr %0, i64 800
+  %728 = load i64, ptr %727, align 8, !tbaa !145
+  %729 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %728, i64 %726), !nosanitize !8
+  %730 = extractvalue { i64, i1 } %729, 1, !nosanitize !8
+  br i1 %730, label %731, label %732, !prof !9, !nosanitize !8
 
-734:                                              ; preds = %727
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+731:                                              ; preds = %724
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-735:                                              ; preds = %727
-  %736 = extractvalue { i64, i1 } %732, 0, !nosanitize !8
-  store i64 %736, ptr %730, align 8, !tbaa !145
-  %737 = getelementptr inbounds nuw i8, ptr %0, i64 784
-  %738 = load i64, ptr %737, align 8, !tbaa !119
-  %739 = icmp eq i64 %738, 0
-  br i1 %739, label %747, label %740
+732:                                              ; preds = %724
+  %733 = extractvalue { i64, i1 } %729, 0, !nosanitize !8
+  store i64 %733, ptr %727, align 8, !tbaa !145
+  %734 = getelementptr inbounds nuw i8, ptr %0, i64 784
+  %735 = load i64, ptr %734, align 8, !tbaa !119
+  %736 = icmp eq i64 %735, 0
+  br i1 %736, label %744, label %737
 
-740:                                              ; preds = %735
-  %741 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %728, i64 1), !nosanitize !8
-  %742 = extractvalue { i64, i1 } %741, 1, !nosanitize !8
-  br i1 %742, label %743, label %744, !prof !9, !nosanitize !8
+737:                                              ; preds = %732
+  %738 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %725, i64 1), !nosanitize !8
+  %739 = extractvalue { i64, i1 } %738, 1, !nosanitize !8
+  br i1 %739, label %740, label %741, !prof !9, !nosanitize !8
 
-743:                                              ; preds = %740
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+740:                                              ; preds = %737
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-744:                                              ; preds = %740
-  %745 = extractvalue { i64, i1 } %741, 0, !nosanitize !8
-  %746 = icmp ugt i64 %745, %738
-  br i1 %746, label %748, label %747
+741:                                              ; preds = %737
+  %742 = extractvalue { i64, i1 } %738, 0, !nosanitize !8
+  %743 = icmp ugt i64 %742, %735
+  br i1 %743, label %745, label %744
 
-747:                                              ; preds = %735, %744
-  br label %748
+744:                                              ; preds = %732, %741
+  br label %745
 
-748:                                              ; preds = %306, %644, %401, %640, %247, %379, %362, %418, %412, %653, %617, %747, %718, %744, %38, %7, %24
-  %749 = phi i64 [ %29, %24 ], [ %39, %38 ], [ -60, %7 ], [ %719, %718 ], [ %729, %747 ], [ -72, %744 ], [ %615, %617 ], [ -70, %653 ], [ -106, %412 ], [ -70, %418 ], [ %346, %362 ], [ -70, %379 ], [ -70, %247 ], [ %641, %640 ], [ %402, %401 ], [ %647, %644 ], [ %307, %306 ]
-  ret i64 %749
+745:                                              ; preds = %303, %641, %398, %637, %244, %376, %359, %415, %409, %650, %614, %744, %715, %741, %38, %7, %24
+  %746 = phi i64 [ %29, %24 ], [ %39, %38 ], [ -60, %7 ], [ %716, %715 ], [ %726, %744 ], [ -72, %741 ], [ %612, %614 ], [ -70, %650 ], [ -106, %409 ], [ -70, %415 ], [ %343, %359 ], [ -70, %376 ], [ -70, %244 ], [ %638, %637 ], [ %399, %398 ], [ %644, %641 ], [ %304, %303 ]
+  ret i64 %746
 }
 
 ; Function Attrs: nounwind uwtable
@@ -4775,15 +4725,15 @@ define dso_local range(i64 0, -9223372036854775807) i64 @ZSTD_getBlockSize(ptr n
   %2 = getelementptr i8, ptr %0, i64 244
   %3 = load i32, ptr %2, align 4, !tbaa !4
   %4 = icmp ult i32 %3, 64
-  br i1 %4, label %6, label %5, !prof !169, !nosanitize !8
+  br i1 %4, label %6, label %5, !prof !215, !nosanitize !8
 
 5:                                                ; preds = %1
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 6:                                                ; preds = %1
   %7 = getelementptr i8, ptr %0, i64 392
-  %8 = load i64, ptr %7, align 8, !tbaa !236
+  %8 = load i64, ptr %7, align 8, !tbaa !235
   %9 = zext nneg i32 %3 to i64
   %10 = shl nuw i64 1, %9
   %11 = tail call range(i64 0, -9223372036854775807) i64 @llvm.umin.i64(i64 %8, i64 %10)
@@ -4795,15 +4745,15 @@ define dso_local i64 @ZSTD_compressBlock_deprecated(ptr noundef %0, ptr noundef 
   %6 = getelementptr i8, ptr %0, i64 244
   %7 = load i32, ptr %6, align 4, !tbaa !4
   %8 = icmp ult i32 %7, 64
-  br i1 %8, label %10, label %9, !prof !169, !nosanitize !8
+  br i1 %8, label %10, label %9, !prof !215, !nosanitize !8
 
 9:                                                ; preds = %5
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 10:                                               ; preds = %5
   %11 = getelementptr i8, ptr %0, i64 392
-  %12 = load i64, ptr %11, align 8, !tbaa !236
+  %12 = load i64, ptr %11, align 8, !tbaa !235
   %13 = zext nneg i32 %7 to i64
   %14 = shl nuw i64 1, %13
   %15 = tail call range(i64 0, -9223372036854775807) i64 @llvm.umin.i64(i64 %12, i64 %14)
@@ -4824,15 +4774,15 @@ define dso_local i64 @ZSTD_compressBlock(ptr noundef %0, ptr noundef %1, i64 nou
   %6 = getelementptr i8, ptr %0, i64 244
   %7 = load i32, ptr %6, align 4, !tbaa !4
   %8 = icmp ult i32 %7, 64
-  br i1 %8, label %10, label %9, !prof !169, !nosanitize !8
+  br i1 %8, label %10, label %9, !prof !215, !nosanitize !8
 
 9:                                                ; preds = %5
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 10:                                               ; preds = %5
   %11 = getelementptr i8, ptr %0, i64 392
-  %12 = load i64, ptr %11, align 8, !tbaa !236
+  %12 = load i64, ptr %11, align 8, !tbaa !235
   %13 = zext nneg i32 %7 to i64
   %14 = shl nuw i64 1, %13
   %15 = tail call range(i64 0, -9223372036854775807) i64 @llvm.umin.i64(i64 %12, i64 %14)
@@ -5062,7 +5012,7 @@ define dso_local i64 @ZSTD_loadCEntropy(ptr noundef initializes((2056, 2060)) %0
 
 140:                                              ; preds = %136
   %141 = and i64 %138, 56
-  %142 = load <8 x i16>, ptr %5, align 16, !tbaa !201
+  %142 = load <8 x i16>, ptr %5, align 16, !tbaa !199
   %143 = freeze <8 x i16> %142
   %144 = icmp eq <8 x i16> %143, zeroinitializer
   %145 = bitcast <8 x i1> %144 to i8
@@ -5075,7 +5025,7 @@ define dso_local i64 @ZSTD_loadCEntropy(ptr noundef initializes((2056, 2060)) %0
 
 149:                                              ; preds = %147
   %150 = getelementptr inbounds nuw i8, ptr %5, i64 16
-  %151 = load <8 x i16>, ptr %150, align 16, !tbaa !201
+  %151 = load <8 x i16>, ptr %150, align 16, !tbaa !199
   %152 = freeze <8 x i16> %151
   %153 = icmp eq <8 x i16> %152, zeroinitializer
   %154 = bitcast <8 x i1> %153 to i8
@@ -5088,7 +5038,7 @@ define dso_local i64 @ZSTD_loadCEntropy(ptr noundef initializes((2056, 2060)) %0
 
 158:                                              ; preds = %156
   %159 = getelementptr inbounds nuw i8, ptr %5, i64 32
-  %160 = load <8 x i16>, ptr %159, align 16, !tbaa !201
+  %160 = load <8 x i16>, ptr %159, align 16, !tbaa !199
   %161 = freeze <8 x i16> %160
   %162 = icmp eq <8 x i16> %161, zeroinitializer
   %163 = bitcast <8 x i1> %162 to i8
@@ -5101,7 +5051,7 @@ define dso_local i64 @ZSTD_loadCEntropy(ptr noundef initializes((2056, 2060)) %0
 
 167:                                              ; preds = %165
   %168 = getelementptr inbounds nuw i8, ptr %5, i64 48
-  %169 = load <8 x i16>, ptr %168, align 16, !tbaa !201
+  %169 = load <8 x i16>, ptr %168, align 16, !tbaa !199
   %170 = freeze <8 x i16> %169
   %171 = icmp eq <8 x i16> %170, zeroinitializer
   %172 = bitcast <8 x i1> %171 to i8
@@ -5119,12 +5069,12 @@ define dso_local i64 @ZSTD_loadCEntropy(ptr noundef initializes((2056, 2060)) %0
 178:                                              ; preds = %181
   %179 = add nuw nsw i64 %182, 1
   %180 = icmp eq i64 %182, %137
-  br i1 %180, label %186, label %181, !llvm.loop !237
+  br i1 %180, label %186, label %181, !llvm.loop !236
 
 181:                                              ; preds = %176, %178
   %182 = phi i64 [ %179, %178 ], [ %177, %176 ]
   %183 = getelementptr inbounds nuw [2 x i8], ptr %5, i64 %182
-  %184 = load i16, ptr %183, align 2, !tbaa !201
+  %184 = load i16, ptr %183, align 2, !tbaa !199
   %185 = icmp eq i16 %184, 0
   br i1 %185, label %186, label %178
 
@@ -5220,14 +5170,14 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_compressBegin_internal(ptr n
 12:                                               ; preds = %6, %10
   %13 = phi i64 [ %11, %10 ], [ 0, %6 ]
   %14 = getelementptr inbounds nuw i8, ptr %0, i64 3760
-  store i64 %13, ptr %14, align 8, !tbaa !240
-  br i1 %8, label %71, label %15
+  store i64 %13, ptr %14, align 8, !tbaa !239
+  br i1 %8, label %68, label %15
 
 15:                                               ; preds = %12
   %16 = getelementptr inbounds nuw i8, ptr %2, i64 8
-  %17 = load i64, ptr %16, align 8, !tbaa !241
+  %17 = load i64, ptr %16, align 8, !tbaa !240
   %18 = icmp eq i64 %17, 0
-  br i1 %18, label %71, label %19
+  br i1 %18, label %68, label %19
 
 19:                                               ; preds = %15
   %20 = icmp ult i64 %4, 131072
@@ -5239,7 +5189,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_compressBegin_internal(ptr n
   br i1 %23, label %24, label %25, !prof !9, !nosanitize !8
 
 24:                                               ; preds = %21
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 25:                                               ; preds = %21
@@ -5248,94 +5198,86 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_compressBegin_internal(ptr n
   br i1 %27, label %29, label %28
 
 28:                                               ; preds = %25
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 29:                                               ; preds = %25, %19
   %30 = getelementptr inbounds nuw i8, ptr %3, i64 68
   %31 = load i32, ptr %30, align 4, !tbaa !98
   %32 = icmp eq i32 %31, 3
-  br i1 %32, label %71, label %33
+  br i1 %32, label %68, label %33
 
 33:                                               ; preds = %29
-  %34 = getelementptr inbounds nuw i8, ptr %2, i64 384
-  %35 = load i32, ptr %34, align 8, !tbaa !242
-  %36 = icmp ult i32 %35, 10
-  br i1 %36, label %38, label %37, !prof !169, !nosanitize !8
+  %34 = getelementptr inbounds nuw i8, ptr %2, i64 244
+  %35 = load i32, ptr %34, align 4, !tbaa !241
+  %36 = icmp eq i32 %35, 0
+  %37 = getelementptr inbounds nuw i8, ptr %2, i64 384
+  %38 = load i32, ptr %37, align 8, !tbaa !4
+  br i1 %36, label %39, label %51
 
-37:                                               ; preds = %33
-  tail call void @llvm.ubsantrap(i8 18) #39, !nosanitize !8
+39:                                               ; preds = %33
+  %40 = zext i32 %38 to i64
+  %41 = getelementptr inbounds nuw [8 x i8], ptr @attachDictSizeCutoffs, i64 %40
+  %42 = load i64, ptr %41, align 8, !tbaa !118
+  %43 = icmp ugt i64 %4, %42
+  br i1 %43, label %44, label %45
+
+44:                                               ; preds = %39
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-38:                                               ; preds = %33
-  %39 = getelementptr inbounds nuw i8, ptr %2, i64 244
-  %40 = load i32, ptr %39, align 4, !tbaa !243
-  %41 = icmp eq i32 %40, 0
-  br i1 %41, label %42, label %54
+45:                                               ; preds = %39
+  %46 = icmp eq i32 %31, 2
+  br i1 %46, label %60, label %47
 
-42:                                               ; preds = %38
-  %43 = zext nneg i32 %35 to i64, !nosanitize !8
-  %44 = getelementptr inbounds nuw [8 x i8], ptr @attachDictSizeCutoffs, i64 %43
-  %45 = load i64, ptr %44, align 8, !tbaa !118
-  %46 = icmp ugt i64 %4, %45
-  br i1 %46, label %47, label %48
+47:                                               ; preds = %45
+  %48 = getelementptr inbounds nuw i8, ptr %3, i64 48
+  %49 = load i32, ptr %48, align 8, !tbaa !97
+  %50 = icmp eq i32 %49, 0
+  br i1 %50, label %59, label %60
 
-47:                                               ; preds = %42
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+51:                                               ; preds = %33
+  %52 = add i32 %38, -3
+  %53 = icmp ult i32 %52, 3
+  br i1 %53, label %54, label %59
+
+54:                                               ; preds = %51
+  %55 = getelementptr inbounds nuw i8, ptr %2, i64 368
+  %56 = load i32, ptr %55, align 8, !tbaa !4
+  %57 = icmp ult i32 %56, 2
+  br i1 %57, label %58, label %59, !prof !9, !nosanitize !8
+
+58:                                               ; preds = %54
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-48:                                               ; preds = %42
-  %49 = icmp eq i32 %31, 2
-  br i1 %49, label %63, label %50
-
-50:                                               ; preds = %48
-  %51 = getelementptr inbounds nuw i8, ptr %3, i64 48
-  %52 = load i32, ptr %51, align 8, !tbaa !97
-  %53 = icmp eq i32 %52, 0
-  br i1 %53, label %62, label %63
-
-54:                                               ; preds = %38
-  %55 = add nsw i32 %35, -3
-  %56 = icmp ult i32 %55, 3
-  br i1 %56, label %57, label %62
-
-57:                                               ; preds = %54
-  %58 = getelementptr inbounds nuw i8, ptr %2, i64 368
-  %59 = load i32, ptr %58, align 8, !tbaa !4
-  %60 = icmp ult i32 %59, 2
-  br i1 %60, label %61, label %62, !prof !9, !nosanitize !8
-
-61:                                               ; preds = %57
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+59:                                               ; preds = %54, %51, %47
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-62:                                               ; preds = %57, %54, %50
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-63:                                               ; preds = %48, %50
+60:                                               ; preds = %45, %47
   call void @llvm.lifetime.start.p0(ptr nonnull %7)
   call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(224) %7, ptr noundef nonnull readonly align 8 dereferenceable(224) %3, i64 224, i1 false)
-  %64 = getelementptr inbounds nuw i8, ptr %2, i64 360
-  %65 = getelementptr inbounds nuw i8, ptr %7, i64 4
-  %66 = load i32, ptr %65, align 4, !tbaa !88
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(28) %65, ptr noundef nonnull readonly align 4 dereferenceable(28) %64, i64 28, i1 false), !tbaa.struct !78
-  store i32 %66, ptr %65, align 4, !tbaa !88
-  %67 = getelementptr inbounds nuw i8, ptr %2, i64 6072
-  %68 = load i32, ptr %67, align 8, !tbaa !244
-  %69 = getelementptr inbounds nuw i8, ptr %7, i64 160
-  store i32 %68, ptr %69, align 8, !tbaa !80
-  %70 = call fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr noundef nonnull %0, ptr noundef nonnull align 8 %7, i64 noundef %4, i32 noundef range(i32 0, 2) %5)
+  %61 = getelementptr inbounds nuw i8, ptr %2, i64 360
+  %62 = getelementptr inbounds nuw i8, ptr %7, i64 4
+  %63 = load i32, ptr %62, align 4, !tbaa !88
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(28) %62, ptr noundef nonnull readonly align 4 dereferenceable(28) %61, i64 28, i1 false), !tbaa.struct !78
+  store i32 %63, ptr %62, align 4, !tbaa !88
+  %64 = getelementptr inbounds nuw i8, ptr %2, i64 6072
+  %65 = load i32, ptr %64, align 8, !tbaa !242
+  %66 = getelementptr inbounds nuw i8, ptr %7, i64 160
+  store i32 %65, ptr %66, align 8, !tbaa !80
+  %67 = call fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr noundef nonnull %0, ptr noundef nonnull align 8 %7, i64 noundef %4, i32 noundef range(i32 0, 2) %5)
   call void @llvm.lifetime.end.p0(ptr nonnull %7)
-  br label %73
+  br label %70
 
-71:                                               ; preds = %12, %15, %29
-  %72 = tail call fastcc i64 @ZSTD_resetCCtx_internal(ptr noundef nonnull %0, ptr noundef %3, i64 noundef %4, i32 noundef %5)
-  br label %73
+68:                                               ; preds = %12, %15, %29
+  %69 = tail call fastcc i64 @ZSTD_resetCCtx_internal(ptr noundef nonnull %0, ptr noundef %3, i64 noundef %4, i32 noundef %5)
+  br label %70
 
-73:                                               ; preds = %71, %63
-  %74 = phi i64 [ %70, %63 ], [ %72, %71 ]
-  ret i64 %74
+70:                                               ; preds = %68, %60
+  %71 = phi i64 [ %67, %60 ], [ %69, %68 ]
+  ret i64 %71
 }
 
 ; Function Attrs: nounwind uwtable
@@ -5426,7 +5368,7 @@ define dso_local range(i64 -119, 0) i64 @ZSTD_compressBegin_advanced(ptr noundef
 59:                                               ; preds = %55, %57
   %60 = phi i64 [ %58, %57 ], [ 0, %55 ]
   %61 = getelementptr inbounds nuw i8, ptr %0, i64 3760
-  store i64 %60, ptr %61, align 8, !tbaa !240
+  store i64 %60, ptr %61, align 8, !tbaa !239
   %62 = call fastcc i64 @ZSTD_resetCCtx_internal(ptr noundef nonnull %0, ptr noundef nonnull readonly %6, i64 noundef %4, i32 noundef 0)
   br label %63
 
@@ -5438,13 +5380,13 @@ define dso_local range(i64 -119, 0) i64 @ZSTD_compressBegin_advanced(ptr noundef
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_compressBegin_usingDict(ptr noundef readnone captures(none) %0, ptr noundef readnone captures(none) %1, i64 noundef %2, i32 noundef %3) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_compressBegin(ptr noundef readnone captures(none) %0, i32 noundef %1) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -5452,7 +5394,7 @@ define dso_local noundef i64 @ZSTD_compressBegin(ptr noundef readnone captures(n
 define dso_local void @ZSTD_CCtx_trace(ptr noundef %0, i64 noundef %1) local_unnamed_addr #4 {
   %3 = alloca %struct.ZSTD_Trace, align 8
   %4 = getelementptr inbounds nuw i8, ptr %0, i64 3760
-  %5 = load i64, ptr %4, align 8, !tbaa !240
+  %5 = load i64, ptr %4, align 8, !tbaa !239
   %6 = icmp ne i64 %5, 0
   %7 = icmp ne ptr @ZSTD_trace_compress_end, null
   %8 = and i1 %7, %6
@@ -5460,19 +5402,19 @@ define dso_local void @ZSTD_CCtx_trace(ptr noundef %0, i64 noundef %1) local_unn
 
 9:                                                ; preds = %2
   %10 = getelementptr inbounds nuw i8, ptr %0, i64 3576
-  %11 = load i64, ptr %10, align 8, !tbaa !245
+  %11 = load i64, ptr %10, align 8, !tbaa !243
   %12 = icmp eq i64 %11, 0
   br i1 %12, label %13, label %22
 
 13:                                               ; preds = %9
   %14 = getelementptr inbounds nuw i8, ptr %0, i64 3616
-  %15 = load i64, ptr %14, align 8, !tbaa !246
+  %15 = load i64, ptr %14, align 8, !tbaa !244
   %16 = icmp eq i64 %15, 0
   br i1 %16, label %17, label %22
 
 17:                                               ; preds = %13
   %18 = getelementptr inbounds nuw i8, ptr %0, i64 316
-  %19 = load i32, ptr %18, align 4, !tbaa !247
+  %19 = load i32, ptr %18, align 4, !tbaa !245
   %20 = icmp sgt i32 %19, 0
   %21 = zext i1 %20 to i32
   br label %22
@@ -5482,21 +5424,21 @@ define dso_local void @ZSTD_CCtx_trace(ptr noundef %0, i64 noundef %1) local_unn
   call void @llvm.lifetime.start.p0(ptr nonnull %3) #36
   %24 = getelementptr inbounds nuw i8, ptr %3, i64 8
   call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(56) %24, i8 0, i64 56, i1 false)
-  store i32 10600, ptr %3, align 8, !tbaa !248
+  store i32 10600, ptr %3, align 8, !tbaa !246
   %25 = getelementptr inbounds nuw i8, ptr %3, i64 4
-  store i32 %23, ptr %25, align 4, !tbaa !253
+  store i32 %23, ptr %25, align 4, !tbaa !251
   %26 = getelementptr inbounds nuw i8, ptr %0, i64 688
-  %27 = load i32, ptr %26, align 8, !tbaa !206
+  %27 = load i32, ptr %26, align 8, !tbaa !204
   %28 = getelementptr inbounds nuw i8, ptr %3, i64 8
-  store i32 %27, ptr %28, align 8, !tbaa !254
+  store i32 %27, ptr %28, align 8, !tbaa !252
   %29 = getelementptr inbounds nuw i8, ptr %0, i64 696
-  %30 = load i64, ptr %29, align 8, !tbaa !255
+  %30 = load i64, ptr %29, align 8, !tbaa !253
   %31 = getelementptr inbounds nuw i8, ptr %3, i64 16
-  store i64 %30, ptr %31, align 8, !tbaa !256
+  store i64 %30, ptr %31, align 8, !tbaa !254
   %32 = getelementptr inbounds nuw i8, ptr %0, i64 792
   %33 = load i64, ptr %32, align 8, !tbaa !141
   %34 = getelementptr inbounds nuw i8, ptr %3, i64 24
-  store i64 %33, ptr %34, align 8, !tbaa !257
+  store i64 %33, ptr %34, align 8, !tbaa !255
   %35 = getelementptr inbounds nuw i8, ptr %0, i64 800
   %36 = load i64, ptr %35, align 8, !tbaa !145
   %37 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %36, i64 %1), !nosanitize !8
@@ -5504,24 +5446,24 @@ define dso_local void @ZSTD_CCtx_trace(ptr noundef %0, i64 noundef %1) local_unn
   br i1 %38, label %39, label %40, !prof !9, !nosanitize !8
 
 39:                                               ; preds = %22
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 40:                                               ; preds = %22
   %41 = extractvalue { i64, i1 } %37, 0, !nosanitize !8
   %42 = getelementptr inbounds nuw i8, ptr %3, i64 32
-  store i64 %41, ptr %42, align 8, !tbaa !258
+  store i64 %41, ptr %42, align 8, !tbaa !256
   %43 = getelementptr inbounds nuw i8, ptr %0, i64 240
   %44 = getelementptr inbounds nuw i8, ptr %3, i64 40
-  store ptr %43, ptr %44, align 8, !tbaa !259
+  store ptr %43, ptr %44, align 8, !tbaa !257
   %45 = getelementptr inbounds nuw i8, ptr %3, i64 48
-  store ptr %0, ptr %45, align 8, !tbaa !260
+  store ptr %0, ptr %45, align 8, !tbaa !258
   call void @ZSTD_trace_compress_end(i64 noundef %5, ptr noundef nonnull %3) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %3) #36
   br label %46
 
 46:                                               ; preds = %2, %40
-  store i64 0, ptr %4, align 8, !tbaa !240
+  store i64 0, ptr %4, align 8, !tbaa !239
   ret void
 }
 
@@ -5540,13 +5482,13 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   br i1 %11, label %12, label %13, !prof !9, !nosanitize !8
 
 12:                                               ; preds = %9
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 13:                                               ; preds = %9
   %14 = extractvalue { i64, i1 } %10, 0, !nosanitize !8
   %15 = getelementptr inbounds nuw i8, ptr %1, i64 %7
-  %16 = load i32, ptr %0, align 8, !tbaa !205
+  %16 = load i32, ptr %0, align 8, !tbaa !203
   switch i32 %16, label %58 [
     i32 0, label %144
     i32 1, label %17
@@ -5561,10 +5503,10 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   %22 = getelementptr inbounds nuw i8, ptr %0, i64 244
   %23 = load i32, ptr %22, align 4, !tbaa !88
   %24 = icmp ult i32 %23, 32
-  br i1 %24, label %26, label %25, !prof !169, !nosanitize !8
+  br i1 %24, label %26, label %25, !prof !215, !nosanitize !8
 
 25:                                               ; preds = %17
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 26:                                               ; preds = %17
@@ -5577,15 +5519,15 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   br i1 %32, label %33, label %34, !prof !9, !nosanitize !8
 
 33:                                               ; preds = %26
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 34:                                               ; preds = %26
   %35 = icmp ult i32 %31, 536870912
-  br i1 %35, label %37, label %36, !prof !169, !nosanitize !8
+  br i1 %35, label %37, label %36, !prof !215, !nosanitize !8
 
 36:                                               ; preds = %34
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 37:                                               ; preds = %34
@@ -5613,9 +5555,9 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   %51 = select i1 %29, i8 %39, i8 0
   %52 = getelementptr inbounds nuw i8, ptr %50, i64 1
   store i8 %51, ptr %52, align 1, !tbaa !164
-  store i32 2, ptr %0, align 8, !tbaa !205
+  store i32 2, ptr %0, align 8, !tbaa !203
   %53 = getelementptr inbounds nuw i8, ptr %50, i64 2
-  store i16 1, ptr %53, align 1, !tbaa !201
+  store i16 1, ptr %53, align 1, !tbaa !199
   %54 = getelementptr inbounds nuw i8, ptr %50, i64 4
   store i8 0, ptr %54, align 1, !tbaa !164
   %55 = add i64 %14, -5
@@ -5628,7 +5570,7 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   br i1 %59, label %60, label %144
 
 60:                                               ; preds = %58
-  store i16 1, ptr %15, align 1, !tbaa !201
+  store i16 1, ptr %15, align 1, !tbaa !199
   %61 = getelementptr inbounds nuw i8, ptr %15, i64 2
   store i8 0, ptr %61, align 1, !tbaa !164
   %62 = add i64 %14, -3
@@ -5639,7 +5581,7 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   %65 = phi ptr [ %57, %48 ], [ %15, %13 ], [ %63, %60 ]
   %66 = phi i64 [ %56, %48 ], [ %14, %13 ], [ %62, %60 ]
   %67 = getelementptr inbounds nuw i8, ptr %0, i64 276
-  %68 = load i32, ptr %67, align 4, !tbaa !217
+  %68 = load i32, ptr %67, align 4, !tbaa !216
   %69 = icmp eq i32 %68, 0
   br i1 %69, label %77, label %70
 
@@ -5657,7 +5599,7 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
 
 77:                                               ; preds = %64, %72
   %78 = phi ptr [ %76, %72 ], [ %65, %64 ]
-  store i32 0, ptr %0, align 8, !tbaa !205
+  store i32 0, ptr %0, align 8, !tbaa !203
   %79 = ptrtoint ptr %78 to i64
   %80 = ptrtoint ptr %15 to i64
   %81 = sub i64 %79, %80
@@ -5678,7 +5620,7 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   br i1 %91, label %92, label %93, !prof !9, !nosanitize !8
 
 92:                                               ; preds = %87
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 93:                                               ; preds = %87
@@ -5688,7 +5630,7 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
 
 96:                                               ; preds = %93, %83
   %97 = getelementptr inbounds nuw i8, ptr %0, i64 3760
-  %98 = load i64, ptr %97, align 8, !tbaa !240
+  %98 = load i64, ptr %97, align 8, !tbaa !239
   %99 = icmp ne i64 %98, 0
   %100 = icmp ne ptr @ZSTD_trace_compress_end, null
   %101 = and i1 %100, %99
@@ -5696,19 +5638,19 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
 
 102:                                              ; preds = %96
   %103 = getelementptr inbounds nuw i8, ptr %0, i64 3576
-  %104 = load i64, ptr %103, align 8, !tbaa !245
+  %104 = load i64, ptr %103, align 8, !tbaa !243
   %105 = icmp eq i64 %104, 0
   br i1 %105, label %106, label %115
 
 106:                                              ; preds = %102
   %107 = getelementptr inbounds nuw i8, ptr %0, i64 3616
-  %108 = load i64, ptr %107, align 8, !tbaa !246
+  %108 = load i64, ptr %107, align 8, !tbaa !244
   %109 = icmp eq i64 %108, 0
   br i1 %109, label %110, label %115
 
 110:                                              ; preds = %106
   %111 = getelementptr inbounds nuw i8, ptr %0, i64 316
-  %112 = load i32, ptr %111, align 4, !tbaa !247
+  %112 = load i32, ptr %111, align 4, !tbaa !245
   %113 = icmp sgt i32 %112, 0
   %114 = zext i1 %113 to i32
   br label %115
@@ -5718,20 +5660,20 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   call void @llvm.lifetime.start.p0(ptr nonnull %6) #36
   %117 = getelementptr inbounds nuw i8, ptr %6, i64 8
   call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(56) %117, i8 0, i64 56, i1 false)
-  store i32 10600, ptr %6, align 8, !tbaa !248
+  store i32 10600, ptr %6, align 8, !tbaa !246
   %118 = getelementptr inbounds nuw i8, ptr %6, i64 4
-  store i32 %116, ptr %118, align 4, !tbaa !253
+  store i32 %116, ptr %118, align 4, !tbaa !251
   %119 = getelementptr inbounds nuw i8, ptr %0, i64 688
-  %120 = load i32, ptr %119, align 8, !tbaa !206
-  store i32 %120, ptr %117, align 8, !tbaa !254
+  %120 = load i32, ptr %119, align 8, !tbaa !204
+  store i32 %120, ptr %117, align 8, !tbaa !252
   %121 = getelementptr inbounds nuw i8, ptr %0, i64 696
-  %122 = load i64, ptr %121, align 8, !tbaa !255
+  %122 = load i64, ptr %121, align 8, !tbaa !253
   %123 = getelementptr inbounds nuw i8, ptr %6, i64 16
-  store i64 %122, ptr %123, align 8, !tbaa !256
+  store i64 %122, ptr %123, align 8, !tbaa !254
   %124 = getelementptr inbounds nuw i8, ptr %0, i64 792
   %125 = load i64, ptr %124, align 8, !tbaa !141
   %126 = getelementptr inbounds nuw i8, ptr %6, i64 24
-  store i64 %125, ptr %126, align 8, !tbaa !257
+  store i64 %125, ptr %126, align 8, !tbaa !255
   %127 = getelementptr inbounds nuw i8, ptr %0, i64 800
   %128 = load i64, ptr %127, align 8, !tbaa !145
   %129 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %128, i64 %81), !nosanitize !8
@@ -5739,30 +5681,30 @@ define dso_local i64 @ZSTD_compressEnd_public(ptr noundef %0, ptr noundef %1, i6
   br i1 %130, label %131, label %132, !prof !9, !nosanitize !8
 
 131:                                              ; preds = %115
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 132:                                              ; preds = %115
   %133 = extractvalue { i64, i1 } %129, 0, !nosanitize !8
   %134 = getelementptr inbounds nuw i8, ptr %6, i64 32
-  store i64 %133, ptr %134, align 8, !tbaa !258
+  store i64 %133, ptr %134, align 8, !tbaa !256
   %135 = getelementptr inbounds nuw i8, ptr %0, i64 240
   %136 = getelementptr inbounds nuw i8, ptr %6, i64 40
-  store ptr %135, ptr %136, align 8, !tbaa !259
+  store ptr %135, ptr %136, align 8, !tbaa !257
   %137 = getelementptr inbounds nuw i8, ptr %6, i64 48
-  store ptr %0, ptr %137, align 8, !tbaa !260
+  store ptr %0, ptr %137, align 8, !tbaa !258
   call void @ZSTD_trace_compress_end(i64 noundef %98, ptr noundef nonnull %6) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %6) #36
   br label %138
 
 138:                                              ; preds = %96, %132
-  store i64 0, ptr %97, align 8, !tbaa !240
+  store i64 0, ptr %97, align 8, !tbaa !239
   %139 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %7, i64 %81), !nosanitize !8
   %140 = extractvalue { i64, i1 } %139, 1, !nosanitize !8
   br i1 %140, label %141, label %142, !prof !9, !nosanitize !8
 
 141:                                              ; preds = %138
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 142:                                              ; preds = %138
@@ -5883,7 +5825,7 @@ define dso_local range(i64 -119, 0) i64 @ZSTD_compress_advanced(ptr noundef %0, 
 70:                                               ; preds = %62, %68
   %71 = phi i64 [ %69, %68 ], [ 0, %62 ]
   %72 = getelementptr inbounds nuw i8, ptr %0, i64 3760
-  store i64 %71, ptr %72, align 8, !tbaa !240
+  store i64 %71, ptr %72, align 8, !tbaa !239
   %73 = tail call fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr noundef nonnull %0, ptr noundef nonnull readonly %42, i64 noundef %4, i32 noundef 0)
   br label %74
 
@@ -5904,20 +5846,20 @@ define dso_local range(i64 -119, 0) i64 @ZSTD_compress_advanced_internal(ptr nou
 12:                                               ; preds = %10, %8
   %13 = phi i64 [ %11, %10 ], [ 0, %8 ]
   %14 = getelementptr inbounds nuw i8, ptr %0, i64 3760
-  store i64 %13, ptr %14, align 8, !tbaa !240
+  store i64 %13, ptr %14, align 8, !tbaa !239
   %15 = tail call fastcc i64 @ZSTD_resetCCtx_internal(ptr noundef nonnull %0, ptr noundef readonly %7, i64 noundef %4, i32 noundef 0)
   ret i64 %15
 }
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_compress_usingDict(ptr noundef readnone captures(none) %0, ptr noundef readnone captures(none) %1, i64 noundef %2, ptr noundef readnone captures(none) %3, i64 noundef %4, ptr noundef readnone captures(none) %5, i64 noundef %6, i32 noundef %7) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_compressCCtx(ptr noundef readnone captures(none) %0, ptr noundef readnone captures(none) %1, i64 noundef %2, ptr noundef readnone captures(none) %3, i64 noundef %4, i32 noundef %5) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -5952,7 +5894,7 @@ define dso_local noundef i64 @ZSTD_compress(ptr noundef readnone captures(none) 
   %22 = getelementptr inbounds nuw i8, ptr %6, i64 8
   store i32 %21, ptr %22, align 8, !tbaa !13
   call fastcc void @ZSTD_clearAllDicts(ptr noundef nonnull %6)
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -5968,20 +5910,20 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
   %11 = getelementptr inbounds nuw i8, ptr %1, i64 4
   %12 = load i32, ptr %11, align 4, !tbaa !73
   %13 = icmp ult i32 %12, 64
-  br i1 %13, label %15, label %14, !prof !169, !nosanitize !8
+  br i1 %13, label %15, label %14, !prof !215, !nosanitize !8
 
 14:                                               ; preds = %3
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 15:                                               ; preds = %3
   %16 = getelementptr inbounds nuw i8, ptr %1, i64 8
   %17 = load i32, ptr %16, align 8, !tbaa !74
   %18 = icmp ult i32 %17, 64
-  br i1 %18, label %20, label %19, !prof !169, !nosanitize !8
+  br i1 %18, label %20, label %19, !prof !215, !nosanitize !8
 
 19:                                               ; preds = %15
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 20:                                               ; preds = %15
@@ -5993,15 +5935,15 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
   br i1 %25, label %26, label %27, !prof !9, !nosanitize !8
 
 26:                                               ; preds = %20
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 27:                                               ; preds = %20
   %28 = icmp samesign ult i32 %17, 62
-  br i1 %28, label %30, label %29, !prof !169, !nosanitize !8
+  br i1 %28, label %30, label %29, !prof !215, !nosanitize !8
 
 29:                                               ; preds = %27
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 30:                                               ; preds = %27
@@ -6011,7 +5953,7 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
   br i1 %33, label %34, label %35, !prof !9, !nosanitize !8
 
 34:                                               ; preds = %30
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 35:                                               ; preds = %30
@@ -6021,7 +5963,7 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
   br i1 %38, label %39, label %40, !prof !9, !nosanitize !8
 
 39:                                               ; preds = %35
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 40:                                               ; preds = %35
@@ -6034,7 +5976,7 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
   br i1 %46, label %47, label %48, !prof !9, !nosanitize !8
 
 47:                                               ; preds = %40
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 48:                                               ; preds = %40
@@ -6045,7 +5987,7 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
   br i1 %52, label %53, label %54, !prof !9, !nosanitize !8
 
 53:                                               ; preds = %48
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 54:                                               ; preds = %48
@@ -6058,7 +6000,7 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
   br i1 %58, label %59, label %60, !prof !9, !nosanitize !8
 
 59:                                               ; preds = %56
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 60:                                               ; preds = %56
@@ -6073,7 +6015,7 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
   br i1 %66, label %67, label %68, !prof !9, !nosanitize !8
 
 67:                                               ; preds = %63
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 68:                                               ; preds = %63
@@ -6083,7 +6025,7 @@ define dso_local i64 @ZSTD_estimateCDictSize_advanced(i64 noundef %0, ptr nounde
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_estimateCDictSize(i64 noundef %0, i32 noundef %1) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -6107,7 +6049,7 @@ define dso_local i64 @ZSTD_sizeof_CDict(ptr noundef readonly captures(address) %
   br i1 %14, label %15, label %16, !prof !9, !nosanitize !8
 
 15:                                               ; preds = %3
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 16:                                               ; preds = %3
@@ -6130,7 +6072,7 @@ define dso_local noalias noundef ptr @ZSTD_createCDict_advanced(ptr noundef read
   br i1 %12, label %14, label %13
 
 13:                                               ; preds = %6
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 14:                                               ; preds = %6
@@ -6154,11 +6096,11 @@ define dso_local noalias noundef ptr @ZSTD_createCDict_advanced2(ptr noundef rea
   br i1 %16, label %18, label %17
 
 17:                                               ; preds = %13
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 18:                                               ; preds = %13
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 19:                                               ; preds = %6
@@ -6197,7 +6139,7 @@ define dso_local noundef i64 @ZSTD_freeCDict(ptr noundef %0) local_unnamed_addr 
   br i1 %19, label %22, label %20
 
 20:                                               ; preds = %18
-  tail call void %5(ptr noundef %7, ptr noundef nonnull %9) #36, !inline_history !261
+  tail call void %5(ptr noundef %7, ptr noundef nonnull %9) #36, !inline_history !259
   br label %21
 
 21:                                               ; preds = %15, %20
@@ -6225,13 +6167,13 @@ define dso_local noundef i64 @ZSTD_freeCDict(ptr noundef %0) local_unnamed_addr 
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noalias noundef nonnull ptr @ZSTD_createCDict(ptr noundef readnone captures(none) %0, i64 noundef %1, i32 noundef %2) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noalias noundef nonnull ptr @ZSTD_createCDict_byReference(ptr noundef readnone captures(none) %0, i64 noundef %1, i32 noundef %2) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -6250,20 +6192,20 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %18 = getelementptr inbounds nuw i8, ptr %6, i64 4
   %19 = load i32, ptr %18, align 4, !tbaa !73
   %20 = icmp ult i32 %19, 64
-  br i1 %20, label %22, label %21, !prof !169, !nosanitize !8
+  br i1 %20, label %22, label %21, !prof !215, !nosanitize !8
 
 21:                                               ; preds = %7
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 22:                                               ; preds = %7
   %23 = getelementptr inbounds nuw i8, ptr %6, i64 8
   %24 = load i32, ptr %23, align 8, !tbaa !74
   %25 = icmp ult i32 %24, 64
-  br i1 %25, label %27, label %26, !prof !169, !nosanitize !8
+  br i1 %25, label %27, label %26, !prof !215, !nosanitize !8
 
 26:                                               ; preds = %22
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 27:                                               ; preds = %22
@@ -6275,15 +6217,15 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %32, label %33, label %34, !prof !9, !nosanitize !8
 
 33:                                               ; preds = %27
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 34:                                               ; preds = %27
   %35 = icmp samesign ult i32 %24, 62
-  br i1 %35, label %37, label %36, !prof !169, !nosanitize !8
+  br i1 %35, label %37, label %36, !prof !215, !nosanitize !8
 
 36:                                               ; preds = %34
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 37:                                               ; preds = %34
@@ -6293,7 +6235,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %40, label %41, label %42, !prof !9, !nosanitize !8
 
 41:                                               ; preds = %37
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 42:                                               ; preds = %37
@@ -6303,7 +6245,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %45, label %46, label %47, !prof !9, !nosanitize !8
 
 46:                                               ; preds = %42
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 47:                                               ; preds = %42
@@ -6316,7 +6258,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %53, label %54, label %55, !prof !9, !nosanitize !8
 
 54:                                               ; preds = %47
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 55:                                               ; preds = %47
@@ -6330,7 +6272,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %60, label %61, label %62, !prof !9, !nosanitize !8
 
 61:                                               ; preds = %58
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 62:                                               ; preds = %58
@@ -6345,7 +6287,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %68, label %69, label %70, !prof !9, !nosanitize !8
 
 69:                                               ; preds = %66
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 70:                                               ; preds = %66
@@ -6355,7 +6297,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %73, label %74, label %75, !prof !9, !nosanitize !8
 
 74:                                               ; preds = %70
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 75:                                               ; preds = %70
@@ -6366,7 +6308,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %79, label %80, label %81, !prof !9, !nosanitize !8
 
 80:                                               ; preds = %75
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 81:                                               ; preds = %75
@@ -6424,11 +6366,11 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %112 = zext i32 %111 to i64
   %113 = shl nuw i64 %112, 32
   %114 = getelementptr inbounds nuw i8, ptr %6, i64 4
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %9, ptr noundef nonnull align 4 dereferenceable(24) %114, i64 24, i1 false), !tbaa.struct !262
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %9, ptr noundef nonnull align 4 dereferenceable(24) %114, i64 24, i1 false), !tbaa.struct !260
   %115 = getelementptr inbounds nuw i8, ptr %0, i64 6072
-  store i32 %17, ptr %115, align 8, !tbaa !244
+  store i32 %17, ptr %115, align 8, !tbaa !242
   %116 = getelementptr inbounds nuw i8, ptr %0, i64 6068
-  store i32 0, ptr %116, align 4, !tbaa !263
+  store i32 0, ptr %116, align 4, !tbaa !261
   store i64 %113, ptr %8, align 8
   %117 = getelementptr inbounds nuw i8, ptr %8, i64 8
   call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %117, ptr noundef nonnull align 8 dereferenceable(24) %9, i64 24, i1 false)
@@ -6447,7 +6389,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %125 = getelementptr inbounds nuw i8, ptr %8, i64 120
   %126 = load i32, ptr %125, align 8, !tbaa !100
   %127 = getelementptr inbounds nuw i8, ptr %0, i64 244
-  store i32 %126, ptr %127, align 4, !tbaa !243
+  store i32 %126, ptr %127, align 4, !tbaa !241
   %128 = icmp ne i32 %4, 1
   %129 = icmp ne ptr %2, null
   %130 = and i1 %129, %128
@@ -6456,7 +6398,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %132, label %134, label %133
 
 133:                                              ; preds = %108
-  store ptr %2, ptr %0, align 8, !tbaa !264
+  store ptr %2, ptr %0, align 8, !tbaa !262
   br label %146
 
 134:                                              ; preds = %108
@@ -6465,7 +6407,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %136, label %137, label %138, !prof !9, !nosanitize !8
 
 137:                                              ; preds = %134
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 138:                                              ; preds = %134
@@ -6484,16 +6426,16 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   store ptr %145, ptr %98, align 8, !tbaa !54
   store ptr %145, ptr %99, align 8, !tbaa !55
   store ptr %145, ptr %100, align 8, !tbaa !56
-  store ptr %91, ptr %0, align 8, !tbaa !264
+  store ptr %91, ptr %0, align 8, !tbaa !262
   tail call void @llvm.memcpy.p0.p0.i64(ptr nonnull align 1 %91, ptr nonnull align 1 %2, i64 %3, i1 false)
   br label %146
 
 146:                                              ; preds = %133, %144
   %147 = phi ptr [ %145, %144 ], [ %91, %133 ]
   %148 = getelementptr inbounds nuw i8, ptr %0, i64 8
-  store i64 %3, ptr %148, align 8, !tbaa !241
+  store i64 %3, ptr %148, align 8, !tbaa !240
   %149 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  store i32 %5, ptr %149, align 8, !tbaa !265
+  store i32 %5, ptr %149, align 8, !tbaa !263
   %150 = getelementptr inbounds nuw i8, ptr %147, i64 8704
   %151 = icmp ugt ptr %150, %90
   br i1 %151, label %152, label %153
@@ -6511,7 +6453,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %156 = phi ptr [ %147, %152 ], [ %150, %153 ]
   %157 = phi ptr [ null, %152 ], [ %147, %153 ]
   %158 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  store ptr %157, ptr %158, align 8, !tbaa !266
+  store ptr %157, ptr %158, align 8, !tbaa !264
   %159 = getelementptr inbounds nuw i8, ptr %0, i64 408
   %160 = getelementptr inbounds nuw i8, ptr %0, i64 6024
   tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %160, ptr noundef nonnull align 4 dereferenceable(12) @repStartValue, i64 12, i1 false), !tbaa !4
@@ -6542,10 +6484,10 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %175 = getelementptr inbounds nuw i8, ptr %8, i64 8
   %176 = load i32, ptr %175, align 8, !tbaa !73
   %177 = icmp ult i32 %176, 64
-  br i1 %177, label %179, label %178, !prof !169, !nosanitize !8
+  br i1 %177, label %179, label %178, !prof !215, !nosanitize !8
 
 178:                                              ; preds = %174
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 179:                                              ; preds = %174
@@ -6559,10 +6501,10 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %185 = getelementptr inbounds nuw i8, ptr %8, i64 12
   %186 = load i32, ptr %185, align 4, !tbaa !74
   %187 = icmp ult i32 %186, 64
-  br i1 %187, label %189, label %188, !prof !169, !nosanitize !8
+  br i1 %187, label %189, label %188, !prof !215, !nosanitize !8
 
 188:                                              ; preds = %183
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 189:                                              ; preds = %183
@@ -6571,38 +6513,38 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %192 = getelementptr inbounds nuw i8, ptr %0, i64 136
   store i64 0, ptr %192, align 8
   %193 = getelementptr inbounds nuw i8, ptr %0, i64 112
-  store ptr @.str, ptr %193, align 8, !tbaa !212
+  store ptr @.str, ptr %193, align 8, !tbaa !210
   %194 = getelementptr inbounds nuw i8, ptr %0, i64 120
-  store ptr @.str, ptr %194, align 8, !tbaa !209
+  store ptr @.str, ptr %194, align 8, !tbaa !207
   %195 = getelementptr inbounds nuw i8, ptr %0, i64 128
   %196 = getelementptr inbounds nuw i8, ptr %0, i64 132
-  store ptr getelementptr inbounds nuw (i8, ptr @.str, i64 2), ptr %122, align 8, !tbaa !208
+  store ptr getelementptr inbounds nuw (i8, ptr @.str, i64 2), ptr %122, align 8, !tbaa !206
   store ptr %156, ptr %100, align 8, !tbaa !56
   %197 = getelementptr inbounds nuw i8, ptr %0, i64 152
-  store i32 0, ptr %197, align 8, !tbaa !267
+  store i32 0, ptr %197, align 8, !tbaa !265
   %198 = getelementptr inbounds nuw i8, ptr %0, i64 404
-  store i32 0, ptr %198, align 4, !tbaa !268
-  store i32 2, ptr %196, align 4, !tbaa !210
-  store i32 2, ptr %195, align 8, !tbaa !211
+  store i32 0, ptr %198, align 4, !tbaa !266
+  store i32 2, ptr %196, align 4, !tbaa !208
+  store i32 2, ptr %195, align 8, !tbaa !209
   %199 = getelementptr inbounds nuw i8, ptr %0, i64 148
-  store i32 2, ptr %199, align 4, !tbaa !213
+  store i32 2, ptr %199, align 4, !tbaa !211
   %200 = getelementptr inbounds nuw i8, ptr %0, i64 144
-  store i32 0, ptr %200, align 8, !tbaa !269
+  store i32 0, ptr %200, align 8, !tbaa !267
   %201 = getelementptr inbounds nuw i8, ptr %0, i64 300
-  store i32 0, ptr %201, align 4, !tbaa !270
+  store i32 0, ptr %201, align 4, !tbaa !268
   %202 = getelementptr inbounds nuw i8, ptr %0, i64 352
-  store ptr null, ptr %202, align 8, !tbaa !271
+  store ptr null, ptr %202, align 8, !tbaa !269
   store ptr %156, ptr %99, align 8, !tbaa !55
   %203 = icmp samesign ult i32 %186, 62
-  br i1 %203, label %205, label %204, !prof !169, !nosanitize !8
+  br i1 %203, label %205, label %204, !prof !215, !nosanitize !8
 
 204:                                              ; preds = %189
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 205:                                              ; preds = %189
   %206 = shl nuw i64 4, %190
-  store ptr %95, ptr %102, align 8, !tbaa !272
+  store ptr %95, ptr %102, align 8, !tbaa !270
   %207 = ptrtoint ptr %156 to i64
   %208 = sub i64 0, %207
   %209 = and i64 %208, 63
@@ -6622,7 +6564,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
 
 215:                                              ; preds = %212, %214
   %216 = phi ptr [ %210, %214 ], [ %156, %212 ]
-  store i32 1, ptr %105, align 8, !tbaa !273
+  store i32 1, ptr %105, align 8, !tbaa !271
   %217 = getelementptr inbounds nuw i8, ptr %210, i64 %206
   %218 = icmp ugt ptr %217, %95
   br i1 %218, label %219, label %220
@@ -6640,18 +6582,18 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %223 = phi ptr [ %217, %220 ], [ %210, %219 ]
   %224 = phi ptr [ %210, %220 ], [ null, %219 ]
   %225 = getelementptr inbounds nuw i8, ptr %0, i64 216
-  store ptr %224, ptr %225, align 8, !tbaa !274
+  store ptr %224, ptr %225, align 8, !tbaa !272
   %226 = extractvalue { i64, i1 } %184, 1, !nosanitize !8
   br i1 %226, label %230, label %231, !prof !9, !nosanitize !8
 
 227:                                              ; preds = %205
   %228 = getelementptr inbounds nuw i8, ptr %0, i64 216
-  store ptr null, ptr %228, align 8, !tbaa !274
+  store ptr null, ptr %228, align 8, !tbaa !272
   %229 = extractvalue { i64, i1 } %184, 1, !nosanitize !8
   br i1 %229, label %230, label %237, !prof !9, !nosanitize !8
 
 230:                                              ; preds = %227, %221
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 231:                                              ; preds = %221
@@ -6670,7 +6612,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
 
 237:                                              ; preds = %227
   %238 = getelementptr inbounds nuw i8, ptr %0, i64 232
-  store ptr null, ptr %238, align 8, !tbaa !275
+  store ptr null, ptr %238, align 8, !tbaa !273
   br label %248
 
 239:                                              ; preds = %236, %235
@@ -6678,14 +6620,14 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %241 = phi ptr [ %223, %235 ], [ %233, %236 ]
   %242 = phi ptr [ null, %235 ], [ %223, %236 ]
   %243 = getelementptr inbounds nuw i8, ptr %0, i64 232
-  store ptr %242, ptr %243, align 8, !tbaa !275
+  store ptr %242, ptr %243, align 8, !tbaa !273
   %244 = icmp ugt ptr %241, %95
   br i1 %244, label %245, label %247
 
 245:                                              ; preds = %239
   store i8 1, ptr %103, align 8, !tbaa !53
   %246 = getelementptr inbounds nuw i8, ptr %0, i64 224
-  store ptr null, ptr %246, align 8, !tbaa !276
+  store ptr null, ptr %246, align 8, !tbaa !274
   br label %329
 
 247:                                              ; preds = %239
@@ -6698,7 +6640,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %251 = phi ptr [ %216, %247 ], [ %156, %237 ]
   %252 = phi ptr [ %241, %247 ], [ null, %237 ]
   %253 = getelementptr inbounds nuw i8, ptr %0, i64 224
-  store ptr %252, ptr %253, align 8, !tbaa !276
+  store ptr %252, ptr %253, align 8, !tbaa !274
   %254 = icmp eq i8 %249, 0
   br i1 %254, label %255, label %329
 
@@ -6731,7 +6673,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
 271:                                              ; preds = %265
   %272 = add nuw i64 %191, 63
   %273 = and i64 %272, -64
-  %274 = load i32, ptr %105, align 8, !tbaa !273
+  %274 = load i32, ptr %105, align 8, !tbaa !271
   %275 = icmp ult i32 %274, 2
   br i1 %275, label %276, label %295
 
@@ -6747,7 +6689,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   %282 = and i64 %281, 63
   %283 = sub nsw i64 0, %282
   %284 = getelementptr inbounds i8, ptr %280, i64 %283
-  store ptr %284, ptr %102, align 8, !tbaa !272
+  store ptr %284, ptr %102, align 8, !tbaa !270
   %285 = ptrtoint ptr %279 to i64
   %286 = sub i64 0, %285
   %287 = and i64 %286, 63
@@ -6766,13 +6708,13 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
 292:                                              ; preds = %291, %278, %276
   %293 = phi ptr [ %288, %291 ], [ %279, %278 ], [ %266, %276 ]
   %294 = phi ptr [ %288, %291 ], [ %288, %278 ], [ %267, %276 ]
-  store i32 2, ptr %105, align 8, !tbaa !273
+  store i32 2, ptr %105, align 8, !tbaa !271
   br label %295
 
 295:                                              ; preds = %292, %271
   %296 = phi ptr [ %266, %271 ], [ %293, %292 ]
   %297 = phi ptr [ %267, %271 ], [ %294, %292 ]
-  %298 = load ptr, ptr %101, align 8, !tbaa !277
+  %298 = load ptr, ptr %101, align 8, !tbaa !275
   %299 = sub i64 0, %273
   %300 = getelementptr inbounds i8, ptr %298, i64 %299
   %301 = icmp uge ptr %300, %297
@@ -6785,12 +6727,12 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br label %304
 
 304:                                              ; preds = %303, %295
-  store ptr %300, ptr %101, align 8, !tbaa !277
+  store ptr %300, ptr %101, align 8, !tbaa !275
   %305 = getelementptr inbounds nuw i8, ptr %0, i64 160
-  store ptr %300, ptr %305, align 8, !tbaa !278
+  store ptr %300, ptr %305, align 8, !tbaa !276
   tail call void @llvm.memset.p0.i64(ptr noundef nonnull align 1 dereferenceable(1) %300, i8 0, i64 %191, i1 false)
   %306 = getelementptr inbounds nuw i8, ptr %0, i64 200
-  store i64 0, ptr %306, align 8, !tbaa !279
+  store i64 0, ptr %306, align 8, !tbaa !277
   %307 = getelementptr inbounds nuw i8, ptr %8, i64 16
   %308 = load i32, ptr %307, align 8, !tbaa !75
   %309 = tail call i32 @llvm.umax.i32(i32 %308, i32 4)
@@ -6800,13 +6742,13 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
   br i1 %312, label %313, label %314, !prof !9, !nosanitize !8
 
 313:                                              ; preds = %304
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 314:                                              ; preds = %304
   %315 = extractvalue { i32, i1 } %311, 0, !nosanitize !8
   %316 = getelementptr inbounds nuw i8, ptr %0, i64 156
-  store i32 %315, ptr %316, align 4, !tbaa !280
+  store i32 %315, ptr %316, align 4, !tbaa !278
   br label %317
 
 317:                                              ; preds = %314, %265
@@ -6818,9 +6760,9 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
 320:                                              ; preds = %317
   store i32 3, ptr %120, align 4, !tbaa !46
   store i32 1, ptr %118, align 8, !tbaa !47
-  %321 = load ptr, ptr %0, align 8, !tbaa !264
-  %322 = load i64, ptr %148, align 8, !tbaa !241
-  %323 = load ptr, ptr %158, align 8, !tbaa !266
+  %321 = load ptr, ptr %0, align 8, !tbaa !262
+  %322 = load i64, ptr %148, align 8, !tbaa !240
+  %323 = load ptr, ptr %158, align 8, !tbaa !264
   %324 = call fastcc i64 @ZSTD_compress_insertDictionary(ptr noundef nonnull %159, ptr noundef nonnull %122, ptr noundef null, ptr noundef nonnull %96, ptr noundef nonnull align 8 %8, ptr noundef %321, i64 noundef %322, i32 noundef %5, i32 noundef 1, i32 noundef 1, ptr noundef %323)
   %325 = icmp ult i64 %324, -119
   br i1 %325, label %326, label %329
@@ -6828,7 +6770,7 @@ define dso_local noundef ptr @ZSTD_initStaticCDict(ptr noundef %0, i64 noundef %
 326:                                              ; preds = %320
   %327 = trunc nuw i64 %324 to i32
   %328 = getelementptr inbounds nuw i8, ptr %0, i64 6064
-  store i32 %327, ptr %328, align 8, !tbaa !281
+  store i32 %327, ptr %328, align 8, !tbaa !279
   br label %329
 
 329:                                              ; preds = %245, %143, %248, %317, %320, %326
@@ -6856,7 +6798,7 @@ define dso_local i32 @ZSTD_getDictID_fromCDict(ptr noundef readonly captures(add
 
 3:                                                ; preds = %1
   %4 = getelementptr inbounds nuw i8, ptr %0, i64 6064
-  %5 = load i32, ptr %4, align 8, !tbaa !281
+  %5 = load i32, ptr %4, align 8, !tbaa !279
   br label %6
 
 6:                                                ; preds = %1, %3
@@ -6875,13 +6817,13 @@ define dso_local noundef i64 @ZSTD_compressBegin_usingCDict_advanced(ptr noundef
 
 9:                                                ; preds = %7
   %10 = getelementptr inbounds nuw i8, ptr %1, i64 8
-  %11 = load i64, ptr %10, align 8, !tbaa !241
+  %11 = load i64, ptr %10, align 8, !tbaa !240
   %12 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %11, i64 6), !nosanitize !8
   %13 = extractvalue { i64, i1 } %12, 1, !nosanitize !8
   br i1 %13, label %14, label %15, !prof !9, !nosanitize !8
 
 14:                                               ; preds = %9
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 15:                                               ; preds = %9
@@ -6890,11 +6832,11 @@ define dso_local noundef i64 @ZSTD_compressBegin_usingCDict_advanced(ptr noundef
   br i1 %17, label %19, label %18
 
 18:                                               ; preds = %15
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 19:                                               ; preds = %15, %7
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 20:                                               ; preds = %5
@@ -6903,13 +6845,13 @@ define dso_local noundef i64 @ZSTD_compressBegin_usingCDict_advanced(ptr noundef
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_compressBegin_usingCDict_deprecated(ptr noundef readnone captures(none) %0, ptr noundef readnone captures(none) %1) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
 ; Function Attrs: cold noreturn nounwind memory(inaccessiblemem: write) uwtable
 define dso_local noundef i64 @ZSTD_compressBegin_usingCDict(ptr noundef readnone captures(none) %0, ptr noundef readnone captures(none) %1) local_unnamed_addr #15 {
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -6924,13 +6866,13 @@ define dso_local noundef i64 @ZSTD_compress_usingCDict_advanced(ptr noundef read
 
 11:                                               ; preds = %9
   %12 = getelementptr inbounds nuw i8, ptr %5, i64 8
-  %13 = load i64, ptr %12, align 8, !tbaa !241
+  %13 = load i64, ptr %12, align 8, !tbaa !240
   %14 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %13, i64 6), !nosanitize !8
   %15 = extractvalue { i64, i1 } %14, 1, !nosanitize !8
   br i1 %15, label %16, label %17, !prof !9, !nosanitize !8
 
 16:                                               ; preds = %11
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 17:                                               ; preds = %11
@@ -6939,11 +6881,11 @@ define dso_local noundef i64 @ZSTD_compress_usingCDict_advanced(ptr noundef read
   br i1 %19, label %21, label %20
 
 20:                                               ; preds = %17
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 21:                                               ; preds = %17, %9
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 22:                                               ; preds = %7
@@ -6961,13 +6903,13 @@ define dso_local noundef i64 @ZSTD_compress_usingCDict(ptr noundef readnone capt
 
 10:                                               ; preds = %8
   %11 = getelementptr inbounds nuw i8, ptr %5, i64 8
-  %12 = load i64, ptr %11, align 8, !tbaa !241
+  %12 = load i64, ptr %11, align 8, !tbaa !240
   %13 = tail call { i64, i1 } @llvm.umul.with.overflow.i64(i64 %12, i64 6), !nosanitize !8
   %14 = extractvalue { i64, i1 } %13, 1, !nosanitize !8
   br i1 %14, label %15, label %16, !prof !9, !nosanitize !8
 
 15:                                               ; preds = %10
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 16:                                               ; preds = %10
@@ -6976,11 +6918,11 @@ define dso_local noundef i64 @ZSTD_compress_usingCDict(ptr noundef readnone capt
   br i1 %18, label %20, label %19
 
 19:                                               ; preds = %16
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 20:                                               ; preds = %16, %8
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 21:                                               ; preds = %6
@@ -7048,7 +6990,7 @@ define dso_local ptr @ZSTD_createCStream_advanced(ptr noundef readonly byval(%st
   br i1 %7, label %13, label %11
 
 11:                                               ; preds = %10
-  %12 = tail call ptr %2(ptr noundef %6, i64 noundef 5280) #36, !inline_history !282
+  %12 = tail call ptr %2(ptr noundef %6, i64 noundef 5280) #36, !inline_history !280
   br label %15
 
 13:                                               ; preds = %10
@@ -7153,7 +7095,7 @@ define dso_local range(i64 -64, 1) i64 @ZSTD_freeCStream(ptr noundef %0) local_u
   br i1 %24, label %26, label %25
 
 25:                                               ; preds = %23
-  tail call void %18(ptr noundef %20, ptr noundef nonnull %21) #36, !inline_history !283
+  tail call void %18(ptr noundef %20, ptr noundef nonnull %21) #36, !inline_history !281
   br label %27
 
 26:                                               ; preds = %23
@@ -7170,7 +7112,7 @@ define dso_local range(i64 -64, 1) i64 @ZSTD_freeCStream(ptr noundef %0) local_u
 
 31:                                               ; preds = %28
   %32 = load ptr, ptr %19, align 8
-  tail call void %29(ptr noundef %32, ptr noundef nonnull %0) #36, !inline_history !284
+  tail call void %29(ptr noundef %32, ptr noundef nonnull %0) #36, !inline_history !282
   br label %34
 
 33:                                               ; preds = %28
@@ -7194,7 +7136,7 @@ define dso_local range(i64 8, 0) i64 @ZSTD_CStreamOutSize() local_unnamed_addr #
   br i1 %2, label %3, label %4, !prof !9, !nosanitize !8
 
 3:                                                ; preds = %0
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 4:                                                ; preds = %0
@@ -7204,7 +7146,7 @@ define dso_local range(i64 8, 0) i64 @ZSTD_CStreamOutSize() local_unnamed_addr #
   br i1 %7, label %8, label %9, !prof !9, !nosanitize !8
 
 8:                                                ; preds = %4
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 9:                                                ; preds = %4
@@ -7216,7 +7158,7 @@ define dso_local range(i64 8, 0) i64 @ZSTD_CStreamOutSize() local_unnamed_addr #
   br i1 %14, label %15, label %16, !prof !9, !nosanitize !8
 
 15:                                               ; preds = %9
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 16:                                               ; preds = %9
@@ -7231,7 +7173,7 @@ define dso_local noundef range(i64 -60, 1) i64 @ZSTD_resetCStream(ptr noundef wr
   br i1 %3, label %4, label %5
 
 4:                                                ; preds = %2
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 5:                                                ; preds = %2
@@ -7242,7 +7184,7 @@ define dso_local noundef range(i64 -60, 1) i64 @ZSTD_resetCStream(ptr noundef wr
   br i1 %8, label %9, label %10, !prof !9, !nosanitize !8
 
 9:                                                ; preds = %5
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 10:                                               ; preds = %5
@@ -7261,7 +7203,7 @@ define dso_local range(i64 -64, 1) i64 @ZSTD_initCStream_internal(ptr noundef ca
   br i1 %9, label %10, label %11, !prof !9, !nosanitize !8
 
 10:                                               ; preds = %6
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 11:                                               ; preds = %6
@@ -7293,7 +7235,7 @@ define dso_local range(i64 -64, 1) i64 @ZSTD_initCStream_internal(ptr noundef ca
 26:                                               ; preds = %22
   %27 = getelementptr i8, ptr %0, i64 912
   %28 = load ptr, ptr %27, align 8
-  %29 = tail call ptr %24(ptr noundef %28, i64 noundef %2) #36, !inline_history !285
+  %29 = tail call ptr %24(ptr noundef %28, i64 noundef %2) #36, !inline_history !283
   br label %32
 
 30:                                               ; preds = %22
@@ -7336,7 +7278,7 @@ define dso_local noundef range(i64 -60, 1) i64 @ZSTD_initCStream_usingCDict_adva
   br i1 %8, label %9, label %10, !prof !9, !nosanitize !8
 
 9:                                                ; preds = %5
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 10:                                               ; preds = %5
@@ -7375,7 +7317,7 @@ define dso_local range(i64 -64, 1) i64 @ZSTD_initCStream_advanced(ptr noundef ca
   br i1 %10, label %11, label %12
 
 11:                                               ; preds = %5
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 12:                                               ; preds = %5
@@ -7386,7 +7328,7 @@ define dso_local range(i64 -64, 1) i64 @ZSTD_initCStream_advanced(ptr noundef ca
   br i1 %15, label %16, label %17, !prof !9, !nosanitize !8
 
 16:                                               ; preds = %12
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 17:                                               ; preds = %12
@@ -7465,7 +7407,7 @@ define dso_local range(i64 -64, 1) i64 @ZSTD_initCStream_advanced(ptr noundef ca
 67:                                               ; preds = %63
   %68 = getelementptr i8, ptr %0, i64 912
   %69 = load ptr, ptr %68, align 8
-  %70 = tail call ptr %65(ptr noundef %69, i64 noundef %2) #36, !inline_history !285
+  %70 = tail call ptr %65(ptr noundef %69, i64 noundef %2) #36, !inline_history !283
   br label %73
 
 71:                                               ; preds = %63
@@ -7537,7 +7479,7 @@ define dso_local range(i64 -64, 1) i64 @ZSTD_initCStream_usingDict(ptr noundef c
 27:                                               ; preds = %23
   %28 = getelementptr i8, ptr %0, i64 912
   %29 = load ptr, ptr %28, align 8
-  %30 = tail call ptr %25(ptr noundef %29, i64 noundef %2) #36, !inline_history !285
+  %30 = tail call ptr %25(ptr noundef %29, i64 noundef %2) #36, !inline_history !283
   br label %33
 
 31:                                               ; preds = %23
@@ -7572,7 +7514,7 @@ define dso_local range(i64 -60, 1) i64 @ZSTD_initCStream_srcSize(ptr noundef cap
   br i1 %4, label %5, label %6
 
 5:                                                ; preds = %3
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 6:                                                ; preds = %3
@@ -7617,7 +7559,7 @@ define dso_local range(i64 -60, 1) i64 @ZSTD_initCStream_srcSize(ptr noundef cap
   br i1 %26, label %27, label %28, !prof !9, !nosanitize !8
 
 27:                                               ; preds = %24
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 28:                                               ; preds = %24
@@ -7676,21 +7618,21 @@ define dso_local i64 @ZSTD_compressStream(ptr noundef %0, ptr noundef captures(n
 
 6:                                                ; preds = %3
   %7 = getelementptr inbounds nuw i8, ptr %0, i64 364
-  %8 = load i32, ptr %7, align 4, !tbaa !286
+  %8 = load i32, ptr %7, align 4, !tbaa !284
   %9 = icmp eq i32 %8, 1
   br i1 %9, label %10, label %20
 
 10:                                               ; preds = %6
   %11 = getelementptr inbounds nuw i8, ptr %0, i64 776
-  %12 = load i64, ptr %11, align 8, !tbaa !215
+  %12 = load i64, ptr %11, align 8, !tbaa !213
   %13 = getelementptr inbounds nuw i8, ptr %0, i64 3672
-  %14 = load i64, ptr %13, align 8, !tbaa !287
+  %14 = load i64, ptr %13, align 8, !tbaa !285
   %15 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %12, i64 %14), !nosanitize !8
   %16 = extractvalue { i64, i1 } %15, 1, !nosanitize !8
   br i1 %16, label %17, label %18, !prof !9, !nosanitize !8
 
 17:                                               ; preds = %10
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 18:                                               ; preds = %10
@@ -7699,7 +7641,7 @@ define dso_local i64 @ZSTD_compressStream(ptr noundef %0, ptr noundef captures(n
 
 20:                                               ; preds = %6
   %21 = getelementptr inbounds nuw i8, ptr %0, i64 3600
-  %22 = load i64, ptr %21, align 8, !tbaa !288
+  %22 = load i64, ptr %21, align 8, !tbaa !286
   %23 = getelementptr inbounds nuw i8, ptr %0, i64 3592
   %24 = load i64, ptr %23, align 8, !tbaa !139
   %25 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %22, i64 %24), !nosanitize !8
@@ -7707,7 +7649,7 @@ define dso_local i64 @ZSTD_compressStream(ptr noundef %0, ptr noundef captures(n
   br i1 %26, label %27, label %28, !prof !9, !nosanitize !8
 
 27:                                               ; preds = %20
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 28:                                               ; preds = %20
@@ -7717,7 +7659,7 @@ define dso_local i64 @ZSTD_compressStream(ptr noundef %0, ptr noundef captures(n
 
 31:                                               ; preds = %28
   %32 = getelementptr inbounds nuw i8, ptr %0, i64 776
-  %33 = load i64, ptr %32, align 8, !tbaa !215
+  %33 = load i64, ptr %32, align 8, !tbaa !213
   br label %34
 
 34:                                               ; preds = %31, %28, %18, %3
@@ -7728,29 +7670,29 @@ define dso_local i64 @ZSTD_compressStream(ptr noundef %0, ptr noundef captures(n
 ; Function Attrs: nounwind uwtable
 define dso_local i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef captures(none) %1, ptr noundef captures(none) %2, i32 noundef %3) local_unnamed_addr #4 {
   %5 = getelementptr inbounds nuw i8, ptr %1, i64 16
-  %6 = load i64, ptr %5, align 8, !tbaa !176
+  %6 = load i64, ptr %5, align 8, !tbaa !174
   %7 = getelementptr inbounds nuw i8, ptr %1, i64 8
-  %8 = load i64, ptr %7, align 8, !tbaa !175
+  %8 = load i64, ptr %7, align 8, !tbaa !173
   %9 = icmp ugt i64 %6, %8
-  br i1 %9, label %492, label %10
+  br i1 %9, label %489, label %10
 
 10:                                               ; preds = %4
   %11 = getelementptr inbounds nuw i8, ptr %2, i64 16
-  %12 = load i64, ptr %11, align 8, !tbaa !179
+  %12 = load i64, ptr %11, align 8, !tbaa !177
   %13 = getelementptr inbounds nuw i8, ptr %2, i64 8
-  %14 = load i64, ptr %13, align 8, !tbaa !178
+  %14 = load i64, ptr %13, align 8, !tbaa !176
   %15 = icmp ugt i64 %12, %14
-  br i1 %15, label %492, label %16
+  br i1 %15, label %489, label %16
 
 16:                                               ; preds = %10
   %17 = icmp ugt i32 %3, 2
-  br i1 %17, label %492, label %18
+  br i1 %17, label %489, label %18
 
 18:                                               ; preds = %16
   %19 = getelementptr inbounds nuw i8, ptr %0, i64 3640
   %20 = load i32, ptr %19, align 8, !tbaa !85
   %21 = icmp eq i32 %20, 0
-  br i1 %21, label %22, label %130
+  br i1 %21, label %22, label %127
 
 22:                                               ; preds = %18
   %23 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %14, i64 %12), !nosanitize !8
@@ -7758,26 +7700,26 @@ define dso_local i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef captures(
   br i1 %24, label %25, label %26, !prof !9, !nosanitize !8
 
 25:                                               ; preds = %22
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 26:                                               ; preds = %22
   %27 = extractvalue { i64, i1 } %23, 0, !nosanitize !8
   %28 = getelementptr inbounds nuw i8, ptr %0, i64 3672
-  %29 = load i64, ptr %28, align 8, !tbaa !287
+  %29 = load i64, ptr %28, align 8, !tbaa !285
   %30 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %27, i64 %29), !nosanitize !8
   %31 = extractvalue { i64, i1 } %30, 0, !nosanitize !8
   %32 = extractvalue { i64, i1 } %30, 1, !nosanitize !8
   br i1 %32, label %33, label %34, !prof !9, !nosanitize !8
 
 33:                                               ; preds = %26
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 34:                                               ; preds = %26
   %35 = getelementptr inbounds nuw i8, ptr %0, i64 16
   %36 = getelementptr inbounds nuw i8, ptr %0, i64 140
-  %37 = load i32, ptr %36, align 4, !tbaa !180
+  %37 = load i32, ptr %36, align 4, !tbaa !178
   %38 = icmp eq i32 %37, 1
   %39 = icmp eq i32 %3, 0
   %40 = and i1 %39, %38
@@ -7790,39 +7732,39 @@ define dso_local i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef captures(
   br i1 %44, label %54, label %45
 
 45:                                               ; preds = %43
-  %46 = load ptr, ptr %2, align 8, !tbaa !177
+  %46 = load ptr, ptr %2, align 8, !tbaa !175
   %47 = getelementptr inbounds nuw i8, ptr %0, i64 3648
-  %48 = load ptr, ptr %47, align 8, !tbaa !289
+  %48 = load ptr, ptr %47, align 8, !tbaa !287
   %49 = icmp eq ptr %46, %48
-  br i1 %49, label %50, label %492
+  br i1 %49, label %50, label %489
 
 50:                                               ; preds = %45
   %51 = getelementptr inbounds nuw i8, ptr %0, i64 3656
-  %52 = load i64, ptr %51, align 8, !tbaa !290
+  %52 = load i64, ptr %51, align 8, !tbaa !288
   %53 = icmp eq i64 %12, %52
-  br i1 %53, label %54, label %492
+  br i1 %53, label %54, label %489
 
 54:                                               ; preds = %43, %50
-  store i64 %14, ptr %11, align 8, !tbaa !179
+  store i64 %14, ptr %11, align 8, !tbaa !177
   %55 = getelementptr inbounds nuw i8, ptr %0, i64 3648
-  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %55, ptr noundef nonnull align 8 dereferenceable(24) %2, i64 24, i1 false), !tbaa.struct !291
-  store i64 %31, ptr %28, align 8, !tbaa !287
-  %56 = load i32, ptr %35, align 8, !tbaa !292
+  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %55, ptr noundef nonnull align 8 dereferenceable(24) %2, i64 24, i1 false), !tbaa.struct !289
+  store i64 %31, ptr %28, align 8, !tbaa !285
+  %56 = load i32, ptr %35, align 8, !tbaa !290
   %57 = icmp eq i32 %56, 0
   %58 = select i1 %57, i64 6, i64 2
-  br label %492
+  br label %489
 
 59:                                               ; preds = %34
   %60 = getelementptr inbounds nuw i8, ptr %0, i64 3736
   %61 = load ptr, ptr %60, align 8, !tbaa !51
   %62 = getelementptr inbounds nuw i8, ptr %0, i64 3696
-  %63 = load ptr, ptr %62, align 8, !tbaa !293
+  %63 = load ptr, ptr %62, align 8, !tbaa !291
   %64 = icmp eq ptr %63, null
   br i1 %64, label %83, label %65
 
 65:                                               ; preds = %59
   %66 = getelementptr inbounds nuw i8, ptr %0, i64 3720
-  %67 = load ptr, ptr %66, align 8, !tbaa !294
+  %67 = load ptr, ptr %66, align 8, !tbaa !292
   %68 = icmp eq ptr %67, null
   br i1 %68, label %69, label %83
 
@@ -7834,7 +7776,7 @@ define dso_local i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef captures(
   %74 = icmp eq ptr %71, null
   %75 = icmp eq ptr %73, null
   %76 = xor i1 %74, %75
-  br i1 %76, label %492, label %77
+  br i1 %76, label %489, label %77
 
 77:                                               ; preds = %69
   %78 = getelementptr inbounds nuw i8, ptr %0, i64 136
@@ -7843,11 +7785,11 @@ define dso_local i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef captures(
   br i1 %80, label %82, label %81
 
 81:                                               ; preds = %77
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 82:                                               ; preds = %77
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 83:                                               ; preds = %65, %59
@@ -7869,7 +7811,7 @@ define dso_local i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef captures(
   br i1 %93, label %94, label %95, !prof !9, !nosanitize !8
 
 94:                                               ; preds = %91
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 95:                                               ; preds = %91
@@ -7893,7 +7835,7 @@ define dso_local i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef captures(
 
 105:                                              ; preds = %101
   %106 = icmp eq i64 %99, 0
-  br i1 %106, label %110, label %129, !prof !9, !nosanitize !8
+  br i1 %106, label %110, label %126, !prof !9, !nosanitize !8
 
 107:                                              ; preds = %101
   %108 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %99, i64 1), !nosanitize !8
@@ -7901,669 +7843,661 @@ define dso_local i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef captures(
   br i1 %109, label %110, label %112, !prof !9, !nosanitize !8
 
 110:                                              ; preds = %107, %105, %102
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 111:                                              ; preds = %102
-  br i1 %86, label %129, label %112
+  br i1 %86, label %126, label %112
 
 112:                                              ; preds = %111, %107
   %113 = phi { i64, i1 } [ %103, %111 ], [ %108, %107 ]
-  %114 = extractvalue { i64, i1 } %113, 0
-  %115 = getelementptr inbounds nuw i8, ptr %85, i64 384
-  %116 = load i32, ptr %115, align 8, !tbaa !242
-  %117 = icmp ult i32 %116, 10
-  br i1 %117, label %119, label %118, !prof !169, !nosanitize !8
+  %114 = getelementptr inbounds nuw i8, ptr %85, i64 244
+  %115 = load i32, ptr %114, align 4, !tbaa !241
+  %116 = icmp eq i32 %115, 0
+  br i1 %116, label %117, label %126
 
-118:                                              ; preds = %112
-  tail call void @llvm.ubsantrap(i8 18) #39, !nosanitize !8
+117:                                              ; preds = %112
+  %118 = extractvalue { i64, i1 } %113, 0
+  %119 = getelementptr inbounds nuw i8, ptr %85, i64 384
+  %120 = load i32, ptr %119, align 8, !tbaa !293
+  %121 = zext i32 %120 to i64
+  %122 = getelementptr inbounds nuw [8 x i8], ptr @attachDictSizeCutoffs, i64 %121
+  %123 = load i64, ptr %122, align 8, !tbaa !118
+  %124 = icmp ugt i64 %118, %123
+  br i1 %124, label %125, label %126
+
+125:                                              ; preds = %117
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-119:                                              ; preds = %112
-  %120 = getelementptr inbounds nuw i8, ptr %85, i64 244
-  %121 = load i32, ptr %120, align 4, !tbaa !243
-  %122 = icmp eq i32 %121, 0
-  br i1 %122, label %123, label %129
-
-123:                                              ; preds = %119
-  %124 = zext nneg i32 %116 to i64, !nosanitize !8
-  %125 = getelementptr inbounds nuw [8 x i8], ptr @attachDictSizeCutoffs, i64 %124
-  %126 = load i64, ptr %125, align 8, !tbaa !118
-  %127 = icmp ugt i64 %114, %126
-  br i1 %127, label %128, label %129
-
-128:                                              ; preds = %123
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+126:                                              ; preds = %117, %112, %111, %105
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-129:                                              ; preds = %123, %119, %111, %105
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+127:                                              ; preds = %18
+  %128 = getelementptr inbounds nuw i8, ptr %0, i64 364
+  %129 = load i32, ptr %128, align 4, !tbaa !284
+  %130 = icmp eq i32 %129, 1
+  br i1 %130, label %131, label %140
+
+131:                                              ; preds = %127
+  %132 = getelementptr inbounds nuw i8, ptr %0, i64 3648
+  %133 = load ptr, ptr %132, align 8, !tbaa !51
+  %134 = load ptr, ptr %2, align 8, !tbaa !175
+  %135 = icmp eq ptr %133, %134
+  br i1 %135, label %136, label %489
+
+136:                                              ; preds = %131
+  %137 = getelementptr inbounds nuw i8, ptr %0, i64 3664
+  %138 = load i64, ptr %137, align 8, !tbaa !118
+  %139 = icmp eq i64 %138, %12
+  br i1 %139, label %140, label %489
+
+140:                                              ; preds = %136, %127
+  %141 = getelementptr inbounds nuw i8, ptr %0, i64 368
+  %142 = load i32, ptr %141, align 8, !tbaa !294
+  %143 = icmp eq i32 %142, 1
+  br i1 %143, label %144, label %153
+
+144:                                              ; preds = %140
+  %145 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %8, i64 %6), !nosanitize !8
+  %146 = extractvalue { i64, i1 } %145, 1, !nosanitize !8
+  br i1 %146, label %147, label %148, !prof !9, !nosanitize !8
+
+147:                                              ; preds = %144
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-130:                                              ; preds = %18
-  %131 = getelementptr inbounds nuw i8, ptr %0, i64 364
-  %132 = load i32, ptr %131, align 4, !tbaa !286
-  %133 = icmp eq i32 %132, 1
-  br i1 %133, label %134, label %143
+148:                                              ; preds = %144
+  %149 = extractvalue { i64, i1 } %145, 0, !nosanitize !8
+  %150 = getelementptr inbounds nuw i8, ptr %0, i64 3680
+  %151 = load i64, ptr %150, align 8, !tbaa !295
+  %152 = icmp eq i64 %151, %149
+  br i1 %152, label %153, label %489
 
-134:                                              ; preds = %130
-  %135 = getelementptr inbounds nuw i8, ptr %0, i64 3648
-  %136 = load ptr, ptr %135, align 8, !tbaa !51
-  %137 = load ptr, ptr %2, align 8, !tbaa !177
-  %138 = icmp eq ptr %136, %137
-  br i1 %138, label %139, label %492
+153:                                              ; preds = %148, %140
+  %154 = load ptr, ptr %2, align 8, !tbaa !175
+  %155 = icmp eq ptr %154, null
+  %156 = getelementptr inbounds nuw i8, ptr %154, i64 %14
+  %157 = getelementptr inbounds nuw i8, ptr %154, i64 %12
+  %158 = select i1 %155, ptr null, ptr %156
+  %159 = select i1 %155, ptr null, ptr %157
+  %160 = load ptr, ptr %1, align 8, !tbaa !171
+  %161 = icmp eq ptr %160, null
+  %162 = getelementptr inbounds nuw i8, ptr %160, i64 %8
+  %163 = ptrtoint ptr %162 to i64
+  %164 = getelementptr inbounds nuw i8, ptr %160, i64 %6
+  %165 = select i1 %161, i64 0, i64 %163
+  %166 = select i1 %161, ptr null, ptr %164
+  br i1 %130, label %167, label %179
 
-139:                                              ; preds = %134
-  %140 = getelementptr inbounds nuw i8, ptr %0, i64 3664
-  %141 = load i64, ptr %140, align 8, !tbaa !118
-  %142 = icmp eq i64 %141, %12
-  br i1 %142, label %143, label %492
+167:                                              ; preds = %153
+  %168 = getelementptr inbounds nuw i8, ptr %0, i64 3672
+  %169 = load i64, ptr %168, align 8, !tbaa !285
+  %170 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %12, i64 %169), !nosanitize !8
+  %171 = extractvalue { i64, i1 } %170, 1, !nosanitize !8
+  br i1 %171, label %172, label %173, !prof !9, !nosanitize !8
 
-143:                                              ; preds = %139, %130
-  %144 = getelementptr inbounds nuw i8, ptr %0, i64 368
-  %145 = load i32, ptr %144, align 8, !tbaa !295
-  %146 = icmp eq i32 %145, 1
-  br i1 %146, label %147, label %156
-
-147:                                              ; preds = %143
-  %148 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %8, i64 %6), !nosanitize !8
-  %149 = extractvalue { i64, i1 } %148, 1, !nosanitize !8
-  br i1 %149, label %150, label %151, !prof !9, !nosanitize !8
-
-150:                                              ; preds = %147
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+172:                                              ; preds = %167
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-151:                                              ; preds = %147
-  %152 = extractvalue { i64, i1 } %148, 0, !nosanitize !8
-  %153 = getelementptr inbounds nuw i8, ptr %0, i64 3680
-  %154 = load i64, ptr %153, align 8, !tbaa !296
-  %155 = icmp eq i64 %154, %152
-  br i1 %155, label %156, label %492
+173:                                              ; preds = %167
+  %174 = extractvalue { i64, i1 } %170, 0, !nosanitize !8
+  store i64 %174, ptr %11, align 8, !tbaa !177
+  %175 = icmp eq ptr %159, null
+  %176 = sub i64 0, %169
+  %177 = getelementptr inbounds i8, ptr %159, i64 %176
+  %178 = select i1 %175, ptr null, ptr %177
+  store i64 0, ptr %168, align 8, !tbaa !285
+  br label %179
 
-156:                                              ; preds = %151, %143
-  %157 = load ptr, ptr %2, align 8, !tbaa !177
-  %158 = icmp eq ptr %157, null
-  %159 = getelementptr inbounds nuw i8, ptr %157, i64 %14
-  %160 = getelementptr inbounds nuw i8, ptr %157, i64 %12
-  %161 = select i1 %158, ptr null, ptr %159
-  %162 = select i1 %158, ptr null, ptr %160
-  %163 = load ptr, ptr %1, align 8, !tbaa !173
-  %164 = icmp eq ptr %163, null
-  %165 = getelementptr inbounds nuw i8, ptr %163, i64 %8
-  %166 = ptrtoint ptr %165 to i64
-  %167 = getelementptr inbounds nuw i8, ptr %163, i64 %6
-  %168 = select i1 %164, i64 0, i64 %166
-  %169 = select i1 %164, ptr null, ptr %167
-  br i1 %133, label %170, label %182
+179:                                              ; preds = %173, %153
+  %180 = phi ptr [ %178, %173 ], [ %159, %153 ]
+  %181 = icmp eq i32 %3, 2
+  %182 = ptrtoint ptr %158 to i64
+  %183 = getelementptr inbounds nuw i8, ptr %0, i64 3592
+  %184 = getelementptr inbounds nuw i8, ptr %0, i64 776
+  %185 = getelementptr inbounds nuw i8, ptr %0, i64 3672
+  %186 = getelementptr inbounds nuw i8, ptr %0, i64 3600
+  %187 = getelementptr inbounds nuw i8, ptr %0, i64 3568
+  %188 = getelementptr inbounds nuw i8, ptr %0, i64 3584
+  %189 = getelementptr inbounds nuw i8, ptr %0, i64 3608
+  %190 = getelementptr inbounds nuw i8, ptr %0, i64 3616
+  %191 = getelementptr inbounds nuw i8, ptr %0, i64 3644
+  %192 = getelementptr inbounds nuw i8, ptr %0, i64 3576
+  %193 = getelementptr inbounds nuw i8, ptr %0, i64 3624
+  %194 = getelementptr inbounds nuw i8, ptr %0, i64 3632
+  %195 = getelementptr inbounds nuw i8, ptr %0, i64 784
+  br label %196
 
-170:                                              ; preds = %156
-  %171 = getelementptr inbounds nuw i8, ptr %0, i64 3672
-  %172 = load i64, ptr %171, align 8, !tbaa !287
-  %173 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %12, i64 %172), !nosanitize !8
-  %174 = extractvalue { i64, i1 } %173, 1, !nosanitize !8
-  br i1 %174, label %175, label %176, !prof !9, !nosanitize !8
+196:                                              ; preds = %425, %179
+  %197 = phi i32 [ %20, %179 ], [ %426, %425 ]
+  %198 = phi ptr [ %180, %179 ], [ %427, %425 ]
+  %199 = phi ptr [ %166, %179 ], [ %428, %425 ]
+  br label %200
 
-175:                                              ; preds = %170
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+200:                                              ; preds = %196, %200
+  switch i32 %197, label %200 [
+    i32 0, label %489
+    i32 1, label %204
+    i32 2, label %201
+  ], !llvm.loop !296
+
+201:                                              ; preds = %200
+  %202 = load i64, ptr %193, align 8, !tbaa !297
+  %203 = load i64, ptr %194, align 8, !tbaa !298
+  br label %394
+
+204:                                              ; preds = %200
+  br i1 %181, label %205, label %240
+
+205:                                              ; preds = %204
+  %206 = ptrtoint ptr %199 to i64
+  %207 = sub i64 %165, %206
+  %208 = ptrtoint ptr %198 to i64
+  %209 = sub i64 %182, %208
+  %210 = icmp ugt i64 %209, -71777214294589697
+  br i1 %210, label %225, label %211
+
+211:                                              ; preds = %205
+  %212 = lshr i64 %209, 8
+  %213 = add nuw i64 %212, %209
+  %214 = icmp ult i64 %209, 131072
+  %215 = sub nuw nsw i64 131072, %209
+  %216 = lshr i64 %215, 11
+  %217 = select i1 %214, i64 %216, i64 0
+  %218 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %213, i64 %217), !nosanitize !8
+  %219 = freeze { i64, i1 } %218
+  %220 = extractvalue { i64, i1 } %219, 1, !nosanitize !8
+  br i1 %220, label %221, label %222, !prof !9, !nosanitize !8
+
+221:                                              ; preds = %211
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-176:                                              ; preds = %170
-  %177 = extractvalue { i64, i1 } %173, 0, !nosanitize !8
-  store i64 %177, ptr %11, align 8, !tbaa !179
-  %178 = icmp eq ptr %162, null
-  %179 = sub i64 0, %172
-  %180 = getelementptr inbounds i8, ptr %162, i64 %179
-  %181 = select i1 %178, ptr null, ptr %180
-  store i64 0, ptr %171, align 8, !tbaa !287
-  br label %182
+222:                                              ; preds = %211
+  %223 = extractvalue { i64, i1 } %219, 0, !nosanitize !8
+  %224 = icmp eq i64 %223, 0
+  br i1 %224, label %225, label %226
 
-182:                                              ; preds = %176, %156
-  %183 = phi ptr [ %181, %176 ], [ %162, %156 ]
-  %184 = icmp eq i32 %3, 2
-  %185 = ptrtoint ptr %161 to i64
-  %186 = getelementptr inbounds nuw i8, ptr %0, i64 3592
-  %187 = getelementptr inbounds nuw i8, ptr %0, i64 776
-  %188 = getelementptr inbounds nuw i8, ptr %0, i64 3672
-  %189 = getelementptr inbounds nuw i8, ptr %0, i64 3600
-  %190 = getelementptr inbounds nuw i8, ptr %0, i64 3568
-  %191 = getelementptr inbounds nuw i8, ptr %0, i64 3584
-  %192 = getelementptr inbounds nuw i8, ptr %0, i64 3608
-  %193 = getelementptr inbounds nuw i8, ptr %0, i64 3616
-  %194 = getelementptr inbounds nuw i8, ptr %0, i64 3644
-  %195 = getelementptr inbounds nuw i8, ptr %0, i64 3576
-  %196 = getelementptr inbounds nuw i8, ptr %0, i64 3624
-  %197 = getelementptr inbounds nuw i8, ptr %0, i64 3632
-  %198 = getelementptr inbounds nuw i8, ptr %0, i64 784
-  br label %199
+225:                                              ; preds = %222, %205
+  br label %226
 
-199:                                              ; preds = %428, %182
-  %200 = phi i32 [ %20, %182 ], [ %429, %428 ]
-  %201 = phi ptr [ %183, %182 ], [ %430, %428 ]
-  %202 = phi ptr [ %169, %182 ], [ %431, %428 ]
-  br label %203
+226:                                              ; preds = %225, %222
+  %227 = phi i64 [ -72, %225 ], [ %223, %222 ]
+  %228 = icmp ult i64 %207, %227
+  br i1 %228, label %229, label %232
 
-203:                                              ; preds = %199, %203
-  switch i32 %200, label %203 [
-    i32 0, label %492
-    i32 1, label %207
-    i32 2, label %204
-  ], !llvm.loop !297
+229:                                              ; preds = %226
+  %230 = load i32, ptr %141, align 8, !tbaa !294
+  %231 = icmp eq i32 %230, 1
+  br i1 %231, label %232, label %240
 
-204:                                              ; preds = %203
-  %205 = load i64, ptr %196, align 8, !tbaa !298
-  %206 = load i64, ptr %197, align 8, !tbaa !299
-  br label %397
+232:                                              ; preds = %229, %226
+  %233 = load i64, ptr %183, align 8, !tbaa !139
+  %234 = icmp eq i64 %233, 0
+  br i1 %234, label %235, label %240
 
-207:                                              ; preds = %203
-  br i1 %184, label %208, label %243
-
-208:                                              ; preds = %207
-  %209 = ptrtoint ptr %202 to i64
-  %210 = sub i64 %168, %209
-  %211 = ptrtoint ptr %201 to i64
-  %212 = sub i64 %185, %211
-  %213 = icmp ugt i64 %212, -71777214294589697
-  br i1 %213, label %228, label %214
-
-214:                                              ; preds = %208
-  %215 = lshr i64 %212, 8
-  %216 = add nuw i64 %215, %212
-  %217 = icmp ult i64 %212, 131072
-  %218 = sub nuw nsw i64 131072, %212
-  %219 = lshr i64 %218, 11
-  %220 = select i1 %217, i64 %219, i64 0
-  %221 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %216, i64 %220), !nosanitize !8
-  %222 = freeze { i64, i1 } %221
-  %223 = extractvalue { i64, i1 } %222, 1, !nosanitize !8
-  br i1 %223, label %224, label %225, !prof !9, !nosanitize !8
-
-224:                                              ; preds = %214
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-225:                                              ; preds = %214
-  %226 = extractvalue { i64, i1 } %222, 0, !nosanitize !8
-  %227 = icmp eq i64 %226, 0
-  br i1 %227, label %228, label %229
-
-228:                                              ; preds = %225, %208
-  br label %229
-
-229:                                              ; preds = %228, %225
-  %230 = phi i64 [ -72, %228 ], [ %226, %225 ]
-  %231 = icmp ult i64 %210, %230
-  br i1 %231, label %232, label %235
-
-232:                                              ; preds = %229
-  %233 = load i32, ptr %144, align 8, !tbaa !295
-  %234 = icmp eq i32 %233, 1
-  br i1 %234, label %235, label %243
-
-235:                                              ; preds = %232, %229
-  %236 = load i64, ptr %186, align 8, !tbaa !139
-  %237 = icmp eq i64 %236, 0
-  br i1 %237, label %238, label %243
+235:                                              ; preds = %232
+  %236 = tail call i64 @ZSTD_compressEnd_public(ptr noundef nonnull %0, ptr noundef %199, i64 noundef %207, ptr noundef %198, i64 noundef %209)
+  %237 = icmp ult i64 %236, -119
+  br i1 %237, label %238, label %489
 
 238:                                              ; preds = %235
-  %239 = tail call i64 @ZSTD_compressEnd_public(ptr noundef nonnull %0, ptr noundef %202, i64 noundef %210, ptr noundef %201, i64 noundef %212)
-  %240 = icmp ult i64 %239, -119
-  br i1 %240, label %241, label %492
-
-241:                                              ; preds = %238
-  %242 = getelementptr inbounds nuw i8, ptr %202, i64 %239
-  store i32 1, ptr %194, align 4, !tbaa !300
+  %239 = getelementptr inbounds nuw i8, ptr %199, i64 %236
+  store i32 1, ptr %191, align 4, !tbaa !299
   store i32 0, ptr %19, align 8, !tbaa !85
-  store i64 0, ptr %198, align 8, !tbaa !119
-  br label %432
+  store i64 0, ptr %195, align 8, !tbaa !119
+  br label %429
 
-243:                                              ; preds = %235, %232, %207
-  %244 = load i32, ptr %131, align 4, !tbaa !286
-  %245 = icmp eq i32 %244, 0
-  br i1 %245, label %246, label %278
+240:                                              ; preds = %232, %229, %204
+  %241 = load i32, ptr %128, align 4, !tbaa !284
+  %242 = icmp eq i32 %241, 0
+  br i1 %242, label %243, label %275
 
-246:                                              ; preds = %243
-  %247 = load i64, ptr %189, align 8, !tbaa !288
-  %248 = load i64, ptr %186, align 8, !tbaa !139
-  %249 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %247, i64 %248), !nosanitize !8
-  %250 = extractvalue { i64, i1 } %249, 1, !nosanitize !8
-  br i1 %250, label %251, label %252, !prof !9, !nosanitize !8
+243:                                              ; preds = %240
+  %244 = load i64, ptr %186, align 8, !tbaa !286
+  %245 = load i64, ptr %183, align 8, !tbaa !139
+  %246 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %244, i64 %245), !nosanitize !8
+  %247 = extractvalue { i64, i1 } %246, 1, !nosanitize !8
+  br i1 %247, label %248, label %249, !prof !9, !nosanitize !8
 
-251:                                              ; preds = %246
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+248:                                              ; preds = %243
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-252:                                              ; preds = %246
-  %253 = extractvalue { i64, i1 } %249, 0, !nosanitize !8
-  %254 = ptrtoint ptr %201 to i64
-  %255 = sub i64 %185, %254
-  %256 = tail call i64 @llvm.umin.i64(i64 %253, i64 %255)
-  %257 = icmp eq i64 %256, 0
-  br i1 %257, label %262, label %258
+249:                                              ; preds = %243
+  %250 = extractvalue { i64, i1 } %246, 0, !nosanitize !8
+  %251 = ptrtoint ptr %198 to i64
+  %252 = sub i64 %182, %251
+  %253 = tail call i64 @llvm.umin.i64(i64 %250, i64 %252)
+  %254 = icmp eq i64 %253, 0
+  br i1 %254, label %259, label %255
 
-258:                                              ; preds = %252
-  %259 = load ptr, ptr %190, align 8, !tbaa !138
-  %260 = getelementptr inbounds nuw i8, ptr %259, i64 %248
-  tail call void @llvm.memcpy.p0.p0.i64(ptr align 1 %260, ptr readonly align 1 %201, i64 %256, i1 false)
-  %261 = load i64, ptr %186, align 8, !tbaa !139
-  br label %262
+255:                                              ; preds = %249
+  %256 = load ptr, ptr %187, align 8, !tbaa !138
+  %257 = getelementptr inbounds nuw i8, ptr %256, i64 %245
+  tail call void @llvm.memcpy.p0.p0.i64(ptr align 1 %257, ptr readonly align 1 %198, i64 %253, i1 false)
+  %258 = load i64, ptr %183, align 8, !tbaa !139
+  br label %259
 
-262:                                              ; preds = %258, %252
-  %263 = phi i64 [ %248, %252 ], [ %261, %258 ]
-  %264 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %263, i64 %256), !nosanitize !8
-  %265 = extractvalue { i64, i1 } %264, 1, !nosanitize !8
-  br i1 %265, label %266, label %267, !prof !9, !nosanitize !8
+259:                                              ; preds = %255, %249
+  %260 = phi i64 [ %245, %249 ], [ %258, %255 ]
+  %261 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %260, i64 %253), !nosanitize !8
+  %262 = extractvalue { i64, i1 } %261, 1, !nosanitize !8
+  br i1 %262, label %263, label %264, !prof !9, !nosanitize !8
 
-266:                                              ; preds = %262
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+263:                                              ; preds = %259
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-267:                                              ; preds = %262
-  %268 = extractvalue { i64, i1 } %264, 0, !nosanitize !8
-  store i64 %268, ptr %186, align 8, !tbaa !139
-  %269 = icmp eq ptr %201, null
-  %270 = getelementptr inbounds nuw i8, ptr %201, i64 %256
-  %271 = select i1 %269, ptr null, ptr %270
-  switch i32 %3, label %290 [
-    i32 0, label %272
-    i32 1, label %275
-  ]
-
-272:                                              ; preds = %267
-  %273 = load i64, ptr %189, align 8, !tbaa !288
-  %274 = icmp ult i64 %268, %273
-  br i1 %274, label %432, label %290
-
-275:                                              ; preds = %267
-  %276 = load i64, ptr %191, align 8, !tbaa !140
-  %277 = icmp eq i64 %268, %276
-  br i1 %277, label %432, label %290
-
-278:                                              ; preds = %243
+264:                                              ; preds = %259
+  %265 = extractvalue { i64, i1 } %261, 0, !nosanitize !8
+  store i64 %265, ptr %183, align 8, !tbaa !139
+  %266 = icmp eq ptr %198, null
+  %267 = getelementptr inbounds nuw i8, ptr %198, i64 %253
+  %268 = select i1 %266, ptr null, ptr %267
   switch i32 %3, label %287 [
-    i32 0, label %279
-    i32 1, label %285
+    i32 0, label %269
+    i32 1, label %272
   ]
 
-279:                                              ; preds = %278
-  %280 = ptrtoint ptr %201 to i64
-  %281 = sub i64 %185, %280
-  %282 = load i64, ptr %187, align 8, !tbaa !215
-  %283 = icmp ult i64 %281, %282
-  br i1 %283, label %284, label %290
+269:                                              ; preds = %264
+  %270 = load i64, ptr %186, align 8, !tbaa !286
+  %271 = icmp ult i64 %265, %270
+  br i1 %271, label %429, label %287
 
-284:                                              ; preds = %279
-  store i64 %281, ptr %188, align 8, !tbaa !287
-  br label %432
+272:                                              ; preds = %264
+  %273 = load i64, ptr %188, align 8, !tbaa !140
+  %274 = icmp eq i64 %265, %273
+  br i1 %274, label %429, label %287
 
-285:                                              ; preds = %278
-  %286 = icmp eq ptr %201, %161
-  br i1 %286, label %432, label %287
+275:                                              ; preds = %240
+  switch i32 %3, label %284 [
+    i32 0, label %276
+    i32 1, label %282
+  ]
 
-287:                                              ; preds = %285, %278
-  %288 = ptrtoint ptr %202 to i64
-  %289 = sub i64 %168, %288
-  br label %303
+276:                                              ; preds = %275
+  %277 = ptrtoint ptr %198 to i64
+  %278 = sub i64 %182, %277
+  %279 = load i64, ptr %184, align 8, !tbaa !213
+  %280 = icmp ult i64 %278, %279
+  br i1 %280, label %281, label %287
 
-290:                                              ; preds = %279, %275, %272, %267
-  %291 = phi ptr [ %271, %272 ], [ %271, %267 ], [ %271, %275 ], [ %201, %279 ]
-  %292 = load i32, ptr %131, align 4, !tbaa !286
-  %293 = icmp eq i32 %292, 0
-  %294 = ptrtoint ptr %202 to i64
-  %295 = sub i64 %168, %294
-  br i1 %293, label %296, label %303
+281:                                              ; preds = %276
+  store i64 %278, ptr %185, align 8, !tbaa !285
+  br label %429
 
-296:                                              ; preds = %290
-  %297 = load i64, ptr %186, align 8, !tbaa !139
-  %298 = load i64, ptr %191, align 8, !tbaa !140
-  %299 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %297, i64 %298), !nosanitize !8
-  %300 = extractvalue { i64, i1 } %299, 0, !nosanitize !8
-  %301 = extractvalue { i64, i1 } %299, 1, !nosanitize !8
-  br i1 %301, label %302, label %310, !prof !9, !nosanitize !8
+282:                                              ; preds = %275
+  %283 = icmp eq ptr %198, %158
+  br i1 %283, label %429, label %284
 
-302:                                              ; preds = %296
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+284:                                              ; preds = %282, %275
+  %285 = ptrtoint ptr %199 to i64
+  %286 = sub i64 %165, %285
+  br label %300
+
+287:                                              ; preds = %276, %272, %269, %264
+  %288 = phi ptr [ %268, %269 ], [ %268, %264 ], [ %268, %272 ], [ %198, %276 ]
+  %289 = load i32, ptr %128, align 4, !tbaa !284
+  %290 = icmp eq i32 %289, 0
+  %291 = ptrtoint ptr %199 to i64
+  %292 = sub i64 %165, %291
+  br i1 %290, label %293, label %300
+
+293:                                              ; preds = %287
+  %294 = load i64, ptr %183, align 8, !tbaa !139
+  %295 = load i64, ptr %188, align 8, !tbaa !140
+  %296 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %294, i64 %295), !nosanitize !8
+  %297 = extractvalue { i64, i1 } %296, 0, !nosanitize !8
+  %298 = extractvalue { i64, i1 } %296, 1, !nosanitize !8
+  br i1 %298, label %299, label %307, !prof !9, !nosanitize !8
+
+299:                                              ; preds = %293
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-303:                                              ; preds = %290, %287
-  %304 = phi i64 [ %289, %287 ], [ %295, %290 ]
-  %305 = phi ptr [ %201, %287 ], [ %291, %290 ]
-  %306 = ptrtoint ptr %305 to i64
-  %307 = sub i64 %185, %306
-  %308 = load i64, ptr %187, align 8, !tbaa !215
-  %309 = tail call i64 @llvm.umin.i64(i64 %307, i64 %308)
-  br label %310
+300:                                              ; preds = %287, %284
+  %301 = phi i64 [ %286, %284 ], [ %292, %287 ]
+  %302 = phi ptr [ %198, %284 ], [ %288, %287 ]
+  %303 = ptrtoint ptr %302 to i64
+  %304 = sub i64 %182, %303
+  %305 = load i64, ptr %184, align 8, !tbaa !213
+  %306 = tail call i64 @llvm.umin.i64(i64 %304, i64 %305)
+  br label %307
 
-310:                                              ; preds = %303, %296
-  %311 = phi i64 [ %295, %296 ], [ %304, %303 ]
-  %312 = phi i1 [ true, %296 ], [ false, %303 ]
-  %313 = phi ptr [ %291, %296 ], [ %305, %303 ]
-  %314 = phi i64 [ %300, %296 ], [ %309, %303 ]
-  %315 = icmp ugt i64 %314, -71777214294589697
-  br i1 %315, label %330, label %316
+307:                                              ; preds = %300, %293
+  %308 = phi i64 [ %292, %293 ], [ %301, %300 ]
+  %309 = phi i1 [ true, %293 ], [ false, %300 ]
+  %310 = phi ptr [ %288, %293 ], [ %302, %300 ]
+  %311 = phi i64 [ %297, %293 ], [ %306, %300 ]
+  %312 = icmp ugt i64 %311, -71777214294589697
+  br i1 %312, label %327, label %313
 
-316:                                              ; preds = %310
-  %317 = lshr i64 %314, 8
-  %318 = add nuw i64 %317, %314
-  %319 = icmp ult i64 %314, 131072
-  %320 = sub nuw nsw i64 131072, %314
-  %321 = lshr i64 %320, 11
-  %322 = select i1 %319, i64 %321, i64 0
-  %323 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %318, i64 %322), !nosanitize !8
-  %324 = freeze { i64, i1 } %323
-  %325 = extractvalue { i64, i1 } %324, 1, !nosanitize !8
-  br i1 %325, label %326, label %327, !prof !9, !nosanitize !8
+313:                                              ; preds = %307
+  %314 = lshr i64 %311, 8
+  %315 = add nuw i64 %314, %311
+  %316 = icmp ult i64 %311, 131072
+  %317 = sub nuw nsw i64 131072, %311
+  %318 = lshr i64 %317, 11
+  %319 = select i1 %316, i64 %318, i64 0
+  %320 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %315, i64 %319), !nosanitize !8
+  %321 = freeze { i64, i1 } %320
+  %322 = extractvalue { i64, i1 } %321, 1, !nosanitize !8
+  br i1 %322, label %323, label %324, !prof !9, !nosanitize !8
 
-326:                                              ; preds = %316
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+323:                                              ; preds = %313
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-327:                                              ; preds = %316
-  %328 = extractvalue { i64, i1 } %324, 0, !nosanitize !8
-  %329 = icmp eq i64 %328, 0
-  br i1 %329, label %330, label %331
+324:                                              ; preds = %313
+  %325 = extractvalue { i64, i1 } %321, 0, !nosanitize !8
+  %326 = icmp eq i64 %325, 0
+  br i1 %326, label %327, label %328
 
-330:                                              ; preds = %327, %310
-  br label %331
+327:                                              ; preds = %324, %307
+  br label %328
 
-331:                                              ; preds = %330, %327
-  %332 = phi i64 [ -72, %330 ], [ %328, %327 ]
-  %333 = icmp ult i64 %311, %332
-  br i1 %333, label %334, label %340
+328:                                              ; preds = %327, %324
+  %329 = phi i64 [ -72, %327 ], [ %325, %324 ]
+  %330 = icmp ult i64 %308, %329
+  br i1 %330, label %331, label %337
+
+331:                                              ; preds = %328
+  %332 = load i32, ptr %141, align 8, !tbaa !294
+  %333 = icmp eq i32 %332, 1
+  br i1 %333, label %337, label %334
 
 334:                                              ; preds = %331
-  %335 = load i32, ptr %144, align 8, !tbaa !295
-  %336 = icmp eq i32 %335, 1
-  br i1 %336, label %340, label %337
+  %335 = load ptr, ptr %189, align 8, !tbaa !300
+  %336 = load i64, ptr %190, align 8, !tbaa !244
+  br label %337
 
-337:                                              ; preds = %334
-  %338 = load ptr, ptr %192, align 8, !tbaa !301
-  %339 = load i64, ptr %193, align 8, !tbaa !246
-  br label %340
+337:                                              ; preds = %334, %331, %328
+  %338 = phi i64 [ %336, %334 ], [ %308, %331 ], [ %308, %328 ]
+  %339 = phi ptr [ %335, %334 ], [ %199, %331 ], [ %199, %328 ]
+  br i1 %309, label %340, label %367
 
-340:                                              ; preds = %337, %334, %331
-  %341 = phi i64 [ %339, %337 ], [ %311, %334 ], [ %311, %331 ]
-  %342 = phi ptr [ %338, %337 ], [ %202, %334 ], [ %202, %331 ]
-  br i1 %312, label %343, label %370
+340:                                              ; preds = %337
+  %341 = icmp eq ptr %310, %158
+  %342 = select i1 %181, i1 %341, i1 false
+  %343 = zext i1 %342 to i32
+  %344 = load ptr, ptr %187, align 8, !tbaa !138
+  %345 = load i64, ptr %188, align 8, !tbaa !140
+  %346 = getelementptr inbounds nuw i8, ptr %344, i64 %345
+  br i1 %342, label %347, label %349
 
-343:                                              ; preds = %340
-  %344 = icmp eq ptr %313, %161
-  %345 = select i1 %184, i1 %344, i1 false
-  %346 = zext i1 %345 to i32
-  %347 = load ptr, ptr %190, align 8, !tbaa !138
-  %348 = load i64, ptr %191, align 8, !tbaa !140
-  %349 = getelementptr inbounds nuw i8, ptr %347, i64 %348
-  br i1 %345, label %350, label %352
+347:                                              ; preds = %340
+  %348 = tail call i64 @ZSTD_compressEnd_public(ptr noundef nonnull %0, ptr noundef %339, i64 noundef %338, ptr noundef %346, i64 noundef %311)
+  br label %351
 
-350:                                              ; preds = %343
-  %351 = tail call i64 @ZSTD_compressEnd_public(ptr noundef nonnull %0, ptr noundef %342, i64 noundef %341, ptr noundef %349, i64 noundef %314)
-  br label %354
+349:                                              ; preds = %340
+  %350 = tail call fastcc i64 @ZSTD_compressContinue_internal(ptr noundef nonnull %0, ptr noundef %339, i64 noundef %338, ptr noundef %346, i64 noundef %311, i32 noundef 1, i32 noundef 0)
+  br label %351
 
-352:                                              ; preds = %343
-  %353 = tail call fastcc i64 @ZSTD_compressContinue_internal(ptr noundef nonnull %0, ptr noundef %342, i64 noundef %341, ptr noundef %349, i64 noundef %314, i32 noundef 1, i32 noundef 0)
-  br label %354
+351:                                              ; preds = %349, %347
+  %352 = phi i64 [ %348, %347 ], [ %350, %349 ]
+  %353 = icmp ult i64 %352, -119
+  br i1 %353, label %354, label %489
 
-354:                                              ; preds = %352, %350
-  %355 = phi i64 [ %351, %350 ], [ %353, %352 ]
-  %356 = icmp ult i64 %355, -119
-  br i1 %356, label %357, label %492
+354:                                              ; preds = %351
+  store i32 %343, ptr %191, align 4, !tbaa !299
+  %355 = load i64, ptr %183, align 8, !tbaa !139
+  %356 = load i64, ptr %184, align 8, !tbaa !213
+  %357 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %355, i64 %356), !nosanitize !8
+  %358 = extractvalue { i64, i1 } %357, 1, !nosanitize !8
+  br i1 %358, label %359, label %360, !prof !9, !nosanitize !8
 
-357:                                              ; preds = %354
-  store i32 %346, ptr %194, align 4, !tbaa !300
-  %358 = load i64, ptr %186, align 8, !tbaa !139
-  %359 = load i64, ptr %187, align 8, !tbaa !215
-  %360 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %358, i64 %359), !nosanitize !8
-  %361 = extractvalue { i64, i1 } %360, 1, !nosanitize !8
-  br i1 %361, label %362, label %363, !prof !9, !nosanitize !8
-
-362:                                              ; preds = %357
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+359:                                              ; preds = %354
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-363:                                              ; preds = %357
-  %364 = extractvalue { i64, i1 } %360, 0, !nosanitize !8
-  store i64 %364, ptr %189, align 8, !tbaa !288
-  %365 = load i64, ptr %195, align 8, !tbaa !245
-  %366 = icmp ugt i64 %364, %365
-  br i1 %366, label %367, label %368
+360:                                              ; preds = %354
+  %361 = extractvalue { i64, i1 } %357, 0, !nosanitize !8
+  store i64 %361, ptr %186, align 8, !tbaa !286
+  %362 = load i64, ptr %192, align 8, !tbaa !243
+  %363 = icmp ugt i64 %361, %362
+  br i1 %363, label %364, label %365
 
-367:                                              ; preds = %363
-  store i64 0, ptr %186, align 8, !tbaa !139
-  store i64 %359, ptr %189, align 8, !tbaa !288
-  br label %368
+364:                                              ; preds = %360
+  store i64 0, ptr %183, align 8, !tbaa !139
+  store i64 %356, ptr %186, align 8, !tbaa !286
+  br label %365
 
-368:                                              ; preds = %367, %363
-  %369 = phi i64 [ %358, %363 ], [ 0, %367 ]
-  store i64 %369, ptr %191, align 8, !tbaa !140
-  br label %385
+365:                                              ; preds = %364, %360
+  %366 = phi i64 [ %355, %360 ], [ 0, %364 ]
+  store i64 %366, ptr %188, align 8, !tbaa !140
+  br label %382
 
-370:                                              ; preds = %340
-  %371 = getelementptr inbounds nuw i8, ptr %313, i64 %314
-  %372 = icmp eq ptr %371, %161
-  %373 = select i1 %184, i1 %372, i1 false
-  %374 = zext i1 %373 to i32
-  br i1 %373, label %375, label %377
+367:                                              ; preds = %337
+  %368 = getelementptr inbounds nuw i8, ptr %310, i64 %311
+  %369 = icmp eq ptr %368, %158
+  %370 = select i1 %181, i1 %369, i1 false
+  %371 = zext i1 %370 to i32
+  br i1 %370, label %372, label %374
 
-375:                                              ; preds = %370
-  %376 = tail call i64 @ZSTD_compressEnd_public(ptr noundef nonnull %0, ptr noundef %342, i64 noundef %341, ptr noundef %313, i64 noundef %314)
-  br label %379
+372:                                              ; preds = %367
+  %373 = tail call i64 @ZSTD_compressEnd_public(ptr noundef nonnull %0, ptr noundef %339, i64 noundef %338, ptr noundef %310, i64 noundef %311)
+  br label %376
 
-377:                                              ; preds = %370
-  %378 = tail call fastcc i64 @ZSTD_compressContinue_internal(ptr noundef nonnull %0, ptr noundef %342, i64 noundef %341, ptr noundef %313, i64 noundef %314, i32 noundef 1, i32 noundef 0)
-  br label %379
+374:                                              ; preds = %367
+  %375 = tail call fastcc i64 @ZSTD_compressContinue_internal(ptr noundef nonnull %0, ptr noundef %339, i64 noundef %338, ptr noundef %310, i64 noundef %311, i32 noundef 1, i32 noundef 0)
+  br label %376
 
-379:                                              ; preds = %377, %375
-  %380 = phi i64 [ %376, %375 ], [ %378, %377 ]
-  %381 = icmp ult i64 %380, -119
-  br i1 %381, label %382, label %492
+376:                                              ; preds = %374, %372
+  %377 = phi i64 [ %373, %372 ], [ %375, %374 ]
+  %378 = icmp ult i64 %377, -119
+  br i1 %378, label %379, label %489
 
-382:                                              ; preds = %379
-  %383 = icmp eq ptr %313, null
-  %384 = select i1 %383, ptr null, ptr %371
-  store i32 %374, ptr %194, align 4, !tbaa !300
-  br label %385
+379:                                              ; preds = %376
+  %380 = icmp eq ptr %310, null
+  %381 = select i1 %380, ptr null, ptr %368
+  store i32 %371, ptr %191, align 4, !tbaa !299
+  br label %382
 
-385:                                              ; preds = %382, %368
-  %386 = phi i32 [ %346, %368 ], [ %374, %382 ]
-  %387 = phi i64 [ %355, %368 ], [ %380, %382 ]
-  %388 = phi ptr [ %313, %368 ], [ %384, %382 ]
-  %389 = icmp eq ptr %342, %202
-  br i1 %389, label %390, label %396
+382:                                              ; preds = %379, %365
+  %383 = phi i32 [ %343, %365 ], [ %371, %379 ]
+  %384 = phi i64 [ %352, %365 ], [ %377, %379 ]
+  %385 = phi ptr [ %310, %365 ], [ %381, %379 ]
+  %386 = icmp eq ptr %339, %199
+  br i1 %386, label %387, label %393
 
-390:                                              ; preds = %385
-  %391 = getelementptr inbounds nuw i8, ptr %202, i64 %387
-  %392 = icmp eq i32 %386, 0
-  br i1 %392, label %393, label %395
+387:                                              ; preds = %382
+  %388 = getelementptr inbounds nuw i8, ptr %199, i64 %384
+  %389 = icmp eq i32 %383, 0
+  br i1 %389, label %390, label %392
 
-393:                                              ; preds = %390
-  %394 = load i32, ptr %19, align 8, !tbaa !85
-  br label %428
+390:                                              ; preds = %387
+  %391 = load i32, ptr %19, align 8, !tbaa !85
+  br label %425
 
-395:                                              ; preds = %390
+392:                                              ; preds = %387
   store i32 0, ptr %19, align 8, !tbaa !85
-  store i64 0, ptr %198, align 8, !tbaa !119
-  br label %432
+  store i64 0, ptr %195, align 8, !tbaa !119
+  br label %429
 
-396:                                              ; preds = %385
-  store i64 %387, ptr %196, align 8, !tbaa !298
-  store i64 0, ptr %197, align 8, !tbaa !299
+393:                                              ; preds = %382
+  store i64 %384, ptr %193, align 8, !tbaa !297
+  store i64 0, ptr %194, align 8, !tbaa !298
   store i32 2, ptr %19, align 8, !tbaa !85
-  br label %397
+  br label %394
 
-397:                                              ; preds = %396, %204
-  %398 = phi i64 [ 0, %396 ], [ %206, %204 ]
-  %399 = phi i64 [ %387, %396 ], [ %205, %204 ]
-  %400 = phi ptr [ %388, %396 ], [ %201, %204 ]
-  %401 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %399, i64 %398), !nosanitize !8
-  %402 = extractvalue { i64, i1 } %401, 0, !nosanitize !8
-  %403 = extractvalue { i64, i1 } %401, 1, !nosanitize !8
-  br i1 %403, label %404, label %405, !prof !9, !nosanitize !8
+394:                                              ; preds = %393, %201
+  %395 = phi i64 [ 0, %393 ], [ %203, %201 ]
+  %396 = phi i64 [ %384, %393 ], [ %202, %201 ]
+  %397 = phi ptr [ %385, %393 ], [ %198, %201 ]
+  %398 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %396, i64 %395), !nosanitize !8
+  %399 = extractvalue { i64, i1 } %398, 0, !nosanitize !8
+  %400 = extractvalue { i64, i1 } %398, 1, !nosanitize !8
+  br i1 %400, label %401, label %402, !prof !9, !nosanitize !8
 
-404:                                              ; preds = %397
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+401:                                              ; preds = %394
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-405:                                              ; preds = %397
-  %406 = ptrtoint ptr %202 to i64
-  %407 = sub i64 %168, %406
-  %408 = tail call i64 @llvm.umin.i64(i64 %407, i64 %402)
-  %409 = icmp eq i64 %408, 0
-  br i1 %409, label %414, label %410
+402:                                              ; preds = %394
+  %403 = ptrtoint ptr %199 to i64
+  %404 = sub i64 %165, %403
+  %405 = tail call i64 @llvm.umin.i64(i64 %404, i64 %399)
+  %406 = icmp eq i64 %405, 0
+  br i1 %406, label %411, label %407
 
-410:                                              ; preds = %405
-  %411 = load ptr, ptr %192, align 8, !tbaa !301
-  %412 = getelementptr inbounds nuw i8, ptr %411, i64 %398
-  tail call void @llvm.memcpy.p0.p0.i64(ptr align 1 %202, ptr readonly align 1 %412, i64 %408, i1 false)
-  %413 = load i64, ptr %197, align 8, !tbaa !299
-  br label %414
+407:                                              ; preds = %402
+  %408 = load ptr, ptr %189, align 8, !tbaa !300
+  %409 = getelementptr inbounds nuw i8, ptr %408, i64 %395
+  tail call void @llvm.memcpy.p0.p0.i64(ptr align 1 %199, ptr readonly align 1 %409, i64 %405, i1 false)
+  %410 = load i64, ptr %194, align 8, !tbaa !298
+  br label %411
 
-414:                                              ; preds = %410, %405
-  %415 = phi i64 [ %398, %405 ], [ %413, %410 ]
-  %416 = getelementptr inbounds nuw i8, ptr %202, i64 %408
-  %417 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %415, i64 %408), !nosanitize !8
-  %418 = extractvalue { i64, i1 } %417, 1, !nosanitize !8
-  br i1 %418, label %419, label %420, !prof !9, !nosanitize !8
+411:                                              ; preds = %407, %402
+  %412 = phi i64 [ %395, %402 ], [ %410, %407 ]
+  %413 = getelementptr inbounds nuw i8, ptr %199, i64 %405
+  %414 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %412, i64 %405), !nosanitize !8
+  %415 = extractvalue { i64, i1 } %414, 1, !nosanitize !8
+  br i1 %415, label %416, label %417, !prof !9, !nosanitize !8
 
-419:                                              ; preds = %414
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+416:                                              ; preds = %411
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-420:                                              ; preds = %414
-  %421 = extractvalue { i64, i1 } %417, 0, !nosanitize !8
-  store i64 %421, ptr %197, align 8, !tbaa !299
-  %422 = icmp ugt i64 %402, %407
-  br i1 %422, label %432, label %423
+417:                                              ; preds = %411
+  %418 = extractvalue { i64, i1 } %414, 0, !nosanitize !8
+  store i64 %418, ptr %194, align 8, !tbaa !298
+  %419 = icmp ugt i64 %399, %404
+  br i1 %419, label %429, label %420
+
+420:                                              ; preds = %417
+  tail call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(16) %193, i8 0, i64 16, i1 false)
+  %421 = load i32, ptr %191, align 4, !tbaa !299
+  %422 = icmp eq i32 %421, 0
+  br i1 %422, label %424, label %423
 
 423:                                              ; preds = %420
-  tail call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(16) %196, i8 0, i64 16, i1 false)
-  %424 = load i32, ptr %194, align 4, !tbaa !300
-  %425 = icmp eq i32 %424, 0
-  br i1 %425, label %427, label %426
-
-426:                                              ; preds = %423
   store i32 0, ptr %19, align 8, !tbaa !85
-  store i64 0, ptr %198, align 8, !tbaa !119
-  br label %432
+  store i64 0, ptr %195, align 8, !tbaa !119
+  br label %429
 
-427:                                              ; preds = %423
+424:                                              ; preds = %420
   store i32 1, ptr %19, align 8, !tbaa !85
-  br label %428
+  br label %425
 
-428:                                              ; preds = %427, %393
-  %429 = phi i32 [ %394, %393 ], [ 1, %427 ]
-  %430 = phi ptr [ %388, %393 ], [ %400, %427 ]
-  %431 = phi ptr [ %391, %393 ], [ %416, %427 ]
-  br label %199, !llvm.loop !297
+425:                                              ; preds = %424, %390
+  %426 = phi i32 [ %391, %390 ], [ 1, %424 ]
+  %427 = phi ptr [ %385, %390 ], [ %397, %424 ]
+  %428 = phi ptr [ %388, %390 ], [ %413, %424 ]
+  br label %196, !llvm.loop !296
 
-432:                                              ; preds = %420, %285, %275, %272, %426, %395, %284, %241
-  %433 = phi ptr [ %391, %395 ], [ %416, %426 ], [ %242, %241 ], [ %202, %284 ], [ %202, %272 ], [ %416, %420 ], [ %202, %275 ], [ %202, %285 ]
-  %434 = phi ptr [ %388, %395 ], [ %400, %426 ], [ %161, %241 ], [ %161, %284 ], [ %271, %272 ], [ %400, %420 ], [ %271, %275 ], [ %161, %285 ]
-  %435 = ptrtoint ptr %434 to i64
-  %436 = ptrtoint ptr %157 to i64
+429:                                              ; preds = %417, %282, %272, %269, %423, %392, %281, %238
+  %430 = phi ptr [ %388, %392 ], [ %413, %423 ], [ %239, %238 ], [ %199, %281 ], [ %199, %269 ], [ %413, %417 ], [ %199, %272 ], [ %199, %282 ]
+  %431 = phi ptr [ %385, %392 ], [ %397, %423 ], [ %158, %238 ], [ %158, %281 ], [ %268, %269 ], [ %397, %417 ], [ %268, %272 ], [ %158, %282 ]
+  %432 = ptrtoint ptr %431 to i64
+  %433 = ptrtoint ptr %154 to i64
+  %434 = sub i64 %432, %433
+  store i64 %434, ptr %11, align 8, !tbaa !177
+  %435 = ptrtoint ptr %430 to i64
+  %436 = ptrtoint ptr %160 to i64
   %437 = sub i64 %435, %436
-  store i64 %437, ptr %11, align 8, !tbaa !179
-  %438 = ptrtoint ptr %433 to i64
-  %439 = ptrtoint ptr %163 to i64
-  %440 = sub i64 %438, %439
-  store i64 %440, ptr %5, align 8, !tbaa !176
-  %441 = load i32, ptr %194, align 4, !tbaa !300
-  %442 = icmp eq i32 %441, 0
-  %443 = load i32, ptr %131, align 4, !tbaa !286
-  br i1 %442, label %444, label %468
+  store i64 %437, ptr %5, align 8, !tbaa !174
+  %438 = load i32, ptr %191, align 4, !tbaa !299
+  %439 = icmp eq i32 %438, 0
+  %440 = load i32, ptr %128, align 4, !tbaa !284
+  br i1 %439, label %441, label %465
 
-444:                                              ; preds = %432
-  %445 = icmp eq i32 %443, 1
-  br i1 %445, label %446, label %454
+441:                                              ; preds = %429
+  %442 = icmp eq i32 %440, 1
+  br i1 %442, label %443, label %451
 
-446:                                              ; preds = %444
-  %447 = load i64, ptr %187, align 8, !tbaa !215
-  %448 = load i64, ptr %188, align 8, !tbaa !287
-  %449 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %447, i64 %448), !nosanitize !8
-  %450 = extractvalue { i64, i1 } %449, 1, !nosanitize !8
-  br i1 %450, label %451, label %452, !prof !9, !nosanitize !8
+443:                                              ; preds = %441
+  %444 = load i64, ptr %184, align 8, !tbaa !213
+  %445 = load i64, ptr %185, align 8, !tbaa !285
+  %446 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %444, i64 %445), !nosanitize !8
+  %447 = extractvalue { i64, i1 } %446, 1, !nosanitize !8
+  br i1 %447, label %448, label %449, !prof !9, !nosanitize !8
 
-451:                                              ; preds = %446
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+448:                                              ; preds = %443
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-452:                                              ; preds = %446
-  %453 = extractvalue { i64, i1 } %449, 0, !nosanitize !8
-  br label %465
+449:                                              ; preds = %443
+  %450 = extractvalue { i64, i1 } %446, 0, !nosanitize !8
+  br label %462
 
-454:                                              ; preds = %444
-  %455 = load i64, ptr %189, align 8, !tbaa !288
-  %456 = load i64, ptr %186, align 8, !tbaa !139
-  %457 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %455, i64 %456), !nosanitize !8
-  %458 = extractvalue { i64, i1 } %457, 1, !nosanitize !8
-  br i1 %458, label %459, label %460, !prof !9, !nosanitize !8
+451:                                              ; preds = %441
+  %452 = load i64, ptr %186, align 8, !tbaa !286
+  %453 = load i64, ptr %183, align 8, !tbaa !139
+  %454 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %452, i64 %453), !nosanitize !8
+  %455 = extractvalue { i64, i1 } %454, 1, !nosanitize !8
+  br i1 %455, label %456, label %457, !prof !9, !nosanitize !8
 
-459:                                              ; preds = %454
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+456:                                              ; preds = %451
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-460:                                              ; preds = %454
-  %461 = extractvalue { i64, i1 } %457, 0, !nosanitize !8
-  %462 = icmp eq i64 %461, 0
-  br i1 %462, label %463, label %465
+457:                                              ; preds = %451
+  %458 = extractvalue { i64, i1 } %454, 0, !nosanitize !8
+  %459 = icmp eq i64 %458, 0
+  br i1 %459, label %460, label %462
 
-463:                                              ; preds = %460
-  %464 = load i64, ptr %187, align 8, !tbaa !215
-  br label %465
+460:                                              ; preds = %457
+  %461 = load i64, ptr %184, align 8, !tbaa !213
+  br label %462
 
-465:                                              ; preds = %452, %460, %463
-  %466 = phi i64 [ %453, %452 ], [ %464, %463 ], [ %461, %460 ]
-  %467 = icmp ult i64 %466, -119
-  br i1 %467, label %468, label %492
+462:                                              ; preds = %449, %457, %460
+  %463 = phi i64 [ %450, %449 ], [ %461, %460 ], [ %458, %457 ]
+  %464 = icmp ult i64 %463, -119
+  br i1 %464, label %465, label %489
 
-468:                                              ; preds = %432, %465
-  %469 = icmp eq i32 %443, 1
-  br i1 %469, label %470, label %472
+465:                                              ; preds = %429, %462
+  %466 = icmp eq i32 %440, 1
+  br i1 %466, label %467, label %469
 
-470:                                              ; preds = %468
-  %471 = getelementptr inbounds nuw i8, ptr %0, i64 3648
-  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %471, ptr noundef nonnull readonly align 8 dereferenceable(24) %2, i64 24, i1 false), !tbaa.struct !291
-  br label %472
+467:                                              ; preds = %465
+  %468 = getelementptr inbounds nuw i8, ptr %0, i64 3648
+  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %468, ptr noundef nonnull readonly align 8 dereferenceable(24) %2, i64 24, i1 false), !tbaa.struct !289
+  br label %469
 
-472:                                              ; preds = %470, %468
-  %473 = load i32, ptr %144, align 8, !tbaa !295
-  %474 = icmp eq i32 %473, 1
-  br i1 %474, label %475, label %484
+469:                                              ; preds = %467, %465
+  %470 = load i32, ptr %141, align 8, !tbaa !294
+  %471 = icmp eq i32 %470, 1
+  br i1 %471, label %472, label %481
 
-475:                                              ; preds = %472
-  %476 = load i64, ptr %7, align 8, !tbaa !175
-  %477 = load i64, ptr %5, align 8, !tbaa !176
-  %478 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %476, i64 %477), !nosanitize !8
-  %479 = extractvalue { i64, i1 } %478, 1, !nosanitize !8
-  br i1 %479, label %480, label %481, !prof !9, !nosanitize !8
+472:                                              ; preds = %469
+  %473 = load i64, ptr %7, align 8, !tbaa !173
+  %474 = load i64, ptr %5, align 8, !tbaa !174
+  %475 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %473, i64 %474), !nosanitize !8
+  %476 = extractvalue { i64, i1 } %475, 1, !nosanitize !8
+  br i1 %476, label %477, label %478, !prof !9, !nosanitize !8
 
-480:                                              ; preds = %475
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+477:                                              ; preds = %472
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-481:                                              ; preds = %475
-  %482 = extractvalue { i64, i1 } %478, 0, !nosanitize !8
-  %483 = getelementptr inbounds nuw i8, ptr %0, i64 3680
-  store i64 %482, ptr %483, align 8, !tbaa !296
-  br label %484
+478:                                              ; preds = %472
+  %479 = extractvalue { i64, i1 } %475, 0, !nosanitize !8
+  %480 = getelementptr inbounds nuw i8, ptr %0, i64 3680
+  store i64 %479, ptr %480, align 8, !tbaa !295
+  br label %481
 
-484:                                              ; preds = %472, %481
-  %485 = load i64, ptr %196, align 8, !tbaa !298
-  %486 = load i64, ptr %197, align 8, !tbaa !299
-  %487 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %485, i64 %486), !nosanitize !8
-  %488 = extractvalue { i64, i1 } %487, 1, !nosanitize !8
-  br i1 %488, label %489, label %490, !prof !9, !nosanitize !8
+481:                                              ; preds = %469, %478
+  %482 = load i64, ptr %193, align 8, !tbaa !297
+  %483 = load i64, ptr %194, align 8, !tbaa !298
+  %484 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %482, i64 %483), !nosanitize !8
+  %485 = extractvalue { i64, i1 } %484, 1, !nosanitize !8
+  br i1 %485, label %486, label %487, !prof !9, !nosanitize !8
 
-489:                                              ; preds = %484
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+486:                                              ; preds = %481
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-490:                                              ; preds = %484
-  %491 = extractvalue { i64, i1 } %487, 0, !nosanitize !8
-  br label %492
+487:                                              ; preds = %481
+  %488 = extractvalue { i64, i1 } %484, 0, !nosanitize !8
+  br label %489
 
-492:                                              ; preds = %203, %379, %354, %238, %134, %139, %151, %54, %45, %50, %69, %465, %16, %10, %4, %490
-  %493 = phi i64 [ -42, %16 ], [ -70, %4 ], [ -72, %10 ], [ %491, %490 ], [ %466, %465 ], [ -50, %134 ], [ -50, %50 ], [ -50, %45 ], [ %58, %54 ], [ -64, %69 ], [ -50, %151 ], [ -50, %139 ], [ %239, %238 ], [ -62, %203 ], [ %380, %379 ], [ %355, %354 ]
-  ret i64 %493
+489:                                              ; preds = %200, %376, %351, %235, %131, %136, %148, %54, %45, %50, %69, %462, %16, %10, %4, %487
+  %490 = phi i64 [ -42, %16 ], [ -70, %4 ], [ -72, %10 ], [ %488, %487 ], [ %463, %462 ], [ -50, %131 ], [ -50, %50 ], [ -50, %45 ], [ %58, %54 ], [ -64, %69 ], [ -50, %148 ], [ -50, %136 ], [ %236, %235 ], [ -62, %200 ], [ %377, %376 ], [ %352, %351 ]
+  ret i64 %490
 }
 
 ; Function Attrs: nounwind uwtable
@@ -8572,22 +8506,22 @@ define dso_local i64 @ZSTD_compressStream2_simpleArgs(ptr noundef %0, ptr nounde
   %10 = alloca %struct.ZSTD_inBuffer_s, align 8
   call void @llvm.lifetime.start.p0(ptr nonnull %9) #36
   call void @llvm.lifetime.start.p0(ptr nonnull %10) #36
-  store ptr %1, ptr %9, align 8, !tbaa !173
+  store ptr %1, ptr %9, align 8, !tbaa !171
   %11 = getelementptr inbounds nuw i8, ptr %9, i64 8
-  store i64 %2, ptr %11, align 8, !tbaa !175
+  store i64 %2, ptr %11, align 8, !tbaa !173
   %12 = load i64, ptr %3, align 8, !tbaa !118
   %13 = getelementptr inbounds nuw i8, ptr %9, i64 16
-  store i64 %12, ptr %13, align 8, !tbaa !176
-  store ptr %4, ptr %10, align 8, !tbaa !177
+  store i64 %12, ptr %13, align 8, !tbaa !174
+  store ptr %4, ptr %10, align 8, !tbaa !175
   %14 = getelementptr inbounds nuw i8, ptr %10, i64 8
-  store i64 %5, ptr %14, align 8, !tbaa !178
+  store i64 %5, ptr %14, align 8, !tbaa !176
   %15 = load i64, ptr %6, align 8, !tbaa !118
   %16 = getelementptr inbounds nuw i8, ptr %10, i64 16
-  store i64 %15, ptr %16, align 8, !tbaa !179
+  store i64 %15, ptr %16, align 8, !tbaa !177
   %17 = call i64 @ZSTD_compressStream2(ptr noundef %0, ptr noundef nonnull %9, ptr noundef nonnull %10, i32 noundef %7)
-  %18 = load i64, ptr %13, align 8, !tbaa !176
+  %18 = load i64, ptr %13, align 8, !tbaa !174
   store i64 %18, ptr %3, align 8, !tbaa !118
-  %19 = load i64, ptr %16, align 8, !tbaa !179
+  %19 = load i64, ptr %16, align 8, !tbaa !177
   store i64 %19, ptr %6, align 8, !tbaa !118
   call void @llvm.lifetime.end.p0(ptr nonnull %10) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %9) #36
@@ -8598,13 +8532,13 @@ define dso_local i64 @ZSTD_compressStream2_simpleArgs(ptr noundef %0, ptr nounde
 define dso_local noundef i64 @ZSTD_compressSequences(ptr noundef captures(none) %0, ptr noundef readnone captures(none) %1, i64 noundef %2, ptr noundef readnone captures(none) %3, i64 noundef %4, ptr noundef readnone captures(none) %5, i64 noundef %6) local_unnamed_addr #22 {
   %8 = getelementptr inbounds nuw i8, ptr %0, i64 3736
   %9 = getelementptr inbounds nuw i8, ptr %0, i64 3696
-  %10 = load ptr, ptr %9, align 8, !tbaa !293
+  %10 = load ptr, ptr %9, align 8, !tbaa !291
   %11 = icmp eq ptr %10, null
   br i1 %11, label %30, label %12
 
 12:                                               ; preds = %7
   %13 = getelementptr inbounds nuw i8, ptr %0, i64 3720
-  %14 = load ptr, ptr %13, align 8, !tbaa !294
+  %14 = load ptr, ptr %13, align 8, !tbaa !292
   %15 = icmp eq ptr %14, null
   br i1 %15, label %16, label %30
 
@@ -8616,7 +8550,7 @@ define dso_local noundef i64 @ZSTD_compressSequences(ptr noundef captures(none) 
   %21 = icmp eq ptr %18, null
   %22 = icmp eq ptr %20, null
   %23 = xor i1 %21, %22
-  br i1 %23, label %57, label %24
+  br i1 %23, label %54, label %24
 
 24:                                               ; preds = %16
   %25 = getelementptr inbounds nuw i8, ptr %0, i64 136
@@ -8625,11 +8559,11 @@ define dso_local noundef i64 @ZSTD_compressSequences(ptr noundef captures(none) 
   br i1 %27, label %29, label %28
 
 28:                                               ; preds = %24
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 29:                                               ; preds = %24
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 30:                                               ; preds = %12, %7
@@ -8641,7 +8575,7 @@ define dso_local noundef i64 @ZSTD_compressSequences(ptr noundef captures(none) 
   br i1 %34, label %35, label %36, !prof !9, !nosanitize !8
 
 35:                                               ; preds = %30
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 36:                                               ; preds = %30
@@ -8649,41 +8583,33 @@ define dso_local noundef i64 @ZSTD_compressSequences(ptr noundef captures(none) 
   %38 = extractvalue { i64, i1 } %33, 0, !nosanitize !8
   %39 = getelementptr inbounds nuw i8, ptr %0, i64 784
   store i64 %38, ptr %39, align 8, !tbaa !119
-  br i1 %37, label %56, label %40
+  br i1 %37, label %53, label %40
 
 40:                                               ; preds = %36
-  %41 = add i64 %38, -1
-  %42 = getelementptr inbounds nuw i8, ptr %32, i64 384
-  %43 = load i32, ptr %42, align 8, !tbaa !242
-  %44 = icmp ult i32 %43, 10
-  br i1 %44, label %46, label %45, !prof !169, !nosanitize !8
+  %41 = getelementptr inbounds nuw i8, ptr %32, i64 244
+  %42 = load i32, ptr %41, align 4, !tbaa !241
+  %43 = icmp eq i32 %42, 0
+  br i1 %43, label %44, label %53
 
-45:                                               ; preds = %40
-  tail call void @llvm.ubsantrap(i8 18) #39, !nosanitize !8
+44:                                               ; preds = %40
+  %45 = add i64 %38, -1
+  %46 = getelementptr inbounds nuw i8, ptr %32, i64 384
+  %47 = load i32, ptr %46, align 8, !tbaa !293
+  %48 = zext i32 %47 to i64
+  %49 = getelementptr inbounds nuw [8 x i8], ptr @attachDictSizeCutoffs, i64 %48
+  %50 = load i64, ptr %49, align 8, !tbaa !118
+  %51 = icmp ugt i64 %45, %50
+  br i1 %51, label %52, label %53
+
+52:                                               ; preds = %44
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-46:                                               ; preds = %40
-  %47 = getelementptr inbounds nuw i8, ptr %32, i64 244
-  %48 = load i32, ptr %47, align 4, !tbaa !243
-  %49 = icmp eq i32 %48, 0
-  br i1 %49, label %50, label %56
-
-50:                                               ; preds = %46
-  %51 = zext nneg i32 %43 to i64, !nosanitize !8
-  %52 = getelementptr inbounds nuw [8 x i8], ptr @attachDictSizeCutoffs, i64 %51
-  %53 = load i64, ptr %52, align 8, !tbaa !118
-  %54 = icmp ugt i64 %41, %53
-  br i1 %54, label %55, label %56
-
-55:                                               ; preds = %50
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+53:                                               ; preds = %36, %44, %40
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-56:                                               ; preds = %36, %50, %46
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-57:                                               ; preds = %16
+54:                                               ; preds = %16
   ret i64 -64
 }
 
@@ -8707,10 +8633,10 @@ define internal fastcc range(i64 -70, 20) i64 @ZSTD_writeFrameHeader(ptr noundef
   %21 = getelementptr inbounds nuw i8, ptr %2, i64 4
   %22 = load i32, ptr %21, align 4, !tbaa !88
   %23 = icmp ult i32 %22, 32
-  br i1 %23, label %25, label %24, !prof !169, !nosanitize !8
+  br i1 %23, label %25, label %24, !prof !215, !nosanitize !8
 
 24:                                               ; preds = %5
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 25:                                               ; preds = %5
@@ -8727,15 +8653,15 @@ define internal fastcc range(i64 -70, 20) i64 @ZSTD_writeFrameHeader(ptr noundef
   br i1 %35, label %36, label %37, !prof !9, !nosanitize !8
 
 36:                                               ; preds = %25
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 37:                                               ; preds = %25
   %38 = icmp ult i32 %34, 536870912
-  br i1 %38, label %40, label %39, !prof !169, !nosanitize !8
+  br i1 %38, label %40, label %39, !prof !215, !nosanitize !8
 
 39:                                               ; preds = %37
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 40:                                               ; preds = %37
@@ -8806,7 +8732,7 @@ define internal fastcc range(i64 -70, 20) i64 @ZSTD_writeFrameHeader(ptr noundef
 79:                                               ; preds = %73
   %80 = getelementptr inbounds nuw i8, ptr %0, i64 %74
   %81 = trunc i32 %4 to i16
-  store i16 %81, ptr %80, align 1, !tbaa !201
+  store i16 %81, ptr %80, align 1, !tbaa !199
   %82 = add nuw nsw i64 %74, 2
   br label %86
 
@@ -8840,14 +8766,14 @@ define internal fastcc range(i64 -70, 20) i64 @ZSTD_writeFrameHeader(ptr noundef
   br i1 %95, label %96, label %97, !prof !9, !nosanitize !8
 
 96:                                               ; preds = %93
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 97:                                               ; preds = %93
   %98 = extractvalue { i64, i1 } %94, 0, !nosanitize !8
   %99 = getelementptr inbounds nuw i8, ptr %0, i64 %87
   %100 = trunc i64 %98 to i16
-  store i16 %100, ptr %99, align 1, !tbaa !201
+  store i16 %100, ptr %99, align 1, !tbaa !199
   %101 = add nuw nsw i64 %87, 2
   br label %109
 
@@ -8883,13 +8809,13 @@ define dso_local i64 @convertSequences_noRepcodes(ptr noundef writeonly captures
   %6 = phi i64 [ %48, %46 ], [ 0, %3 ]
   %7 = phi i64 [ %47, %46 ], [ 0, %3 ]
   %8 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %6
-  %9 = load i32, ptr %8, align 4, !tbaa !183
+  %9 = load i32, ptr %8, align 4, !tbaa !181
   %10 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %9, i32 3), !nosanitize !8
   %11 = extractvalue { i32, i1 } %10, 1, !nosanitize !8
   br i1 %11, label %12, label %13, !prof !9, !nosanitize !8
 
 12:                                               ; preds = %5
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 13:                                               ; preds = %5
@@ -8897,18 +8823,18 @@ define dso_local i64 @convertSequences_noRepcodes(ptr noundef writeonly captures
   %15 = getelementptr inbounds nuw [8 x i8], ptr %0, i64 %6
   store i32 %14, ptr %15, align 4, !tbaa !162
   %16 = getelementptr inbounds nuw i8, ptr %8, i64 4
-  %17 = load i32, ptr %16, align 4, !tbaa !186
+  %17 = load i32, ptr %16, align 4, !tbaa !184
   %18 = trunc i32 %17 to i16
   %19 = getelementptr inbounds nuw i8, ptr %15, i64 4
   store i16 %18, ptr %19, align 4, !tbaa !159
   %20 = getelementptr inbounds nuw i8, ptr %8, i64 8
-  %21 = load i32, ptr %20, align 4, !tbaa !185
+  %21 = load i32, ptr %20, align 4, !tbaa !183
   %22 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %21, i32 3), !nosanitize !8
   %23 = extractvalue { i32, i1 } %22, 1, !nosanitize !8
   br i1 %23, label %24, label %25, !prof !9, !nosanitize !8
 
 24:                                               ; preds = %13
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 25:                                               ; preds = %13
@@ -8917,7 +8843,7 @@ define dso_local i64 @convertSequences_noRepcodes(ptr noundef writeonly captures
   %28 = getelementptr inbounds nuw i8, ptr %15, i64 6
   store i16 %27, ptr %28, align 2, !tbaa !163
   %29 = icmp ugt i32 %21, 65538
-  br i1 %29, label %30, label %32, !prof !302
+  br i1 %29, label %30, label %32, !prof !301
 
 30:                                               ; preds = %25
   %31 = add nuw i64 %6, 1
@@ -8926,7 +8852,7 @@ define dso_local i64 @convertSequences_noRepcodes(ptr noundef writeonly captures
 32:                                               ; preds = %30, %25
   %33 = phi i64 [ %31, %30 ], [ %7, %25 ]
   %34 = icmp ugt i32 %17, 65535
-  br i1 %34, label %35, label %46, !prof !302
+  br i1 %34, label %35, label %46, !prof !301
 
 35:                                               ; preds = %32
   %36 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %6, i64 %2), !nosanitize !8
@@ -8934,7 +8860,7 @@ define dso_local i64 @convertSequences_noRepcodes(ptr noundef writeonly captures
   br i1 %37, label %38, label %39, !prof !9, !nosanitize !8
 
 38:                                               ; preds = %35
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 39:                                               ; preds = %35
@@ -8944,7 +8870,7 @@ define dso_local i64 @convertSequences_noRepcodes(ptr noundef writeonly captures
   br i1 %42, label %43, label %44, !prof !9, !nosanitize !8
 
 43:                                               ; preds = %39
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 44:                                               ; preds = %39
@@ -8955,7 +8881,7 @@ define dso_local i64 @convertSequences_noRepcodes(ptr noundef writeonly captures
   %47 = phi i64 [ %45, %44 ], [ %33, %32 ]
   %48 = add nuw i64 %6, 1
   %49 = icmp eq i64 %48, %2
-  br i1 %49, label %50, label %5, !llvm.loop !303
+  br i1 %49, label %50, label %5, !llvm.loop !302
 
 50:                                               ; preds = %46, %3
   %51 = phi i64 [ 0, %3 ], [ %47, %46 ]
@@ -8968,9 +8894,9 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   call void @llvm.lifetime.start.p0(ptr nonnull %5) #36
   %6 = getelementptr inbounds nuw i8, ptr %0, i64 976
   %7 = getelementptr inbounds nuw i8, ptr %0, i64 1032
-  %8 = load i64, ptr %7, align 8, !tbaa !304
+  %8 = load i64, ptr %7, align 8, !tbaa !303
   %9 = icmp ult i64 %2, %8
-  br i1 %9, label %10, label %260
+  br i1 %9, label %10, label %258
 
 10:                                               ; preds = %4
   %11 = getelementptr inbounds nuw i8, ptr %0, i64 3224
@@ -8983,7 +8909,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
 
 16:                                               ; preds = %10
   %17 = extractvalue { i64, i1 } %15, 1, !nosanitize !8
-  br i1 %17, label %107, label %18, !prof !305, !nosanitize !8
+  br i1 %17, label %107, label %18, !prof !304, !nosanitize !8
 
 18:                                               ; preds = %16
   %19 = extractvalue { i64, i1 } %15, 0, !nosanitize !8
@@ -8993,7 +8919,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   %23 = getelementptr inbounds nuw i8, ptr %0, i64 984
   %24 = getelementptr inbounds nuw i8, ptr %0, i64 1052
   %25 = icmp eq i64 %19, 0
-  br i1 %25, label %214, label %26
+  br i1 %25, label %212, label %26
 
 26:                                               ; preds = %18
   %27 = load i32, ptr %21, align 8
@@ -9007,11 +8933,11 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   br i1 %32, label %33, label %34, !prof !9, !nosanitize !8
 
 33:                                               ; preds = %30
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 34:                                               ; preds = %30
-  %35 = load ptr, ptr %6, align 8, !tbaa !225
+  %35 = load ptr, ptr %6, align 8, !tbaa !224
   %36 = icmp eq i64 %31, 0
   br i1 %36, label %37, label %41
 
@@ -9019,20 +8945,20 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   %38 = getelementptr inbounds nuw [8 x i8], ptr %35, i64 %2
   %39 = getelementptr inbounds i8, ptr %38, i64 -8
   %40 = getelementptr inbounds nuw i8, ptr %0, i64 984
-  store ptr %39, ptr %40, align 8, !tbaa !224
-  br label %214
+  store ptr %39, ptr %40, align 8, !tbaa !223
+  br label %212
 
 41:                                               ; preds = %34, %82
   %42 = phi i64 [ %84, %82 ], [ 0, %34 ]
   %43 = phi i64 [ %83, %82 ], [ 0, %34 ]
   %44 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %42
-  %45 = load i32, ptr %44, align 4, !tbaa !183
+  %45 = load i32, ptr %44, align 4, !tbaa !181
   %46 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %45, i32 3), !nosanitize !8
   %47 = extractvalue { i32, i1 } %46, 1, !nosanitize !8
   br i1 %47, label %48, label %49, !prof !9, !nosanitize !8
 
 48:                                               ; preds = %41
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 49:                                               ; preds = %41
@@ -9040,18 +8966,18 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   %51 = getelementptr inbounds nuw [8 x i8], ptr %35, i64 %42
   store i32 %50, ptr %51, align 4, !tbaa !162
   %52 = getelementptr inbounds nuw i8, ptr %44, i64 4
-  %53 = load i32, ptr %52, align 4, !tbaa !186
+  %53 = load i32, ptr %52, align 4, !tbaa !184
   %54 = trunc i32 %53 to i16
   %55 = getelementptr inbounds nuw i8, ptr %51, i64 4
   store i16 %54, ptr %55, align 4, !tbaa !159
   %56 = getelementptr inbounds nuw i8, ptr %44, i64 8
-  %57 = load i32, ptr %56, align 4, !tbaa !185
+  %57 = load i32, ptr %56, align 4, !tbaa !183
   %58 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %57, i32 3), !nosanitize !8
   %59 = extractvalue { i32, i1 } %58, 1, !nosanitize !8
   br i1 %59, label %60, label %61, !prof !9, !nosanitize !8
 
 60:                                               ; preds = %49
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 61:                                               ; preds = %49
@@ -9060,7 +8986,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   %64 = getelementptr inbounds nuw i8, ptr %51, i64 6
   store i16 %63, ptr %64, align 2, !tbaa !163
   %65 = icmp ugt i32 %57, 65538
-  br i1 %65, label %66, label %68, !prof !302
+  br i1 %65, label %66, label %68, !prof !301
 
 66:                                               ; preds = %61
   %67 = add nuw i64 %42, 1
@@ -9069,7 +8995,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
 68:                                               ; preds = %66, %61
   %69 = phi i64 [ %67, %66 ], [ %43, %61 ]
   %70 = icmp ugt i32 %53, 65535
-  br i1 %70, label %71, label %82, !prof !302
+  br i1 %70, label %71, label %82, !prof !301
 
 71:                                               ; preds = %68
   %72 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %42, i64 %31), !nosanitize !8
@@ -9077,7 +9003,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   br i1 %73, label %74, label %75, !prof !9, !nosanitize !8
 
 74:                                               ; preds = %71
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 75:                                               ; preds = %71
@@ -9087,7 +9013,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   br i1 %78, label %79, label %80, !prof !9, !nosanitize !8
 
 79:                                               ; preds = %75
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 80:                                               ; preds = %75
@@ -9098,15 +9024,15 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   %83 = phi i64 [ %81, %80 ], [ %69, %68 ]
   %84 = add nuw i64 %42, 1
   %85 = icmp eq i64 %84, %31
-  br i1 %85, label %86, label %41, !llvm.loop !303
+  br i1 %85, label %86, label %41, !llvm.loop !302
 
 86:                                               ; preds = %82
   %87 = getelementptr inbounds nuw [8 x i8], ptr %35, i64 %2
   %88 = getelementptr inbounds i8, ptr %87, i64 -8
   %89 = getelementptr inbounds nuw i8, ptr %0, i64 984
-  store ptr %88, ptr %89, align 8, !tbaa !224
+  store ptr %88, ptr %89, align 8, !tbaa !223
   %90 = icmp eq i64 %83, 0
-  br i1 %90, label %214, label %91
+  br i1 %90, label %212, label %91
 
 91:                                               ; preds = %86
   %92 = icmp ugt i64 %83, %31
@@ -9114,55 +9040,55 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   br i1 %92, label %98, label %94
 
 94:                                               ; preds = %91
-  store i32 2, ptr %93, align 8, !tbaa !306
+  store i32 2, ptr %93, align 8, !tbaa !305
   %95 = trunc i64 %83 to i32
   %96 = add i32 %95, -1
   %97 = getelementptr inbounds nuw i8, ptr %0, i64 1052
-  store i32 %96, ptr %97, align 4, !tbaa !307
-  br label %214
+  store i32 %96, ptr %97, align 4, !tbaa !306
+  br label %212
 
 98:                                               ; preds = %91
-  store i32 1, ptr %93, align 8, !tbaa !306
+  store i32 1, ptr %93, align 8, !tbaa !305
   %99 = sub nuw i64 %83, %31
   %100 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %99, i64 1), !nosanitize !8
   %101 = extractvalue { i64, i1 } %100, 1, !nosanitize !8
   br i1 %101, label %102, label %103, !prof !9, !nosanitize !8
 
 102:                                              ; preds = %98
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 103:                                              ; preds = %98
   %104 = extractvalue { i64, i1 } %100, 0, !nosanitize !8
   %105 = trunc i64 %104 to i32
   %106 = getelementptr inbounds nuw i8, ptr %0, i64 1052
-  store i32 %105, ptr %106, align 4, !tbaa !307
-  br label %214
+  store i32 %105, ptr %106, align 4, !tbaa !306
+  br label %212
 
 107:                                              ; preds = %16
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-108:                                              ; preds = %26, %208
-  %109 = phi i32 [ %29, %26 ], [ %211, %208 ]
-  %110 = phi i64 [ 0, %26 ], [ %212, %208 ]
-  %111 = phi i32 [ %28, %26 ], [ %210, %208 ]
-  %112 = phi i32 [ %27, %26 ], [ %209, %208 ]
+108:                                              ; preds = %26, %206
+  %109 = phi i32 [ %29, %26 ], [ %209, %206 ]
+  %110 = phi i64 [ 0, %26 ], [ %210, %206 ]
+  %111 = phi i32 [ %28, %26 ], [ %208, %206 ]
+  %112 = phi i32 [ %27, %26 ], [ %207, %206 ]
   %113 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %110
   %114 = getelementptr inbounds nuw i8, ptr %113, i64 4
-  %115 = load i32, ptr %114, align 4, !tbaa !186
+  %115 = load i32, ptr %114, align 4, !tbaa !184
   %116 = icmp eq i32 %115, 0
   %117 = zext i1 %116 to i32
   %118 = getelementptr inbounds nuw i8, ptr %113, i64 8
-  %119 = load i32, ptr %118, align 4, !tbaa !185
-  %120 = load i32, ptr %113, align 4, !tbaa !183
+  %119 = load i32, ptr %118, align 4, !tbaa !183
+  %120 = load i32, ptr %113, align 4, !tbaa !181
   %121 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %120, i32 3), !nosanitize !8
   %122 = extractvalue { i32, i1 } %121, 0, !nosanitize !8
   %123 = extractvalue { i32, i1 } %121, 1, !nosanitize !8
   br i1 %123, label %124, label %125, !prof !9, !nosanitize !8
 
 124:                                              ; preds = %108
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 125:                                              ; preds = %108
@@ -9195,7 +9121,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   br i1 %139, label %140, label %141, !prof !9, !nosanitize !8
 
 140:                                              ; preds = %137
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 141:                                              ; preds = %137
@@ -9209,7 +9135,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   %147 = phi i32 [ %131, %130 ], [ %135, %134 ], [ 1, %125 ], [ %122, %136 ]
   %148 = icmp ugt i32 %115, 65535
   %149 = load ptr, ptr %23, align 8, !tbaa !158
-  br i1 %148, label %150, label %157, !prof !308
+  br i1 %148, label %150, label %157, !prof !307
 
 150:                                              ; preds = %146
   store i32 1, ptr %22, align 8, !tbaa !167
@@ -9236,12 +9162,12 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   br i1 %165, label %166, label %167, !prof !9, !nosanitize !8
 
 166:                                              ; preds = %157
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 167:                                              ; preds = %157
   %168 = icmp ugt i64 %164, 65535
-  br i1 %168, label %169, label %176, !prof !302
+  br i1 %168, label %169, label %176, !prof !301
 
 169:                                              ; preds = %167
   store i32 2, ptr %22, align 8, !tbaa !167
@@ -9267,7 +9193,7 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   store i32 %111, ptr %21, align 8, !tbaa !4
   store i32 %109, ptr %20, align 4, !tbaa !4
   %182 = add i32 %159, -3
-  br label %205
+  br label %203
 
 183:                                              ; preds = %176
   %184 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %159, i32 1), !nosanitize !8
@@ -9275,14 +9201,14 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   br i1 %185, label %186, label %187, !prof !9, !nosanitize !8
 
 186:                                              ; preds = %183
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 187:                                              ; preds = %183
   %188 = extractvalue { i32, i1 } %184, 0, !nosanitize !8
   %189 = add nuw nsw i32 %188, %117
   switch i32 %189, label %195 [
-    i32 0, label %208
+    i32 0, label %206
     i32 3, label %190
   ]
 
@@ -9290,131 +9216,123 @@ define dso_local range(i64 -107, 1) i64 @ZSTD_convertBlockSequences(ptr noundef 
   %191 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %109, i32 1), !nosanitize !8
   %192 = extractvalue { i32, i1 } %191, 0, !nosanitize !8
   %193 = extractvalue { i32, i1 } %191, 1, !nosanitize !8
-  br i1 %193, label %194, label %201, !prof !9, !nosanitize !8
+  br i1 %193, label %194, label %199, !prof !9, !nosanitize !8
 
 194:                                              ; preds = %190
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 195:                                              ; preds = %187
-  %196 = icmp ugt i32 %189, 2
-  br i1 %196, label %262, label %197
+  %196 = zext nneg i32 %189 to i64
+  %197 = getelementptr inbounds nuw [4 x i8], ptr %5, i64 %196
+  %198 = load i32, ptr %197, align 4, !tbaa !4
+  br label %199
 
-197:                                              ; preds = %195
-  %198 = zext nneg i32 %189 to i64
-  %199 = getelementptr inbounds nuw [4 x i8], ptr %5, i64 %198
-  %200 = load i32, ptr %199, align 4, !tbaa !4
-  br label %201
-
-201:                                              ; preds = %197, %190
-  %202 = phi i32 [ %200, %197 ], [ %192, %190 ]
-  %203 = icmp eq i32 %189, 1
-  %204 = select i1 %203, i32 %112, i32 %111
-  store i32 %204, ptr %21, align 8, !tbaa !4
+199:                                              ; preds = %195, %190
+  %200 = phi i32 [ %198, %195 ], [ %192, %190 ]
+  %201 = icmp eq i32 %189, 1
+  %202 = select i1 %201, i32 %112, i32 %111
+  store i32 %202, ptr %21, align 8, !tbaa !4
   store i32 %109, ptr %20, align 4, !tbaa !4
-  br label %205
+  br label %203
 
-205:                                              ; preds = %201, %181
-  %206 = phi i32 [ %204, %201 ], [ %111, %181 ]
-  %207 = phi i32 [ %202, %201 ], [ %182, %181 ]
-  store i32 %207, ptr %5, align 8, !tbaa !4
-  br label %208
+203:                                              ; preds = %199, %181
+  %204 = phi i32 [ %202, %199 ], [ %111, %181 ]
+  %205 = phi i32 [ %200, %199 ], [ %182, %181 ]
+  store i32 %205, ptr %5, align 8, !tbaa !4
+  br label %206
 
-208:                                              ; preds = %205, %187
-  %209 = phi i32 [ %206, %205 ], [ %112, %187 ]
-  %210 = phi i32 [ %109, %205 ], [ %111, %187 ]
-  %211 = phi i32 [ %207, %205 ], [ %109, %187 ]
-  %212 = add i64 %110, 1
-  %213 = icmp eq i64 %212, %19
-  br i1 %213, label %214, label %108
+206:                                              ; preds = %203, %187
+  %207 = phi i32 [ %204, %203 ], [ %112, %187 ]
+  %208 = phi i32 [ %109, %203 ], [ %111, %187 ]
+  %209 = phi i32 [ %205, %203 ], [ %109, %187 ]
+  %210 = add i64 %110, 1
+  %211 = icmp eq i64 %210, %19
+  br i1 %211, label %212, label %108
 
-214:                                              ; preds = %208, %18, %37, %86, %103, %94
-  %215 = icmp ugt i64 %2, 1
-  %216 = and i1 %215, %14
-  br i1 %216, label %217, label %256
+212:                                              ; preds = %206, %18, %37, %86, %103, %94
+  %213 = icmp ugt i64 %2, 1
+  %214 = and i1 %213, %14
+  br i1 %214, label %215, label %254
 
-217:                                              ; preds = %214
-  %218 = icmp ugt i64 %2, 3
-  br i1 %218, label %219, label %242
+215:                                              ; preds = %212
+  %216 = icmp ugt i64 %2, 3
+  br i1 %216, label %217, label %240
 
-219:                                              ; preds = %217
-  %220 = trunc i64 %2 to i32
-  %221 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %220, i32 2), !nosanitize !8
-  %222 = extractvalue { i32, i1 } %221, 0, !nosanitize !8
-  %223 = extractvalue { i32, i1 } %221, 1, !nosanitize !8
-  br i1 %223, label %224, label %225, !prof !9, !nosanitize !8
+217:                                              ; preds = %215
+  %218 = trunc i64 %2 to i32
+  %219 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %218, i32 2), !nosanitize !8
+  %220 = extractvalue { i32, i1 } %219, 0, !nosanitize !8
+  %221 = extractvalue { i32, i1 } %219, 1, !nosanitize !8
+  br i1 %221, label %222, label %223, !prof !9, !nosanitize !8
 
-224:                                              ; preds = %219
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+222:                                              ; preds = %217
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-225:                                              ; preds = %219
-  %226 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %222, i32 2), !nosanitize !8
-  %227 = extractvalue { i32, i1 } %226, 1, !nosanitize !8
-  br i1 %227, label %228, label %229, !prof !9, !nosanitize !8
+223:                                              ; preds = %217
+  %224 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %220, i32 2), !nosanitize !8
+  %225 = extractvalue { i32, i1 } %224, 1, !nosanitize !8
+  br i1 %225, label %226, label %227, !prof !9, !nosanitize !8
 
-228:                                              ; preds = %225
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+226:                                              ; preds = %223
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-229:                                              ; preds = %225
-  %230 = extractvalue { i32, i1 } %226, 0, !nosanitize !8
-  %231 = zext i32 %230 to i64
-  %232 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %231
-  %233 = load i32, ptr %232, align 4, !tbaa !183
-  %234 = getelementptr inbounds nuw i8, ptr %5, i64 8
-  store i32 %233, ptr %234, align 8, !tbaa !4
-  %235 = add i32 %222, -1
-  %236 = zext i32 %235 to i64
-  %237 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %236
-  %238 = load i32, ptr %237, align 4, !tbaa !183
-  %239 = getelementptr inbounds nuw i8, ptr %5, i64 4
-  store i32 %238, ptr %239, align 4, !tbaa !4
-  %240 = zext i32 %222 to i64
-  %241 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %240
-  br label %253
+227:                                              ; preds = %223
+  %228 = extractvalue { i32, i1 } %224, 0, !nosanitize !8
+  %229 = zext i32 %228 to i64
+  %230 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %229
+  %231 = load i32, ptr %230, align 4, !tbaa !181
+  %232 = getelementptr inbounds nuw i8, ptr %5, i64 8
+  store i32 %231, ptr %232, align 8, !tbaa !4
+  %233 = add i32 %220, -1
+  %234 = zext i32 %233 to i64
+  %235 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %234
+  %236 = load i32, ptr %235, align 4, !tbaa !181
+  %237 = getelementptr inbounds nuw i8, ptr %5, i64 4
+  store i32 %236, ptr %237, align 4, !tbaa !4
+  %238 = zext i32 %220 to i64
+  %239 = getelementptr inbounds nuw [16 x i8], ptr %1, i64 %238
+  br label %251
 
-242:                                              ; preds = %217
-  %243 = icmp eq i64 %2, 3
-  br i1 %243, label %244, label %250
+240:                                              ; preds = %215
+  %241 = icmp eq i64 %2, 3
+  br i1 %241, label %242, label %248
 
-244:                                              ; preds = %242
-  %245 = load i32, ptr %5, align 8, !tbaa !4
-  %246 = getelementptr inbounds nuw i8, ptr %5, i64 8
-  store i32 %245, ptr %246, align 8, !tbaa !4
-  %247 = load i32, ptr %1, align 4, !tbaa !183
-  %248 = getelementptr inbounds nuw i8, ptr %5, i64 4
-  store i32 %247, ptr %248, align 4, !tbaa !4
-  %249 = getelementptr inbounds nuw i8, ptr %1, i64 16
-  br label %253
+242:                                              ; preds = %240
+  %243 = load i32, ptr %5, align 8, !tbaa !4
+  %244 = getelementptr inbounds nuw i8, ptr %5, i64 8
+  store i32 %243, ptr %244, align 8, !tbaa !4
+  %245 = load i32, ptr %1, align 4, !tbaa !181
+  %246 = getelementptr inbounds nuw i8, ptr %5, i64 4
+  store i32 %245, ptr %246, align 4, !tbaa !4
+  %247 = getelementptr inbounds nuw i8, ptr %1, i64 16
+  br label %251
 
-250:                                              ; preds = %242
-  %251 = getelementptr inbounds nuw i8, ptr %5, i64 4
-  %252 = load <2 x i32>, ptr %5, align 8, !tbaa !4
-  store <2 x i32> %252, ptr %251, align 4, !tbaa !4
-  br label %253
+248:                                              ; preds = %240
+  %249 = getelementptr inbounds nuw i8, ptr %5, i64 4
+  %250 = load <2 x i32>, ptr %5, align 8, !tbaa !4
+  store <2 x i32> %250, ptr %249, align 4, !tbaa !4
+  br label %251
 
-253:                                              ; preds = %244, %250, %229
-  %254 = phi ptr [ %241, %229 ], [ %1, %250 ], [ %249, %244 ]
-  %255 = load i32, ptr %254, align 4, !tbaa !183
-  store i32 %255, ptr %5, align 8, !tbaa !4
-  br label %256
+251:                                              ; preds = %242, %248, %227
+  %252 = phi ptr [ %239, %227 ], [ %1, %248 ], [ %247, %242 ]
+  %253 = load i32, ptr %252, align 4, !tbaa !181
+  store i32 %253, ptr %5, align 8, !tbaa !4
+  br label %254
 
-256:                                              ; preds = %253, %214
-  %257 = getelementptr inbounds nuw i8, ptr %0, i64 3232
-  %258 = load ptr, ptr %257, align 8, !tbaa !58
-  %259 = getelementptr inbounds nuw i8, ptr %258, i64 5616
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(12) %259, ptr noundef nonnull align 8 dereferenceable(12) %5, i64 12, i1 false)
-  br label %260
+254:                                              ; preds = %251, %212
+  %255 = getelementptr inbounds nuw i8, ptr %0, i64 3232
+  %256 = load ptr, ptr %255, align 8, !tbaa !58
+  %257 = getelementptr inbounds nuw i8, ptr %256, i64 5616
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(12) %257, ptr noundef nonnull align 8 dereferenceable(12) %5, i64 12, i1 false)
+  br label %258
 
-260:                                              ; preds = %4, %256
-  %261 = phi i64 [ 0, %256 ], [ -107, %4 ]
+258:                                              ; preds = %4, %254
+  %259 = phi i64 [ 0, %254 ], [ -107, %4 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %5) #36
-  ret i64 %261
-
-262:                                              ; preds = %195
-  tail call void @llvm.ubsantrap(i8 73) #34, !nosanitize !8
-  unreachable, !nosanitize !8
+  ret i64 %259
 }
 
 ; Function Attrs: nounwind memory(argmem: readwrite, inaccessiblemem: write) uwtable
@@ -9441,7 +9359,7 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
   br i1 %18, label %19, label %20, !prof !9, !nosanitize !8
 
 19:                                               ; preds = %7
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 20:                                               ; preds = %7
@@ -9459,7 +9377,7 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
   br i1 %29, label %30, label %31, !prof !9, !nosanitize !8
 
 30:                                               ; preds = %22
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 31:                                               ; preds = %22
@@ -9477,7 +9395,7 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
   br i1 %40, label %41, label %42, !prof !9, !nosanitize !8
 
 41:                                               ; preds = %33
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 42:                                               ; preds = %33
@@ -9495,7 +9413,7 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
   br i1 %51, label %52, label %53, !prof !9, !nosanitize !8
 
 52:                                               ; preds = %44
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 53:                                               ; preds = %44
@@ -9505,7 +9423,7 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
 55:                                               ; preds = %53
   %56 = add nuw i64 %11, 4
   %57 = icmp ult i64 %56, %6
-  br i1 %57, label %7, label %58, !llvm.loop !309
+  br i1 %57, label %7, label %58, !llvm.loop !308
 
 58:                                               ; preds = %55, %3
   %59 = phi i64 [ 0, %3 ], [ %28, %55 ]
@@ -9528,7 +9446,7 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
   br i1 %73, label %74, label %75, !prof !9, !nosanitize !8
 
 74:                                               ; preds = %65
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 75:                                               ; preds = %65
@@ -9538,10 +9456,10 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
 77:                                               ; preds = %75
   %78 = add i64 %67, 1
   %79 = icmp eq i64 %78, %2
-  br i1 %79, label %80, label %65, !llvm.loop !310
+  br i1 %79, label %80, label %65, !llvm.loop !309
 
 80:                                               ; preds = %77, %58
-  store i64 -107, ptr %0, align 8, !tbaa !311
+  store i64 -107, ptr %0, align 8, !tbaa !310
   br label %108
 
 81:                                               ; preds = %20, %31, %42, %53, %75
@@ -9555,7 +9473,7 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
   br i1 %88, label %89, label %90, !prof !9, !nosanitize !8
 
 89:                                               ; preds = %81
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 90:                                               ; preds = %81
@@ -9565,7 +9483,7 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
   br i1 %93, label %94, label %95, !prof !9, !nosanitize !8
 
 94:                                               ; preds = %90
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 95:                                               ; preds = %90
@@ -9575,20 +9493,20 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
   br i1 %98, label %99, label %100, !prof !9, !nosanitize !8
 
 99:                                               ; preds = %95
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 100:                                              ; preds = %95
   %101 = extractvalue { i64, i1 } %97, 0, !nosanitize !8
   %102 = add nuw i64 %85, 1
-  store i64 %102, ptr %0, align 8, !tbaa !311
+  store i64 %102, ptr %0, align 8, !tbaa !310
   %103 = and i64 %101, 4294967295
   %104 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  store i64 %103, ptr %104, align 8, !tbaa !313
+  store i64 %103, ptr %104, align 8, !tbaa !312
   %105 = lshr i64 %101, 32
   %106 = add nuw nsw i64 %103, %105
   %107 = getelementptr inbounds nuw i8, ptr %0, i64 8
-  store i64 %106, ptr %107, align 8, !tbaa !314
+  store i64 %106, ptr %107, align 8, !tbaa !313
   br label %108
 
 108:                                              ; preds = %100, %80
@@ -9598,18 +9516,18 @@ define dso_local void @ZSTD_get1BlockSummary(ptr dead_on_unwind noalias writable
 ; Function Attrs: nounwind memory(read, argmem: readwrite, inaccessiblemem: write, target_mem: none) uwtable
 define dso_local range(i64 -66, -63) i64 @ZSTD_compressSequencesAndLiterals(ptr noundef captures(none) %0, ptr noundef readnone captures(none) %1, i64 noundef %2, ptr noundef readonly captures(none) %3, i64 noundef %4, ptr noundef readnone captures(none) %5, i64 noundef %6, i64 noundef %7, i64 noundef %8) local_unnamed_addr #22 {
   %10 = icmp ult i64 %7, %6
-  br i1 %10, label %61, label %11
+  br i1 %10, label %58, label %11
 
 11:                                               ; preds = %9
   %12 = getelementptr inbounds nuw i8, ptr %0, i64 3736
   %13 = getelementptr inbounds nuw i8, ptr %0, i64 3696
-  %14 = load ptr, ptr %13, align 8, !tbaa !293
+  %14 = load ptr, ptr %13, align 8, !tbaa !291
   %15 = icmp eq ptr %14, null
   br i1 %15, label %34, label %16
 
 16:                                               ; preds = %11
   %17 = getelementptr inbounds nuw i8, ptr %0, i64 3720
-  %18 = load ptr, ptr %17, align 8, !tbaa !294
+  %18 = load ptr, ptr %17, align 8, !tbaa !292
   %19 = icmp eq ptr %18, null
   br i1 %19, label %20, label %34
 
@@ -9621,7 +9539,7 @@ define dso_local range(i64 -66, -63) i64 @ZSTD_compressSequencesAndLiterals(ptr 
   %25 = icmp eq ptr %22, null
   %26 = icmp eq ptr %24, null
   %27 = xor i1 %25, %26
-  br i1 %27, label %61, label %28
+  br i1 %27, label %58, label %28
 
 28:                                               ; preds = %20
   %29 = getelementptr inbounds nuw i8, ptr %0, i64 136
@@ -9630,11 +9548,11 @@ define dso_local range(i64 -66, -63) i64 @ZSTD_compressSequencesAndLiterals(ptr 
   br i1 %31, label %33, label %32
 
 32:                                               ; preds = %28
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 33:                                               ; preds = %28
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 34:                                               ; preds = %16, %11
@@ -9646,7 +9564,7 @@ define dso_local range(i64 -66, -63) i64 @ZSTD_compressSequencesAndLiterals(ptr 
   br i1 %38, label %39, label %40, !prof !9, !nosanitize !8
 
 39:                                               ; preds = %34
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 40:                                               ; preds = %34
@@ -9654,70 +9572,62 @@ define dso_local range(i64 -66, -63) i64 @ZSTD_compressSequencesAndLiterals(ptr 
   %42 = extractvalue { i64, i1 } %37, 0, !nosanitize !8
   %43 = getelementptr inbounds nuw i8, ptr %0, i64 784
   store i64 %42, ptr %43, align 8, !tbaa !119
-  br i1 %41, label %60, label %44
+  br i1 %41, label %57, label %44
 
 44:                                               ; preds = %40
-  %45 = add i64 %42, -1
-  %46 = getelementptr inbounds nuw i8, ptr %36, i64 384
-  %47 = load i32, ptr %46, align 8, !tbaa !242
-  %48 = icmp ult i32 %47, 10
-  br i1 %48, label %50, label %49, !prof !169, !nosanitize !8
+  %45 = getelementptr inbounds nuw i8, ptr %36, i64 244
+  %46 = load i32, ptr %45, align 4, !tbaa !241
+  %47 = icmp eq i32 %46, 0
+  br i1 %47, label %48, label %57
 
-49:                                               ; preds = %44
-  tail call void @llvm.ubsantrap(i8 18) #39, !nosanitize !8
+48:                                               ; preds = %44
+  %49 = add i64 %42, -1
+  %50 = getelementptr inbounds nuw i8, ptr %36, i64 384
+  %51 = load i32, ptr %50, align 8, !tbaa !293
+  %52 = zext i32 %51 to i64
+  %53 = getelementptr inbounds nuw [8 x i8], ptr @attachDictSizeCutoffs, i64 %52
+  %54 = load i64, ptr %53, align 8, !tbaa !118
+  %55 = icmp ugt i64 %49, %54
+  br i1 %55, label %56, label %57
+
+56:                                               ; preds = %48
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-50:                                               ; preds = %44
-  %51 = getelementptr inbounds nuw i8, ptr %36, i64 244
-  %52 = load i32, ptr %51, align 4, !tbaa !243
-  %53 = icmp eq i32 %52, 0
-  br i1 %53, label %54, label %60
-
-54:                                               ; preds = %50
-  %55 = zext nneg i32 %47 to i64, !nosanitize !8
-  %56 = getelementptr inbounds nuw [8 x i8], ptr @attachDictSizeCutoffs, i64 %55
-  %57 = load i64, ptr %56, align 8, !tbaa !118
-  %58 = icmp ugt i64 %45, %57
-  br i1 %58, label %59, label %60
-
-59:                                               ; preds = %54
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+57:                                               ; preds = %40, %48, %44
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-60:                                               ; preds = %40, %54, %50
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-61:                                               ; preds = %20, %9
-  %62 = phi i64 [ -64, %20 ], [ -66, %9 ]
-  ret i64 %62
+58:                                               ; preds = %20, %9
+  %59 = phi i64 [ -64, %20 ], [ -66, %9 ]
+  ret i64 %59
 }
 
 ; Function Attrs: nounwind uwtable
 define dso_local i64 @ZSTD_flushStream(ptr noundef %0, ptr noundef captures(none) %1) local_unnamed_addr #4 {
   %3 = alloca %struct.ZSTD_inBuffer_s, align 8
   call void @llvm.lifetime.start.p0(ptr nonnull %3) #36
-  tail call void @llvm.experimental.noalias.scope.decl(metadata !315)
+  tail call void @llvm.experimental.noalias.scope.decl(metadata !314)
   %4 = getelementptr inbounds nuw i8, ptr %0, i64 364
-  %5 = load i32, ptr %4, align 4, !tbaa !286, !noalias !315
+  %5 = load i32, ptr %4, align 4, !tbaa !284, !noalias !314
   %6 = icmp eq i32 %5, 1
   br i1 %6, label %7, label %11
 
 7:                                                ; preds = %2
   %8 = getelementptr inbounds nuw i8, ptr %0, i64 3648
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %3, ptr noundef nonnull readonly align 8 dereferenceable(24) %8, i64 24, i1 false), !tbaa.struct !291
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %3, ptr noundef nonnull readonly align 8 dereferenceable(24) %8, i64 24, i1 false), !tbaa.struct !289
   %9 = getelementptr inbounds nuw i8, ptr %3, i64 16
-  %10 = load i64, ptr %9, align 8, !tbaa !179
+  %10 = load i64, ptr %9, align 8, !tbaa !177
   br label %12
 
 11:                                               ; preds = %2
-  call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %3, i8 0, i64 24, i1 false), !alias.scope !315
+  call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %3, i8 0, i64 24, i1 false), !alias.scope !314
   br label %12
 
 12:                                               ; preds = %7, %11
   %13 = phi i64 [ %10, %7 ], [ 0, %11 ]
   %14 = getelementptr inbounds nuw i8, ptr %3, i64 8
-  store i64 %13, ptr %14, align 8, !tbaa !178
+  store i64 %13, ptr %14, align 8, !tbaa !176
   %15 = call i64 @ZSTD_compressStream2(ptr noundef nonnull %0, ptr noundef %1, ptr noundef nonnull %3, i32 noundef 1)
   call void @llvm.lifetime.end.p0(ptr nonnull %3) #36
   ret i64 %15
@@ -9727,19 +9637,19 @@ define dso_local i64 @ZSTD_flushStream(ptr noundef %0, ptr noundef captures(none
 define dso_local i64 @ZSTD_endStream(ptr noundef %0, ptr noundef captures(none) %1) local_unnamed_addr #4 {
   %3 = alloca %struct.ZSTD_inBuffer_s, align 8
   call void @llvm.lifetime.start.p0(ptr nonnull %3) #36
-  tail call void @llvm.experimental.noalias.scope.decl(metadata !318)
+  tail call void @llvm.experimental.noalias.scope.decl(metadata !317)
   %4 = getelementptr inbounds nuw i8, ptr %0, i64 364
-  %5 = load i32, ptr %4, align 4, !tbaa !286, !noalias !318
+  %5 = load i32, ptr %4, align 4, !tbaa !284, !noalias !317
   %6 = icmp eq i32 %5, 1
   br i1 %6, label %7, label %9
 
 7:                                                ; preds = %2
   %8 = getelementptr inbounds nuw i8, ptr %0, i64 3648
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %3, ptr noundef nonnull readonly align 8 dereferenceable(24) %8, i64 24, i1 false), !tbaa.struct !291
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %3, ptr noundef nonnull readonly align 8 dereferenceable(24) %8, i64 24, i1 false), !tbaa.struct !289
   br label %10
 
 9:                                                ; preds = %2
-  call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %3, i8 0, i64 24, i1 false), !alias.scope !318
+  call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %3, i8 0, i64 24, i1 false), !alias.scope !317
   br label %10
 
 10:                                               ; preds = %7, %9
@@ -9749,27 +9659,27 @@ define dso_local i64 @ZSTD_endStream(ptr noundef %0, ptr noundef captures(none) 
 
 13:                                               ; preds = %10
   %14 = getelementptr inbounds nuw i8, ptr %0, i64 316
-  %15 = load i32, ptr %14, align 4, !tbaa !247
+  %15 = load i32, ptr %14, align 4, !tbaa !245
   %16 = icmp sgt i32 %15, 0
   br i1 %16, label %38, label %17
 
 17:                                               ; preds = %13
   %18 = getelementptr inbounds nuw i8, ptr %0, i64 3644
-  %19 = load i32, ptr %18, align 4, !tbaa !300
+  %19 = load i32, ptr %18, align 4, !tbaa !299
   %20 = icmp eq i32 %19, 0
   %21 = select i1 %20, i64 3, i64 0
   br i1 %20, label %22, label %29
 
 22:                                               ; preds = %17
   %23 = getelementptr inbounds nuw i8, ptr %0, i64 276
-  %24 = load i32, ptr %23, align 4, !tbaa !217
+  %24 = load i32, ptr %23, align 4, !tbaa !216
   %25 = shl nsw i32 %24, 2
   %26 = add i32 %24, 536870912
   %27 = icmp ult i32 %26, 1073741824
-  br i1 %27, label %29, label %28, !prof !169, !nosanitize !8
+  br i1 %27, label %29, label %28, !prof !215, !nosanitize !8
 
 28:                                               ; preds = %22
-  tail call void @llvm.ubsantrap(i8 12) #39, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #39, !nosanitize !8
   unreachable, !nosanitize !8
 
 29:                                               ; preds = %17, %22
@@ -9781,7 +9691,7 @@ define dso_local i64 @ZSTD_endStream(ptr noundef %0, ptr noundef captures(none) 
   br i1 %34, label %35, label %36, !prof !9, !nosanitize !8
 
 35:                                               ; preds = %29
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 36:                                               ; preds = %29
@@ -9805,11 +9715,11 @@ define dso_local void @ZSTD_getCParams(ptr dead_on_unwind noalias readnone sret(
   br i1 %5, label %6, label %7
 
 6:                                                ; preds = %4
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 7:                                                ; preds = %4
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -9819,11 +9729,11 @@ define dso_local void @ZSTD_getParams(ptr dead_on_unwind noalias readnone sret(%
   br i1 %5, label %6, label %7
 
 6:                                                ; preds = %4
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 7:                                                ; preds = %4
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 }
 
@@ -9832,9 +9742,9 @@ define dso_local void @ZSTD_registerSequenceProducer(ptr noundef writeonly captu
   %4 = icmp eq ptr %2, null
   %5 = select i1 %4, ptr null, ptr %1
   %6 = getelementptr inbounds nuw i8, ptr %0, i64 224
-  store ptr %2, ptr %6, align 8, !tbaa !321
+  store ptr %2, ptr %6, align 8, !tbaa !320
   %7 = getelementptr inbounds nuw i8, ptr %0, i64 216
-  store ptr %5, ptr %7, align 8, !tbaa !322
+  store ptr %5, ptr %7, align 8, !tbaa !321
   ret void
 }
 
@@ -9843,9 +9753,9 @@ define dso_local void @ZSTD_CCtxParams_registerSequenceProducer(ptr noundef writ
   %4 = icmp eq ptr %2, null
   %5 = select i1 %4, ptr null, ptr %1
   %6 = getelementptr inbounds nuw i8, ptr %0, i64 208
-  store ptr %2, ptr %6, align 8, !tbaa !321
+  store ptr %2, ptr %6, align 8, !tbaa !320
   %7 = getelementptr inbounds nuw i8, ptr %0, i64 200
-  store ptr %5, ptr %7, align 8, !tbaa !322
+  store ptr %5, ptr %7, align 8, !tbaa !321
   ret void
 }
 
@@ -9871,7 +9781,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %6 = alloca %struct.ldmParams_t, align 8
   %7 = getelementptr inbounds nuw i8, ptr %0, i64 704
   %8 = getelementptr inbounds nuw i8, ptr %0, i64 968
-  store i32 1, ptr %8, align 8, !tbaa !222
+  store i32 1, ptr %8, align 8, !tbaa !221
   %9 = getelementptr inbounds nuw i8, ptr %0, i64 240
   tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(224) %9, ptr noundef nonnull align 8 dereferenceable(224) %1, i64 224, i1 false), !tbaa.struct !117
   %10 = getelementptr inbounds nuw i8, ptr %0, i64 336
@@ -9888,10 +9798,10 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %16 = getelementptr inbounds nuw i8, ptr %0, i64 244
   %17 = load i32, ptr %16, align 4, !tbaa !88
   %18 = icmp ult i32 %17, 64
-  br i1 %18, label %20, label %19, !prof !169, !nosanitize !8
+  br i1 %18, label %20, label %19, !prof !215, !nosanitize !8
 
 19:                                               ; preds = %15
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 20:                                               ; preds = %15
@@ -9927,7 +9837,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %45, label %46, label %47, !prof !9, !nosanitize !8
 
 46:                                               ; preds = %35
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 47:                                               ; preds = %35
@@ -9940,7 +9850,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %53, label %54, label %55, !prof !9, !nosanitize !8
 
 54:                                               ; preds = %47
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 55:                                               ; preds = %31, %47
@@ -9957,7 +9867,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %63, label %64, label %65, !prof !9, !nosanitize !8
 
 64:                                               ; preds = %60
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 65:                                               ; preds = %20, %55, %60
@@ -9970,16 +9880,16 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %72 = icmp eq i64 %71, 0
   %73 = getelementptr inbounds nuw i8, ptr %0, i64 400
   %74 = load i32, ptr %73, align 8, !tbaa !80
-  %75 = load ptr, ptr %29, align 8, !tbaa !321
+  %75 = load ptr, ptr %29, align 8, !tbaa !320
   %76 = icmp ne ptr %75, null
   %77 = load i64, ptr %26, align 8, !tbaa !83
   %78 = load i32, ptr %16, align 4, !tbaa !72
   %79 = freeze i32 %78
   %80 = icmp ult i32 %79, 64
-  br i1 %80, label %82, label %81, !prof !169, !nosanitize !8
+  br i1 %80, label %82, label %81, !prof !215, !nosanitize !8
 
 81:                                               ; preds = %65
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 82:                                               ; preds = %65
@@ -10004,10 +9914,10 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %97 = udiv i64 %91, %96
   %98 = add nuw i64 %91, 32
   %99 = icmp samesign ult i64 %97, 2305843009213693952
-  br i1 %99, label %101, label %100, !prof !169, !nosanitize !8
+  br i1 %99, label %101, label %100, !prof !215, !nosanitize !8
 
 100:                                              ; preds = %90
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 101:                                              ; preds = %90
@@ -10017,7 +9927,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %104, label %105, label %106, !prof !9, !nosanitize !8
 
 105:                                              ; preds = %101
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 106:                                              ; preds = %101
@@ -10028,7 +9938,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %110, label %111, label %112, !prof !9, !nosanitize !8
 
 111:                                              ; preds = %106
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 112:                                              ; preds = %106
@@ -10040,7 +9950,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %117, label %118, label %119, !prof !9, !nosanitize !8
 
 118:                                              ; preds = %112
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 119:                                              ; preds = %112
@@ -10060,10 +9970,10 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %129 = getelementptr inbounds nuw i8, ptr %0, i64 248
   %130 = load i32, ptr %129, align 4, !tbaa !73
   %131 = icmp ult i32 %130, 64
-  br i1 %131, label %133, label %132, !prof !169, !nosanitize !8
+  br i1 %131, label %133, label %132, !prof !215, !nosanitize !8
 
 132:                                              ; preds = %128
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 133:                                              ; preds = %128
@@ -10077,10 +9987,10 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %139 = getelementptr inbounds nuw i8, ptr %0, i64 252
   %140 = load i32, ptr %139, align 4, !tbaa !74
   %141 = icmp ult i32 %140, 64
-  br i1 %141, label %143, label %142, !prof !169, !nosanitize !8
+  br i1 %141, label %143, label %142, !prof !215, !nosanitize !8
 
 142:                                              ; preds = %137
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 143:                                              ; preds = %137
@@ -10108,15 +10018,15 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %156, label %157, label %158, !prof !9, !nosanitize !8
 
 157:                                              ; preds = %153
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 158:                                              ; preds = %153
   %159 = icmp samesign ult i32 %140, 62
-  br i1 %159, label %161, label %160, !prof !169, !nosanitize !8
+  br i1 %159, label %161, label %160, !prof !215, !nosanitize !8
 
 160:                                              ; preds = %158
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 161:                                              ; preds = %158
@@ -10126,7 +10036,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %164, label %165, label %166, !prof !9, !nosanitize !8
 
 165:                                              ; preds = %161
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 166:                                              ; preds = %161
@@ -10136,7 +10046,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %169, label %170, label %171, !prof !9, !nosanitize !8
 
 170:                                              ; preds = %166
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 171:                                              ; preds = %166
@@ -10155,7 +10065,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %183, label %184, label %185, !prof !9, !nosanitize !8
 
 184:                                              ; preds = %171
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 185:                                              ; preds = %171
@@ -10165,7 +10075,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %188, label %189, label %190, !prof !9, !nosanitize !8
 
 189:                                              ; preds = %185
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 190:                                              ; preds = %185
@@ -10175,20 +10085,20 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %193, label %194, label %195, !prof !9, !nosanitize !8
 
 194:                                              ; preds = %190
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 195:                                              ; preds = %190
   %196 = extractvalue { i64, i1 } %192, 0, !nosanitize !8
   call void @llvm.lifetime.start.p0(ptr nonnull %5) #36
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %5, ptr noundef nonnull readonly align 4 dereferenceable(24) %10, i64 24, i1 false), !tbaa.struct !262
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %5, ptr noundef nonnull readonly align 4 dereferenceable(24) %10, i64 24, i1 false), !tbaa.struct !260
   %197 = tail call i64 @ZSTD_ldm_getTableSize(ptr noundef nonnull byval(%struct.ldmParams_t) align 8 %5) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %5) #36
   call void @llvm.lifetime.start.p0(ptr nonnull %6) #36
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %6, ptr noundef nonnull readonly align 4 dereferenceable(24) %10, i64 24, i1 false), !tbaa.struct !262
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %6, ptr noundef nonnull readonly align 4 dereferenceable(24) %10, i64 24, i1 false), !tbaa.struct !260
   %198 = tail call i64 @ZSTD_ldm_getMaxNbSeq(ptr noundef nonnull byval(%struct.ldmParams_t) align 8 %6, i64 noundef %91) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %6) #36
-  %199 = load i32, ptr %10, align 4, !tbaa !323
+  %199 = load i32, ptr %10, align 4, !tbaa !322
   %200 = icmp eq i32 %199, 1
   br i1 %200, label %201, label %213
 
@@ -10198,7 +10108,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %203, label %204, label %205, !prof !9, !nosanitize !8
 
 204:                                              ; preds = %201
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 205:                                              ; preds = %201
@@ -10208,7 +10118,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %208, label %209, label %210, !prof !9, !nosanitize !8
 
 209:                                              ; preds = %205
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 210:                                              ; preds = %205
@@ -10224,7 +10134,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %217, label %218, label %219, !prof !9, !nosanitize !8
 
 218:                                              ; preds = %213
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 219:                                              ; preds = %213
@@ -10236,10 +10146,10 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
 
 224:                                              ; preds = %219
   %225 = icmp samesign ult i64 %223, 1152921504606846976
-  br i1 %225, label %227, label %226, !prof !169, !nosanitize !8
+  br i1 %225, label %227, label %226, !prof !215, !nosanitize !8
 
 226:                                              ; preds = %224
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 227:                                              ; preds = %224
@@ -10249,7 +10159,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %230, label %231, label %232, !prof !9, !nosanitize !8
 
 231:                                              ; preds = %227
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 232:                                              ; preds = %227
@@ -10265,7 +10175,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %239, label %240, label %241, !prof !9, !nosanitize !8
 
 240:                                              ; preds = %235
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 241:                                              ; preds = %235
@@ -10275,7 +10185,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %244, label %245, label %246, !prof !9, !nosanitize !8
 
 245:                                              ; preds = %241
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 246:                                              ; preds = %241
@@ -10285,7 +10195,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %249, label %250, label %251, !prof !9, !nosanitize !8
 
 250:                                              ; preds = %246
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 251:                                              ; preds = %246
@@ -10295,7 +10205,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %254, label %255, label %256, !prof !9, !nosanitize !8
 
 255:                                              ; preds = %251
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 256:                                              ; preds = %251
@@ -10305,7 +10215,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %259, label %260, label %261, !prof !9, !nosanitize !8
 
 260:                                              ; preds = %256
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 261:                                              ; preds = %256
@@ -10315,7 +10225,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %264, label %265, label %266, !prof !9, !nosanitize !8
 
 265:                                              ; preds = %261
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 266:                                              ; preds = %261
@@ -10330,18 +10240,18 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
 
 272:                                              ; preds = %269
   %273 = getelementptr inbounds nuw i8, ptr %0, i64 764
-  %274 = load i32, ptr %273, align 4, !tbaa !324
+  %274 = load i32, ptr %273, align 4, !tbaa !323
   %275 = tail call { i32, i1 } @llvm.sadd.with.overflow.i32(i32 %274, i32 1), !nosanitize !8
   %276 = extractvalue { i32, i1 } %275, 1, !nosanitize !8
   br i1 %276, label %277, label %278, !prof !9, !nosanitize !8
 
 277:                                              ; preds = %272
-  tail call void @llvm.ubsantrap(i8 0) #39, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #39, !nosanitize !8
   unreachable, !nosanitize !8
 
 278:                                              ; preds = %272
   %279 = extractvalue { i32, i1 } %275, 0, !nosanitize !8
-  store i32 %279, ptr %273, align 4, !tbaa !324
+  store i32 %279, ptr %273, align 4, !tbaa !323
   br label %280
 
 280:                                              ; preds = %278, %269
@@ -10357,7 +10267,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %289, label %290, label %291, !prof !9, !nosanitize !8
 
 290:                                              ; preds = %280
-  tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 291:                                              ; preds = %280
@@ -10365,7 +10275,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %293 = getelementptr i8, ptr %0, i64 728
   %294 = load ptr, ptr %293, align 8, !tbaa !55
   %295 = getelementptr i8, ptr %0, i64 744
-  %296 = load ptr, ptr %295, align 8, !tbaa !277
+  %296 = load ptr, ptr %295, align 8, !tbaa !275
   %297 = ptrtoint ptr %296 to i64
   %298 = ptrtoint ptr %294 to i64
   %299 = sub i64 %297, %298
@@ -10374,7 +10284,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
 
 301:                                              ; preds = %291
   %302 = getelementptr inbounds nuw i8, ptr %0, i64 764
-  %303 = load i32, ptr %302, align 4, !tbaa !324
+  %303 = load i32, ptr %302, align 4, !tbaa !323
   %304 = icmp sgt i32 %303, 128
   br label %305
 
@@ -10401,7 +10311,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   br i1 %317, label %319, label %318
 
 318:                                              ; preds = %316
-  tail call void %312(ptr noundef %314, ptr noundef nonnull %281) #36, !inline_history !261
+  tail call void %312(ptr noundef %314, ptr noundef nonnull %281) #36, !inline_history !259
   br label %320
 
 319:                                              ; preds = %316
@@ -10415,7 +10325,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
 
 323:                                              ; preds = %320
   %324 = load ptr, ptr %313, align 8
-  %325 = tail call ptr %321(ptr noundef %324, i64 noundef %267) #36, !inline_history !325
+  %325 = tail call ptr %321(ptr noundef %324, i64 noundef %267) #36, !inline_history !324
   br label %328
 
 326:                                              ; preds = %320
@@ -10440,17 +10350,17 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %337 = sub nsw i64 0, %336
   %338 = getelementptr inbounds i8, ptr %332, i64 %337
   %339 = getelementptr inbounds nuw i8, ptr %0, i64 752
-  store ptr %338, ptr %339, align 8, !tbaa !272
+  store ptr %338, ptr %339, align 8, !tbaa !270
   %340 = getelementptr inbounds nuw i8, ptr %0, i64 768
-  store i32 0, ptr %340, align 8, !tbaa !273
+  store i32 0, ptr %340, align 8, !tbaa !271
   %341 = getelementptr inbounds nuw i8, ptr %0, i64 772
-  store i32 0, ptr %341, align 4, !tbaa !326
+  store i32 0, ptr %341, align 4, !tbaa !325
   store ptr %329, ptr %293, align 8, !tbaa !55
-  store ptr %338, ptr %295, align 8, !tbaa !277
+  store ptr %338, ptr %295, align 8, !tbaa !275
   %342 = getelementptr inbounds nuw i8, ptr %0, i64 760
   store i8 0, ptr %342, align 8, !tbaa !53
   %343 = getelementptr inbounds nuw i8, ptr %0, i64 764
-  store i32 0, ptr %343, align 4, !tbaa !324
+  store i32 0, ptr %343, align 4, !tbaa !323
   %344 = getelementptr inbounds nuw i8, ptr %329, i64 5632
   %345 = icmp samesign ult i64 %267, 5632
   br i1 %345, label %346, label %347
@@ -10500,7 +10410,7 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   store i64 8920, ptr %360, align 8, !tbaa !60
   store ptr %358, ptr %293, align 8, !tbaa !55
   %361 = getelementptr inbounds i8, ptr %332, i64 %337
-  store ptr %361, ptr %295, align 8, !tbaa !277
+  store ptr %361, ptr %295, align 8, !tbaa !275
   %362 = getelementptr inbounds nuw i8, ptr %0, i64 760
   store i8 0, ptr %362, align 8, !tbaa !53
   br label %375
@@ -10509,20 +10419,20 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %364 = getelementptr inbounds nuw i8, ptr %0, i64 720
   %365 = load ptr, ptr %364, align 8, !tbaa !54
   %366 = getelementptr inbounds nuw i8, ptr %0, i64 768
-  %367 = load i32, ptr %366, align 8, !tbaa !273
+  %367 = load i32, ptr %366, align 8, !tbaa !271
   %368 = and i64 %284, 63
   %369 = sub nsw i64 0, %368
   %370 = icmp ugt i32 %367, 1
   store ptr %365, ptr %293, align 8, !tbaa !55
   %371 = getelementptr inbounds i8, ptr %283, i64 %369
-  store ptr %371, ptr %295, align 8, !tbaa !277
+  store ptr %371, ptr %295, align 8, !tbaa !275
   %372 = getelementptr inbounds nuw i8, ptr %0, i64 760
   store i8 0, ptr %372, align 8, !tbaa !53
   br i1 %370, label %373, label %375
 
 373:                                              ; preds = %363
   %374 = getelementptr inbounds nuw i8, ptr %0, i64 768
-  store i32 1, ptr %374, align 8, !tbaa !273
+  store i32 1, ptr %374, align 8, !tbaa !271
   br label %375
 
 375:                                              ; preds = %357, %363, %373
@@ -10533,20 +10443,20 @@ define internal fastcc range(i64 -119, 0) i64 @ZSTD_resetCCtx_internal(ptr nound
   %379 = icmp eq i32 %378, 1
   %380 = zext i1 %379 to i32
   %381 = getelementptr inbounds nuw i8, ptr %0, i64 3536
-  store i32 %380, ptr %381, align 8, !tbaa !327
+  store i32 %380, ptr %381, align 8, !tbaa !326
   %382 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %2, i64 1), !nosanitize !8
   %383 = extractvalue { i64, i1 } %382, 1, !nosanitize !8
   br i1 %383, label %384, label %385, !prof !9, !nosanitize !8
 
 384:                                              ; preds = %375
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 385:                                              ; preds = %375
   %386 = extractvalue { i64, i1 } %382, 0, !nosanitize !8
   %387 = getelementptr inbounds nuw i8, ptr %0, i64 784
   store i64 %386, ptr %387, align 8, !tbaa !119
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable
 
 388:                                              ; preds = %328, %355, %350, %346, %308, %266
@@ -10583,7 +10493,7 @@ define internal fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind no
   %21 = getelementptr inbounds nuw i8, ptr %1, i64 40
   %22 = load ptr, ptr %21, align 8, !tbaa !157
   %23 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  store i64 0, ptr %23, align 8, !tbaa !328
+  store i64 0, ptr %23, align 8, !tbaa !327
   %24 = load ptr, ptr %1, align 8, !tbaa !154
   %25 = getelementptr inbounds nuw i8, ptr %1, i64 8
   %26 = load ptr, ptr %25, align 8, !tbaa !158
@@ -10686,18 +10596,18 @@ define internal fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind no
 
 93:                                               ; preds = %85, %88
   %94 = getelementptr inbounds nuw i8, ptr %0, i64 32
-  store i32 0, ptr %94, align 8, !tbaa !330
+  store i32 0, ptr %94, align 8, !tbaa !329
   call void @llvm.lifetime.start.p0(ptr nonnull %12) #36
   store i32 35, ptr %12, align 4, !tbaa !4
   %95 = call i64 @HIST_countFast_wksp(ptr noundef %8, ptr noundef nonnull %12, ptr noundef %20, i64 noundef %2, ptr noundef %9, i64 noundef %10) #36
   %96 = getelementptr inbounds nuw i8, ptr %3, i64 3548
-  %97 = load i32, ptr %96, align 4, !tbaa !192
+  %97 = load i32, ptr %96, align 4, !tbaa !190
   %98 = getelementptr inbounds nuw i8, ptr %4, i64 3548
-  store i32 %97, ptr %98, align 4, !tbaa !192
+  store i32 %97, ptr %98, align 4, !tbaa !190
   %99 = load i32, ptr %12, align 4, !tbaa !4
   %100 = getelementptr inbounds nuw i8, ptr %3, i64 2224
   %101 = call i32 @ZSTD_selectEncodingType(ptr noundef nonnull %98, ptr noundef %8, i32 noundef %99, i64 noundef %95, i64 noundef %2, i32 noundef 9, ptr noundef nonnull %100, ptr noundef nonnull @LL_defaultNorm, i32 noundef 6, i32 noundef 1, i32 noundef %7) #36
-  store i32 %101, ptr %0, align 8, !tbaa !331
+  store i32 %101, ptr %0, align 8, !tbaa !330
   %102 = ptrtoint ptr %6 to i64
   %103 = ptrtoint ptr %5 to i64
   %104 = sub i64 %102, %103
@@ -10711,12 +10621,12 @@ define internal fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind no
   br i1 %109, label %110, label %113
 
 110:                                              ; preds = %108
-  store i64 %106, ptr %23, align 8, !tbaa !328
+  store i64 %106, ptr %23, align 8, !tbaa !327
   br label %113
 
 111:                                              ; preds = %93
   %112 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  store i64 %106, ptr %112, align 8, !tbaa !332
+  store i64 %106, ptr %112, align 8, !tbaa !331
   call void @llvm.lifetime.end.p0(ptr nonnull %12) #36
   br label %158
 
@@ -10730,12 +10640,12 @@ define internal fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind no
   %117 = icmp ult i32 %116, 29
   %118 = zext i1 %117 to i32
   %119 = getelementptr inbounds nuw i8, ptr %3, i64 3540
-  %120 = load i32, ptr %119, align 4, !tbaa !196
+  %120 = load i32, ptr %119, align 4, !tbaa !194
   %121 = getelementptr inbounds nuw i8, ptr %4, i64 3540
-  store i32 %120, ptr %121, align 4, !tbaa !196
+  store i32 %120, ptr %121, align 4, !tbaa !194
   %122 = call i32 @ZSTD_selectEncodingType(ptr noundef nonnull %121, ptr noundef %8, i32 noundef %116, i64 noundef %115, i64 noundef %2, i32 noundef 8, ptr noundef nonnull %3, ptr noundef nonnull @OF_defaultNorm, i32 noundef 5, i32 noundef %118, i32 noundef %7) #36
   %123 = getelementptr inbounds nuw i8, ptr %0, i64 4
-  store i32 %122, ptr %123, align 4, !tbaa !333
+  store i32 %122, ptr %123, align 4, !tbaa !332
   %124 = ptrtoint ptr %114 to i64
   %125 = sub i64 %102, %124
   %126 = load i32, ptr %13, align 4, !tbaa !4
@@ -10748,12 +10658,12 @@ define internal fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind no
   br i1 %130, label %131, label %134
 
 131:                                              ; preds = %129
-  store i64 %127, ptr %23, align 8, !tbaa !328
+  store i64 %127, ptr %23, align 8, !tbaa !327
   br label %134
 
 132:                                              ; preds = %113
   %133 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  store i64 %127, ptr %133, align 8, !tbaa !332
+  store i64 %127, ptr %133, align 8, !tbaa !331
   call void @llvm.lifetime.end.p0(ptr nonnull %13) #36
   br label %158
 
@@ -10764,14 +10674,14 @@ define internal fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind no
   store i32 52, ptr %14, align 4, !tbaa !4
   %136 = call i64 @HIST_countFast_wksp(ptr noundef %8, ptr noundef nonnull %14, ptr noundef %22, i64 noundef %2, ptr noundef %9, i64 noundef %10) #36
   %137 = getelementptr inbounds nuw i8, ptr %3, i64 3544
-  %138 = load i32, ptr %137, align 4, !tbaa !197
+  %138 = load i32, ptr %137, align 4, !tbaa !195
   %139 = getelementptr inbounds nuw i8, ptr %4, i64 3544
-  store i32 %138, ptr %139, align 4, !tbaa !197
+  store i32 %138, ptr %139, align 4, !tbaa !195
   %140 = load i32, ptr %14, align 4, !tbaa !4
   %141 = getelementptr inbounds nuw i8, ptr %3, i64 772
   %142 = call i32 @ZSTD_selectEncodingType(ptr noundef nonnull %139, ptr noundef %8, i32 noundef %140, i64 noundef %136, i64 noundef %2, i32 noundef 9, ptr noundef nonnull %141, ptr noundef nonnull @ML_defaultNorm, i32 noundef 6, i32 noundef 1, i32 noundef %7) #36
   %143 = getelementptr inbounds nuw i8, ptr %0, i64 8
-  store i32 %142, ptr %143, align 8, !tbaa !334
+  store i32 %142, ptr %143, align 8, !tbaa !333
   %144 = ptrtoint ptr %135 to i64
   %145 = sub i64 %102, %144
   %146 = load i32, ptr %14, align 4, !tbaa !4
@@ -10784,12 +10694,12 @@ define internal fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind no
   br i1 %150, label %151, label %154
 
 151:                                              ; preds = %149
-  store i64 %147, ptr %23, align 8, !tbaa !328
+  store i64 %147, ptr %23, align 8, !tbaa !327
   br label %154
 
 152:                                              ; preds = %134
   %153 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  store i64 %147, ptr %153, align 8, !tbaa !332
+  store i64 %147, ptr %153, align 8, !tbaa !331
   call void @llvm.lifetime.end.p0(ptr nonnull %14) #36
   br label %158
 
@@ -10798,7 +10708,7 @@ define internal fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind no
   %155 = add nuw nsw i64 %127, %106
   %156 = add nuw nsw i64 %155, %147
   %157 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  store i64 %156, ptr %157, align 8, !tbaa !332
+  store i64 %156, ptr %157, align 8, !tbaa !331
   br label %158
 
 158:                                              ; preds = %152, %132, %111, %154
@@ -10824,7 +10734,7 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   br i1 %13, label %14, label %15, !prof !9, !nosanitize !8
 
 14:                                               ; preds = %5
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 15:                                               ; preds = %5
@@ -10832,17 +10742,17 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   %17 = extractvalue { i32, i1 } %12, 0, !nosanitize !8
   %18 = load i32, ptr %16, align 4, !tbaa !88
   %19 = icmp ult i32 %18, 32
-  br i1 %19, label %21, label %20, !prof !169, !nosanitize !8
+  br i1 %19, label %21, label %20, !prof !215, !nosanitize !8
 
 20:                                               ; preds = %15
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 21:                                               ; preds = %15
   %22 = shl nuw i32 1, %18
   %23 = getelementptr inbounds nuw i8, ptr %0, i64 40
   %24 = getelementptr i8, ptr %0, i64 8
-  %25 = load ptr, ptr %24, align 8, !tbaa !212
+  %25 = load ptr, ptr %24, align 8, !tbaa !210
   %26 = ptrtoint ptr %4 to i64
   %27 = ptrtoint ptr %25 to i64
   %28 = sub i64 %26, %27
@@ -10852,10 +10762,10 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
 
 31:                                               ; preds = %21
   %32 = icmp ult i32 %17, 32
-  br i1 %32, label %34, label %33, !prof !169, !nosanitize !8
+  br i1 %32, label %34, label %33, !prof !215, !nosanitize !8
 
 33:                                               ; preds = %31
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 34:                                               ; preds = %31
@@ -10875,7 +10785,7 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   br i1 %47, label %48, label %49, !prof !9, !nosanitize !8
 
 48:                                               ; preds = %34
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 49:                                               ; preds = %34
@@ -10886,26 +10796,26 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   br i1 %53, label %54, label %55, !prof !9, !nosanitize !8
 
 54:                                               ; preds = %49
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 55:                                               ; preds = %49
   %56 = zext i32 %52 to i64
   %57 = getelementptr inbounds nuw i8, ptr %25, i64 %56
-  store ptr %57, ptr %24, align 8, !tbaa !212
+  store ptr %57, ptr %24, align 8, !tbaa !210
   %58 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  %59 = load ptr, ptr %58, align 8, !tbaa !209
+  %59 = load ptr, ptr %58, align 8, !tbaa !207
   %60 = getelementptr inbounds nuw i8, ptr %59, i64 %56
-  store ptr %60, ptr %58, align 8, !tbaa !209
+  store ptr %60, ptr %58, align 8, !tbaa !207
   %61 = getelementptr inbounds nuw i8, ptr %0, i64 28
-  %62 = load i32, ptr %61, align 4, !tbaa !210
+  %62 = load i32, ptr %61, align 4, !tbaa !208
   %63 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %52, i32 2), !nosanitize !8
   %64 = extractvalue { i32, i1 } %63, 0, !nosanitize !8
   %65 = extractvalue { i32, i1 } %63, 1, !nosanitize !8
   br i1 %65, label %66, label %67, !prof !9, !nosanitize !8
 
 66:                                               ; preds = %55
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 67:                                               ; preds = %55
@@ -10918,7 +10828,7 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   br i1 %71, label %72, label %73, !prof !9, !nosanitize !8
 
 72:                                               ; preds = %69
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 73:                                               ; preds = %69
@@ -10927,9 +10837,9 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
 
 75:                                               ; preds = %73, %67
   %76 = phi i32 [ %74, %73 ], [ 2, %67 ]
-  store i32 %76, ptr %61, align 4, !tbaa !210
+  store i32 %76, ptr %61, align 4, !tbaa !208
   %77 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  %78 = load i32, ptr %77, align 8, !tbaa !211
+  %78 = load i32, ptr %77, align 8, !tbaa !209
   %79 = icmp ult i32 %78, %64
   br i1 %79, label %86, label %80
 
@@ -10939,7 +10849,7 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   br i1 %82, label %83, label %84, !prof !9, !nosanitize !8
 
 83:                                               ; preds = %80
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 84:                                               ; preds = %80
@@ -10948,20 +10858,20 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
 
 86:                                               ; preds = %84, %75
   %87 = phi i32 [ %85, %84 ], [ 2, %75 ]
-  store i32 %87, ptr %77, align 8, !tbaa !211
+  store i32 %87, ptr %77, align 8, !tbaa !209
   %88 = getelementptr inbounds nuw i8, ptr %0, i64 32
-  %89 = load i32, ptr %88, align 8, !tbaa !335
+  %89 = load i32, ptr %88, align 8, !tbaa !334
   %90 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %89, i32 1), !nosanitize !8
   %91 = extractvalue { i32, i1 } %90, 1, !nosanitize !8
   br i1 %91, label %92, label %93, !prof !9, !nosanitize !8
 
 92:                                               ; preds = %86
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 93:                                               ; preds = %86
   %94 = extractvalue { i32, i1 } %90, 0, !nosanitize !8
-  store i32 %94, ptr %88, align 8, !tbaa !335
+  store i32 %94, ptr %88, align 8, !tbaa !334
   %95 = getelementptr inbounds nuw i8, ptr %1, i64 16
   %96 = load ptr, ptr %95, align 8, !tbaa !54
   %97 = getelementptr inbounds nuw i8, ptr %1, i64 32
@@ -10969,22 +10879,22 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   %98 = getelementptr inbounds nuw i8, ptr %2, i64 12
   %99 = load i32, ptr %98, align 4, !tbaa !89
   %100 = icmp ult i32 %99, 32
-  br i1 %100, label %102, label %101, !prof !169, !nosanitize !8
+  br i1 %100, label %102, label %101, !prof !215, !nosanitize !8
 
 101:                                              ; preds = %93
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 102:                                              ; preds = %93
   %103 = shl nuw i32 1, %99
   %104 = getelementptr inbounds nuw i8, ptr %0, i64 112
-  %105 = load ptr, ptr %104, align 8, !tbaa !274
+  %105 = load ptr, ptr %104, align 8, !tbaa !272
   tail call fastcc void @ZSTD_reduceTable(ptr noundef %105, i32 noundef %103, i32 noundef %52)
   %106 = load i32, ptr %8, align 4, !tbaa !94
   %107 = getelementptr inbounds nuw i8, ptr %2, i64 160
   %108 = load i32, ptr %107, align 8, !tbaa !80
   %109 = getelementptr inbounds nuw i8, ptr %0, i64 140
-  %110 = load i32, ptr %109, align 4, !tbaa !336
+  %110 = load i32, ptr %109, align 4, !tbaa !335
   %111 = icmp eq i32 %110, 0
   br i1 %111, label %112, label %119
 
@@ -11002,17 +10912,17 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
 119:                                              ; preds = %114, %102
   %120 = load i32, ptr %6, align 4, !tbaa !90
   %121 = icmp ult i32 %120, 32
-  br i1 %121, label %123, label %122, !prof !169, !nosanitize !8
+  br i1 %121, label %123, label %122, !prof !215, !nosanitize !8
 
 122:                                              ; preds = %119
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 123:                                              ; preds = %119
   %124 = shl nuw i32 1, %120
   %125 = icmp eq i32 %106, 6
   %126 = getelementptr inbounds nuw i8, ptr %0, i64 128
-  %127 = load ptr, ptr %126, align 8, !tbaa !275
+  %127 = load ptr, ptr %126, align 8, !tbaa !273
   br i1 %125, label %128, label %330
 
 128:                                              ; preds = %123
@@ -11039,7 +10949,7 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   br i1 %142, label %143, label %144, !prof !9, !nosanitize !8
 
 143:                                              ; preds = %321, %309, %297, %285, %273, %261, %249, %237, %225, %213, %201, %189, %177, %165, %153, %140
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 144:                                              ; preds = %140
@@ -11366,7 +11276,7 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
   store i32 %327, ptr %316, align 4, !tbaa !4
   %328 = add nuw nsw i32 %133, 1
   %329 = icmp eq i32 %328, %129
-  br i1 %329, label %331, label %131, !llvm.loop !337
+  br i1 %329, label %331, label %131, !llvm.loop !336
 
 330:                                              ; preds = %123
   tail call fastcc void @ZSTD_reduceTable(ptr noundef %127, i32 noundef %124, i32 noundef %52)
@@ -11374,22 +11284,22 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
 
 331:                                              ; preds = %326, %330, %128, %114, %112
   %332 = getelementptr inbounds nuw i8, ptr %0, i64 48
-  %333 = load i32, ptr %332, align 8, !tbaa !267
+  %333 = load i32, ptr %332, align 8, !tbaa !265
   %334 = icmp eq i32 %333, 0
   br i1 %334, label %342, label %335
 
 335:                                              ; preds = %331
   %336 = icmp ult i32 %333, 32
-  br i1 %336, label %338, label %337, !prof !169, !nosanitize !8
+  br i1 %336, label %338, label %337, !prof !215, !nosanitize !8
 
 337:                                              ; preds = %335
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 338:                                              ; preds = %335
   %339 = shl nuw i32 1, %333
   %340 = getelementptr inbounds nuw i8, ptr %0, i64 120
-  %341 = load ptr, ptr %340, align 8, !tbaa !276
+  %341 = load ptr, ptr %340, align 8, !tbaa !274
   tail call fastcc void @ZSTD_reduceTable(ptr noundef %341, i32 noundef %339, i32 noundef %52)
   br label %342
 
@@ -11406,12 +11316,12 @@ define internal fastcc void @ZSTD_overflowCorrectIfNeeded(ptr noundef captures(n
 
 348:                                              ; preds = %342, %347
   %349 = getelementptr inbounds nuw i8, ptr %0, i64 44
-  %350 = load i32, ptr %349, align 4, !tbaa !213
+  %350 = load i32, ptr %349, align 4, !tbaa !211
   %351 = tail call i32 @llvm.usub.sat.i32(i32 %350, i32 %52)
-  store i32 %351, ptr %349, align 4, !tbaa !213
-  store i32 0, ptr %23, align 8, !tbaa !269
+  store i32 %351, ptr %349, align 4, !tbaa !211
+  store i32 0, ptr %23, align 8, !tbaa !267
   %352 = getelementptr inbounds nuw i8, ptr %0, i64 248
-  store ptr null, ptr %352, align 8, !tbaa !271
+  store ptr null, ptr %352, align 8, !tbaa !269
   br label %353
 
 353:                                              ; preds = %348, %21
@@ -11427,7 +11337,7 @@ define internal fastcc i64 @ZSTD_compressBlock_internal(ptr noundef %0, ptr noun
 9:                                                ; preds = %6
   %10 = icmp eq i64 %7, 1
   %11 = getelementptr inbounds nuw i8, ptr %0, i64 936
-  %12 = load i32, ptr %11, align 8, !tbaa !223
+  %12 = load i32, ptr %11, align 8, !tbaa !222
   %13 = icmp eq i32 %12, 0
   br i1 %10, label %14, label %15
 
@@ -11463,9 +11373,9 @@ define internal fastcc i64 @ZSTD_compressBlock_internal(ptr noundef %0, ptr noun
   %34 = getelementptr inbounds nuw i8, ptr %0, i64 8
   %35 = load i32, ptr %34, align 8, !tbaa !13
   %36 = getelementptr inbounds nuw i8, ptr %0, i64 992
-  %37 = load ptr, ptr %36, align 8, !tbaa !171
+  %37 = load ptr, ptr %36, align 8, !tbaa !169
   %38 = getelementptr inbounds nuw i8, ptr %0, i64 1000
-  %39 = load ptr, ptr %38, align 8, !tbaa !172
+  %39 = load ptr, ptr %38, align 8, !tbaa !170
   %40 = ptrtoint ptr %39 to i64
   %41 = ptrtoint ptr %37 to i64
   %42 = sub i64 %40, %41
@@ -11487,10 +11397,10 @@ define internal fastcc i64 @ZSTD_compressBlock_internal(ptr noundef %0, ptr noun
   %52 = getelementptr inbounds nuw i8, ptr %0, i64 268
   %53 = load i32, ptr %52, align 4, !tbaa !94
   %54 = icmp ult i32 %53, 65
-  br i1 %54, label %56, label %55, !prof !169, !nosanitize !8
+  br i1 %54, label %56, label %55, !prof !215, !nosanitize !8
 
 55:                                               ; preds = %51
-  tail call void @llvm.ubsantrap(i8 20) #39, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #39, !nosanitize !8
   unreachable, !nosanitize !8
 
 56:                                               ; preds = %51
@@ -11504,7 +11414,7 @@ define internal fastcc i64 @ZSTD_compressBlock_internal(ptr noundef %0, ptr noun
   br i1 %63, label %64, label %65, !prof !9, !nosanitize !8
 
 64:                                               ; preds = %56
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 65:                                               ; preds = %56
@@ -11520,7 +11430,7 @@ define internal fastcc i64 @ZSTD_compressBlock_internal(ptr noundef %0, ptr noun
 
 72:                                               ; preds = %69
   %73 = getelementptr inbounds nuw i8, ptr %0, i64 968
-  %74 = load i32, ptr %73, align 8, !tbaa !222
+  %74 = load i32, ptr %73, align 8, !tbaa !221
   %75 = icmp eq i32 %74, 0
   %76 = icmp ult i64 %70, 25
   %77 = select i1 %75, i1 %76, i1 false
@@ -11578,7 +11488,7 @@ define internal fastcc void @ZSTD_reduceTable(ptr noundef captures(none) %0, i32
   br i1 %9, label %11, label %194
 
 10:                                               ; preds = %3
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 11:                                               ; preds = %8, %190
@@ -11597,7 +11507,7 @@ define internal fastcc void @ZSTD_reduceTable(ptr noundef captures(none) %0, i32
   br i1 %21, label %22, label %23, !prof !9, !nosanitize !8
 
 22:                                               ; preds = %185, %174, %163, %152, %141, %130, %119, %108, %97, %86, %75, %64, %53, %42, %31, %19
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 23:                                               ; preds = %19
@@ -11879,7 +11789,7 @@ define internal fastcc void @ZSTD_reduceTable(ptr noundef captures(none) %0, i32
   store i32 %191, ptr %182, align 4, !tbaa !4
   %192 = add nuw nsw i32 %13, 1
   %193 = icmp eq i32 %192, %4
-  br i1 %193, label %194, label %11, !llvm.loop !337
+  br i1 %193, label %194, label %11, !llvm.loop !336
 
 194:                                              ; preds = %190, %8
   ret void
@@ -11904,28 +11814,28 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
 
 9:                                                ; preds = %3
   %10 = getelementptr inbounds nuw i8, ptr %0, i64 268
-  %11 = load i32, ptr %10, align 4, !tbaa !219
+  %11 = load i32, ptr %10, align 4, !tbaa !218
   %12 = icmp ugt i32 %11, 6
   %13 = getelementptr inbounds nuw i8, ptr %0, i64 3184
   br i1 %12, label %14, label %15
 
 14:                                               ; preds = %9
   tail call void @ZSTD_ldm_skipRawSeqStoreBytes(ptr noundef nonnull %13, i64 noundef %2) #36
-  br label %331
+  br label %267
 
 15:                                               ; preds = %9
   %16 = getelementptr inbounds nuw i8, ptr %0, i64 260
-  %17 = load i32, ptr %16, align 4, !tbaa !338
+  %17 = load i32, ptr %16, align 4, !tbaa !337
   tail call void @ZSTD_ldm_skipSequences(ptr noundef nonnull %13, i64 noundef %2, i32 noundef %17) #36
-  br label %331
+  br label %267
 
 18:                                               ; preds = %3
   %19 = getelementptr inbounds nuw i8, ptr %0, i64 3224
   %20 = getelementptr inbounds nuw i8, ptr %0, i64 976
   %21 = getelementptr inbounds nuw i8, ptr %0, i64 992
-  %22 = load ptr, ptr %21, align 8, !tbaa !171
+  %22 = load ptr, ptr %21, align 8, !tbaa !169
   %23 = getelementptr inbounds nuw i8, ptr %0, i64 1000
-  store ptr %22, ptr %23, align 8, !tbaa !172
+  store ptr %22, ptr %23, align 8, !tbaa !170
   %24 = load ptr, ptr %20, align 8, !tbaa !154
   %25 = getelementptr inbounds nuw i8, ptr %0, i64 984
   store ptr %24, ptr %25, align 8, !tbaa !158
@@ -11933,25 +11843,25 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   store i32 0, ptr %26, align 8, !tbaa !167
   %27 = load ptr, ptr %19, align 8, !tbaa !57
   %28 = getelementptr inbounds nuw i8, ptr %0, i64 3472
-  store ptr %27, ptr %28, align 8, !tbaa !339
+  store ptr %27, ptr %28, align 8, !tbaa !338
   %29 = getelementptr inbounds nuw i8, ptr %0, i64 312
-  %30 = load i32, ptr %29, align 8, !tbaa !340
+  %30 = load i32, ptr %29, align 8, !tbaa !339
   %31 = getelementptr inbounds nuw i8, ptr %0, i64 3480
-  store i32 %30, ptr %31, align 8, !tbaa !341
+  store i32 %30, ptr %31, align 8, !tbaa !340
   %32 = getelementptr inbounds nuw i8, ptr %0, i64 3248
-  %33 = load ptr, ptr %32, align 8, !tbaa !342
+  %33 = load ptr, ptr %32, align 8, !tbaa !341
   %34 = ptrtoint ptr %1 to i64
   %35 = ptrtoint ptr %33 to i64
   %36 = sub i64 %34, %35
   %37 = trunc i64 %36 to i32
   %38 = getelementptr inbounds nuw i8, ptr %0, i64 3284
-  %39 = load i32, ptr %38, align 4, !tbaa !213
+  %39 = load i32, ptr %38, align 4, !tbaa !211
   %40 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %39, i32 384), !nosanitize !8
   %41 = extractvalue { i32, i1 } %40, 1, !nosanitize !8
   br i1 %41, label %42, label %43, !prof !9, !nosanitize !8
 
 42:                                               ; preds = %18
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 43:                                               ; preds = %18
@@ -11965,7 +11875,7 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   br i1 %48, label %49, label %50, !prof !9, !nosanitize !8
 
 49:                                               ; preds = %46
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 50:                                               ; preds = %46
@@ -11975,33 +11885,33 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   br i1 %53, label %54, label %55, !prof !9, !nosanitize !8
 
 54:                                               ; preds = %50
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 55:                                               ; preds = %50
   %56 = extractvalue { i32, i1 } %52, 0, !nosanitize !8
   %57 = tail call i32 @llvm.umin.i32(i32 %56, i32 192)
   %58 = sub nuw i32 %37, %57
-  store i32 %58, ptr %38, align 4, !tbaa !213
+  store i32 %58, ptr %38, align 4, !tbaa !211
   br label %59
 
 59:                                               ; preds = %55, %43
   %60 = getelementptr i8, ptr %0, i64 3264
-  %61 = load i32, ptr %60, align 8, !tbaa !211
+  %61 = load i32, ptr %60, align 8, !tbaa !209
   %62 = getelementptr i8, ptr %0, i64 3268
-  %63 = load i32, ptr %62, align 4, !tbaa !210
+  %63 = load i32, ptr %62, align 4, !tbaa !208
   %64 = icmp ult i32 %63, %61
   br i1 %64, label %74, label %65
 
 65:                                               ; preds = %59
   %66 = getelementptr inbounds nuw i8, ptr %0, i64 3488
-  %67 = load ptr, ptr %66, align 8, !tbaa !271
+  %67 = load ptr, ptr %66, align 8, !tbaa !269
   %68 = icmp eq ptr %67, null
   br i1 %68, label %74, label %69
 
 69:                                               ; preds = %65
   %70 = getelementptr inbounds nuw i8, ptr %67, i64 140
-  %71 = load i32, ptr %70, align 4, !tbaa !336
+  %71 = load i32, ptr %70, align 4, !tbaa !335
   %72 = icmp eq i32 %71, 0
   %73 = select i1 %72, i64 2, i64 3
   br label %74
@@ -12024,27 +11934,27 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   store i32 %85, ptr %86, align 4, !tbaa !4
   %87 = getelementptr inbounds nuw i8, ptr %0, i64 3184
   %88 = getelementptr inbounds nuw i8, ptr %0, i64 3192
-  %89 = load i64, ptr %88, align 8, !tbaa !343
+  %89 = load i64, ptr %88, align 8, !tbaa !342
   %90 = getelementptr inbounds nuw i8, ptr %0, i64 3208
-  %91 = load i64, ptr %90, align 8, !tbaa !203
+  %91 = load i64, ptr %90, align 8, !tbaa !201
   %92 = icmp ult i64 %89, %91
   br i1 %92, label %93, label %101
 
 93:                                               ; preds = %74
   %94 = getelementptr i8, ptr %0, i64 448
-  %95 = load ptr, ptr %94, align 8, !tbaa !321
+  %95 = load ptr, ptr %94, align 8, !tbaa !320
   %96 = icmp eq ptr %95, null
-  br i1 %96, label %97, label %331
+  br i1 %96, label %97, label %267
 
 97:                                               ; preds = %93
   %98 = getelementptr inbounds nuw i8, ptr %0, i64 400
-  %99 = load i32, ptr %98, align 8, !tbaa !344
+  %99 = load i32, ptr %98, align 8, !tbaa !343
   %100 = tail call i64 @ZSTD_ldm_blockCompress(ptr noundef nonnull %87, ptr noundef nonnull %6, ptr noundef nonnull %20, ptr noundef nonnull %79, i32 noundef %99, ptr noundef %1, i64 noundef %2) #36
-  br label %323
+  br label %259
 
 101:                                              ; preds = %74
   %102 = getelementptr inbounds nuw i8, ptr %0, i64 336
-  %103 = load i32, ptr %102, align 8, !tbaa !214
+  %103 = load i32, ptr %102, align 8, !tbaa !212
   %104 = icmp eq i32 %103, 1
   br i1 %104, label %105, label %127
 
@@ -12053,18 +11963,18 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   %106 = getelementptr inbounds nuw i8, ptr %4, i64 8
   call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(24) %106, i8 0, i64 24, i1 false)
   %107 = getelementptr i8, ptr %0, i64 448
-  %108 = load ptr, ptr %107, align 8, !tbaa !321
+  %108 = load ptr, ptr %107, align 8, !tbaa !320
   %109 = icmp eq ptr %108, null
   br i1 %109, label %110, label %119
 
 110:                                              ; preds = %105
   %111 = getelementptr inbounds nuw i8, ptr %0, i64 3168
-  %112 = load ptr, ptr %111, align 8, !tbaa !345
-  store ptr %112, ptr %4, align 8, !tbaa !346
+  %112 = load ptr, ptr %111, align 8, !tbaa !344
+  store ptr %112, ptr %4, align 8, !tbaa !345
   %113 = getelementptr inbounds nuw i8, ptr %0, i64 3176
-  %114 = load i64, ptr %113, align 8, !tbaa !347
+  %114 = load i64, ptr %113, align 8, !tbaa !346
   %115 = getelementptr inbounds nuw i8, ptr %4, i64 32
-  store i64 %114, ptr %115, align 8, !tbaa !348
+  store i64 %114, ptr %115, align 8, !tbaa !347
   %116 = getelementptr inbounds nuw i8, ptr %0, i64 1056
   %117 = call i64 @ZSTD_ldm_generateSequences(ptr noundef nonnull %116, ptr noundef nonnull %4, ptr noundef nonnull %102, ptr noundef %1, i64 noundef %2) #36
   %118 = icmp ult i64 %117, -119
@@ -12073,51 +11983,51 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
 119:                                              ; preds = %110, %105
   %120 = phi i64 [ -41, %105 ], [ %117, %110 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %4) #36
-  br label %331
+  br label %267
 
 121:                                              ; preds = %110
   %122 = load ptr, ptr %77, align 8, !tbaa !58
   %123 = getelementptr inbounds nuw i8, ptr %122, i64 5616
   %124 = getelementptr inbounds nuw i8, ptr %0, i64 400
-  %125 = load i32, ptr %124, align 8, !tbaa !344
+  %125 = load i32, ptr %124, align 8, !tbaa !343
   %126 = call i64 @ZSTD_ldm_blockCompress(ptr noundef nonnull %4, ptr noundef nonnull %6, ptr noundef nonnull %20, ptr noundef nonnull %123, i32 noundef %125, ptr noundef %1, i64 noundef %2) #36
   call void @llvm.lifetime.end.p0(ptr nonnull %4) #36
-  br label %323
+  br label %259
 
 127:                                              ; preds = %101
   %128 = getelementptr i8, ptr %0, i64 448
-  %129 = load ptr, ptr %128, align 8, !tbaa !321
+  %129 = load ptr, ptr %128, align 8, !tbaa !320
   %130 = icmp eq ptr %129, null
-  br i1 %130, label %271, label %131
+  br i1 %130, label %239, label %131
 
 131:                                              ; preds = %127
-  %132 = load i32, ptr %7, align 4, !tbaa !216
+  %132 = load i32, ptr %7, align 4, !tbaa !214
   %133 = icmp ult i32 %132, 32
-  br i1 %133, label %135, label %134, !prof !169, !nosanitize !8
+  br i1 %133, label %135, label %134, !prof !215, !nosanitize !8
 
 134:                                              ; preds = %131
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 135:                                              ; preds = %131
   %136 = shl nuw i32 1, %132
   %137 = getelementptr inbounds nuw i8, ptr %0, i64 440
-  %138 = load ptr, ptr %137, align 8, !tbaa !349
+  %138 = load ptr, ptr %137, align 8, !tbaa !348
   %139 = getelementptr inbounds nuw i8, ptr %0, i64 5264
-  %140 = load ptr, ptr %139, align 8, !tbaa !350
+  %140 = load ptr, ptr %139, align 8, !tbaa !349
   %141 = getelementptr inbounds nuw i8, ptr %0, i64 5272
-  %142 = load i64, ptr %141, align 8, !tbaa !351
+  %142 = load i64, ptr %141, align 8, !tbaa !350
   %143 = getelementptr inbounds nuw i8, ptr %0, i64 284
-  %144 = load i32, ptr %143, align 4, !tbaa !352
+  %144 = load i32, ptr %143, align 4, !tbaa !351
   %145 = zext i32 %136 to i64
   %146 = tail call i64 %129(ptr noundef %138, ptr noundef %140, i64 noundef %142, ptr noundef %1, i64 noundef %2, ptr noundef null, i64 noundef 0, i32 noundef %144, i64 noundef %145) #36
-  %147 = load i64, ptr %141, align 8, !tbaa !351
+  %147 = load i64, ptr %141, align 8, !tbaa !350
   %148 = add i64 %146, -1
   %149 = icmp ult i64 %148, %147
   br i1 %149, label %150, label %212
 
 150:                                              ; preds = %135
-  %151 = load ptr, ptr %139, align 8, !tbaa !350
+  %151 = load ptr, ptr %139, align 8, !tbaa !349
   %152 = getelementptr [16 x i8], ptr %151, i64 %146
   %153 = getelementptr i8, ptr %152, i64 -16
   %154 = load i32, ptr %153, align 4, !tbaa !4
@@ -12139,7 +12049,7 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   br i1 %164, label %165, label %166, !prof !9, !nosanitize !8
 
 165:                                              ; preds = %162
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 166:                                              ; preds = %162
@@ -12154,7 +12064,7 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
 171:                                              ; preds = %168
   call void @llvm.lifetime.start.p0(ptr nonnull %5) #36
   call void @llvm.memset.p0.i64(ptr noundef nonnull align 8 dereferenceable(16) %5, i8 0, i64 16, i1 false)
-  %172 = load ptr, ptr %139, align 8, !tbaa !350
+  %172 = load ptr, ptr %139, align 8, !tbaa !349
   br label %178
 
 173:                                              ; preds = %189
@@ -12162,7 +12072,7 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   %175 = extractvalue { i64, i1 } %186, 0, !nosanitize !8
   %176 = extractvalue { i64, i1 } %193, 0, !nosanitize !8
   %177 = icmp eq i64 %174, %169
-  br i1 %177, label %196, label %178, !llvm.loop !353
+  br i1 %177, label %196, label %178, !llvm.loop !352
 
 178:                                              ; preds = %171, %173
   %179 = phi i64 [ %174, %173 ], [ 0, %171 ]
@@ -12170,26 +12080,26 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   %181 = phi i64 [ %176, %173 ], [ 0, %171 ]
   %182 = getelementptr inbounds nuw [16 x i8], ptr %172, i64 %179
   %183 = getelementptr inbounds nuw i8, ptr %182, i64 4
-  %184 = load i32, ptr %183, align 4, !tbaa !186
+  %184 = load i32, ptr %183, align 4, !tbaa !184
   %185 = zext i32 %184 to i64
   %186 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %180, i64 %185), !nosanitize !8
   %187 = extractvalue { i64, i1 } %186, 1, !nosanitize !8
   br i1 %187, label %188, label %189, !prof !9, !nosanitize !8
 
 188:                                              ; preds = %178
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 189:                                              ; preds = %178
   %190 = getelementptr inbounds nuw i8, ptr %182, i64 8
-  %191 = load i32, ptr %190, align 4, !tbaa !185
+  %191 = load i32, ptr %190, align 4, !tbaa !183
   %192 = zext i32 %191 to i64
   %193 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %181, i64 %192), !nosanitize !8
   %194 = extractvalue { i64, i1 } %193, 1, !nosanitize !8
   br i1 %194, label %195, label %173, !prof !9, !nosanitize !8
 
 195:                                              ; preds = %189
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 196:                                              ; preds = %173
@@ -12198,7 +12108,7 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
   br i1 %198, label %199, label %200, !prof !9, !nosanitize !8
 
 199:                                              ; preds = %196
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 200:                                              ; preds = %196
@@ -12208,199 +12118,91 @@ define internal fastcc range(i64 -119, 2) i64 @ZSTD_buildSeqStore(ptr noundef %0
 
 203:                                              ; preds = %200
   %204 = getelementptr inbounds nuw i8, ptr %0, i64 456
-  %205 = load i32, ptr %204, align 8, !tbaa !354
+  %205 = load i32, ptr %204, align 8, !tbaa !353
   %206 = call fastcc i64 @ZSTD_transferSequences_wBlockDelim(ptr noundef %0, ptr noundef nonnull %5, ptr noundef nonnull %172, i64 noundef %169, ptr noundef %1, i64 noundef %2, i32 noundef %205)
   %207 = icmp ult i64 %206, -119
   br i1 %207, label %208, label %210
 
 208:                                              ; preds = %203
   %209 = getelementptr inbounds nuw i8, ptr %0, i64 3528
-  store ptr null, ptr %209, align 8, !tbaa !355
+  store ptr null, ptr %209, align 8, !tbaa !354
   br label %210
 
 210:                                              ; preds = %200, %203, %208
   %211 = phi i64 [ %206, %203 ], [ 0, %208 ], [ -107, %200 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %5) #36
-  br label %331
+  br label %267
 
 212:                                              ; preds = %135, %160, %168
   %213 = phi i64 [ %169, %168 ], [ -106, %160 ], [ -106, %135 ]
   %214 = getelementptr inbounds nuw i8, ptr %0, i64 436
-  %215 = load i32, ptr %214, align 4, !tbaa !356
+  %215 = load i32, ptr %214, align 4, !tbaa !355
   %216 = icmp eq i32 %215, 0
-  br i1 %216, label %331, label %217
+  br i1 %216, label %267, label %217
 
 217:                                              ; preds = %212
   %218 = getelementptr inbounds nuw i8, ptr %0, i64 268
-  %219 = load i32, ptr %218, align 4, !tbaa !219
+  %219 = load i32, ptr %218, align 4, !tbaa !218
   %220 = getelementptr inbounds nuw i8, ptr %0, i64 400
-  %221 = load i32, ptr %220, align 8, !tbaa !344
+  %221 = load i32, ptr %220, align 8, !tbaa !343
   %222 = add i32 %219, -6
   %223 = icmp ult i32 %222, -3
   %224 = icmp ne i32 %221, 1
   %225 = or i1 %223, %224
-  br i1 %225, label %238, label %226
+  %226 = getelementptr inbounds nuw [24 x i8], ptr @ZSTD_selectBlockCompressor.rowBasedBlockCompressors, i64 %75
+  %227 = zext nneg i32 %219 to i64
+  %228 = getelementptr [8 x i8], ptr %226, i64 %227
+  %229 = getelementptr i8, ptr %228, i64 -24
+  %230 = getelementptr inbounds nuw [80 x i8], ptr @ZSTD_selectBlockCompressor.blockCompressor, i64 %75
+  %231 = sext i32 %219 to i64
+  %232 = getelementptr inbounds [8 x i8], ptr %230, i64 %231
+  %233 = select i1 %225, ptr %232, ptr %229
+  %234 = load ptr, ptr %233, align 8, !tbaa !51
+  %235 = getelementptr inbounds nuw i8, ptr %0, i64 3528
+  store ptr null, ptr %235, align 8, !tbaa !354
+  %236 = load ptr, ptr %77, align 8, !tbaa !58
+  %237 = getelementptr inbounds nuw i8, ptr %236, i64 5616
+  %238 = tail call i64 %234(ptr noundef nonnull %6, ptr noundef nonnull %20, ptr noundef nonnull %237, ptr noundef %1, i64 noundef %2) #36
+  br label %259
 
-226:                                              ; preds = %217
-  %227 = add nsw i32 %219, -3
-  %228 = mul nuw nsw i64 %75, 24
-  %229 = mul nuw nsw i64 %75, 24
-  %230 = getelementptr inbounds nuw [24 x i8], ptr @ZSTD_selectBlockCompressor.rowBasedBlockCompressors, i64 %75
-  %231 = zext nneg i32 %227 to i64
-  %232 = shl nuw nsw i64 %231, 3
-  %233 = add nuw nsw i64 %232, %228
-  %234 = shl nuw nsw i64 %231, 3
-  %235 = add nuw nsw i64 %229, %234
-  %236 = getelementptr inbounds nuw [8 x i8], ptr %230, i64 %231
-  br label %250
+239:                                              ; preds = %127
+  %240 = getelementptr inbounds nuw i8, ptr %0, i64 268
+  %241 = load i32, ptr %240, align 4, !tbaa !218
+  %242 = getelementptr inbounds nuw i8, ptr %0, i64 400
+  %243 = load i32, ptr %242, align 8, !tbaa !343
+  %244 = add i32 %241, -6
+  %245 = icmp ult i32 %244, -3
+  %246 = icmp ne i32 %243, 1
+  %247 = or i1 %245, %246
+  %248 = getelementptr inbounds nuw [24 x i8], ptr @ZSTD_selectBlockCompressor.rowBasedBlockCompressors, i64 %75
+  %249 = zext nneg i32 %241 to i64
+  %250 = getelementptr [8 x i8], ptr %248, i64 %249
+  %251 = getelementptr i8, ptr %250, i64 -24
+  %252 = getelementptr inbounds nuw [80 x i8], ptr @ZSTD_selectBlockCompressor.blockCompressor, i64 %75
+  %253 = sext i32 %241 to i64
+  %254 = getelementptr inbounds [8 x i8], ptr %252, i64 %253
+  %255 = select i1 %247, ptr %254, ptr %251
+  %256 = load ptr, ptr %255, align 8, !tbaa !51
+  %257 = getelementptr inbounds nuw i8, ptr %0, i64 3528
+  store ptr null, ptr %257, align 8, !tbaa !354
+  %258 = tail call i64 %256(ptr noundef nonnull %6, ptr noundef nonnull %20, ptr noundef nonnull %79, ptr noundef %1, i64 noundef %2) #36
+  br label %259
 
-237:                                              ; preds = %238
-  tail call void @llvm.ubsantrap(i8 18) #39, !nosanitize !8
-  unreachable, !nosanitize !8
+259:                                              ; preds = %217, %121, %239, %97
+  %260 = phi i64 [ %100, %97 ], [ %126, %121 ], [ %238, %217 ], [ %258, %239 ]
+  %261 = getelementptr inbounds nuw i8, ptr %1, i64 %2
+  %262 = sub i64 0, %260
+  %263 = getelementptr inbounds i8, ptr %261, i64 %262
+  %264 = load ptr, ptr %23, align 8, !tbaa !170
+  call void @llvm.memcpy.p0.p0.i64(ptr align 1 %264, ptr nonnull readonly align 1 %263, i64 %260, i1 false)
+  %265 = load ptr, ptr %23, align 8, !tbaa !170
+  %266 = getelementptr inbounds nuw i8, ptr %265, i64 %260
+  store ptr %266, ptr %23, align 8, !tbaa !170
+  br label %267
 
-238:                                              ; preds = %217
-  %239 = icmp ult i32 %219, 10
-  br i1 %239, label %240, label %237, !prof !170, !nosanitize !8
-
-240:                                              ; preds = %238
-  %241 = zext nneg i32 %219 to i64
-  %242 = mul nuw nsw i64 %75, 80
-  %243 = mul nuw nsw i64 %75, 80
-  %244 = getelementptr inbounds nuw [80 x i8], ptr @ZSTD_selectBlockCompressor.blockCompressor, i64 %75
-  %245 = shl nuw nsw i64 %241, 3
-  %246 = add nuw nsw i64 %245, %242
-  %247 = shl nuw nsw i64 %241, 3
-  %248 = add nuw nsw i64 %243, %247
-  %249 = getelementptr inbounds nuw [8 x i8], ptr %244, i64 %241
-  br label %250
-
-250:                                              ; preds = %240, %226
-  %251 = phi i64 [ 96, %226 ], [ 320, %240 ]
-  %252 = phi i64 [ %233, %226 ], [ %246, %240 ]
-  %253 = phi i64 [ %235, %226 ], [ %248, %240 ]
-  %254 = phi ptr [ %236, %226 ], [ %249, %240 ]
-  %255 = sub nsw i64 %251, %252, !nosanitize !8
-  %256 = icmp samesign ult i64 %251, %252, !nosanitize !8
-  %257 = icmp ult i64 %255, 8, !nosanitize !8
-  %258 = or i1 %256, %257, !nosanitize !8
-  br i1 %258, label %259, label %260
-
-259:                                              ; preds = %250
-  tail call void @llvm.ubsantrap(i8 9) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-260:                                              ; preds = %250
-  %261 = sub nsw i64 %251, %253, !nosanitize !8
-  %262 = icmp ult i64 %251, %253, !nosanitize !8
-  %263 = icmp ult i64 %261, 8, !nosanitize !8
-  %264 = or i1 %262, %263, !nosanitize !8
-  br i1 %264, label %333, label %265
-
-265:                                              ; preds = %260
-  %266 = load ptr, ptr %254, align 8, !tbaa !51
-  %267 = getelementptr inbounds nuw i8, ptr %0, i64 3528
-  store ptr null, ptr %267, align 8, !tbaa !355
-  %268 = load ptr, ptr %77, align 8, !tbaa !58
-  %269 = getelementptr inbounds nuw i8, ptr %268, i64 5616
-  %270 = tail call i64 %266(ptr noundef nonnull %6, ptr noundef nonnull %20, ptr noundef nonnull %269, ptr noundef %1, i64 noundef %2) #36
-  br label %323
-
-271:                                              ; preds = %127
-  %272 = getelementptr inbounds nuw i8, ptr %0, i64 268
-  %273 = load i32, ptr %272, align 4, !tbaa !219
-  %274 = getelementptr inbounds nuw i8, ptr %0, i64 400
-  %275 = load i32, ptr %274, align 8, !tbaa !344
-  %276 = add i32 %273, -6
-  %277 = icmp ult i32 %276, -3
-  %278 = icmp ne i32 %275, 1
-  %279 = or i1 %277, %278
-  br i1 %279, label %292, label %280
-
-280:                                              ; preds = %271
-  %281 = add nsw i32 %273, -3
-  %282 = mul nuw nsw i64 %75, 24
-  %283 = mul nuw nsw i64 %75, 24
-  %284 = getelementptr inbounds nuw [24 x i8], ptr @ZSTD_selectBlockCompressor.rowBasedBlockCompressors, i64 %75
-  %285 = zext nneg i32 %281 to i64
-  %286 = shl nuw nsw i64 %285, 3
-  %287 = add nuw nsw i64 %286, %282
-  %288 = shl nuw nsw i64 %285, 3
-  %289 = add nuw nsw i64 %283, %288
-  %290 = getelementptr inbounds nuw [8 x i8], ptr %284, i64 %285
-  br label %304
-
-291:                                              ; preds = %292
-  tail call void @llvm.ubsantrap(i8 18) #39, !nosanitize !8
-  unreachable, !nosanitize !8
-
-292:                                              ; preds = %271
-  %293 = icmp ult i32 %273, 10
-  br i1 %293, label %294, label %291, !prof !170, !nosanitize !8
-
-294:                                              ; preds = %292
-  %295 = zext nneg i32 %273 to i64
-  %296 = mul nuw nsw i64 %75, 80
-  %297 = mul nuw nsw i64 %75, 80
-  %298 = getelementptr inbounds nuw [80 x i8], ptr @ZSTD_selectBlockCompressor.blockCompressor, i64 %75
-  %299 = shl nuw nsw i64 %295, 3
-  %300 = add nuw nsw i64 %299, %296
-  %301 = shl nuw nsw i64 %295, 3
-  %302 = add nuw nsw i64 %297, %301
-  %303 = getelementptr inbounds nuw [8 x i8], ptr %298, i64 %295
-  br label %304
-
-304:                                              ; preds = %294, %280
-  %305 = phi i64 [ 96, %280 ], [ 320, %294 ]
-  %306 = phi i64 [ %287, %280 ], [ %300, %294 ]
-  %307 = phi i64 [ %289, %280 ], [ %302, %294 ]
-  %308 = phi ptr [ %290, %280 ], [ %303, %294 ]
-  %309 = sub nsw i64 %305, %306, !nosanitize !8
-  %310 = icmp samesign ult i64 %305, %306, !nosanitize !8
-  %311 = icmp ult i64 %309, 8, !nosanitize !8
-  %312 = or i1 %310, %311, !nosanitize !8
-  br i1 %312, label %313, label %314
-
-313:                                              ; preds = %304
-  tail call void @llvm.ubsantrap(i8 9) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-314:                                              ; preds = %304
-  %315 = sub nsw i64 %305, %307, !nosanitize !8
-  %316 = icmp ult i64 %305, %307, !nosanitize !8
-  %317 = icmp ult i64 %315, 8, !nosanitize !8
-  %318 = or i1 %316, %317, !nosanitize !8
-  br i1 %318, label %334, label %319
-
-319:                                              ; preds = %314
-  %320 = load ptr, ptr %308, align 8, !tbaa !51
-  %321 = getelementptr inbounds nuw i8, ptr %0, i64 3528
-  store ptr null, ptr %321, align 8, !tbaa !355
-  %322 = tail call i64 %320(ptr noundef nonnull %6, ptr noundef nonnull %20, ptr noundef nonnull %79, ptr noundef %1, i64 noundef %2) #36
-  br label %323
-
-323:                                              ; preds = %265, %121, %319, %97
-  %324 = phi i64 [ %100, %97 ], [ %126, %121 ], [ %270, %265 ], [ %322, %319 ]
-  %325 = getelementptr inbounds nuw i8, ptr %1, i64 %2
-  %326 = sub i64 0, %324
-  %327 = getelementptr inbounds i8, ptr %325, i64 %326
-  %328 = load ptr, ptr %23, align 8, !tbaa !172
-  call void @llvm.memcpy.p0.p0.i64(ptr align 1 %328, ptr nonnull readonly align 1 %327, i64 %324, i1 false)
-  %329 = load ptr, ptr %23, align 8, !tbaa !172
-  %330 = getelementptr inbounds nuw i8, ptr %329, i64 %324
-  store ptr %330, ptr %23, align 8, !tbaa !172
-  br label %331
-
-331:                                              ; preds = %212, %210, %93, %119, %15, %14, %323
-  %332 = phi i64 [ 1, %15 ], [ 0, %323 ], [ 1, %14 ], [ -41, %93 ], [ %120, %119 ], [ %213, %212 ], [ %211, %210 ]
-  ret i64 %332
-
-333:                                              ; preds = %260
-  tail call void @llvm.ubsantrap(i8 66) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-334:                                              ; preds = %314
-  tail call void @llvm.ubsantrap(i8 68) #34, !nosanitize !8
-  unreachable, !nosanitize !8
+267:                                              ; preds = %212, %210, %93, %119, %15, %14, %259
+  %268 = phi i64 [ 1, %15 ], [ 0, %259 ], [ 1, %14 ], [ -41, %93 ], [ %120, %119 ], [ %213, %212 ], [ %211, %210 ]
+  ret i64 %268
 }
 
 declare void @ZSTD_ldm_skipRawSeqStoreBytes(ptr noundef, i64 noundef) local_unnamed_addr #16
@@ -12414,7 +12216,7 @@ declare i64 @ZSTD_ldm_generateSequences(ptr noundef, ptr noundef, ptr noundef, p
 ; Function Attrs: nounwind memory(readwrite, inaccessiblemem: write, target_mem: none) uwtable
 define internal fastcc noundef i64 @ZSTD_transferSequences_wBlockDelim(ptr noundef captures(none) %0, ptr noundef captures(none) %1, ptr noundef readonly captures(none) %2, i64 noundef %3, ptr noundef %4, i64 noundef %5, i32 noundef %6) unnamed_addr #29 {
   %8 = alloca %struct.repcodes_s, align 8
-  %9 = load i32, ptr %1, align 8, !tbaa !357
+  %9 = load i32, ptr %1, align 8, !tbaa !356
   %10 = getelementptr inbounds nuw i8, ptr %4, i64 %5
   call void @llvm.lifetime.start.p0(ptr nonnull %8) #36
   %11 = getelementptr inbounds nuw i8, ptr %0, i64 3728
@@ -12424,7 +12226,7 @@ define internal fastcc noundef i64 @ZSTD_transferSequences_wBlockDelim(ptr nound
 
 14:                                               ; preds = %7
   %15 = getelementptr inbounds nuw i8, ptr %12, i64 8
-  %16 = load i64, ptr %15, align 8, !tbaa !241
+  %16 = load i64, ptr %15, align 8, !tbaa !240
   br label %24
 
 17:                                               ; preds = %7
@@ -12446,7 +12248,7 @@ define internal fastcc noundef i64 @ZSTD_transferSequences_wBlockDelim(ptr nound
   call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(12) %8, ptr noundef nonnull align 8 dereferenceable(12) %28, i64 12, i1 false)
   %29 = zext i32 %9 to i64
   %30 = icmp ugt i64 %3, %29
-  br i1 %30, label %31, label %386
+  br i1 %30, label %31, label %384
 
 31:                                               ; preds = %24
   %32 = load i32, ptr %8, align 8
@@ -12471,55 +12273,55 @@ define internal fastcc noundef i64 @ZSTD_transferSequences_wBlockDelim(ptr nound
   %51 = load i32, ptr %35, align 8
   br label %52
 
-52:                                               ; preds = %31, %379
-  %53 = phi i32 [ %51, %31 ], [ %136, %379 ]
-  %54 = phi i32 [ %50, %31 ], [ %137, %379 ]
-  %55 = phi i64 [ %29, %31 ], [ %384, %379 ]
-  %56 = phi ptr [ %4, %31 ], [ %382, %379 ]
-  %57 = phi i32 [ %32, %31 ], [ %138, %379 ]
+52:                                               ; preds = %31, %377
+  %53 = phi i32 [ %51, %31 ], [ %134, %377 ]
+  %54 = phi i32 [ %50, %31 ], [ %135, %377 ]
+  %55 = phi i64 [ %29, %31 ], [ %382, %377 ]
+  %56 = phi ptr [ %4, %31 ], [ %380, %377 ]
+  %57 = phi i32 [ %32, %31 ], [ %136, %377 ]
   %58 = ptrtoint ptr %56 to i64
   %59 = trunc nuw i64 %55 to i32
   %60 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %55
   %61 = getelementptr inbounds nuw i8, ptr %60, i64 8
-  %62 = load i32, ptr %61, align 4, !tbaa !185
+  %62 = load i32, ptr %61, align 4, !tbaa !183
   %63 = icmp eq i32 %62, 0
   br i1 %63, label %64, label %67
 
 64:                                               ; preds = %52
-  %65 = load i32, ptr %60, align 4, !tbaa !183
+  %65 = load i32, ptr %60, align 4, !tbaa !181
   %66 = icmp eq i32 %65, 0
-  br i1 %66, label %386, label %67
+  br i1 %66, label %384, label %67
 
 67:                                               ; preds = %52, %64
   %68 = getelementptr inbounds nuw i8, ptr %60, i64 4
-  %69 = load i32, ptr %68, align 4, !tbaa !186
+  %69 = load i32, ptr %68, align 4, !tbaa !184
   br i1 %33, label %70, label %77
 
 70:                                               ; preds = %67
-  %71 = load i32, ptr %60, align 4, !tbaa !183
+  %71 = load i32, ptr %60, align 4, !tbaa !181
   %72 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %71, i32 3), !nosanitize !8
   %73 = extractvalue { i32, i1 } %72, 1, !nosanitize !8
   br i1 %73, label %74, label %75, !prof !9, !nosanitize !8
 
 74:                                               ; preds = %70
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 75:                                               ; preds = %70
   %76 = extractvalue { i32, i1 } %72, 0, !nosanitize !8
-  br label %135
+  br label %133
 
 77:                                               ; preds = %67
   %78 = icmp eq i32 %69, 0
   %79 = zext i1 %78 to i32
-  %80 = load i32, ptr %60, align 4, !tbaa !183
+  %80 = load i32, ptr %60, align 4, !tbaa !181
   %81 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %80, i32 3), !nosanitize !8
   %82 = extractvalue { i32, i1 } %81, 0, !nosanitize !8
   %83 = extractvalue { i32, i1 } %81, 1, !nosanitize !8
   br i1 %83, label %84, label %85, !prof !9, !nosanitize !8
 
 84:                                               ; preds = %77
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 85:                                               ; preds = %77
@@ -12552,7 +12354,7 @@ define internal fastcc noundef i64 @ZSTD_transferSequences_wBlockDelim(ptr nound
   br i1 %99, label %100, label %101, !prof !9, !nosanitize !8
 
 100:                                              ; preds = %97
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 101:                                              ; preds = %97
@@ -12568,7 +12370,7 @@ define internal fastcc noundef i64 @ZSTD_transferSequences_wBlockDelim(ptr nound
   store i32 %54, ptr %35, align 8, !tbaa !4
   store i32 %57, ptr %34, align 4, !tbaa !4
   %107 = add i32 %82, -3
-  br label %131
+  br label %129
 
 108:                                              ; preds = %85, %101, %94, %90, %104
   %109 = phi i32 [ %82, %104 ], [ %91, %90 ], [ 1, %85 ], [ %95, %94 ], [ 3, %101 ]
@@ -12577,14 +12379,14 @@ define internal fastcc noundef i64 @ZSTD_transferSequences_wBlockDelim(ptr nound
   br i1 %111, label %112, label %113, !prof !9, !nosanitize !8
 
 112:                                              ; preds = %108
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 113:                                              ; preds = %108
   %114 = extractvalue { i32, i1 } %110, 0, !nosanitize !8
   %115 = add nuw nsw i32 %114, %79
   switch i32 %115, label %121 [
-    i32 0, label %135
+    i32 0, label %133
     i32 3, label %116
   ]
 
@@ -12592,563 +12394,555 @@ define internal fastcc noundef i64 @ZSTD_transferSequences_wBlockDelim(ptr nound
   %117 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %57, i32 1), !nosanitize !8
   %118 = extractvalue { i32, i1 } %117, 0, !nosanitize !8
   %119 = extractvalue { i32, i1 } %117, 1, !nosanitize !8
-  br i1 %119, label %120, label %127, !prof !9, !nosanitize !8
+  br i1 %119, label %120, label %125, !prof !9, !nosanitize !8
 
 120:                                              ; preds = %116
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 121:                                              ; preds = %113
-  %122 = icmp ugt i32 %115, 2
-  br i1 %122, label %471, label %123
+  %122 = zext nneg i32 %115 to i64
+  %123 = getelementptr inbounds nuw [4 x i8], ptr %8, i64 %122
+  %124 = load i32, ptr %123, align 4, !tbaa !4
+  br label %125
 
-123:                                              ; preds = %121
-  %124 = zext nneg i32 %115 to i64
-  %125 = getelementptr inbounds nuw [4 x i8], ptr %8, i64 %124
-  %126 = load i32, ptr %125, align 4, !tbaa !4
-  br label %127
-
-127:                                              ; preds = %123, %116
-  %128 = phi i32 [ %126, %123 ], [ %118, %116 ]
-  %129 = icmp eq i32 %115, 1
-  %130 = select i1 %129, i32 %53, i32 %54
-  store i32 %130, ptr %35, align 8, !tbaa !4
+125:                                              ; preds = %121, %116
+  %126 = phi i32 [ %124, %121 ], [ %118, %116 ]
+  %127 = icmp eq i32 %115, 1
+  %128 = select i1 %127, i32 %53, i32 %54
+  store i32 %128, ptr %35, align 8, !tbaa !4
   store i32 %57, ptr %34, align 4, !tbaa !4
-  br label %131
+  br label %129
 
-131:                                              ; preds = %127, %106
-  %132 = phi i32 [ %130, %127 ], [ %54, %106 ]
-  %133 = phi i32 [ %109, %127 ], [ %82, %106 ]
-  %134 = phi i32 [ %128, %127 ], [ %107, %106 ]
-  store i32 %134, ptr %8, align 8, !tbaa !4
-  br label %135
+129:                                              ; preds = %125, %106
+  %130 = phi i32 [ %128, %125 ], [ %54, %106 ]
+  %131 = phi i32 [ %109, %125 ], [ %82, %106 ]
+  %132 = phi i32 [ %126, %125 ], [ %107, %106 ]
+  store i32 %132, ptr %8, align 8, !tbaa !4
+  br label %133
 
-135:                                              ; preds = %131, %113, %75
-  %136 = phi i32 [ %53, %75 ], [ %53, %113 ], [ %132, %131 ]
-  %137 = phi i32 [ %54, %75 ], [ %54, %113 ], [ %57, %131 ]
-  %138 = phi i32 [ %57, %75 ], [ %57, %113 ], [ %134, %131 ]
-  %139 = phi i32 [ %76, %75 ], [ %109, %113 ], [ %133, %131 ]
-  %140 = load i32, ptr %36, align 8, !tbaa !359
-  %141 = icmp eq i32 %140, 0
-  br i1 %141, label %176, label %142
+133:                                              ; preds = %129, %113, %75
+  %134 = phi i32 [ %53, %75 ], [ %53, %113 ], [ %130, %129 ]
+  %135 = phi i32 [ %54, %75 ], [ %54, %113 ], [ %57, %129 ]
+  %136 = phi i32 [ %57, %75 ], [ %57, %113 ], [ %132, %129 ]
+  %137 = phi i32 [ %76, %75 ], [ %109, %113 ], [ %131, %129 ]
+  %138 = load i32, ptr %36, align 8, !tbaa !358
+  %139 = icmp eq i32 %138, 0
+  br i1 %139, label %174, label %140
 
-142:                                              ; preds = %135
-  %143 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %69, i32 %62), !nosanitize !8
-  %144 = extractvalue { i32, i1 } %143, 1, !nosanitize !8
-  br i1 %144, label %145, label %146, !prof !9, !nosanitize !8
+140:                                              ; preds = %133
+  %141 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %69, i32 %62), !nosanitize !8
+  %142 = extractvalue { i32, i1 } %141, 1, !nosanitize !8
+  br i1 %142, label %143, label %144, !prof !9, !nosanitize !8
 
-145:                                              ; preds = %142
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+143:                                              ; preds = %140
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-146:                                              ; preds = %142
-  %147 = extractvalue { i32, i1 } %143, 0, !nosanitize !8
-  %148 = zext i32 %147 to i64
-  %149 = load i64, ptr %37, align 8, !tbaa !360
-  %150 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %149, i64 %148), !nosanitize !8
-  %151 = extractvalue { i64, i1 } %150, 1, !nosanitize !8
-  br i1 %151, label %152, label %153, !prof !9, !nosanitize !8
+144:                                              ; preds = %140
+  %145 = extractvalue { i32, i1 } %141, 0, !nosanitize !8
+  %146 = zext i32 %145 to i64
+  %147 = load i64, ptr %37, align 8, !tbaa !359
+  %148 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %147, i64 %146), !nosanitize !8
+  %149 = extractvalue { i64, i1 } %148, 1, !nosanitize !8
+  br i1 %149, label %150, label %151, !prof !9, !nosanitize !8
 
-152:                                              ; preds = %146
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+150:                                              ; preds = %144
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-153:                                              ; preds = %146
-  %154 = extractvalue { i64, i1 } %150, 0, !nosanitize !8
-  store i64 %154, ptr %37, align 8, !tbaa !360
-  %155 = load i32, ptr %38, align 4, !tbaa !216
-  %156 = icmp ult i32 %155, 32
-  br i1 %156, label %158, label %157, !prof !169, !nosanitize !8
+151:                                              ; preds = %144
+  %152 = extractvalue { i64, i1 } %148, 0, !nosanitize !8
+  store i64 %152, ptr %37, align 8, !tbaa !359
+  %153 = load i32, ptr %38, align 4, !tbaa !214
+  %154 = icmp ult i32 %153, 32
+  br i1 %154, label %156, label %155, !prof !215, !nosanitize !8
 
-157:                                              ; preds = %153
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+155:                                              ; preds = %151
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-158:                                              ; preds = %153
-  %159 = load ptr, ptr %41, align 8, !tbaa !321
-  %160 = icmp ne ptr %159, null
-  %161 = load i32, ptr %39, align 4, !tbaa !338
-  %162 = shl nuw i32 1, %155
-  %163 = zext i32 %162 to i64
-  %164 = icmp ugt i64 %154, %163
-  %165 = add nuw nsw i64 %154, %40
-  %166 = select i1 %164, i64 %163, i64 %165
-  %167 = add nuw nsw i64 %166, 3
-  %168 = icmp eq i32 %161, 3
-  %169 = or i1 %168, %160
-  %170 = select i1 %169, i64 3, i64 4
-  %171 = zext i32 %139 to i64
-  %172 = icmp samesign uge i64 %167, %171
-  %173 = zext i32 %62 to i64
-  %174 = icmp samesign ule i64 %170, %173
-  %175 = select i1 %172, i1 %174, i1 false
-  br i1 %175, label %176, label %469
+156:                                              ; preds = %151
+  %157 = load ptr, ptr %41, align 8, !tbaa !320
+  %158 = icmp ne ptr %157, null
+  %159 = load i32, ptr %39, align 4, !tbaa !337
+  %160 = shl nuw i32 1, %153
+  %161 = zext i32 %160 to i64
+  %162 = icmp ugt i64 %152, %161
+  %163 = add nuw nsw i64 %152, %40
+  %164 = select i1 %162, i64 %161, i64 %163
+  %165 = add nuw nsw i64 %164, 3
+  %166 = icmp eq i32 %159, 3
+  %167 = or i1 %166, %158
+  %168 = select i1 %167, i64 3, i64 4
+  %169 = zext i32 %137 to i64
+  %170 = icmp samesign uge i64 %165, %169
+  %171 = zext i32 %62 to i64
+  %172 = icmp samesign ule i64 %168, %171
+  %173 = select i1 %170, i1 %172, i1 false
+  br i1 %173, label %174, label %467
 
-176:                                              ; preds = %135, %158
-  %177 = load i32, ptr %1, align 8, !tbaa !357
-  %178 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %59, i32 %177), !nosanitize !8
-  %179 = extractvalue { i32, i1 } %178, 1, !nosanitize !8
-  br i1 %179, label %180, label %181, !prof !9, !nosanitize !8
+174:                                              ; preds = %133, %156
+  %175 = load i32, ptr %1, align 8, !tbaa !356
+  %176 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %59, i32 %175), !nosanitize !8
+  %177 = extractvalue { i32, i1 } %176, 1, !nosanitize !8
+  br i1 %177, label %178, label %179, !prof !9, !nosanitize !8
 
-180:                                              ; preds = %176
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+178:                                              ; preds = %174
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-181:                                              ; preds = %176
-  %182 = extractvalue { i32, i1 } %178, 0, !nosanitize !8
-  %183 = zext i32 %182 to i64
-  %184 = load i64, ptr %42, align 8, !tbaa !304
-  %185 = icmp ugt i64 %184, %183
-  br i1 %185, label %186, label %469
+179:                                              ; preds = %174
+  %180 = extractvalue { i32, i1 } %176, 0, !nosanitize !8
+  %181 = zext i32 %180 to i64
+  %182 = load i64, ptr %42, align 8, !tbaa !303
+  %183 = icmp ugt i64 %182, %181
+  br i1 %183, label %184, label %467
 
-186:                                              ; preds = %181
-  %187 = zext i32 %69 to i64
-  %188 = zext i32 %62 to i64
-  %189 = getelementptr inbounds nuw i8, ptr %56, i64 %187
-  %190 = icmp ugt ptr %189, %44
-  %191 = load ptr, ptr %45, align 8, !tbaa !172
-  br i1 %190, label %214, label %192
+184:                                              ; preds = %179
+  %185 = zext i32 %69 to i64
+  %186 = zext i32 %62 to i64
+  %187 = getelementptr inbounds nuw i8, ptr %56, i64 %185
+  %188 = icmp ugt ptr %187, %44
+  %189 = load ptr, ptr %45, align 8, !tbaa !170
+  br i1 %188, label %212, label %190
 
-192:                                              ; preds = %186
-  %193 = load <2 x i64>, ptr %56, align 1, !tbaa !164
-  store <2 x i64> %193, ptr %191, align 1, !tbaa !164
-  %194 = icmp ugt i32 %69, 16
-  br i1 %194, label %195, label %335
+190:                                              ; preds = %184
+  %191 = load <2 x i64>, ptr %56, align 1, !tbaa !164
+  store <2 x i64> %191, ptr %189, align 1, !tbaa !164
+  %192 = icmp ugt i32 %69, 16
+  br i1 %192, label %193, label %333
 
-195:                                              ; preds = %192
-  %196 = getelementptr inbounds nuw i8, ptr %56, i64 16
-  %197 = load ptr, ptr %45, align 8, !tbaa !172
-  %198 = getelementptr inbounds nuw i8, ptr %197, i64 16
-  %199 = getelementptr i8, ptr %197, i64 %187
-  %200 = load <2 x i64>, ptr %196, align 1, !tbaa !164
-  store <2 x i64> %200, ptr %198, align 1, !tbaa !164
-  %201 = icmp ult i32 %69, 33
-  br i1 %201, label %335, label %202
+193:                                              ; preds = %190
+  %194 = getelementptr inbounds nuw i8, ptr %56, i64 16
+  %195 = load ptr, ptr %45, align 8, !tbaa !170
+  %196 = getelementptr inbounds nuw i8, ptr %195, i64 16
+  %197 = getelementptr i8, ptr %195, i64 %185
+  %198 = load <2 x i64>, ptr %194, align 1, !tbaa !164
+  store <2 x i64> %198, ptr %196, align 1, !tbaa !164
+  %199 = icmp ult i32 %69, 33
+  br i1 %199, label %333, label %200
 
-202:                                              ; preds = %195
-  %203 = getelementptr inbounds nuw i8, ptr %197, i64 32
-  br label %204
+200:                                              ; preds = %193
+  %201 = getelementptr inbounds nuw i8, ptr %195, i64 32
+  br label %202
 
-204:                                              ; preds = %204, %202
-  %205 = phi ptr [ %203, %202 ], [ %212, %204 ]
-  %206 = phi ptr [ %196, %202 ], [ %210, %204 ]
-  %207 = getelementptr inbounds nuw i8, ptr %206, i64 16
-  %208 = load <2 x i64>, ptr %207, align 1, !tbaa !164
-  store <2 x i64> %208, ptr %205, align 1, !tbaa !164
-  %209 = getelementptr inbounds nuw i8, ptr %205, i64 16
-  %210 = getelementptr inbounds nuw i8, ptr %206, i64 32
-  %211 = load <2 x i64>, ptr %210, align 1, !tbaa !164
-  store <2 x i64> %211, ptr %209, align 1, !tbaa !164
-  %212 = getelementptr inbounds nuw i8, ptr %205, i64 32
-  %213 = icmp ult ptr %212, %199
-  br i1 %213, label %204, label %339, !llvm.loop !361
+202:                                              ; preds = %202, %200
+  %203 = phi ptr [ %201, %200 ], [ %210, %202 ]
+  %204 = phi ptr [ %194, %200 ], [ %208, %202 ]
+  %205 = getelementptr inbounds nuw i8, ptr %204, i64 16
+  %206 = load <2 x i64>, ptr %205, align 1, !tbaa !164
+  store <2 x i64> %206, ptr %203, align 1, !tbaa !164
+  %207 = getelementptr inbounds nuw i8, ptr %203, i64 16
+  %208 = getelementptr inbounds nuw i8, ptr %204, i64 32
+  %209 = load <2 x i64>, ptr %208, align 1, !tbaa !164
+  store <2 x i64> %209, ptr %207, align 1, !tbaa !164
+  %210 = getelementptr inbounds nuw i8, ptr %203, i64 32
+  %211 = icmp ult ptr %210, %197
+  br i1 %211, label %202, label %337, !llvm.loop !360
 
-214:                                              ; preds = %186
-  %215 = icmp ugt ptr %56, %44
-  br i1 %215, label %234, label %216
+212:                                              ; preds = %184
+  %213 = icmp ugt ptr %56, %44
+  br i1 %213, label %232, label %214
 
-216:                                              ; preds = %214
-  %217 = ptrtoint ptr %56 to i64
-  %218 = sub i64 %46, %217
-  %219 = getelementptr inbounds i8, ptr %191, i64 %218
-  %220 = load <2 x i64>, ptr %56, align 1, !tbaa !164
-  store <2 x i64> %220, ptr %191, align 1, !tbaa !164
-  %221 = icmp ult i64 %218, 17
-  br i1 %221, label %234, label %222
+214:                                              ; preds = %212
+  %215 = ptrtoint ptr %56 to i64
+  %216 = sub i64 %46, %215
+  %217 = getelementptr inbounds i8, ptr %189, i64 %216
+  %218 = load <2 x i64>, ptr %56, align 1, !tbaa !164
+  store <2 x i64> %218, ptr %189, align 1, !tbaa !164
+  %219 = icmp ult i64 %216, 17
+  br i1 %219, label %232, label %220
 
-222:                                              ; preds = %216
-  %223 = getelementptr inbounds nuw i8, ptr %191, i64 16
-  br label %224
+220:                                              ; preds = %214
+  %221 = getelementptr inbounds nuw i8, ptr %189, i64 16
+  br label %222
 
-224:                                              ; preds = %224, %222
-  %225 = phi ptr [ %223, %222 ], [ %232, %224 ]
-  %226 = phi ptr [ %56, %222 ], [ %230, %224 ]
-  %227 = getelementptr inbounds nuw i8, ptr %226, i64 16
-  %228 = load <2 x i64>, ptr %227, align 1, !tbaa !164
-  store <2 x i64> %228, ptr %225, align 1, !tbaa !164
-  %229 = getelementptr inbounds nuw i8, ptr %225, i64 16
-  %230 = getelementptr inbounds nuw i8, ptr %226, i64 32
-  %231 = load <2 x i64>, ptr %230, align 1, !tbaa !164
-  store <2 x i64> %231, ptr %229, align 1, !tbaa !164
-  %232 = getelementptr inbounds nuw i8, ptr %225, i64 32
-  %233 = icmp ult ptr %232, %219
-  br i1 %233, label %224, label %234, !llvm.loop !361
+222:                                              ; preds = %222, %220
+  %223 = phi ptr [ %221, %220 ], [ %230, %222 ]
+  %224 = phi ptr [ %56, %220 ], [ %228, %222 ]
+  %225 = getelementptr inbounds nuw i8, ptr %224, i64 16
+  %226 = load <2 x i64>, ptr %225, align 1, !tbaa !164
+  store <2 x i64> %226, ptr %223, align 1, !tbaa !164
+  %227 = getelementptr inbounds nuw i8, ptr %223, i64 16
+  %228 = getelementptr inbounds nuw i8, ptr %224, i64 32
+  %229 = load <2 x i64>, ptr %228, align 1, !tbaa !164
+  store <2 x i64> %229, ptr %227, align 1, !tbaa !164
+  %230 = getelementptr inbounds nuw i8, ptr %223, i64 32
+  %231 = icmp ult ptr %230, %217
+  br i1 %231, label %222, label %232, !llvm.loop !360
 
-234:                                              ; preds = %224, %216, %214
-  %235 = phi ptr [ %56, %214 ], [ %44, %216 ], [ %44, %224 ]
-  %236 = phi ptr [ %191, %214 ], [ %219, %216 ], [ %219, %224 ]
-  %237 = icmp ult ptr %235, %189
-  br i1 %237, label %238, label %339
+232:                                              ; preds = %222, %214, %212
+  %233 = phi ptr [ %56, %212 ], [ %44, %214 ], [ %44, %222 ]
+  %234 = phi ptr [ %189, %212 ], [ %217, %214 ], [ %217, %222 ]
+  %235 = icmp ult ptr %233, %187
+  br i1 %235, label %236, label %337
 
-238:                                              ; preds = %234
-  %239 = ptrtoaddr ptr %235 to i64
-  %240 = ptrtoaddr ptr %236 to i64
-  %241 = ptrtoint ptr %235 to i64
-  %242 = add i64 %58, %187
-  %243 = sub i64 %242, %241
-  %244 = icmp ult i64 %243, 4
-  %245 = sub i64 %240, %239
-  %246 = icmp ult i64 %245, 32
-  %247 = select i1 %244, i1 true, i1 %246
-  br i1 %247, label %283, label %248
+236:                                              ; preds = %232
+  %237 = ptrtoaddr ptr %233 to i64
+  %238 = ptrtoaddr ptr %234 to i64
+  %239 = ptrtoint ptr %233 to i64
+  %240 = add i64 %58, %185
+  %241 = sub i64 %240, %239
+  %242 = icmp ult i64 %241, 4
+  %243 = sub i64 %238, %237
+  %244 = icmp ult i64 %243, 32
+  %245 = select i1 %242, i1 true, i1 %244
+  br i1 %245, label %281, label %246
 
-248:                                              ; preds = %238
-  %249 = icmp ult i64 %243, 32
-  br i1 %249, label %269, label %250
+246:                                              ; preds = %236
+  %247 = icmp ult i64 %241, 32
+  br i1 %247, label %267, label %248
 
-250:                                              ; preds = %248
-  %251 = and i64 %243, 28
-  %252 = and i64 %243, -32
-  %253 = getelementptr i8, ptr %236, i64 %252
-  %254 = getelementptr i8, ptr %235, i64 %252
-  br label %255
+248:                                              ; preds = %246
+  %249 = and i64 %241, 28
+  %250 = and i64 %241, -32
+  %251 = getelementptr i8, ptr %234, i64 %250
+  %252 = getelementptr i8, ptr %233, i64 %250
+  br label %253
 
-255:                                              ; preds = %255, %250
-  %256 = phi i64 [ 0, %250 ], [ %263, %255 ]
-  %257 = getelementptr i8, ptr %236, i64 %256
-  %258 = getelementptr i8, ptr %235, i64 %256
-  %259 = getelementptr i8, ptr %258, i64 16
-  %260 = load <16 x i8>, ptr %258, align 1, !tbaa !164
-  %261 = load <16 x i8>, ptr %259, align 1, !tbaa !164
-  %262 = getelementptr i8, ptr %257, i64 16
-  store <16 x i8> %260, ptr %257, align 1, !tbaa !164
-  store <16 x i8> %261, ptr %262, align 1, !tbaa !164
-  %263 = add nuw i64 %256, 32
-  %264 = icmp eq i64 %263, %252
-  br i1 %264, label %265, label %255, !llvm.loop !362
+253:                                              ; preds = %253, %248
+  %254 = phi i64 [ 0, %248 ], [ %261, %253 ]
+  %255 = getelementptr i8, ptr %234, i64 %254
+  %256 = getelementptr i8, ptr %233, i64 %254
+  %257 = getelementptr i8, ptr %256, i64 16
+  %258 = load <16 x i8>, ptr %256, align 1, !tbaa !164
+  %259 = load <16 x i8>, ptr %257, align 1, !tbaa !164
+  %260 = getelementptr i8, ptr %255, i64 16
+  store <16 x i8> %258, ptr %255, align 1, !tbaa !164
+  store <16 x i8> %259, ptr %260, align 1, !tbaa !164
+  %261 = add nuw i64 %254, 32
+  %262 = icmp eq i64 %261, %250
+  br i1 %262, label %263, label %253, !llvm.loop !361
 
-265:                                              ; preds = %255
-  %266 = icmp eq i64 %243, %252
-  br i1 %266, label %339, label %267
+263:                                              ; preds = %253
+  %264 = icmp eq i64 %241, %250
+  br i1 %264, label %337, label %265
 
-267:                                              ; preds = %265
-  %268 = icmp eq i64 %251, 0
-  br i1 %268, label %283, label %269, !prof !363
+265:                                              ; preds = %263
+  %266 = icmp eq i64 %249, 0
+  br i1 %266, label %281, label %267, !prof !362
 
-269:                                              ; preds = %248, %267
-  %270 = phi i64 [ %252, %267 ], [ 0, %248 ]
-  %271 = and i64 %243, -4
-  %272 = getelementptr i8, ptr %236, i64 %271
-  %273 = getelementptr i8, ptr %235, i64 %271
-  br label %274
+267:                                              ; preds = %246, %265
+  %268 = phi i64 [ %250, %265 ], [ 0, %246 ]
+  %269 = and i64 %241, -4
+  %270 = getelementptr i8, ptr %234, i64 %269
+  %271 = getelementptr i8, ptr %233, i64 %269
+  br label %272
 
-274:                                              ; preds = %274, %269
-  %275 = phi i64 [ %270, %269 ], [ %279, %274 ]
-  %276 = getelementptr i8, ptr %236, i64 %275
-  %277 = getelementptr i8, ptr %235, i64 %275
-  %278 = load <4 x i8>, ptr %277, align 1, !tbaa !164
-  store <4 x i8> %278, ptr %276, align 1, !tbaa !164
-  %279 = add nuw i64 %275, 4
-  %280 = icmp eq i64 %279, %271
-  br i1 %280, label %281, label %274, !llvm.loop !364
+272:                                              ; preds = %272, %267
+  %273 = phi i64 [ %268, %267 ], [ %277, %272 ]
+  %274 = getelementptr i8, ptr %234, i64 %273
+  %275 = getelementptr i8, ptr %233, i64 %273
+  %276 = load <4 x i8>, ptr %275, align 1, !tbaa !164
+  store <4 x i8> %276, ptr %274, align 1, !tbaa !164
+  %277 = add nuw i64 %273, 4
+  %278 = icmp eq i64 %277, %269
+  br i1 %278, label %279, label %272, !llvm.loop !363
 
-281:                                              ; preds = %274
-  %282 = icmp eq i64 %243, %271
-  br i1 %282, label %339, label %283
+279:                                              ; preds = %272
+  %280 = icmp eq i64 %241, %269
+  br i1 %280, label %337, label %281
 
-283:                                              ; preds = %238, %267, %281
-  %284 = phi ptr [ %236, %238 ], [ %253, %267 ], [ %272, %281 ]
-  %285 = phi ptr [ %235, %238 ], [ %254, %267 ], [ %273, %281 ]
-  %286 = add i64 %58, %187
-  %287 = ptrtoint ptr %285 to i64
-  %288 = sub i64 %286, %287
-  %289 = add i64 %58, -1
-  %290 = add i64 %289, %187
-  %291 = sub i64 %290, %287
-  %292 = and i64 %288, 7
-  %293 = icmp eq i64 %292, 0
-  br i1 %293, label %303, label %294
+281:                                              ; preds = %236, %265, %279
+  %282 = phi ptr [ %234, %236 ], [ %251, %265 ], [ %270, %279 ]
+  %283 = phi ptr [ %233, %236 ], [ %252, %265 ], [ %271, %279 ]
+  %284 = add i64 %58, %185
+  %285 = ptrtoint ptr %283 to i64
+  %286 = sub i64 %284, %285
+  %287 = add i64 %58, -1
+  %288 = add i64 %287, %185
+  %289 = sub i64 %288, %285
+  %290 = and i64 %286, 7
+  %291 = icmp eq i64 %290, 0
+  br i1 %291, label %301, label %292
 
-294:                                              ; preds = %283, %294
-  %295 = phi ptr [ %300, %294 ], [ %284, %283 ]
-  %296 = phi ptr [ %298, %294 ], [ %285, %283 ]
-  %297 = phi i64 [ %301, %294 ], [ 0, %283 ]
-  %298 = getelementptr inbounds nuw i8, ptr %296, i64 1
-  %299 = load i8, ptr %296, align 1, !tbaa !164
-  %300 = getelementptr inbounds nuw i8, ptr %295, i64 1
-  store i8 %299, ptr %295, align 1, !tbaa !164
-  %301 = add i64 %297, 1
-  %302 = icmp eq i64 %301, %292
-  br i1 %302, label %303, label %294, !llvm.loop !365
+292:                                              ; preds = %281, %292
+  %293 = phi ptr [ %298, %292 ], [ %282, %281 ]
+  %294 = phi ptr [ %296, %292 ], [ %283, %281 ]
+  %295 = phi i64 [ %299, %292 ], [ 0, %281 ]
+  %296 = getelementptr inbounds nuw i8, ptr %294, i64 1
+  %297 = load i8, ptr %294, align 1, !tbaa !164
+  %298 = getelementptr inbounds nuw i8, ptr %293, i64 1
+  store i8 %297, ptr %293, align 1, !tbaa !164
+  %299 = add i64 %295, 1
+  %300 = icmp eq i64 %299, %290
+  br i1 %300, label %301, label %292, !llvm.loop !364
 
-303:                                              ; preds = %294, %283
-  %304 = phi ptr [ %284, %283 ], [ %300, %294 ]
-  %305 = phi ptr [ %285, %283 ], [ %298, %294 ]
-  %306 = icmp ult i64 %291, 7
-  br i1 %306, label %339, label %307
+301:                                              ; preds = %292, %281
+  %302 = phi ptr [ %282, %281 ], [ %298, %292 ]
+  %303 = phi ptr [ %283, %281 ], [ %296, %292 ]
+  %304 = icmp ult i64 %289, 7
+  br i1 %304, label %337, label %305
 
-307:                                              ; preds = %303, %307
-  %308 = phi ptr [ %333, %307 ], [ %304, %303 ]
-  %309 = phi ptr [ %331, %307 ], [ %305, %303 ]
-  %310 = getelementptr inbounds nuw i8, ptr %309, i64 1
-  %311 = load i8, ptr %309, align 1, !tbaa !164
-  %312 = getelementptr inbounds nuw i8, ptr %308, i64 1
-  store i8 %311, ptr %308, align 1, !tbaa !164
-  %313 = getelementptr inbounds nuw i8, ptr %309, i64 2
-  %314 = load i8, ptr %310, align 1, !tbaa !164
-  %315 = getelementptr inbounds nuw i8, ptr %308, i64 2
-  store i8 %314, ptr %312, align 1, !tbaa !164
-  %316 = getelementptr inbounds nuw i8, ptr %309, i64 3
-  %317 = load i8, ptr %313, align 1, !tbaa !164
-  %318 = getelementptr inbounds nuw i8, ptr %308, i64 3
-  store i8 %317, ptr %315, align 1, !tbaa !164
-  %319 = getelementptr inbounds nuw i8, ptr %309, i64 4
-  %320 = load i8, ptr %316, align 1, !tbaa !164
-  %321 = getelementptr inbounds nuw i8, ptr %308, i64 4
-  store i8 %320, ptr %318, align 1, !tbaa !164
-  %322 = getelementptr inbounds nuw i8, ptr %309, i64 5
-  %323 = load i8, ptr %319, align 1, !tbaa !164
-  %324 = getelementptr inbounds nuw i8, ptr %308, i64 5
-  store i8 %323, ptr %321, align 1, !tbaa !164
-  %325 = getelementptr inbounds nuw i8, ptr %309, i64 6
-  %326 = load i8, ptr %322, align 1, !tbaa !164
-  %327 = getelementptr inbounds nuw i8, ptr %308, i64 6
-  store i8 %326, ptr %324, align 1, !tbaa !164
-  %328 = getelementptr inbounds nuw i8, ptr %309, i64 7
-  %329 = load i8, ptr %325, align 1, !tbaa !164
-  %330 = getelementptr inbounds nuw i8, ptr %308, i64 7
-  store i8 %329, ptr %327, align 1, !tbaa !164
-  %331 = getelementptr inbounds nuw i8, ptr %309, i64 8
-  %332 = load i8, ptr %328, align 1, !tbaa !164
-  %333 = getelementptr inbounds nuw i8, ptr %308, i64 8
-  store i8 %332, ptr %330, align 1, !tbaa !164
-  %334 = icmp eq ptr %331, %189
-  br i1 %334, label %339, label %307, !llvm.loop !367
+305:                                              ; preds = %301, %305
+  %306 = phi ptr [ %331, %305 ], [ %302, %301 ]
+  %307 = phi ptr [ %329, %305 ], [ %303, %301 ]
+  %308 = getelementptr inbounds nuw i8, ptr %307, i64 1
+  %309 = load i8, ptr %307, align 1, !tbaa !164
+  %310 = getelementptr inbounds nuw i8, ptr %306, i64 1
+  store i8 %309, ptr %306, align 1, !tbaa !164
+  %311 = getelementptr inbounds nuw i8, ptr %307, i64 2
+  %312 = load i8, ptr %308, align 1, !tbaa !164
+  %313 = getelementptr inbounds nuw i8, ptr %306, i64 2
+  store i8 %312, ptr %310, align 1, !tbaa !164
+  %314 = getelementptr inbounds nuw i8, ptr %307, i64 3
+  %315 = load i8, ptr %311, align 1, !tbaa !164
+  %316 = getelementptr inbounds nuw i8, ptr %306, i64 3
+  store i8 %315, ptr %313, align 1, !tbaa !164
+  %317 = getelementptr inbounds nuw i8, ptr %307, i64 4
+  %318 = load i8, ptr %314, align 1, !tbaa !164
+  %319 = getelementptr inbounds nuw i8, ptr %306, i64 4
+  store i8 %318, ptr %316, align 1, !tbaa !164
+  %320 = getelementptr inbounds nuw i8, ptr %307, i64 5
+  %321 = load i8, ptr %317, align 1, !tbaa !164
+  %322 = getelementptr inbounds nuw i8, ptr %306, i64 5
+  store i8 %321, ptr %319, align 1, !tbaa !164
+  %323 = getelementptr inbounds nuw i8, ptr %307, i64 6
+  %324 = load i8, ptr %320, align 1, !tbaa !164
+  %325 = getelementptr inbounds nuw i8, ptr %306, i64 6
+  store i8 %324, ptr %322, align 1, !tbaa !164
+  %326 = getelementptr inbounds nuw i8, ptr %307, i64 7
+  %327 = load i8, ptr %323, align 1, !tbaa !164
+  %328 = getelementptr inbounds nuw i8, ptr %306, i64 7
+  store i8 %327, ptr %325, align 1, !tbaa !164
+  %329 = getelementptr inbounds nuw i8, ptr %307, i64 8
+  %330 = load i8, ptr %326, align 1, !tbaa !164
+  %331 = getelementptr inbounds nuw i8, ptr %306, i64 8
+  store i8 %330, ptr %328, align 1, !tbaa !164
+  %332 = icmp eq ptr %329, %187
+  br i1 %332, label %337, label %305, !llvm.loop !366
 
-335:                                              ; preds = %195, %192
-  %336 = load ptr, ptr %45, align 8, !tbaa !172
-  %337 = getelementptr inbounds nuw i8, ptr %336, i64 %187
-  store ptr %337, ptr %45, align 8, !tbaa !172
-  %338 = load ptr, ptr %48, align 8, !tbaa !158
-  br label %351
+333:                                              ; preds = %193, %190
+  %334 = load ptr, ptr %45, align 8, !tbaa !170
+  %335 = getelementptr inbounds nuw i8, ptr %334, i64 %185
+  store ptr %335, ptr %45, align 8, !tbaa !170
+  %336 = load ptr, ptr %48, align 8, !tbaa !158
+  br label %349
 
-339:                                              ; preds = %204, %303, %307, %265, %281, %234
-  %340 = load ptr, ptr %45, align 8, !tbaa !172
-  %341 = getelementptr inbounds nuw i8, ptr %340, i64 %187
-  store ptr %341, ptr %45, align 8, !tbaa !172
-  %342 = icmp ugt i32 %69, 65535
-  %343 = load ptr, ptr %48, align 8, !tbaa !158
-  br i1 %342, label %344, label %351, !prof !368
+337:                                              ; preds = %202, %301, %305, %263, %279, %232
+  %338 = load ptr, ptr %45, align 8, !tbaa !170
+  %339 = getelementptr inbounds nuw i8, ptr %338, i64 %185
+  store ptr %339, ptr %45, align 8, !tbaa !170
+  %340 = icmp ugt i32 %69, 65535
+  %341 = load ptr, ptr %48, align 8, !tbaa !158
+  br i1 %340, label %342, label %349, !prof !367
 
-344:                                              ; preds = %339
+342:                                              ; preds = %337
   store i32 1, ptr %47, align 8, !tbaa !167
-  %345 = load ptr, ptr %43, align 8, !tbaa !154
-  %346 = ptrtoint ptr %343 to i64
-  %347 = ptrtoint ptr %345 to i64
-  %348 = sub i64 %346, %347
-  %349 = lshr exact i64 %348, 3
-  %350 = trunc i64 %349 to i32
-  store i32 %350, ptr %49, align 4, !tbaa !168
-  br label %351
+  %343 = load ptr, ptr %43, align 8, !tbaa !154
+  %344 = ptrtoint ptr %341 to i64
+  %345 = ptrtoint ptr %343 to i64
+  %346 = sub i64 %344, %345
+  %347 = lshr exact i64 %346, 3
+  %348 = trunc i64 %347 to i32
+  store i32 %348, ptr %49, align 4, !tbaa !168
+  br label %349
 
-351:                                              ; preds = %335, %344, %339
-  %352 = phi ptr [ %338, %335 ], [ %343, %344 ], [ %343, %339 ]
-  %353 = trunc i32 %69 to i16
-  %354 = getelementptr inbounds nuw i8, ptr %352, i64 4
-  store i16 %353, ptr %354, align 4, !tbaa !159
-  store i32 %139, ptr %352, align 4, !tbaa !162
-  %355 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 range(i64 0, 4294967296) %188, i64 3), !nosanitize !8
-  %356 = extractvalue { i64, i1 } %355, 0, !nosanitize !8
-  %357 = extractvalue { i64, i1 } %355, 1, !nosanitize !8
-  br i1 %357, label %358, label %359, !prof !9, !nosanitize !8
+349:                                              ; preds = %333, %342, %337
+  %350 = phi ptr [ %336, %333 ], [ %341, %342 ], [ %341, %337 ]
+  %351 = trunc i32 %69 to i16
+  %352 = getelementptr inbounds nuw i8, ptr %350, i64 4
+  store i16 %351, ptr %352, align 4, !tbaa !159
+  store i32 %137, ptr %350, align 4, !tbaa !162
+  %353 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 range(i64 0, 4294967296) %186, i64 3), !nosanitize !8
+  %354 = extractvalue { i64, i1 } %353, 0, !nosanitize !8
+  %355 = extractvalue { i64, i1 } %353, 1, !nosanitize !8
+  br i1 %355, label %356, label %357, !prof !9, !nosanitize !8
 
-358:                                              ; preds = %351
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+356:                                              ; preds = %349
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-359:                                              ; preds = %351
-  %360 = icmp ugt i64 %356, 65535
-  br i1 %360, label %361, label %368, !prof !302
+357:                                              ; preds = %349
+  %358 = icmp ugt i64 %354, 65535
+  br i1 %358, label %359, label %366, !prof !301
 
-361:                                              ; preds = %359
+359:                                              ; preds = %357
   store i32 2, ptr %47, align 8, !tbaa !167
-  %362 = load ptr, ptr %43, align 8, !tbaa !154
-  %363 = ptrtoint ptr %352 to i64
-  %364 = ptrtoint ptr %362 to i64
-  %365 = sub i64 %363, %364
-  %366 = lshr exact i64 %365, 3
-  %367 = trunc i64 %366 to i32
-  store i32 %367, ptr %49, align 4, !tbaa !168
-  br label %368
+  %360 = load ptr, ptr %43, align 8, !tbaa !154
+  %361 = ptrtoint ptr %350 to i64
+  %362 = ptrtoint ptr %360 to i64
+  %363 = sub i64 %361, %362
+  %364 = lshr exact i64 %363, 3
+  %365 = trunc i64 %364 to i32
+  store i32 %365, ptr %49, align 4, !tbaa !168
+  br label %366
 
-368:                                              ; preds = %359, %361
-  %369 = trunc i64 %356 to i16
-  %370 = getelementptr inbounds nuw i8, ptr %352, i64 6
-  store i16 %369, ptr %370, align 2, !tbaa !163
-  %371 = getelementptr inbounds nuw i8, ptr %352, i64 8
-  store ptr %371, ptr %48, align 8, !tbaa !158
-  %372 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %62, i32 %69), !nosanitize !8
-  %373 = extractvalue { i32, i1 } %372, 1, !nosanitize !8
-  br i1 %373, label %374, label %375, !prof !9, !nosanitize !8
+366:                                              ; preds = %357, %359
+  %367 = trunc i64 %354 to i16
+  %368 = getelementptr inbounds nuw i8, ptr %350, i64 6
+  store i16 %367, ptr %368, align 2, !tbaa !163
+  %369 = getelementptr inbounds nuw i8, ptr %350, i64 8
+  store ptr %369, ptr %48, align 8, !tbaa !158
+  %370 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %62, i32 %69), !nosanitize !8
+  %371 = extractvalue { i32, i1 } %370, 1, !nosanitize !8
+  br i1 %371, label %372, label %373, !prof !9, !nosanitize !8
 
-374:                                              ; preds = %368
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+372:                                              ; preds = %366
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-375:                                              ; preds = %368
-  %376 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %59, i32 1), !nosanitize !8
-  %377 = extractvalue { i32, i1 } %376, 1, !nosanitize !8
-  br i1 %377, label %378, label %379, !prof !9, !nosanitize !8
+373:                                              ; preds = %366
+  %374 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %59, i32 1), !nosanitize !8
+  %375 = extractvalue { i32, i1 } %374, 1, !nosanitize !8
+  br i1 %375, label %376, label %377, !prof !9, !nosanitize !8
 
-378:                                              ; preds = %375
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+376:                                              ; preds = %373
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-379:                                              ; preds = %375
-  %380 = extractvalue { i32, i1 } %372, 0, !nosanitize !8
-  %381 = zext i32 %380 to i64
-  %382 = getelementptr inbounds nuw i8, ptr %56, i64 %381
-  %383 = extractvalue { i32, i1 } %376, 0, !nosanitize !8
-  %384 = zext i32 %383 to i64
-  %385 = icmp ugt i64 %3, %384
-  br i1 %385, label %52, label %386, !llvm.loop !369
+377:                                              ; preds = %373
+  %378 = extractvalue { i32, i1 } %370, 0, !nosanitize !8
+  %379 = zext i32 %378 to i64
+  %380 = getelementptr inbounds nuw i8, ptr %56, i64 %379
+  %381 = extractvalue { i32, i1 } %374, 0, !nosanitize !8
+  %382 = zext i32 %381 to i64
+  %383 = icmp ugt i64 %3, %382
+  br i1 %383, label %52, label %384, !llvm.loop !368
 
-386:                                              ; preds = %379, %64, %24
-  %387 = phi ptr [ %4, %24 ], [ %56, %64 ], [ %382, %379 ]
-  %388 = phi i32 [ %9, %24 ], [ %59, %64 ], [ %383, %379 ]
-  %389 = phi i64 [ %29, %24 ], [ %55, %64 ], [ %384, %379 ]
-  %390 = icmp eq i64 %3, %389
-  br i1 %390, label %469, label %391
+384:                                              ; preds = %377, %64, %24
+  %385 = phi ptr [ %4, %24 ], [ %56, %64 ], [ %380, %377 ]
+  %386 = phi i32 [ %9, %24 ], [ %59, %64 ], [ %381, %377 ]
+  %387 = phi i64 [ %29, %24 ], [ %55, %64 ], [ %382, %377 ]
+  %388 = icmp eq i64 %3, %387
+  br i1 %388, label %467, label %389
 
-391:                                              ; preds = %386
-  %392 = icmp ne i32 %6, 2
-  %393 = icmp eq i32 %388, %9
-  %394 = select i1 %392, i1 true, i1 %393
-  br i1 %394, label %436, label %395
+389:                                              ; preds = %384
+  %390 = icmp ne i32 %6, 2
+  %391 = icmp eq i32 %386, %9
+  %392 = select i1 %390, i1 true, i1 %391
+  br i1 %392, label %434, label %393
 
-395:                                              ; preds = %391
-  %396 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %388, i32 1), !nosanitize !8
-  %397 = extractvalue { i32, i1 } %396, 0, !nosanitize !8
-  %398 = extractvalue { i32, i1 } %396, 1, !nosanitize !8
-  br i1 %398, label %399, label %400, !prof !9, !nosanitize !8
+393:                                              ; preds = %389
+  %394 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %386, i32 1), !nosanitize !8
+  %395 = extractvalue { i32, i1 } %394, 0, !nosanitize !8
+  %396 = extractvalue { i32, i1 } %394, 1, !nosanitize !8
+  br i1 %396, label %397, label %398, !prof !9, !nosanitize !8
 
-399:                                              ; preds = %395
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+397:                                              ; preds = %393
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-400:                                              ; preds = %395
-  %401 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %9, i32 2), !nosanitize !8
-  %402 = extractvalue { i32, i1 } %401, 1, !nosanitize !8
-  br i1 %402, label %403, label %404, !prof !9, !nosanitize !8
+398:                                              ; preds = %393
+  %399 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %9, i32 2), !nosanitize !8
+  %400 = extractvalue { i32, i1 } %399, 1, !nosanitize !8
+  br i1 %400, label %401, label %402, !prof !9, !nosanitize !8
 
-403:                                              ; preds = %400
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+401:                                              ; preds = %398
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-404:                                              ; preds = %400
-  %405 = extractvalue { i32, i1 } %401, 0, !nosanitize !8
-  %406 = icmp ult i32 %397, %405
-  br i1 %406, label %418, label %407
+402:                                              ; preds = %398
+  %403 = extractvalue { i32, i1 } %399, 0, !nosanitize !8
+  %404 = icmp ult i32 %395, %403
+  br i1 %404, label %416, label %405
 
-407:                                              ; preds = %404
-  %408 = add i32 %397, -2
-  %409 = zext i32 %408 to i64
-  %410 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %409
-  %411 = load i32, ptr %410, align 4, !tbaa !183
-  %412 = getelementptr inbounds nuw i8, ptr %8, i64 8
-  store i32 %411, ptr %412, align 8, !tbaa !4
-  %413 = add i32 %397, -1
-  %414 = zext i32 %413 to i64
-  %415 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %414
-  %416 = load i32, ptr %415, align 4, !tbaa !183
-  %417 = getelementptr inbounds nuw i8, ptr %8, i64 4
-  store i32 %416, ptr %417, align 4, !tbaa !4
-  br label %432
+405:                                              ; preds = %402
+  %406 = add i32 %395, -2
+  %407 = zext i32 %406 to i64
+  %408 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %407
+  %409 = load i32, ptr %408, align 4, !tbaa !181
+  %410 = getelementptr inbounds nuw i8, ptr %8, i64 8
+  store i32 %409, ptr %410, align 8, !tbaa !4
+  %411 = add i32 %395, -1
+  %412 = zext i32 %411 to i64
+  %413 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %412
+  %414 = load i32, ptr %413, align 4, !tbaa !181
+  %415 = getelementptr inbounds nuw i8, ptr %8, i64 4
+  store i32 %414, ptr %415, align 4, !tbaa !4
+  br label %430
 
-418:                                              ; preds = %404
-  %419 = add nuw i32 %9, 1
-  %420 = icmp eq i32 %397, %419
-  br i1 %420, label %421, label %429
+416:                                              ; preds = %402
+  %417 = add nuw i32 %9, 1
+  %418 = icmp eq i32 %395, %417
+  br i1 %418, label %419, label %427
 
-421:                                              ; preds = %418
-  %422 = load i32, ptr %8, align 8, !tbaa !4
-  %423 = getelementptr inbounds nuw i8, ptr %8, i64 8
-  store i32 %422, ptr %423, align 8, !tbaa !4
-  %424 = add i32 %397, -1
-  %425 = zext i32 %424 to i64
-  %426 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %425
-  %427 = load i32, ptr %426, align 4, !tbaa !183
+419:                                              ; preds = %416
+  %420 = load i32, ptr %8, align 8, !tbaa !4
+  %421 = getelementptr inbounds nuw i8, ptr %8, i64 8
+  store i32 %420, ptr %421, align 8, !tbaa !4
+  %422 = add i32 %395, -1
+  %423 = zext i32 %422 to i64
+  %424 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %423
+  %425 = load i32, ptr %424, align 4, !tbaa !181
+  %426 = getelementptr inbounds nuw i8, ptr %8, i64 4
+  store i32 %425, ptr %426, align 4, !tbaa !4
+  br label %430
+
+427:                                              ; preds = %416
   %428 = getelementptr inbounds nuw i8, ptr %8, i64 4
-  store i32 %427, ptr %428, align 4, !tbaa !4
-  br label %432
+  %429 = load <2 x i32>, ptr %8, align 8, !tbaa !4
+  store <2 x i32> %429, ptr %428, align 4, !tbaa !4
+  br label %430
 
-429:                                              ; preds = %418
-  %430 = getelementptr inbounds nuw i8, ptr %8, i64 4
-  %431 = load <2 x i32>, ptr %8, align 8, !tbaa !4
-  store <2 x i32> %431, ptr %430, align 4, !tbaa !4
-  br label %432
+430:                                              ; preds = %419, %427, %405
+  %431 = zext i32 %395 to i64
+  %432 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %431
+  %433 = load i32, ptr %432, align 4, !tbaa !181
+  store i32 %433, ptr %8, align 8, !tbaa !4
+  br label %434
 
-432:                                              ; preds = %421, %429, %407
-  %433 = zext i32 %397 to i64
-  %434 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %433
-  %435 = load i32, ptr %434, align 4, !tbaa !183
-  store i32 %435, ptr %8, align 8, !tbaa !4
-  br label %436
+434:                                              ; preds = %430, %389
+  %435 = getelementptr inbounds nuw i8, ptr %0, i64 3232
+  %436 = load ptr, ptr %435, align 8, !tbaa !58
+  %437 = getelementptr inbounds nuw i8, ptr %436, i64 5616
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(12) %437, ptr noundef nonnull align 8 dereferenceable(12) %8, i64 12, i1 false)
+  %438 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %387
+  %439 = getelementptr inbounds nuw i8, ptr %438, i64 4
+  %440 = load i32, ptr %439, align 4, !tbaa !184
+  %441 = icmp eq i32 %440, 0
+  br i1 %441, label %458, label %442
 
-436:                                              ; preds = %432, %391
-  %437 = getelementptr inbounds nuw i8, ptr %0, i64 3232
-  %438 = load ptr, ptr %437, align 8, !tbaa !58
-  %439 = getelementptr inbounds nuw i8, ptr %438, i64 5616
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(12) %439, ptr noundef nonnull align 8 dereferenceable(12) %8, i64 12, i1 false)
-  %440 = getelementptr inbounds nuw [16 x i8], ptr %2, i64 %389
-  %441 = getelementptr inbounds nuw i8, ptr %440, i64 4
-  %442 = load i32, ptr %441, align 4, !tbaa !186
-  %443 = icmp eq i32 %442, 0
-  br i1 %443, label %460, label %444
+442:                                              ; preds = %434
+  %443 = zext i32 %440 to i64
+  %444 = getelementptr inbounds nuw i8, ptr %0, i64 1000
+  %445 = load ptr, ptr %444, align 8, !tbaa !170
+  tail call void @llvm.memcpy.p0.p0.i64(ptr align 1 %445, ptr readonly align 1 %385, i64 %443, i1 false)
+  %446 = load ptr, ptr %444, align 8, !tbaa !170
+  %447 = getelementptr inbounds nuw i8, ptr %446, i64 %443
+  store ptr %447, ptr %444, align 8, !tbaa !170
+  %448 = load i32, ptr %439, align 4, !tbaa !184
+  %449 = zext i32 %448 to i64
+  %450 = getelementptr inbounds nuw i8, ptr %1, i64 8
+  %451 = load i64, ptr %450, align 8, !tbaa !359
+  %452 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %451, i64 %449), !nosanitize !8
+  %453 = extractvalue { i64, i1 } %452, 1, !nosanitize !8
+  br i1 %453, label %454, label %455, !prof !9, !nosanitize !8
 
-444:                                              ; preds = %436
-  %445 = zext i32 %442 to i64
-  %446 = getelementptr inbounds nuw i8, ptr %0, i64 1000
-  %447 = load ptr, ptr %446, align 8, !tbaa !172
-  tail call void @llvm.memcpy.p0.p0.i64(ptr align 1 %447, ptr readonly align 1 %387, i64 %445, i1 false)
-  %448 = load ptr, ptr %446, align 8, !tbaa !172
-  %449 = getelementptr inbounds nuw i8, ptr %448, i64 %445
-  store ptr %449, ptr %446, align 8, !tbaa !172
-  %450 = load i32, ptr %441, align 4, !tbaa !186
-  %451 = zext i32 %450 to i64
-  %452 = getelementptr inbounds nuw i8, ptr %1, i64 8
-  %453 = load i64, ptr %452, align 8, !tbaa !360
-  %454 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %453, i64 %451), !nosanitize !8
-  %455 = extractvalue { i64, i1 } %454, 1, !nosanitize !8
-  br i1 %455, label %456, label %457, !prof !9, !nosanitize !8
-
-456:                                              ; preds = %444
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+454:                                              ; preds = %442
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-457:                                              ; preds = %444
-  %458 = extractvalue { i64, i1 } %454, 0, !nosanitize !8
-  %459 = getelementptr inbounds nuw i8, ptr %387, i64 %451
-  store i64 %458, ptr %452, align 8, !tbaa !360
-  br label %460
+455:                                              ; preds = %442
+  %456 = extractvalue { i64, i1 } %452, 0, !nosanitize !8
+  %457 = getelementptr inbounds nuw i8, ptr %385, i64 %449
+  store i64 %456, ptr %450, align 8, !tbaa !359
+  br label %458
 
-460:                                              ; preds = %436, %457
-  %461 = phi ptr [ %459, %457 ], [ %387, %436 ]
-  %462 = icmp eq ptr %461, %10
-  br i1 %462, label %463, label %469
+458:                                              ; preds = %434, %455
+  %459 = phi ptr [ %457, %455 ], [ %385, %434 ]
+  %460 = icmp eq ptr %459, %10
+  br i1 %460, label %461, label %467
 
-463:                                              ; preds = %460
-  %464 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %388, i32 1), !nosanitize !8
-  %465 = extractvalue { i32, i1 } %464, 1, !nosanitize !8
-  br i1 %465, label %466, label %467, !prof !9, !nosanitize !8
+461:                                              ; preds = %458
+  %462 = tail call { i32, i1 } @llvm.uadd.with.overflow.i32(i32 %386, i32 1), !nosanitize !8
+  %463 = extractvalue { i32, i1 } %462, 1, !nosanitize !8
+  br i1 %463, label %464, label %465, !prof !9, !nosanitize !8
 
-466:                                              ; preds = %463
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+464:                                              ; preds = %461
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-467:                                              ; preds = %463
-  %468 = extractvalue { i32, i1 } %464, 0, !nosanitize !8
-  store i32 %468, ptr %1, align 8, !tbaa !357
-  br label %469
+465:                                              ; preds = %461
+  %466 = extractvalue { i32, i1 } %462, 0, !nosanitize !8
+  store i32 %466, ptr %1, align 8, !tbaa !356
+  br label %467
 
-469:                                              ; preds = %181, %158, %460, %386, %467
-  %470 = phi i64 [ -107, %460 ], [ %5, %467 ], [ -107, %386 ], [ -107, %158 ], [ -107, %181 ]
+467:                                              ; preds = %179, %156, %458, %384, %465
+  %468 = phi i64 [ -107, %458 ], [ %5, %465 ], [ -107, %384 ], [ -107, %156 ], [ -107, %179 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %8) #36
-  ret i64 %470
-
-471:                                              ; preds = %121
-  tail call void @llvm.ubsantrap(i8 95) #34, !nosanitize !8
-  unreachable, !nosanitize !8
+  ret i64 %468
 }
 
 ; Function Attrs: nounwind memory(argmem: read, inaccessiblemem: write) uwtable
@@ -13233,8 +13027,8 @@ define internal fastcc range(i32 0, 2) i32 @ZSTD_isRLE(ptr noundef %0, i64 nound
   br i1 %57, label %58, label %65
 
 58:                                               ; preds = %53
-  %59 = load i16, ptr %54, align 1, !tbaa !201
-  %60 = load i16, ptr %55, align 1, !tbaa !201
+  %59 = load i16, ptr %54, align 1, !tbaa !199
+  %60 = load i16, ptr %55, align 1, !tbaa !199
   %61 = icmp eq i16 %59, %60
   br i1 %61, label %62, label %65
 
@@ -13305,13 +13099,13 @@ define internal fastcc range(i32 0, 2) i32 @ZSTD_isRLE(ptr noundef %0, i64 nound
   br i1 %105, label %106, label %107, !prof !9, !nosanitize !8
 
 106:                                              ; preds = %103
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 107:                                              ; preds = %103
   %108 = extractvalue { i64, i1 } %104, 0, !nosanitize !8
   %109 = icmp eq i64 %108, %1
-  br i1 %109, label %110, label %86, !llvm.loop !370
+  br i1 %109, label %110, label %86, !llvm.loop !369
 
 110:                                              ; preds = %107, %86, %91, %95, %99, %84, %80, %2
   %111 = phi i32 [ 0, %80 ], [ 1, %2 ], [ 1, %84 ], [ 1, %107 ], [ 0, %91 ], [ 0, %95 ], [ 0, %99 ], [ 0, %86 ]
@@ -13327,7 +13121,7 @@ declare i64 @llvm.cttz.i64(i64, i1 immarg) #28
 define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSeqStore_singleBlock(ptr noundef captures(none) %0, ptr noundef readonly captures(none) %1, ptr noundef nonnull captures(none) %2, ptr noundef nonnull captures(none) %3, ptr noundef %4, i64 noundef %5, ptr noundef %6, i64 noundef %7, i32 noundef range(i32 0, 2) %8, i32 noundef range(i32 0, 2) %9) unnamed_addr #4 {
   %11 = alloca %struct.repcodes_s, align 4
   call void @llvm.lifetime.start.p0(ptr nonnull %11) #36
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %11, ptr noundef nonnull align 4 dereferenceable(12) %2, i64 12, i1 false), !tbaa.struct !371
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %11, ptr noundef nonnull align 4 dereferenceable(12) %2, i64 12, i1 false), !tbaa.struct !370
   %12 = icmp eq i32 %9, 0
   br i1 %12, label %149, label %13
 
@@ -13390,7 +13184,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   br i1 %56, label %57, label %58, !prof !9, !nosanitize !8
 
 57:                                               ; preds = %53
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 58:                                               ; preds = %53
@@ -13400,7 +13194,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   br i1 %61, label %62, label %63, !prof !9, !nosanitize !8
 
 62:                                               ; preds = %58
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 63:                                               ; preds = %58
@@ -13428,7 +13222,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   br i1 %78, label %79, label %80, !prof !9, !nosanitize !8
 
 79:                                               ; preds = %76
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 80:                                               ; preds = %76
@@ -13454,7 +13248,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   br i1 %91, label %92, label %93, !prof !9, !nosanitize !8
 
 92:                                               ; preds = %88
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 93:                                               ; preds = %88
@@ -13473,7 +13267,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   br i1 %100, label %101, label %107, !prof !9, !nosanitize !8
 
 101:                                              ; preds = %96
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 102:                                              ; preds = %93
@@ -13514,7 +13308,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   br i1 %122, label %123, label %124, !prof !9, !nosanitize !8
 
 123:                                              ; preds = %120
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 124:                                              ; preds = %120
@@ -13533,7 +13327,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   br i1 %131, label %132, label %138, !prof !9, !nosanitize !8
 
 132:                                              ; preds = %127
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 133:                                              ; preds = %124
@@ -13561,7 +13355,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
 146:                                              ; preds = %144, %124
   %147 = add nuw nsw i64 %39, 1
   %148 = icmp eq i64 %147, %37
-  br i1 %148, label %149, label %38, !llvm.loop !372
+  br i1 %148, label %149, label %38, !llvm.loop !371
 
 149:                                              ; preds = %146, %28, %10
   %150 = icmp ult i64 %5, 3
@@ -13582,9 +13376,9 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   %163 = getelementptr inbounds nuw i8, ptr %0, i64 8
   %164 = load i32, ptr %163, align 8, !tbaa !13
   %165 = getelementptr inbounds nuw i8, ptr %1, i64 16
-  %166 = load ptr, ptr %165, align 8, !tbaa !171
+  %166 = load ptr, ptr %165, align 8, !tbaa !169
   %167 = getelementptr inbounds nuw i8, ptr %1, i64 24
-  %168 = load ptr, ptr %167, align 8, !tbaa !172
+  %168 = load ptr, ptr %167, align 8, !tbaa !170
   %169 = ptrtoint ptr %168 to i64
   %170 = ptrtoint ptr %166 to i64
   %171 = sub i64 %169, %170
@@ -13606,10 +13400,10 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   %181 = getelementptr inbounds nuw i8, ptr %0, i64 268
   %182 = load i32, ptr %181, align 4, !tbaa !94
   %183 = icmp ult i32 %182, 65
-  br i1 %183, label %185, label %184, !prof !169, !nosanitize !8
+  br i1 %183, label %185, label %184, !prof !215, !nosanitize !8
 
 184:                                              ; preds = %180
-  tail call void @llvm.ubsantrap(i8 20) #39, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #39, !nosanitize !8
   unreachable, !nosanitize !8
 
 185:                                              ; preds = %180
@@ -13623,7 +13417,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   br i1 %192, label %193, label %194, !prof !9, !nosanitize !8
 
 193:                                              ; preds = %185
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 194:                                              ; preds = %185
@@ -13635,7 +13429,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
 198:                                              ; preds = %151, %174, %194
   %199 = phi i64 [ %197, %194 ], [ 0, %174 ], [ 0, %151 ]
   %200 = getelementptr inbounds nuw i8, ptr %0, i64 968
-  %201 = load i32, ptr %200, align 8, !tbaa !222
+  %201 = load i32, ptr %200, align 8, !tbaa !221
   %202 = icmp eq i32 %201, 0
   %203 = icmp ult i64 %199, 25
   %204 = and i1 %203, %202
@@ -13650,7 +13444,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
 209:                                              ; preds = %205, %198
   %210 = phi i64 [ %199, %198 ], [ %208, %205 ]
   %211 = getelementptr inbounds nuw i8, ptr %0, i64 936
-  %212 = load i32, ptr %211, align 8, !tbaa !223
+  %212 = load i32, ptr %211, align 8, !tbaa !222
   %213 = icmp eq i32 %212, 0
   br i1 %213, label %220, label %214
 
@@ -13673,10 +13467,10 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
 
 221:                                              ; preds = %220
   %222 = icmp ult i64 %7, 2305843009213693952
-  br i1 %222, label %224, label %223, !prof !169, !nosanitize !8
+  br i1 %222, label %224, label %223, !prof !215, !nosanitize !8
 
 223:                                              ; preds = %221
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 224:                                              ; preds = %221
@@ -13689,22 +13483,22 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   %229 = shl i32 %228, 3
   %230 = or disjoint i32 %229, %8
   %231 = trunc i32 %230 to i16
-  store i16 %231, ptr %4, align 1, !tbaa !201
+  store i16 %231, ptr %4, align 1, !tbaa !199
   %232 = lshr i32 %229, 16
   %233 = trunc i32 %232 to i8
   %234 = getelementptr inbounds nuw i8, ptr %4, i64 2
   store i8 %233, ptr %234, align 1, !tbaa !164
   tail call void @llvm.memcpy.p0.p0.i64(ptr nonnull align 1 %154, ptr readonly align 1 %6, i64 %7, i1 false)
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %2, ptr noundef nonnull align 4 dereferenceable(12) %11, i64 12, i1 false), !tbaa.struct !371
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %2, ptr noundef nonnull align 4 dereferenceable(12) %11, i64 12, i1 false), !tbaa.struct !370
   br label %265
 
 235:                                              ; preds = %220
   %236 = load i8, ptr %6, align 1, !tbaa !164
   %237 = icmp ult i64 %7, 2305843009213693952
-  br i1 %237, label %239, label %238, !prof !169, !nosanitize !8
+  br i1 %237, label %239, label %238, !prof !215, !nosanitize !8
 
 238:                                              ; preds = %235
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 239:                                              ; preds = %235
@@ -13717,13 +13511,13 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   %244 = or disjoint i32 %243, %8
   %245 = trunc i32 %244 to i16
   %246 = or disjoint i16 %245, 2
-  store i16 %246, ptr %4, align 1, !tbaa !201
+  store i16 %246, ptr %4, align 1, !tbaa !199
   %247 = lshr i32 %243, 16
   %248 = trunc i32 %247 to i8
   %249 = getelementptr inbounds nuw i8, ptr %4, i64 2
   store i8 %248, ptr %249, align 1, !tbaa !164
   store i8 %236, ptr %154, align 1, !tbaa !164
-  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %2, ptr noundef nonnull align 4 dereferenceable(12) %11, i64 12, i1 false), !tbaa.struct !371
+  call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %2, ptr noundef nonnull align 4 dereferenceable(12) %11, i64 12, i1 false), !tbaa.struct !370
   br label %265
 
 250:                                              ; preds = %220
@@ -13731,10 +13525,10 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   %252 = shufflevector <2 x ptr> %251, <2 x ptr> poison, <2 x i32> <i32 1, i32 0>
   store <2 x ptr> %252, ptr %152, align 8, !tbaa !51
   %253 = icmp ult i64 %210, 2305843009213693952
-  br i1 %253, label %255, label %254, !prof !169, !nosanitize !8
+  br i1 %253, label %255, label %254, !prof !215, !nosanitize !8
 
 254:                                              ; preds = %250
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 255:                                              ; preds = %250
@@ -13743,7 +13537,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
   %258 = or disjoint i32 %257, %8
   %259 = trunc i32 %258 to i16
   %260 = or disjoint i16 %259, 4
-  store i16 %260, ptr %4, align 1, !tbaa !201
+  store i16 %260, ptr %4, align 1, !tbaa !199
   %261 = lshr i32 %257, 16
   %262 = trunc i32 %261 to i8
   %263 = getelementptr inbounds nuw i8, ptr %4, i64 2
@@ -13771,7 +13565,7 @@ define internal fastcc range(i64 -119, 2305843009213693955) i64 @ZSTD_compressSe
 
 ; Function Attrs: nounwind memory(read, argmem: readwrite, inaccessiblemem: write, target_mem: none) uwtable
 define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none) initializes((0, 80)) %0, ptr noundef readonly captures(none) %1, i64 noundef %2, i64 noundef range(i64 0, -9223372036854775808) %3) unnamed_addr #22 {
-  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(80) %0, ptr noundef nonnull align 8 dereferenceable(80) %1, i64 80, i1 false), !tbaa.struct !229
+  tail call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 8 dereferenceable(80) %0, ptr noundef nonnull align 8 dereferenceable(80) %1, i64 80, i1 false), !tbaa.struct !228
   %5 = icmp eq i64 %2, 0
   br i1 %5, label %51, label %6
 
@@ -13796,7 +13590,7 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   %20 = phi i64 [ 0, %11 ], [ %44, %42 ]
   %21 = getelementptr inbounds nuw [8 x i8], ptr %9, i64 %20
   %22 = getelementptr inbounds nuw i8, ptr %21, i64 4
-  %23 = load i16, ptr %22, align 4, !tbaa !201
+  %23 = load i16, ptr %22, align 4, !tbaa !199
   %24 = zext i16 %23 to i64
   %25 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %19, i64 %24), !nosanitize !8
   %26 = extractvalue { i64, i1 } %25, 0, !nosanitize !8
@@ -13804,7 +13598,7 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   br i1 %27, label %28, label %29, !prof !9, !nosanitize !8
 
 28:                                               ; preds = %18
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 29:                                               ; preds = %18
@@ -13824,7 +13618,7 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   br i1 %38, label %39, label %40, !prof !9, !nosanitize !8
 
 39:                                               ; preds = %36
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 40:                                               ; preds = %36
@@ -13835,14 +13629,14 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   %43 = phi i64 [ %41, %40 ], [ %26, %33 ], [ %26, %29 ]
   %44 = add nuw i64 %20, 1
   %45 = icmp eq i64 %44, %15
-  br i1 %45, label %46, label %18, !llvm.loop !232
+  br i1 %45, label %46, label %18, !llvm.loop !231
 
 46:                                               ; preds = %42, %6
   %47 = phi i64 [ 0, %6 ], [ %43, %42 ]
   %48 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  %49 = load ptr, ptr %48, align 8, !tbaa !171
+  %49 = load ptr, ptr %48, align 8, !tbaa !169
   %50 = getelementptr inbounds nuw i8, ptr %49, i64 %47
-  store ptr %50, ptr %48, align 8, !tbaa !171
+  store ptr %50, ptr %48, align 8, !tbaa !169
   br label %51
 
 51:                                               ; preds = %46, %4
@@ -13874,7 +13668,7 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   br i1 %69, label %70, label %71, !prof !9, !nosanitize !8
 
 70:                                               ; preds = %64
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 71:                                               ; preds = %64
@@ -13917,7 +13711,7 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   %97 = phi i64 [ 0, %88 ], [ %121, %119 ]
   %98 = getelementptr inbounds nuw [8 x i8], ptr %75, i64 %97
   %99 = getelementptr inbounds nuw i8, ptr %98, i64 4
-  %100 = load i16, ptr %99, align 4, !tbaa !201
+  %100 = load i16, ptr %99, align 4, !tbaa !199
   %101 = zext i16 %100 to i64
   %102 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %96, i64 %101), !nosanitize !8
   %103 = extractvalue { i64, i1 } %102, 0, !nosanitize !8
@@ -13925,7 +13719,7 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   br i1 %104, label %105, label %106, !prof !9, !nosanitize !8
 
 105:                                              ; preds = %95
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 106:                                              ; preds = %95
@@ -13945,7 +13739,7 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   br i1 %115, label %116, label %117, !prof !9, !nosanitize !8
 
 116:                                              ; preds = %113
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 117:                                              ; preds = %113
@@ -13956,15 +13750,15 @@ define internal fastcc void @ZSTD_deriveSeqStoreChunk(ptr noundef captures(none)
   %120 = phi i64 [ %118, %117 ], [ %103, %110 ], [ %103, %106 ]
   %121 = add nuw i64 %97, 1
   %122 = icmp eq i64 %121, %92
-  br i1 %122, label %123, label %95, !llvm.loop !232
+  br i1 %122, label %123, label %95, !llvm.loop !231
 
 123:                                              ; preds = %119, %86
   %124 = phi i64 [ 0, %86 ], [ %120, %119 ]
   %125 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  %126 = load ptr, ptr %125, align 8, !tbaa !171
+  %126 = load ptr, ptr %125, align 8, !tbaa !169
   %127 = getelementptr inbounds nuw i8, ptr %126, i64 %124
   %128 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  store ptr %127, ptr %128, align 8, !tbaa !172
+  store ptr %127, ptr %128, align 8, !tbaa !170
   br label %129
 
 129:                                              ; preds = %73, %123
@@ -13990,24 +13784,24 @@ define internal fastcc void @ZSTD_deriveBlockSplitsHelper(ptr noundef nonnull ca
   %8 = getelementptr inbounds nuw i8, ptr %3, i64 3928
   %9 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %1, i64 %2), !nosanitize !8
   %10 = extractvalue { i64, i1 } %9, 1, !nosanitize !8
-  br i1 %10, label %17, label %11, !prof !305, !nosanitize !8
+  br i1 %10, label %17, label %11, !prof !304, !nosanitize !8
 
 11:                                               ; preds = %5
   %12 = getelementptr inbounds nuw i8, ptr %0, i64 8
   %13 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %2, i64 %1), !nosanitize !8
   %14 = extractvalue { i64, i1 } %13, 1, !nosanitize !8
-  br i1 %14, label %18, label %15, !prof !305, !nosanitize !8
+  br i1 %14, label %18, label %15, !prof !304, !nosanitize !8
 
 15:                                               ; preds = %11
   %16 = extractvalue { i64, i1 } %9, 0
   br label %19
 
 17:                                               ; preds = %5
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 18:                                               ; preds = %53, %11
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 19:                                               ; preds = %15, %53
@@ -14020,7 +13814,7 @@ define internal fastcc void @ZSTD_deriveBlockSplitsHelper(ptr noundef nonnull ca
   br i1 %25, label %58, label %26
 
 26:                                               ; preds = %19
-  %27 = load i64, ptr %12, align 8, !tbaa !228
+  %27 = load i64, ptr %12, align 8, !tbaa !227
   %28 = icmp ugt i64 %27, 195
   br i1 %28, label %58, label %29
 
@@ -14044,7 +13838,7 @@ define internal fastcc void @ZSTD_deriveBlockSplitsHelper(ptr noundef nonnull ca
   br i1 %40, label %41, label %42, !prof !9, !nosanitize !8
 
 41:                                               ; preds = %38
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 42:                                               ; preds = %38
@@ -14055,8 +13849,8 @@ define internal fastcc void @ZSTD_deriveBlockSplitsHelper(ptr noundef nonnull ca
 45:                                               ; preds = %42
   tail call fastcc void @ZSTD_deriveBlockSplitsHelper(ptr noundef %0, i64 noundef %22, i64 noundef %23, ptr noundef nonnull %3, ptr noundef %4)
   %46 = trunc i64 %23 to i32
-  %47 = load ptr, ptr %0, align 8, !tbaa !226
-  %48 = load i64, ptr %12, align 8, !tbaa !228
+  %47 = load ptr, ptr %0, align 8, !tbaa !225
+  %48 = load i64, ptr %12, align 8, !tbaa !227
   %49 = getelementptr inbounds nuw [4 x i8], ptr %47, i64 %48
   store i32 %46, ptr %49, align 4, !tbaa !4
   %50 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %48, i64 1), !nosanitize !8
@@ -14064,16 +13858,16 @@ define internal fastcc void @ZSTD_deriveBlockSplitsHelper(ptr noundef nonnull ca
   br i1 %51, label %52, label %53, !prof !9, !nosanitize !8
 
 52:                                               ; preds = %45
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 53:                                               ; preds = %45
   %54 = extractvalue { i64, i1 } %50, 0, !nosanitize !8
-  store i64 %54, ptr %12, align 8, !tbaa !228
+  store i64 %54, ptr %12, align 8, !tbaa !227
   %55 = add nuw i64 %23, %2
   %56 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %2, i64 %23), !nosanitize !8
   %57 = extractvalue { i64, i1 } %56, 1, !nosanitize !8
-  br i1 %57, label %18, label %19, !prof !373, !nosanitize !8
+  br i1 %57, label %18, label %19, !prof !372, !nosanitize !8
 
 58:                                               ; preds = %42, %29, %26, %19
   ret void
@@ -14097,13 +13891,13 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   %16 = load i64, ptr %15, align 8, !tbaa !60
   %17 = tail call i64 @ZSTD_buildBlockEntropyStats(ptr noundef %0, ptr noundef %9, ptr noundef %11, ptr noundef nonnull %12, ptr noundef nonnull %7, ptr noundef %14, i64 noundef %16)
   %18 = icmp ult i64 %17, -119
-  br i1 %18, label %19, label %262
+  br i1 %18, label %19, label %256
 
 19:                                               ; preds = %2
   %20 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  %21 = load ptr, ptr %20, align 8, !tbaa !171
+  %21 = load ptr, ptr %20, align 8, !tbaa !169
   %22 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  %23 = load ptr, ptr %22, align 8, !tbaa !172
+  %23 = load ptr, ptr %22, align 8, !tbaa !170
   %24 = ptrtoint ptr %23 to i64
   %25 = ptrtoint ptr %21 to i64
   %26 = sub i64 %24, %25
@@ -14123,7 +13917,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   %40 = load ptr, ptr %10, align 8, !tbaa !58
   %41 = load ptr, ptr %13, align 8, !tbaa !59
   %42 = load i64, ptr %15, align 8, !tbaa !60
-  %43 = load i32, ptr %7, align 8, !tbaa !374
+  %43 = load i32, ptr %7, align 8, !tbaa !373
   %44 = icmp eq i32 %43, 2
   call void @llvm.lifetime.start.p0(ptr nonnull %6) #36
   store i32 255, ptr %6, align 4, !tbaa !4
@@ -14155,13 +13949,13 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
 
 58:                                               ; preds = %55
   %59 = getelementptr inbounds nuw i8, ptr %1, i64 5088
-  %60 = load i64, ptr %59, align 8, !tbaa !375
+  %60 = load i64, ptr %59, align 8, !tbaa !374
   %61 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %57, i64 %60), !nosanitize !8
   %62 = extractvalue { i64, i1 } %61, 1, !nosanitize !8
   br i1 %62, label %63, label %64, !prof !9, !nosanitize !8
 
 63:                                               ; preds = %58
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 64:                                               ; preds = %58
@@ -14178,7 +13972,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   br i1 %70, label %71, label %72, !prof !9, !nosanitize !8
 
 71:                                               ; preds = %68
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 72:                                               ; preds = %68
@@ -14192,7 +13986,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   br i1 %77, label %78, label %79, !prof !9, !nosanitize !8
 
 78:                                               ; preds = %74
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 79:                                               ; preds = %74
@@ -14213,7 +14007,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   %89 = zext i1 %88 to i64
   %90 = add nuw nsw i64 %87, %89
   %91 = getelementptr inbounds nuw i8, ptr %1, i64 5100
-  %92 = load i32, ptr %91, align 4, !tbaa !376
+  %92 = load i32, ptr %91, align 4, !tbaa !375
   %93 = getelementptr inbounds nuw i8, ptr %28, i64 %39
   call void @llvm.lifetime.start.p0(ptr nonnull %5) #36
   store i32 31, ptr %5, align 4, !tbaa !4
@@ -14261,7 +14055,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   %118 = extractvalue { i64, i1 } %115, 0
   %119 = getelementptr inbounds nuw i8, ptr %112, i64 1
   %120 = icmp ult ptr %119, %93
-  br i1 %120, label %110, label %128, !llvm.loop !377
+  br i1 %120, label %110, label %128, !llvm.loop !376
 
 121:                                              ; preds = %104
   %122 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 range(i64 -1152921504606846976, 1152921504606846976) %39, i64 10), !nosanitize !8
@@ -14269,7 +14063,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   br i1 %123, label %124, label %125, !prof !9, !nosanitize !8
 
 124:                                              ; preds = %121
-  call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 125:                                              ; preds = %121
@@ -14277,7 +14071,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   br label %131
 
 127:                                              ; preds = %110
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 128:                                              ; preds = %117, %107
@@ -14288,7 +14082,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
 131:                                              ; preds = %128, %125
   %132 = phi i64 [ %126, %125 ], [ %130, %128 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %5) #36
-  %133 = load i32, ptr %85, align 8, !tbaa !378
+  %133 = load i32, ptr %85, align 8, !tbaa !377
   %134 = getelementptr inbounds nuw i8, ptr %40, i64 4288
   %135 = getelementptr inbounds nuw i8, ptr %30, i64 %39
   call void @llvm.lifetime.start.p0(ptr nonnull %4) #36
@@ -14322,7 +14116,7 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
 149:                                              ; preds = %146, %140, %131
   %150 = phi i64 [ %147, %146 ], [ 0, %140 ], [ 0, %131 ]
   %151 = icmp eq ptr %34, %35
-  br i1 %151, label %175, label %158
+  br i1 %151, label %173, label %158
 
 152:                                              ; preds = %146
   %153 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 range(i64 -1152921504606846976, 1152921504606846976) %39, i64 10), !nosanitize !8
@@ -14330,206 +14124,190 @@ define internal fastcc range(i64 3, 0) i64 @ZSTD_buildEntropyStatisticsAndEstima
   br i1 %154, label %155, label %156, !prof !9, !nosanitize !8
 
 155:                                              ; preds = %152
-  call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 156:                                              ; preds = %152
   %157 = extractvalue { i64, i1 } %153, 0, !nosanitize !8
-  br label %178
+  br label %176
 
-158:                                              ; preds = %149, %171
-  %159 = phi i64 [ %172, %171 ], [ %150, %149 ]
-  %160 = phi ptr [ %173, %171 ], [ %30, %149 ]
+158:                                              ; preds = %149, %169
+  %159 = phi i64 [ %170, %169 ], [ %150, %149 ]
+  %160 = phi ptr [ %171, %169 ], [ %30, %149 ]
   %161 = load i8, ptr %160, align 1, !tbaa !164
-  %162 = icmp ugt i8 %161, 47
-  br i1 %162, label %248, label %163
+  %162 = zext i8 %161 to i64
+  %163 = getelementptr inbounds nuw i8, ptr @LL_bits, i64 %162
+  %164 = load i8, ptr %163, align 1, !tbaa !164
+  %165 = zext i8 %164 to i64
+  %166 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %159, i64 %165), !nosanitize !8
+  %167 = extractvalue { i64, i1 } %166, 1, !nosanitize !8
+  br i1 %167, label %168, label %169, !prof !9, !nosanitize !8
 
-163:                                              ; preds = %158
-  %164 = zext nneg i8 %161 to i64
-  %165 = getelementptr inbounds nuw i8, ptr @LL_bits, i64 %164
-  %166 = load i8, ptr %165, align 1, !tbaa !164
-  %167 = zext i8 %166 to i64
-  %168 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %159, i64 %167), !nosanitize !8
-  %169 = extractvalue { i64, i1 } %168, 1, !nosanitize !8
-  br i1 %169, label %170, label %171, !prof !9, !nosanitize !8
-
-170:                                              ; preds = %163
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+168:                                              ; preds = %158
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-171:                                              ; preds = %163
-  %172 = extractvalue { i64, i1 } %168, 0
-  %173 = getelementptr inbounds nuw i8, ptr %160, i64 1
-  %174 = icmp ult ptr %173, %135
-  br i1 %174, label %158, label %175, !llvm.loop !377
+169:                                              ; preds = %158
+  %170 = extractvalue { i64, i1 } %166, 0
+  %171 = getelementptr inbounds nuw i8, ptr %160, i64 1
+  %172 = icmp ult ptr %171, %135
+  br i1 %172, label %158, label %173, !llvm.loop !376
 
-175:                                              ; preds = %171, %149
-  %176 = phi i64 [ %150, %149 ], [ %172, %171 ]
-  %177 = lshr i64 %176, 3
-  br label %178
+173:                                              ; preds = %169, %149
+  %174 = phi i64 [ %150, %149 ], [ %170, %169 ]
+  %175 = lshr i64 %174, 3
+  br label %176
 
-178:                                              ; preds = %175, %156
-  %179 = phi i64 [ %157, %156 ], [ %177, %175 ]
+176:                                              ; preds = %173, %156
+  %177 = phi i64 [ %157, %156 ], [ %175, %173 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %4) #36
-  %180 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %132, i64 %179), !nosanitize !8
-  %181 = extractvalue { i64, i1 } %180, 1, !nosanitize !8
-  br i1 %181, label %182, label %183, !prof !9, !nosanitize !8
+  %178 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %132, i64 %177), !nosanitize !8
+  %179 = extractvalue { i64, i1 } %178, 1, !nosanitize !8
+  br i1 %179, label %180, label %181, !prof !9, !nosanitize !8
 
-182:                                              ; preds = %178
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+180:                                              ; preds = %176
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-183:                                              ; preds = %178
-  %184 = extractvalue { i64, i1 } %180, 0, !nosanitize !8
-  %185 = getelementptr inbounds nuw i8, ptr %1, i64 5104
-  %186 = load i32, ptr %185, align 8, !tbaa !198
-  %187 = getelementptr inbounds nuw i8, ptr %40, i64 2836
-  %188 = getelementptr inbounds nuw i8, ptr %32, i64 %39
+181:                                              ; preds = %176
+  %182 = extractvalue { i64, i1 } %178, 0, !nosanitize !8
+  %183 = getelementptr inbounds nuw i8, ptr %1, i64 5104
+  %184 = load i32, ptr %183, align 8, !tbaa !196
+  %185 = getelementptr inbounds nuw i8, ptr %40, i64 2836
+  %186 = getelementptr inbounds nuw i8, ptr %32, i64 %39
   call void @llvm.lifetime.start.p0(ptr nonnull %3) #36
   store i32 52, ptr %3, align 4, !tbaa !4
-  %189 = call i64 @HIST_countFast_wksp(ptr noundef %41, ptr noundef nonnull %3, ptr noundef %32, i64 noundef range(i64 -1152921504606846976, 1152921504606846976) %39, ptr noundef %41, i64 noundef %42) #36
-  switch i32 %186, label %193 [
-    i32 0, label %190
-    i32 1, label %202
+  %187 = call i64 @HIST_countFast_wksp(ptr noundef %41, ptr noundef nonnull %3, ptr noundef %32, i64 noundef range(i64 -1152921504606846976, 1152921504606846976) %39, ptr noundef %41, i64 noundef %42) #36
+  switch i32 %184, label %191 [
+    i32 0, label %188
+    i32 1, label %200
   ]
 
-190:                                              ; preds = %183
-  %191 = load i32, ptr %3, align 4, !tbaa !4
-  %192 = call i64 @ZSTD_crossEntropyCost(ptr noundef nonnull @ML_defaultNorm, i32 noundef 6, ptr noundef %41, i32 noundef %191) #36
-  br label %199
+188:                                              ; preds = %181
+  %189 = load i32, ptr %3, align 4, !tbaa !4
+  %190 = call i64 @ZSTD_crossEntropyCost(ptr noundef nonnull @ML_defaultNorm, i32 noundef 6, ptr noundef %41, i32 noundef %189) #36
+  br label %197
 
-193:                                              ; preds = %183
-  %194 = and i32 %186, -2
-  %195 = icmp eq i32 %194, 2
-  br i1 %195, label %196, label %202
+191:                                              ; preds = %181
+  %192 = and i32 %184, -2
+  %193 = icmp eq i32 %192, 2
+  br i1 %193, label %194, label %200
 
-196:                                              ; preds = %193
-  %197 = load i32, ptr %3, align 4, !tbaa !4
-  %198 = call i64 @ZSTD_fseBitCost(ptr noundef nonnull %187, ptr noundef %41, i32 noundef %197) #36
-  br label %199
+194:                                              ; preds = %191
+  %195 = load i32, ptr %3, align 4, !tbaa !4
+  %196 = call i64 @ZSTD_fseBitCost(ptr noundef nonnull %185, ptr noundef %41, i32 noundef %195) #36
+  br label %197
 
-199:                                              ; preds = %196, %190
-  %200 = phi i64 [ %192, %190 ], [ %198, %196 ]
-  %201 = icmp ult i64 %200, -119
-  br i1 %201, label %202, label %205
+197:                                              ; preds = %194, %188
+  %198 = phi i64 [ %190, %188 ], [ %196, %194 ]
+  %199 = icmp ult i64 %198, -119
+  br i1 %199, label %200, label %203
 
-202:                                              ; preds = %199, %193, %183
-  %203 = phi i64 [ %200, %199 ], [ 0, %193 ], [ 0, %183 ]
-  %204 = icmp eq ptr %34, %35
-  br i1 %204, label %228, label %211
+200:                                              ; preds = %197, %191, %181
+  %201 = phi i64 [ %198, %197 ], [ 0, %191 ], [ 0, %181 ]
+  %202 = icmp eq ptr %34, %35
+  br i1 %202, label %224, label %209
 
-205:                                              ; preds = %199
-  %206 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 range(i64 -1152921504606846976, 1152921504606846976) %39, i64 10), !nosanitize !8
-  %207 = extractvalue { i64, i1 } %206, 1, !nosanitize !8
-  br i1 %207, label %208, label %209, !prof !9, !nosanitize !8
+203:                                              ; preds = %197
+  %204 = call { i64, i1 } @llvm.umul.with.overflow.i64(i64 range(i64 -1152921504606846976, 1152921504606846976) %39, i64 10), !nosanitize !8
+  %205 = extractvalue { i64, i1 } %204, 1, !nosanitize !8
+  br i1 %205, label %206, label %207, !prof !9, !nosanitize !8
 
-208:                                              ; preds = %205
-  call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
+206:                                              ; preds = %203
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 12) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-209:                                              ; preds = %205
-  %210 = extractvalue { i64, i1 } %206, 0, !nosanitize !8
-  br label %231
+207:                                              ; preds = %203
+  %208 = extractvalue { i64, i1 } %204, 0, !nosanitize !8
+  br label %227
 
-211:                                              ; preds = %202, %224
-  %212 = phi i64 [ %225, %224 ], [ %203, %202 ]
-  %213 = phi ptr [ %226, %224 ], [ %32, %202 ]
-  %214 = load i8, ptr %213, align 1, !tbaa !164
-  %215 = icmp ugt i8 %214, 63
-  br i1 %215, label %249, label %216
+209:                                              ; preds = %200, %220
+  %210 = phi i64 [ %221, %220 ], [ %201, %200 ]
+  %211 = phi ptr [ %222, %220 ], [ %32, %200 ]
+  %212 = load i8, ptr %211, align 1, !tbaa !164
+  %213 = zext i8 %212 to i64
+  %214 = getelementptr inbounds nuw i8, ptr @ML_bits, i64 %213
+  %215 = load i8, ptr %214, align 1, !tbaa !164
+  %216 = zext i8 %215 to i64
+  %217 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %210, i64 %216), !nosanitize !8
+  %218 = extractvalue { i64, i1 } %217, 1, !nosanitize !8
+  br i1 %218, label %219, label %220, !prof !9, !nosanitize !8
 
-216:                                              ; preds = %211
-  %217 = zext nneg i8 %214 to i64
-  %218 = getelementptr inbounds nuw i8, ptr @ML_bits, i64 %217
-  %219 = load i8, ptr %218, align 1, !tbaa !164
-  %220 = zext i8 %219 to i64
-  %221 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %212, i64 %220), !nosanitize !8
-  %222 = extractvalue { i64, i1 } %221, 1, !nosanitize !8
-  br i1 %222, label %223, label %224, !prof !9, !nosanitize !8
-
-223:                                              ; preds = %216
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+219:                                              ; preds = %209
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-224:                                              ; preds = %216
-  %225 = extractvalue { i64, i1 } %221, 0
-  %226 = getelementptr inbounds nuw i8, ptr %213, i64 1
-  %227 = icmp ult ptr %226, %188
-  br i1 %227, label %211, label %228, !llvm.loop !377
+220:                                              ; preds = %209
+  %221 = extractvalue { i64, i1 } %217, 0
+  %222 = getelementptr inbounds nuw i8, ptr %211, i64 1
+  %223 = icmp ult ptr %222, %186
+  br i1 %223, label %209, label %224, !llvm.loop !376
 
-228:                                              ; preds = %224, %202
-  %229 = phi i64 [ %203, %202 ], [ %225, %224 ]
-  %230 = lshr i64 %229, 3
-  br label %231
+224:                                              ; preds = %220, %200
+  %225 = phi i64 [ %201, %200 ], [ %221, %220 ]
+  %226 = lshr i64 %225, 3
+  br label %227
 
-231:                                              ; preds = %228, %209
-  %232 = phi i64 [ %210, %209 ], [ %230, %228 ]
+227:                                              ; preds = %224, %207
+  %228 = phi i64 [ %208, %207 ], [ %226, %224 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %3) #36
-  %233 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %184, i64 %232), !nosanitize !8
-  %234 = extractvalue { i64, i1 } %233, 1, !nosanitize !8
-  br i1 %234, label %235, label %236, !prof !9, !nosanitize !8
+  %229 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %182, i64 %228), !nosanitize !8
+  %230 = extractvalue { i64, i1 } %229, 1, !nosanitize !8
+  br i1 %230, label %231, label %232, !prof !9, !nosanitize !8
 
-235:                                              ; preds = %231
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+231:                                              ; preds = %227
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-236:                                              ; preds = %231
-  %237 = extractvalue { i64, i1 } %233, 0, !nosanitize !8
-  %238 = getelementptr inbounds nuw i8, ptr %1, i64 5248
-  %239 = load i64, ptr %238, align 8, !tbaa !379
-  %240 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %237, i64 %239), !nosanitize !8
-  %241 = extractvalue { i64, i1 } %240, 1, !nosanitize !8
-  br i1 %241, label %242, label %243, !prof !9, !nosanitize !8
+232:                                              ; preds = %227
+  %233 = extractvalue { i64, i1 } %229, 0, !nosanitize !8
+  %234 = getelementptr inbounds nuw i8, ptr %1, i64 5248
+  %235 = load i64, ptr %234, align 8, !tbaa !378
+  %236 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %233, i64 %235), !nosanitize !8
+  %237 = extractvalue { i64, i1 } %236, 1, !nosanitize !8
+  br i1 %237, label %238, label %239, !prof !9, !nosanitize !8
 
-242:                                              ; preds = %236
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+238:                                              ; preds = %232
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-243:                                              ; preds = %236
-  %244 = extractvalue { i64, i1 } %240, 0, !nosanitize !8
-  %245 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %244, i64 %90), !nosanitize !8
-  %246 = extractvalue { i64, i1 } %245, 1, !nosanitize !8
-  br i1 %246, label %247, label %250, !prof !9, !nosanitize !8
+239:                                              ; preds = %232
+  %240 = extractvalue { i64, i1 } %236, 0, !nosanitize !8
+  %241 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %240, i64 %90), !nosanitize !8
+  %242 = extractvalue { i64, i1 } %241, 1, !nosanitize !8
+  br i1 %242, label %243, label %244, !prof !9, !nosanitize !8
 
-247:                                              ; preds = %243
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+243:                                              ; preds = %239
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-248:                                              ; preds = %158
-  call void @llvm.ubsantrap(i8 56) #34, !nosanitize !8
+244:                                              ; preds = %239
+  %245 = extractvalue { i64, i1 } %241, 0, !nosanitize !8
+  %246 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %245, i64 %83), !nosanitize !8
+  %247 = extractvalue { i64, i1 } %246, 1, !nosanitize !8
+  br i1 %247, label %248, label %249, !prof !9, !nosanitize !8
+
+248:                                              ; preds = %244
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-249:                                              ; preds = %211
-  call void @llvm.ubsantrap(i8 58) #34, !nosanitize !8
+249:                                              ; preds = %244
+  %250 = extractvalue { i64, i1 } %246, 0, !nosanitize !8
+  %251 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %250, i64 3), !nosanitize !8
+  %252 = extractvalue { i64, i1 } %251, 1, !nosanitize !8
+  br i1 %252, label %253, label %254, !prof !9, !nosanitize !8
+
+253:                                              ; preds = %249
+; LIMIT STUDY: Oracle neutralized -> call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-250:                                              ; preds = %243
-  %251 = extractvalue { i64, i1 } %245, 0, !nosanitize !8
-  %252 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %251, i64 %83), !nosanitize !8
-  %253 = extractvalue { i64, i1 } %252, 1, !nosanitize !8
-  br i1 %253, label %254, label %255, !prof !9, !nosanitize !8
+254:                                              ; preds = %249
+  %255 = extractvalue { i64, i1 } %251, 0, !nosanitize !8
+  br label %256
 
-254:                                              ; preds = %250
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-255:                                              ; preds = %250
-  %256 = extractvalue { i64, i1 } %252, 0, !nosanitize !8
-  %257 = call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %256, i64 3), !nosanitize !8
-  %258 = extractvalue { i64, i1 } %257, 1, !nosanitize !8
-  br i1 %258, label %259, label %260, !prof !9, !nosanitize !8
-
-259:                                              ; preds = %255
-  call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-260:                                              ; preds = %255
-  %261 = extractvalue { i64, i1 } %257, 0, !nosanitize !8
-  br label %262
-
-262:                                              ; preds = %2, %260
-  %263 = phi i64 [ %261, %260 ], [ %17, %2 ]
-  ret i64 %263
+256:                                              ; preds = %2, %254
+  %257 = phi i64 [ %255, %254 ], [ %17, %2 ]
+  ret i64 %257
 }
 
 declare i64 @ZSTD_crossEntropyCost(ptr noundef, i32 noundef, ptr noundef, i32 noundef) local_unnamed_addr #16
@@ -14547,16 +14325,16 @@ define internal fastcc range(i64 -70, 1) i64 @ZSTD_copyBlockSequences(ptr nounde
   %10 = sub i64 %8, %9
   %11 = ashr exact i64 %10, 3
   %12 = getelementptr inbounds nuw i8, ptr %1, i64 24
-  %13 = load ptr, ptr %12, align 8, !tbaa !172
+  %13 = load ptr, ptr %12, align 8, !tbaa !170
   %14 = getelementptr inbounds nuw i8, ptr %1, i64 16
-  %15 = load ptr, ptr %14, align 8, !tbaa !171
+  %15 = load ptr, ptr %14, align 8, !tbaa !169
   %16 = ptrtoint ptr %13 to i64
   %17 = ptrtoint ptr %15 to i64
   %18 = sub i64 %16, %17
   %19 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  %20 = load i64, ptr %19, align 8, !tbaa !380
+  %20 = load i64, ptr %19, align 8, !tbaa !379
   %21 = getelementptr inbounds nuw i8, ptr %0, i64 8
-  %22 = load ptr, ptr %21, align 8, !tbaa !381
+  %22 = load ptr, ptr %21, align 8, !tbaa !380
   %23 = getelementptr inbounds nuw [16 x i8], ptr %22, i64 %20
   %24 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %11, i64 1), !nosanitize !8
   %25 = extractvalue { i64, i1 } %24, 0, !nosanitize !8
@@ -14564,30 +14342,30 @@ define internal fastcc range(i64 -70, 1) i64 @ZSTD_copyBlockSequences(ptr nounde
   br i1 %26, label %27, label %28, !prof !9, !nosanitize !8
 
 27:                                               ; preds = %3
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 28:                                               ; preds = %3
   call void @llvm.lifetime.start.p0(ptr nonnull %4) #36
   %29 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  %30 = load i64, ptr %29, align 8, !tbaa !382
+  %30 = load i64, ptr %29, align 8, !tbaa !381
   %31 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %30, i64 %20), !nosanitize !8
   %32 = extractvalue { i64, i1 } %31, 1, !nosanitize !8
   br i1 %32, label %33, label %34, !prof !9, !nosanitize !8
 
 33:                                               ; preds = %28
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 34:                                               ; preds = %28
   %35 = extractvalue { i64, i1 } %31, 0, !nosanitize !8
   %36 = icmp ugt i64 %25, %35
-  br i1 %36, label %160, label %37
+  br i1 %36, label %154, label %37
 
 37:                                               ; preds = %34
   call void @llvm.memcpy.p0.p0.i64(ptr noundef nonnull align 4 dereferenceable(12) %4, ptr noundef nonnull align 4 dereferenceable(12) %2, i64 12, i1 false)
   %38 = icmp eq ptr %7, %5
-  br i1 %38, label %144, label %39
+  br i1 %38, label %138, label %39
 
 39:                                               ; preds = %37
   %40 = load i32, ptr %4, align 4
@@ -14601,27 +14379,27 @@ define internal fastcc range(i64 -70, 1) i64 @ZSTD_copyBlockSequences(ptr nounde
   %48 = load i32, ptr %46, align 4
   br label %49
 
-49:                                               ; preds = %39, %140
-  %50 = phi i32 [ %48, %39 ], [ %133, %140 ]
-  %51 = phi i32 [ %47, %39 ], [ %134, %140 ]
-  %52 = phi i64 [ 0, %39 ], [ %141, %140 ]
-  %53 = phi i64 [ 0, %39 ], [ %142, %140 ]
-  %54 = phi i32 [ %40, %39 ], [ %135, %140 ]
+49:                                               ; preds = %39, %134
+  %50 = phi i32 [ %48, %39 ], [ %127, %134 ]
+  %51 = phi i32 [ %47, %39 ], [ %128, %134 ]
+  %52 = phi i64 [ 0, %39 ], [ %135, %134 ]
+  %53 = phi i64 [ 0, %39 ], [ %136, %134 ]
+  %54 = phi i32 [ %40, %39 ], [ %129, %134 ]
   %55 = getelementptr inbounds nuw [8 x i8], ptr %5, i64 %53
   %56 = getelementptr inbounds nuw i8, ptr %55, i64 4
   %57 = load i16, ptr %56, align 4, !tbaa !159
   %58 = zext i16 %57 to i32
   %59 = getelementptr inbounds nuw [16 x i8], ptr %23, i64 %53
   %60 = getelementptr inbounds nuw i8, ptr %59, i64 4
-  store i32 %58, ptr %60, align 4, !tbaa !186
+  store i32 %58, ptr %60, align 4, !tbaa !184
   %61 = getelementptr inbounds nuw i8, ptr %55, i64 6
   %62 = load i16, ptr %61, align 2, !tbaa !163
   %63 = zext i16 %62 to i32
   %64 = add nuw nsw i32 %63, 3
   %65 = getelementptr inbounds nuw i8, ptr %59, i64 8
-  store i32 %64, ptr %65, align 4, !tbaa !185
+  store i32 %64, ptr %65, align 4, !tbaa !183
   %66 = getelementptr inbounds nuw i8, ptr %59, i64 12
-  store i32 0, ptr %66, align 4, !tbaa !383
+  store i32 0, ptr %66, align 4, !tbaa !382
   %67 = icmp eq i64 %53, %43
   br i1 %67, label %68, label %74
 
@@ -14634,12 +14412,12 @@ define internal fastcc range(i64 -70, 1) i64 @ZSTD_copyBlockSequences(ptr nounde
 
 70:                                               ; preds = %68
   %71 = or disjoint i32 %58, 65536
-  store i32 %71, ptr %60, align 4, !tbaa !186
+  store i32 %71, ptr %60, align 4, !tbaa !184
   br label %74
 
 72:                                               ; preds = %68
   %73 = add nuw nsw i32 %63, 65539
-  store i32 %73, ptr %65, align 4, !tbaa !185
+  store i32 %73, ptr %65, align 4, !tbaa !183
   br label %74
 
 74:                                               ; preds = %68, %49, %72, %70
@@ -14647,180 +14425,156 @@ define internal fastcc range(i64 -70, 1) i64 @ZSTD_copyBlockSequences(ptr nounde
   %76 = load i32, ptr %55, align 4, !tbaa !162
   %77 = add i32 %76, -1
   %78 = icmp ult i32 %77, 3
-  br i1 %78, label %79, label %102
+  br i1 %78, label %79, label %98
 
 79:                                               ; preds = %74
-  store i32 %76, ptr %66, align 4, !tbaa !383
+  store i32 %76, ptr %66, align 4, !tbaa !382
   %80 = icmp eq i32 %75, 0
-  br i1 %80, label %88, label %81
+  br i1 %80, label %86, label %81
 
 81:                                               ; preds = %79
-  %82 = icmp eq i32 %76, 0
-  br i1 %82, label %162, label %83
+  %82 = zext nneg i32 %76 to i64
+  %83 = getelementptr [4 x i8], ptr %4, i64 %82
+  %84 = getelementptr i8, ptr %83, i64 -4
+  %85 = load i32, ptr %84, align 4, !tbaa !4
+  br label %105
 
-83:                                               ; preds = %81
-  %84 = zext nneg i32 %76 to i64
-  %85 = getelementptr [4 x i8], ptr %4, i64 %84
-  %86 = getelementptr i8, ptr %85, i64 -4
-  %87 = load i32, ptr %86, align 4, !tbaa !4
-  br label %109
+86:                                               ; preds = %79
+  %87 = icmp eq i32 %76, 3
+  br i1 %87, label %88, label %94
 
-88:                                               ; preds = %79
-  %89 = icmp eq i32 %76, 3
-  br i1 %89, label %90, label %96
+88:                                               ; preds = %86
+  %89 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %54, i32 1), !nosanitize !8
+  %90 = extractvalue { i32, i1 } %89, 1, !nosanitize !8
+  br i1 %90, label %91, label %92, !prof !9, !nosanitize !8
 
-90:                                               ; preds = %88
-  %91 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %54, i32 1), !nosanitize !8
-  %92 = extractvalue { i32, i1 } %91, 1, !nosanitize !8
-  br i1 %92, label %93, label %94, !prof !9, !nosanitize !8
-
-93:                                               ; preds = %90
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+91:                                               ; preds = %88
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-94:                                               ; preds = %90
-  %95 = extractvalue { i32, i1 } %91, 0, !nosanitize !8
-  br label %109
+92:                                               ; preds = %88
+  %93 = extractvalue { i32, i1 } %89, 0, !nosanitize !8
+  br label %105
 
-96:                                               ; preds = %88
-  %97 = icmp ugt i32 %76, 3
-  br i1 %97, label %163, label %98
+94:                                               ; preds = %86
+  %95 = zext nneg i32 %76 to i64
+  %96 = getelementptr inbounds nuw [4 x i8], ptr %4, i64 %95
+  %97 = load i32, ptr %96, align 4, !tbaa !4
+  br label %105
 
-98:                                               ; preds = %96
-  %99 = zext nneg i32 %76 to i64
-  %100 = getelementptr inbounds nuw [4 x i8], ptr %4, i64 %99
-  %101 = load i32, ptr %100, align 4, !tbaa !4
-  br label %109
+98:                                               ; preds = %74
+  %99 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %76, i32 3), !nosanitize !8
+  %100 = extractvalue { i32, i1 } %99, 1, !nosanitize !8
+  br i1 %100, label %101, label %102, !prof !9, !nosanitize !8
 
-102:                                              ; preds = %74
-  %103 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %76, i32 3), !nosanitize !8
-  %104 = extractvalue { i32, i1 } %103, 1, !nosanitize !8
-  br i1 %104, label %105, label %106, !prof !9, !nosanitize !8
-
-105:                                              ; preds = %102
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+101:                                              ; preds = %98
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-106:                                              ; preds = %102
-  %107 = extractvalue { i32, i1 } %103, 0, !nosanitize !8
-  store i32 %107, ptr %59, align 4, !tbaa !183
+102:                                              ; preds = %98
+  %103 = extractvalue { i32, i1 } %99, 0, !nosanitize !8
+  store i32 %103, ptr %59, align 4, !tbaa !181
   store i32 %51, ptr %46, align 4, !tbaa !4
   store i32 %54, ptr %45, align 4, !tbaa !4
-  %108 = add i32 %76, -3
-  br label %129
+  %104 = add i32 %76, -3
+  br label %123
 
-109:                                              ; preds = %83, %98, %94
-  %110 = phi i32 [ %101, %98 ], [ %95, %94 ], [ %87, %83 ]
-  store i32 %110, ptr %59, align 4, !tbaa !183
-  %111 = icmp ne i16 %57, 0
-  %112 = sext i1 %111 to i32
-  %113 = add nsw i32 %76, %112
-  switch i32 %113, label %119 [
-    i32 0, label %132
-    i32 3, label %114
+105:                                              ; preds = %81, %94, %92
+  %106 = phi i32 [ %97, %94 ], [ %93, %92 ], [ %85, %81 ]
+  store i32 %106, ptr %59, align 4, !tbaa !181
+  %107 = icmp ne i16 %57, 0
+  %108 = sext i1 %107 to i32
+  %109 = add nsw i32 %76, %108
+  switch i32 %109, label %115 [
+    i32 0, label %126
+    i32 3, label %110
   ]
 
-114:                                              ; preds = %109
-  %115 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %54, i32 1), !nosanitize !8
-  %116 = extractvalue { i32, i1 } %115, 0, !nosanitize !8
-  %117 = extractvalue { i32, i1 } %115, 1, !nosanitize !8
-  br i1 %117, label %118, label %125, !prof !9, !nosanitize !8
+110:                                              ; preds = %105
+  %111 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %54, i32 1), !nosanitize !8
+  %112 = extractvalue { i32, i1 } %111, 0, !nosanitize !8
+  %113 = extractvalue { i32, i1 } %111, 1, !nosanitize !8
+  br i1 %113, label %114, label %119, !prof !9, !nosanitize !8
 
-118:                                              ; preds = %114
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+114:                                              ; preds = %110
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-119:                                              ; preds = %109
-  %120 = icmp ugt i32 %113, 2
-  br i1 %120, label %164, label %121
+115:                                              ; preds = %105
+  %116 = zext nneg i32 %109 to i64
+  %117 = getelementptr inbounds nuw [4 x i8], ptr %4, i64 %116
+  %118 = load i32, ptr %117, align 4, !tbaa !4
+  br label %119
 
-121:                                              ; preds = %119
-  %122 = zext nneg i32 %113 to i64
-  %123 = getelementptr inbounds nuw [4 x i8], ptr %4, i64 %122
-  %124 = load i32, ptr %123, align 4, !tbaa !4
-  br label %125
-
-125:                                              ; preds = %121, %114
-  %126 = phi i32 [ %124, %121 ], [ %116, %114 ]
-  %127 = icmp eq i32 %113, 1
-  %128 = select i1 %127, i32 %50, i32 %51
-  store i32 %128, ptr %46, align 4, !tbaa !4
+119:                                              ; preds = %115, %110
+  %120 = phi i32 [ %118, %115 ], [ %112, %110 ]
+  %121 = icmp eq i32 %109, 1
+  %122 = select i1 %121, i32 %50, i32 %51
+  store i32 %122, ptr %46, align 4, !tbaa !4
   store i32 %54, ptr %45, align 4, !tbaa !4
-  br label %129
+  br label %123
 
-129:                                              ; preds = %125, %106
-  %130 = phi i32 [ %128, %125 ], [ %51, %106 ]
-  %131 = phi i32 [ %126, %125 ], [ %108, %106 ]
-  store i32 %131, ptr %4, align 4, !tbaa !4
-  br label %132
+123:                                              ; preds = %119, %102
+  %124 = phi i32 [ %122, %119 ], [ %51, %102 ]
+  %125 = phi i32 [ %120, %119 ], [ %104, %102 ]
+  store i32 %125, ptr %4, align 4, !tbaa !4
+  br label %126
 
-132:                                              ; preds = %109, %129
-  %133 = phi i32 [ %50, %109 ], [ %130, %129 ]
-  %134 = phi i32 [ %51, %109 ], [ %54, %129 ]
-  %135 = phi i32 [ %54, %109 ], [ %131, %129 ]
-  %136 = zext nneg i32 %75 to i64
-  %137 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %52, i64 %136), !nosanitize !8
-  %138 = extractvalue { i64, i1 } %137, 1, !nosanitize !8
-  br i1 %138, label %139, label %140, !prof !9, !nosanitize !8
+126:                                              ; preds = %105, %123
+  %127 = phi i32 [ %50, %105 ], [ %124, %123 ]
+  %128 = phi i32 [ %51, %105 ], [ %54, %123 ]
+  %129 = phi i32 [ %54, %105 ], [ %125, %123 ]
+  %130 = zext nneg i32 %75 to i64
+  %131 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %52, i64 %130), !nosanitize !8
+  %132 = extractvalue { i64, i1 } %131, 1, !nosanitize !8
+  br i1 %132, label %133, label %134, !prof !9, !nosanitize !8
 
-139:                                              ; preds = %132
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+133:                                              ; preds = %126
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-140:                                              ; preds = %132
-  %141 = extractvalue { i64, i1 } %137, 0, !nosanitize !8
-  %142 = add nuw i64 %53, 1
-  %143 = icmp eq i64 %142, %11
-  br i1 %143, label %144, label %49, !llvm.loop !384
+134:                                              ; preds = %126
+  %135 = extractvalue { i64, i1 } %131, 0, !nosanitize !8
+  %136 = add nuw i64 %53, 1
+  %137 = icmp eq i64 %136, %11
+  br i1 %137, label %138, label %49, !llvm.loop !383
 
-144:                                              ; preds = %140, %37
-  %145 = phi i64 [ 0, %37 ], [ %141, %140 ]
-  %146 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %18, i64 %145), !nosanitize !8
-  %147 = extractvalue { i64, i1 } %146, 1, !nosanitize !8
-  br i1 %147, label %148, label %149, !prof !9, !nosanitize !8
+138:                                              ; preds = %134, %37
+  %139 = phi i64 [ 0, %37 ], [ %135, %134 ]
+  %140 = tail call { i64, i1 } @llvm.usub.with.overflow.i64(i64 %18, i64 %139), !nosanitize !8
+  %141 = extractvalue { i64, i1 } %140, 1, !nosanitize !8
+  br i1 %141, label %142, label %143, !prof !9, !nosanitize !8
 
-148:                                              ; preds = %144
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+142:                                              ; preds = %138
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-149:                                              ; preds = %144
-  %150 = extractvalue { i64, i1 } %146, 0, !nosanitize !8
-  %151 = trunc i64 %150 to i32
-  %152 = getelementptr inbounds nuw [16 x i8], ptr %23, i64 %11
-  %153 = getelementptr inbounds nuw i8, ptr %152, i64 4
-  store i32 %151, ptr %153, align 4, !tbaa !186
-  %154 = getelementptr inbounds nuw i8, ptr %152, i64 8
-  store i32 0, ptr %154, align 4, !tbaa !185
-  store i32 0, ptr %152, align 4, !tbaa !183
-  %155 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %20, i64 %25), !nosanitize !8
-  %156 = extractvalue { i64, i1 } %155, 1, !nosanitize !8
-  br i1 %156, label %157, label %158, !prof !9, !nosanitize !8
+143:                                              ; preds = %138
+  %144 = extractvalue { i64, i1 } %140, 0, !nosanitize !8
+  %145 = trunc i64 %144 to i32
+  %146 = getelementptr inbounds nuw [16 x i8], ptr %23, i64 %11
+  %147 = getelementptr inbounds nuw i8, ptr %146, i64 4
+  store i32 %145, ptr %147, align 4, !tbaa !184
+  %148 = getelementptr inbounds nuw i8, ptr %146, i64 8
+  store i32 0, ptr %148, align 4, !tbaa !183
+  store i32 0, ptr %146, align 4, !tbaa !181
+  %149 = tail call { i64, i1 } @llvm.uadd.with.overflow.i64(i64 %20, i64 %25), !nosanitize !8
+  %150 = extractvalue { i64, i1 } %149, 1, !nosanitize !8
+  br i1 %150, label %151, label %152, !prof !9, !nosanitize !8
 
-157:                                              ; preds = %149
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+151:                                              ; preds = %143
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
-158:                                              ; preds = %149
-  %159 = extractvalue { i64, i1 } %155, 0, !nosanitize !8
-  store i64 %159, ptr %19, align 8, !tbaa !380
-  br label %160
+152:                                              ; preds = %143
+  %153 = extractvalue { i64, i1 } %149, 0, !nosanitize !8
+  store i64 %153, ptr %19, align 8, !tbaa !379
+  br label %154
 
-160:                                              ; preds = %34, %158
-  %161 = phi i64 [ 0, %158 ], [ -70, %34 ]
+154:                                              ; preds = %34, %152
+  %155 = phi i64 [ 0, %152 ], [ -70, %34 ]
   call void @llvm.lifetime.end.p0(ptr nonnull %4) #36
-  ret i64 %161
-
-162:                                              ; preds = %81
-  tail call void @llvm.ubsantrap(i8 43) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-163:                                              ; preds = %96
-  tail call void @llvm.ubsantrap(i8 45) #34, !nosanitize !8
-  unreachable, !nosanitize !8
-
-164:                                              ; preds = %119
-  tail call void @llvm.ubsantrap(i8 47) #34, !nosanitize !8
-  unreachable, !nosanitize !8
+  ret i64 %155
 }
 
 ; Function Attrs: inlinehint nounwind uwtable
@@ -14852,7 +14606,7 @@ define internal fastcc i64 @ZSTD_entropyCompressSeqStore_internal(ptr noundef %0
   br i1 %35, label %36, label %37, !prof !9, !nosanitize !8
 
 36:                                               ; preds = %11
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 37:                                               ; preds = %11
@@ -14931,7 +14685,7 @@ define internal fastcc i64 @ZSTD_entropyCompressSeqStore_internal(ptr noundef %0
   %79 = getelementptr inbounds nuw i8, ptr %59, i64 1
   %80 = trunc i64 %24 to i16
   %81 = add i16 %80, -32512
-  store i16 %81, ptr %79, align 1, !tbaa !201
+  store i16 %81, ptr %79, align 1, !tbaa !199
   %82 = getelementptr inbounds nuw i8, ptr %59, i64 3
   br label %83
 
@@ -14953,27 +14707,27 @@ define internal fastcc i64 @ZSTD_entropyCompressSeqStore_internal(ptr noundef %0
   %92 = getelementptr inbounds nuw i8, ptr %5, i64 2064
   call fastcc void @ZSTD_buildSequencesStatistics(ptr dead_on_unwind noalias writable align 8 %12, ptr noundef nonnull %4, i64 noundef %24, ptr noundef nonnull %92, ptr noundef nonnull %15, ptr noundef nonnull %91, ptr noundef nonnull %31, i32 noundef %14, ptr noundef nonnull %8, ptr noundef nonnull %32, i64 noundef %34)
   %93 = getelementptr inbounds nuw i8, ptr %12, i64 16
-  %94 = load i64, ptr %93, align 8, !tbaa !332
+  %94 = load i64, ptr %93, align 8, !tbaa !331
   %95 = icmp ult i64 %94, -119
   br i1 %95, label %96, label %122
 
 96:                                               ; preds = %90
-  %97 = load i32, ptr %12, align 8, !tbaa !331
+  %97 = load i32, ptr %12, align 8, !tbaa !330
   %98 = icmp ult i32 %97, 67108864
-  br i1 %98, label %100, label %99, !prof !169, !nosanitize !8
+  br i1 %98, label %100, label %99, !prof !215, !nosanitize !8
 
 99:                                               ; preds = %96
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 100:                                              ; preds = %96
   %101 = getelementptr inbounds nuw i8, ptr %12, i64 4
-  %102 = load i32, ptr %101, align 4, !tbaa !333
+  %102 = load i32, ptr %101, align 4, !tbaa !332
   %103 = icmp ult i32 %102, 268435456
-  br i1 %103, label %105, label %104, !prof !169, !nosanitize !8
+  br i1 %103, label %105, label %104, !prof !215, !nosanitize !8
 
 104:                                              ; preds = %100
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 105:                                              ; preds = %100
@@ -14985,17 +14739,17 @@ define internal fastcc i64 @ZSTD_entropyCompressSeqStore_internal(ptr noundef %0
   br i1 %110, label %111, label %112, !prof !9, !nosanitize !8
 
 111:                                              ; preds = %105
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 112:                                              ; preds = %105
   %113 = getelementptr inbounds nuw i8, ptr %12, i64 8
-  %114 = load i32, ptr %113, align 8, !tbaa !334
+  %114 = load i32, ptr %113, align 8, !tbaa !333
   %115 = icmp ult i32 %114, 1073741824
-  br i1 %115, label %117, label %116, !prof !169, !nosanitize !8
+  br i1 %115, label %117, label %116, !prof !215, !nosanitize !8
 
 116:                                              ; preds = %112
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 117:                                              ; preds = %112
@@ -15005,7 +14759,7 @@ define internal fastcc i64 @ZSTD_entropyCompressSeqStore_internal(ptr noundef %0
   br i1 %120, label %121, label %123, !prof !9, !nosanitize !8
 
 121:                                              ; preds = %117
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 122:                                              ; preds = %90
@@ -15017,10 +14771,10 @@ define internal fastcc i64 @ZSTD_entropyCompressSeqStore_internal(ptr noundef %0
   %125 = trunc i32 %124 to i8
   store i8 %125, ptr %84, align 1, !tbaa !164
   %126 = getelementptr inbounds nuw i8, ptr %12, i64 24
-  %127 = load i64, ptr %126, align 8, !tbaa !328
+  %127 = load i64, ptr %126, align 8, !tbaa !327
   %128 = getelementptr inbounds nuw i8, ptr %91, i64 %94
   %129 = getelementptr inbounds nuw i8, ptr %12, i64 32
-  %130 = load i32, ptr %129, align 8, !tbaa !330
+  %130 = load i32, ptr %129, align 8, !tbaa !329
   call void @llvm.lifetime.end.p0(ptr nonnull %12) #36
   %131 = ptrtoint ptr %128 to i64
   %132 = sub i64 %61, %131
@@ -15039,7 +14793,7 @@ define internal fastcc i64 @ZSTD_entropyCompressSeqStore_internal(ptr noundef %0
   br i1 %140, label %141, label %142, !prof !9, !nosanitize !8
 
 141:                                              ; preds = %138
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 142:                                              ; preds = %138
@@ -15162,42 +14916,42 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   br i1 %27, label %78, label %28
 
 28:                                               ; preds = %8
-  %29 = load ptr, ptr %0, align 8, !tbaa !208
+  %29 = load ptr, ptr %0, align 8, !tbaa !206
   %30 = icmp eq ptr %26, %29
   br i1 %30, label %31, label %38
 
 31:                                               ; preds = %28
   %32 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  %33 = load ptr, ptr %32, align 8, !tbaa !209
+  %33 = load ptr, ptr %32, align 8, !tbaa !207
   %34 = getelementptr inbounds nuw i8, ptr %0, i64 28
-  %35 = load i32, ptr %34, align 4, !tbaa !210
+  %35 = load i32, ptr %34, align 4, !tbaa !208
   %36 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  %37 = load i32, ptr %36, align 8, !tbaa !211
+  %37 = load i32, ptr %36, align 8, !tbaa !209
   br label %58
 
 38:                                               ; preds = %28
   %39 = getelementptr inbounds nuw i8, ptr %0, i64 8
-  %40 = load ptr, ptr %39, align 8, !tbaa !212
+  %40 = load ptr, ptr %39, align 8, !tbaa !210
   %41 = ptrtoint ptr %29 to i64
   %42 = ptrtoint ptr %40 to i64
   %43 = sub i64 %41, %42
   %44 = getelementptr inbounds nuw i8, ptr %0, i64 24
-  %45 = load i32, ptr %44, align 8, !tbaa !211
+  %45 = load i32, ptr %44, align 8, !tbaa !209
   %46 = getelementptr inbounds nuw i8, ptr %0, i64 28
-  store i32 %45, ptr %46, align 4, !tbaa !210
+  store i32 %45, ptr %46, align 4, !tbaa !208
   %47 = trunc i64 %43 to i32
-  store i32 %47, ptr %44, align 8, !tbaa !211
+  store i32 %47, ptr %44, align 8, !tbaa !209
   %48 = getelementptr inbounds nuw i8, ptr %0, i64 16
-  store ptr %40, ptr %48, align 8, !tbaa !209
+  store ptr %40, ptr %48, align 8, !tbaa !207
   %49 = sub i64 0, %43
   %50 = getelementptr inbounds i8, ptr %26, i64 %49
-  store ptr %50, ptr %39, align 8, !tbaa !212
+  store ptr %50, ptr %39, align 8, !tbaa !210
   %51 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %47, i32 %45), !nosanitize !8
   %52 = extractvalue { i32, i1 } %51, 1, !nosanitize !8
   br i1 %52, label %53, label %54, !prof !9, !nosanitize !8
 
 53:                                               ; preds = %38
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 54:                                               ; preds = %38
@@ -15206,7 +14960,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   br i1 %56, label %57, label %58
 
 57:                                               ; preds = %54
-  store i32 %47, ptr %46, align 4, !tbaa !210
+  store i32 %47, ptr %46, align 4, !tbaa !208
   br label %58
 
 58:                                               ; preds = %57, %54, %31
@@ -15214,7 +14968,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   %60 = phi i32 [ %35, %31 ], [ %45, %54 ], [ %47, %57 ]
   %61 = phi ptr [ %33, %31 ], [ %40, %54 ], [ %40, %57 ]
   %62 = getelementptr inbounds nuw i8, ptr %26, i64 %25
-  store ptr %62, ptr %0, align 8, !tbaa !208
+  store ptr %62, ptr %0, align 8, !tbaa !206
   %63 = zext i32 %60 to i64
   %64 = getelementptr inbounds nuw i8, ptr %61, i64 %63
   %65 = icmp ugt ptr %62, %64
@@ -15231,7 +14985,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   %74 = sub i64 %72, %73
   %75 = tail call i64 @llvm.umin.i64(i64 %74, i64 %66)
   %76 = trunc nuw i64 %75 to i32
-  store i32 %76, ptr %71, align 4, !tbaa !210
+  store i32 %76, ptr %71, align 4, !tbaa !208
   br label %77
 
 77:                                               ; preds = %58, %70
@@ -15241,42 +14995,42 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   br i1 %14, label %127, label %141
 
 79:                                               ; preds = %77
-  %80 = load ptr, ptr %1, align 8, !tbaa !208
+  %80 = load ptr, ptr %1, align 8, !tbaa !206
   %81 = icmp eq ptr %26, %80
   br i1 %81, label %82, label %89
 
 82:                                               ; preds = %79
   %83 = getelementptr inbounds nuw i8, ptr %1, i64 16
-  %84 = load ptr, ptr %83, align 8, !tbaa !209
+  %84 = load ptr, ptr %83, align 8, !tbaa !207
   %85 = getelementptr inbounds nuw i8, ptr %1, i64 28
-  %86 = load i32, ptr %85, align 4, !tbaa !210
+  %86 = load i32, ptr %85, align 4, !tbaa !208
   %87 = getelementptr inbounds nuw i8, ptr %1, i64 24
-  %88 = load i32, ptr %87, align 8, !tbaa !211
+  %88 = load i32, ptr %87, align 8, !tbaa !209
   br label %109
 
 89:                                               ; preds = %79
   %90 = getelementptr inbounds nuw i8, ptr %1, i64 8
-  %91 = load ptr, ptr %90, align 8, !tbaa !212
+  %91 = load ptr, ptr %90, align 8, !tbaa !210
   %92 = ptrtoint ptr %80 to i64
   %93 = ptrtoint ptr %91 to i64
   %94 = sub i64 %92, %93
   %95 = getelementptr inbounds nuw i8, ptr %1, i64 24
-  %96 = load i32, ptr %95, align 8, !tbaa !211
+  %96 = load i32, ptr %95, align 8, !tbaa !209
   %97 = getelementptr inbounds nuw i8, ptr %1, i64 28
-  store i32 %96, ptr %97, align 4, !tbaa !210
+  store i32 %96, ptr %97, align 4, !tbaa !208
   %98 = trunc i64 %94 to i32
-  store i32 %98, ptr %95, align 8, !tbaa !211
+  store i32 %98, ptr %95, align 8, !tbaa !209
   %99 = getelementptr inbounds nuw i8, ptr %1, i64 16
-  store ptr %91, ptr %99, align 8, !tbaa !209
+  store ptr %91, ptr %99, align 8, !tbaa !207
   %100 = sub i64 0, %94
   %101 = getelementptr inbounds i8, ptr %26, i64 %100
-  store ptr %101, ptr %90, align 8, !tbaa !212
+  store ptr %101, ptr %90, align 8, !tbaa !210
   %102 = tail call { i32, i1 } @llvm.usub.with.overflow.i32(i32 %98, i32 %96), !nosanitize !8
   %103 = extractvalue { i32, i1 } %102, 1, !nosanitize !8
   br i1 %103, label %104, label %105, !prof !9, !nosanitize !8
 
 104:                                              ; preds = %89
-  tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 21) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 105:                                              ; preds = %89
@@ -15285,14 +15039,14 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   br i1 %107, label %108, label %109
 
 108:                                              ; preds = %105
-  store i32 %98, ptr %97, align 4, !tbaa !210
+  store i32 %98, ptr %97, align 4, !tbaa !208
   br label %109
 
 109:                                              ; preds = %108, %105, %82
   %110 = phi i32 [ %88, %82 ], [ %98, %105 ], [ %98, %108 ]
   %111 = phi i32 [ %86, %82 ], [ %96, %105 ], [ %98, %108 ]
   %112 = phi ptr [ %84, %82 ], [ %91, %105 ], [ %91, %108 ]
-  store ptr %62, ptr %1, align 8, !tbaa !208
+  store ptr %62, ptr %1, align 8, !tbaa !206
   %113 = zext i32 %111 to i64
   %114 = getelementptr inbounds nuw i8, ptr %112, i64 %113
   %115 = icmp ugt ptr %62, %114
@@ -15309,7 +15063,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   %124 = sub i64 %122, %123
   %125 = tail call i64 @llvm.umin.i64(i64 %124, i64 %116)
   %126 = trunc nuw i64 %125 to i32
-  store i32 %126, ptr %121, align 4, !tbaa !210
+  store i32 %126, ptr %121, align 4, !tbaa !208
   br label %127
 
 127:                                              ; preds = %78, %109, %120
@@ -15320,7 +15074,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
 
 131:                                              ; preds = %127
   %132 = getelementptr inbounds nuw i8, ptr %1, i64 8
-  %133 = load ptr, ptr %132, align 8, !tbaa !385
+  %133 = load ptr, ptr %132, align 8, !tbaa !384
   %134 = ptrtoint ptr %9 to i64
   %135 = ptrtoint ptr %133 to i64
   %136 = sub i64 %134, %135
@@ -15330,7 +15084,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
 138:                                              ; preds = %127, %131
   %139 = phi i32 [ %137, %131 ], [ 0, %127 ]
   %140 = getelementptr inbounds nuw i8, ptr %1, i64 48
-  store i32 %139, ptr %140, align 8, !tbaa !386
+  store i32 %139, ptr %140, align 8, !tbaa !385
   tail call void @ZSTD_ldm_fillHashTable(ptr noundef nonnull %1, ptr noundef nonnull %26, ptr noundef nonnull %9, ptr noundef nonnull %10) #36
   br label %141
 
@@ -15343,7 +15097,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   br i1 %146, label %147, label %148, !prof !9, !nosanitize !8
 
 147:                                              ; preds = %141
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 148:                                              ; preds = %141
@@ -15354,7 +15108,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   br i1 %152, label %153, label %154, !prof !9, !nosanitize !8
 
 153:                                              ; preds = %148
-  tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 0) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 154:                                              ; preds = %148
@@ -15369,13 +15123,13 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   %163 = select i1 %160, ptr %162, ptr %26
   %164 = tail call i64 @llvm.umin.i64(i64 %25, i64 %159)
   %165 = getelementptr inbounds nuw i8, ptr %0, i64 8
-  %166 = load ptr, ptr %165, align 8, !tbaa !342
+  %166 = load ptr, ptr %165, align 8, !tbaa !341
   %167 = ptrtoint ptr %163 to i64
   %168 = ptrtoint ptr %166 to i64
   %169 = sub i64 %167, %168
   %170 = trunc i64 %169 to i32
   %171 = getelementptr inbounds nuw i8, ptr %0, i64 44
-  store i32 %170, ptr %171, align 4, !tbaa !213
+  store i32 %170, ptr %171, align 4, !tbaa !211
   %172 = getelementptr inbounds nuw i8, ptr %3, i64 48
   %173 = load i32, ptr %172, align 8, !tbaa !97
   %174 = icmp eq i32 %173, 0
@@ -15384,11 +15138,11 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   %177 = trunc i64 %176 to i32
   %178 = select i1 %174, i32 %177, i32 0
   %179 = getelementptr inbounds nuw i8, ptr %0, i64 40
-  store i32 %178, ptr %179, align 8, !tbaa !269
+  store i32 %178, ptr %179, align 8, !tbaa !267
   %180 = getelementptr inbounds nuw i8, ptr %3, i64 164
   %181 = load i32, ptr %180, align 4, !tbaa !112
   %182 = getelementptr inbounds nuw i8, ptr %0, i64 136
-  store i32 %181, ptr %182, align 8, !tbaa !207
+  store i32 %181, ptr %182, align 8, !tbaa !205
   %183 = icmp samesign ult i64 %164, 9
   br i1 %183, label %218, label %184
 
@@ -15417,7 +15171,7 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
 
 188:                                              ; preds = %184, %184, %184
   %189 = getelementptr inbounds nuw i8, ptr %0, i64 140
-  %190 = load i32, ptr %189, align 4, !tbaa !336
+  %190 = load i32, ptr %189, align 4, !tbaa !335
   %191 = icmp eq i32 %190, 0
   br i1 %191, label %194, label %192
 
@@ -15435,17 +15189,17 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
 198:                                              ; preds = %194
   %199 = load i32, ptr %142, align 4, !tbaa !89
   %200 = icmp ult i32 %199, 64
-  br i1 %200, label %202, label %201, !prof !169, !nosanitize !8
+  br i1 %200, label %202, label %201, !prof !215, !nosanitize !8
 
 201:                                              ; preds = %198
-  tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
+; LIMIT STUDY: Oracle neutralized -> tail call void @llvm.ubsantrap(i8 20) #34, !nosanitize !8
   unreachable, !nosanitize !8
 
 202:                                              ; preds = %198
   %203 = zext nneg i32 %199 to i64
   %204 = shl nuw i64 1, %203
   %205 = getelementptr inbounds nuw i8, ptr %0, i64 56
-  %206 = load ptr, ptr %205, align 8, !tbaa !278
+  %206 = load ptr, ptr %205, align 8, !tbaa !276
   tail call void @llvm.memset.p0.i64(ptr noundef nonnull align 1 dereferenceable(1) %206, i8 0, i64 %204, i1 false)
   %207 = getelementptr inbounds i8, ptr %9, i64 -8
   tail call void @ZSTD_row_update(ptr noundef nonnull %0, ptr noundef nonnull %207) #36
@@ -15462,11 +15216,11 @@ define internal fastcc void @ZSTD_loadDictionaryContent(ptr noundef %0, ptr noun
   br label %213
 
 213:                                              ; preds = %184, %192, %208, %202, %211, %187, %186
-  %214 = load ptr, ptr %165, align 8, !tbaa !342
+  %214 = load ptr, ptr %165, align 8, !tbaa !341
   %215 = ptrtoint ptr %214 to i64
   %216 = sub i64 %175, %215
   %217 = trunc i64 %216 to i32
-  store i32 %217, ptr %171, align 4, !tbaa !213
+  store i32 %217, ptr %171, align 4, !tbaa !211
   br label %218
 
 218:                                              ; preds = %154, %213
@@ -15723,221 +15477,220 @@ attributes #40 = { nounwind willreturn memory(read) }
 !166 = !{!"llvm.loop.mustprogress"}
 !167 = !{!27, !5, i64 72}
 !168 = !{!27, !5, i64 76}
-!169 = !{!"branch_weights", i32 1048575, i32 1}
-!170 = !{!"branch_weights", i32 -8192, i32 8191}
-!171 = !{!27, !29, i64 16}
-!172 = !{!27, !29, i64 24}
-!173 = !{!174, !21, i64 0}
-!174 = !{!"ZSTD_outBuffer_s", !21, i64 0, !18, i64 8, !18, i64 16}
-!175 = !{!174, !18, i64 8}
-!176 = !{!174, !18, i64 16}
-!177 = !{!38, !21, i64 0}
-!178 = !{!38, !18, i64 8}
-!179 = !{!38, !18, i64 16}
-!180 = !{!14, !5, i64 140}
-!181 = !{!14, !5, i64 144}
-!182 = !{!14, !18, i64 952}
-!183 = !{!184, !5, i64 0}
-!184 = !{!"", !5, i64 0, !5, i64 4, !5, i64 8, !5, i64 12}
-!185 = !{!184, !5, i64 8}
-!186 = !{!184, !5, i64 4}
-!187 = !{i64 0, i64 4, !4, i64 4, i64 4, !4, i64 8, i64 4, !4, i64 12, i64 4, !4}
-!188 = distinct !{!188, !166}
-!189 = !{!70, !5, i64 2056}
-!190 = !{!44, !5, i64 0}
-!191 = !{!43, !18, i64 136}
-!192 = !{!71, !5, i64 3548}
-!193 = !{!194}
-!194 = distinct !{!194, !195, !"ZSTD_buildDummySequencesStatistics: argument 0"}
-!195 = distinct !{!195, !"ZSTD_buildDummySequencesStatistics"}
-!196 = !{!71, !5, i64 3540}
-!197 = !{!71, !5, i64 3544}
-!198 = !{!45, !5, i64 8}
-!199 = !{!45, !18, i64 160}
-!200 = !{!43, !18, i64 296}
-!201 = !{!161, !161, i64 0}
-!202 = !{!14, !21, i64 3184}
-!203 = !{!14, !18, i64 3208}
-!204 = !{!14, !18, i64 3216}
-!205 = !{!14, !5, i64 0}
-!206 = !{!14, !5, i64 688}
-!207 = !{!34, !5, i64 136}
-!208 = !{!31, !29, i64 0}
-!209 = !{!31, !29, i64 16}
-!210 = !{!31, !5, i64 28}
-!211 = !{!31, !5, i64 24}
-!212 = !{!31, !29, i64 8}
-!213 = !{!34, !5, i64 44}
-!214 = !{!14, !5, i64 336}
-!215 = !{!14, !18, i64 776}
-!216 = !{!14, !5, i64 244}
-!217 = !{!14, !5, i64 276}
-!218 = !{!14, !5, i64 384}
-!219 = !{!14, !5, i64 268}
-!220 = !{!37, !37, i64 0}
-!221 = !{!34, !5, i64 28}
-!222 = !{!14, !5, i64 968}
-!223 = !{!14, !5, i64 936}
-!224 = !{!14, !28, i64 984}
-!225 = !{!14, !28, i64 976}
-!226 = !{!227, !35, i64 0}
-!227 = !{!"", !35, i64 0, !18, i64 8}
-!228 = !{!227, !18, i64 8}
-!229 = !{i64 0, i64 8, !230, i64 8, i64 8, !230, i64 16, i64 8, !231, i64 24, i64 8, !231, i64 32, i64 8, !231, i64 40, i64 8, !231, i64 48, i64 8, !231, i64 56, i64 8, !118, i64 64, i64 8, !118, i64 72, i64 4, !4, i64 76, i64 4, !4}
-!230 = !{!28, !28, i64 0}
-!231 = !{!29, !29, i64 0}
+!169 = !{!27, !29, i64 16}
+!170 = !{!27, !29, i64 24}
+!171 = !{!172, !21, i64 0}
+!172 = !{!"ZSTD_outBuffer_s", !21, i64 0, !18, i64 8, !18, i64 16}
+!173 = !{!172, !18, i64 8}
+!174 = !{!172, !18, i64 16}
+!175 = !{!38, !21, i64 0}
+!176 = !{!38, !18, i64 8}
+!177 = !{!38, !18, i64 16}
+!178 = !{!14, !5, i64 140}
+!179 = !{!14, !5, i64 144}
+!180 = !{!14, !18, i64 952}
+!181 = !{!182, !5, i64 0}
+!182 = !{!"", !5, i64 0, !5, i64 4, !5, i64 8, !5, i64 12}
+!183 = !{!182, !5, i64 8}
+!184 = !{!182, !5, i64 4}
+!185 = !{i64 0, i64 4, !4, i64 4, i64 4, !4, i64 8, i64 4, !4, i64 12, i64 4, !4}
+!186 = distinct !{!186, !166}
+!187 = !{!70, !5, i64 2056}
+!188 = !{!44, !5, i64 0}
+!189 = !{!43, !18, i64 136}
+!190 = !{!71, !5, i64 3548}
+!191 = !{!192}
+!192 = distinct !{!192, !193, !"ZSTD_buildDummySequencesStatistics: argument 0"}
+!193 = distinct !{!193, !"ZSTD_buildDummySequencesStatistics"}
+!194 = !{!71, !5, i64 3540}
+!195 = !{!71, !5, i64 3544}
+!196 = !{!45, !5, i64 8}
+!197 = !{!45, !18, i64 160}
+!198 = !{!43, !18, i64 296}
+!199 = !{!161, !161, i64 0}
+!200 = !{!14, !21, i64 3184}
+!201 = !{!14, !18, i64 3208}
+!202 = !{!14, !18, i64 3216}
+!203 = !{!14, !5, i64 0}
+!204 = !{!14, !5, i64 688}
+!205 = !{!34, !5, i64 136}
+!206 = !{!31, !29, i64 0}
+!207 = !{!31, !29, i64 16}
+!208 = !{!31, !5, i64 28}
+!209 = !{!31, !5, i64 24}
+!210 = !{!31, !29, i64 8}
+!211 = !{!34, !5, i64 44}
+!212 = !{!14, !5, i64 336}
+!213 = !{!14, !18, i64 776}
+!214 = !{!14, !5, i64 244}
+!215 = !{!"branch_weights", i32 1048575, i32 1}
+!216 = !{!14, !5, i64 276}
+!217 = !{!14, !5, i64 384}
+!218 = !{!14, !5, i64 268}
+!219 = !{!37, !37, i64 0}
+!220 = !{!34, !5, i64 28}
+!221 = !{!14, !5, i64 968}
+!222 = !{!14, !5, i64 936}
+!223 = !{!14, !28, i64 984}
+!224 = !{!14, !28, i64 976}
+!225 = !{!226, !35, i64 0}
+!226 = !{!"", !35, i64 0, !18, i64 8}
+!227 = !{!226, !18, i64 8}
+!228 = !{i64 0, i64 8, !229, i64 8, i64 8, !229, i64 16, i64 8, !230, i64 24, i64 8, !230, i64 32, i64 8, !230, i64 40, i64 8, !230, i64 48, i64 8, !230, i64 56, i64 8, !118, i64 64, i64 8, !118, i64 72, i64 4, !4, i64 76, i64 4, !4}
+!229 = !{!28, !28, i64 0}
+!230 = !{!29, !29, i64 0}
+!231 = distinct !{!231, !166}
 !232 = distinct !{!232, !166}
 !233 = distinct !{!233, !166}
 !234 = distinct !{!234, !166}
-!235 = distinct !{!235, !166}
-!236 = !{!14, !18, i64 392}
-!237 = distinct !{!237, !166, !238, !239}
-!238 = !{!"llvm.loop.unroll.runtime.disable"}
-!239 = !{!"llvm.loop.isvectorized", i32 1}
-!240 = !{!14, !23, i64 3760}
-!241 = !{!67, !18, i64 8}
-!242 = !{!67, !5, i64 384}
-!243 = !{!67, !5, i64 244}
-!244 = !{!67, !5, i64 6072}
-!245 = !{!14, !18, i64 3576}
-!246 = !{!14, !18, i64 3616}
-!247 = !{!14, !5, i64 316}
-!248 = !{!249, !5, i64 0}
-!249 = !{!"", !5, i64 0, !5, i64 4, !5, i64 8, !5, i64 12, !18, i64 16, !18, i64 24, !18, i64 32, !250, i64 40, !251, i64 48, !252, i64 56}
-!250 = !{!"p1 _ZTS18ZSTD_CCtx_params_s", !21, i64 0}
-!251 = !{!"p1 _ZTS11ZSTD_CCtx_s", !21, i64 0}
-!252 = !{!"p1 _ZTS11ZSTD_DCtx_s", !21, i64 0}
-!253 = !{!249, !5, i64 4}
-!254 = !{!249, !5, i64 8}
-!255 = !{!14, !18, i64 696}
-!256 = !{!249, !18, i64 16}
-!257 = !{!249, !18, i64 24}
-!258 = !{!249, !18, i64 32}
-!259 = !{!249, !250, i64 40}
-!260 = !{!249, !251, i64 48}
-!261 = distinct !{null, null}
-!262 = !{i64 0, i64 4, !4, i64 4, i64 4, !4, i64 8, i64 4, !4, i64 12, i64 4, !4, i64 16, i64 4, !4, i64 20, i64 4, !4}
-!263 = !{!67, !5, i64 6068}
-!264 = !{!67, !21, i64 0}
-!265 = !{!67, !5, i64 16}
-!266 = !{!67, !35, i64 24}
-!267 = !{!34, !5, i64 48}
-!268 = !{!34, !5, i64 300}
-!269 = !{!34, !5, i64 40}
-!270 = !{!34, !5, i64 196}
-!271 = !{!34, !37, i64 248}
-!272 = !{!22, !21, i64 48}
-!273 = !{!22, !5, i64 64}
-!274 = !{!34, !35, i64 112}
-!275 = !{!34, !35, i64 128}
-!276 = !{!34, !35, i64 120}
-!277 = !{!22, !21, i64 40}
-!278 = !{!34, !29, i64 56}
-!279 = !{!34, !18, i64 96}
-!280 = !{!34, !5, i64 52}
-!281 = !{!67, !5, i64 6064}
-!282 = distinct !{ptr @ZSTD_createCCtx_advanced, null}
-!283 = distinct !{ptr @ZSTD_freeCCtx, null, null, null}
-!284 = distinct !{ptr @ZSTD_freeCCtx, null}
-!285 = distinct !{ptr @ZSTD_CCtx_loadDictionary, ptr @ZSTD_CCtx_loadDictionary_advanced, null}
-!286 = !{!14, !5, i64 364}
-!287 = !{!14, !18, i64 3672}
-!288 = !{!14, !18, i64 3600}
-!289 = !{!14, !21, i64 3648}
-!290 = !{!14, !18, i64 3656}
-!291 = !{i64 0, i64 8, !51, i64 8, i64 8, !118, i64 16, i64 8, !118}
-!292 = !{!14, !5, i64 16}
-!293 = !{!39, !21, i64 8}
-!294 = !{!39, !40, i64 32}
-!295 = !{!14, !5, i64 368}
-!296 = !{!14, !18, i64 3680}
-!297 = distinct !{!297, !166}
-!298 = !{!14, !18, i64 3624}
-!299 = !{!14, !18, i64 3632}
-!300 = !{!14, !5, i64 3644}
-!301 = !{!14, !29, i64 3608}
-!302 = !{!"branch_weights", !"expected", i32 1, i32 2000}
-!303 = distinct !{!303, !166}
-!304 = !{!14, !18, i64 1032}
-!305 = !{!"branch_weights", i32 1, i32 127}
-!306 = !{!14, !5, i64 1048}
-!307 = !{!14, !5, i64 1052}
-!308 = !{!"branch_weights", !"expected", i32 1125985, i32 2146357663}
+!235 = !{!14, !18, i64 392}
+!236 = distinct !{!236, !166, !237, !238}
+!237 = !{!"llvm.loop.unroll.runtime.disable"}
+!238 = !{!"llvm.loop.isvectorized", i32 1}
+!239 = !{!14, !23, i64 3760}
+!240 = !{!67, !18, i64 8}
+!241 = !{!67, !5, i64 244}
+!242 = !{!67, !5, i64 6072}
+!243 = !{!14, !18, i64 3576}
+!244 = !{!14, !18, i64 3616}
+!245 = !{!14, !5, i64 316}
+!246 = !{!247, !5, i64 0}
+!247 = !{!"", !5, i64 0, !5, i64 4, !5, i64 8, !5, i64 12, !18, i64 16, !18, i64 24, !18, i64 32, !248, i64 40, !249, i64 48, !250, i64 56}
+!248 = !{!"p1 _ZTS18ZSTD_CCtx_params_s", !21, i64 0}
+!249 = !{!"p1 _ZTS11ZSTD_CCtx_s", !21, i64 0}
+!250 = !{!"p1 _ZTS11ZSTD_DCtx_s", !21, i64 0}
+!251 = !{!247, !5, i64 4}
+!252 = !{!247, !5, i64 8}
+!253 = !{!14, !18, i64 696}
+!254 = !{!247, !18, i64 16}
+!255 = !{!247, !18, i64 24}
+!256 = !{!247, !18, i64 32}
+!257 = !{!247, !248, i64 40}
+!258 = !{!247, !249, i64 48}
+!259 = distinct !{null, null}
+!260 = !{i64 0, i64 4, !4, i64 4, i64 4, !4, i64 8, i64 4, !4, i64 12, i64 4, !4, i64 16, i64 4, !4, i64 20, i64 4, !4}
+!261 = !{!67, !5, i64 6068}
+!262 = !{!67, !21, i64 0}
+!263 = !{!67, !5, i64 16}
+!264 = !{!67, !35, i64 24}
+!265 = !{!34, !5, i64 48}
+!266 = !{!34, !5, i64 300}
+!267 = !{!34, !5, i64 40}
+!268 = !{!34, !5, i64 196}
+!269 = !{!34, !37, i64 248}
+!270 = !{!22, !21, i64 48}
+!271 = !{!22, !5, i64 64}
+!272 = !{!34, !35, i64 112}
+!273 = !{!34, !35, i64 128}
+!274 = !{!34, !35, i64 120}
+!275 = !{!22, !21, i64 40}
+!276 = !{!34, !29, i64 56}
+!277 = !{!34, !18, i64 96}
+!278 = !{!34, !5, i64 52}
+!279 = !{!67, !5, i64 6064}
+!280 = distinct !{ptr @ZSTD_createCCtx_advanced, null}
+!281 = distinct !{ptr @ZSTD_freeCCtx, null, null, null}
+!282 = distinct !{ptr @ZSTD_freeCCtx, null}
+!283 = distinct !{ptr @ZSTD_CCtx_loadDictionary, ptr @ZSTD_CCtx_loadDictionary_advanced, null}
+!284 = !{!14, !5, i64 364}
+!285 = !{!14, !18, i64 3672}
+!286 = !{!14, !18, i64 3600}
+!287 = !{!14, !21, i64 3648}
+!288 = !{!14, !18, i64 3656}
+!289 = !{i64 0, i64 8, !51, i64 8, i64 8, !118, i64 16, i64 8, !118}
+!290 = !{!14, !5, i64 16}
+!291 = !{!39, !21, i64 8}
+!292 = !{!39, !40, i64 32}
+!293 = !{!67, !5, i64 384}
+!294 = !{!14, !5, i64 368}
+!295 = !{!14, !18, i64 3680}
+!296 = distinct !{!296, !166}
+!297 = !{!14, !18, i64 3624}
+!298 = !{!14, !18, i64 3632}
+!299 = !{!14, !5, i64 3644}
+!300 = !{!14, !29, i64 3608}
+!301 = !{!"branch_weights", !"expected", i32 1, i32 2000}
+!302 = distinct !{!302, !166}
+!303 = !{!14, !18, i64 1032}
+!304 = !{!"branch_weights", i32 1, i32 127}
+!305 = !{!14, !5, i64 1048}
+!306 = !{!14, !5, i64 1052}
+!307 = !{!"branch_weights", !"expected", i32 1125985, i32 2146357663}
+!308 = distinct !{!308, !166}
 !309 = distinct !{!309, !166}
-!310 = distinct !{!310, !166}
-!311 = !{!312, !18, i64 0}
-!312 = !{!"", !18, i64 0, !18, i64 8, !18, i64 16}
-!313 = !{!312, !18, i64 16}
-!314 = !{!312, !18, i64 8}
-!315 = !{!316}
-!316 = distinct !{!316, !317, !"inBuffer_forEndFlush: argument 0"}
-!317 = distinct !{!317, !"inBuffer_forEndFlush"}
-!318 = !{!319}
-!319 = distinct !{!319, !320, !"inBuffer_forEndFlush: argument 0"}
-!320 = distinct !{!320, !"inBuffer_forEndFlush"}
-!321 = !{!15, !21, i64 208}
-!322 = !{!15, !21, i64 200}
-!323 = !{!19, !5, i64 0}
-!324 = !{!22, !5, i64 60}
-!325 = distinct !{null, null}
-!326 = !{!22, !5, i64 68}
-!327 = !{!14, !5, i64 3536}
-!328 = !{!329, !18, i64 24}
-!329 = !{!"", !5, i64 0, !5, i64 4, !5, i64 8, !18, i64 16, !18, i64 24, !5, i64 32}
-!330 = !{!329, !5, i64 32}
-!331 = !{!329, !5, i64 0}
-!332 = !{!329, !18, i64 16}
-!333 = !{!329, !5, i64 4}
-!334 = !{!329, !5, i64 8}
-!335 = !{!31, !5, i64 32}
-!336 = !{!34, !5, i64 140}
-!337 = distinct !{!337, !166}
-!338 = !{!14, !5, i64 260}
-!339 = !{!34, !21, i64 232}
-!340 = !{!14, !5, i64 312}
-!341 = !{!34, !5, i64 240}
-!342 = !{!34, !29, i64 8}
-!343 = !{!14, !18, i64 3192}
-!344 = !{!14, !5, i64 400}
-!345 = !{!14, !21, i64 3168}
-!346 = !{!32, !21, i64 0}
-!347 = !{!14, !18, i64 3176}
-!348 = !{!32, !18, i64 32}
-!349 = !{!14, !21, i64 440}
-!350 = !{!14, !21, i64 5264}
-!351 = !{!14, !18, i64 5272}
-!352 = !{!14, !5, i64 284}
-!353 = distinct !{!353, !166}
-!354 = !{!14, !5, i64 456}
-!355 = !{!34, !21, i64 288}
-!356 = !{!14, !5, i64 436}
-!357 = !{!358, !5, i64 0}
-!358 = !{!"", !5, i64 0, !5, i64 4, !18, i64 8}
-!359 = !{!14, !5, i64 376}
-!360 = !{!358, !18, i64 8}
-!361 = distinct !{!361, !166}
-!362 = distinct !{!362, !166, !239, !238}
-!363 = !{!"branch_weights", i32 4, i32 28}
-!364 = distinct !{!364, !166, !239, !238}
-!365 = distinct !{!365, !366}
-!366 = !{!"llvm.loop.unroll.disable"}
-!367 = distinct !{!367, !166, !239}
-!368 = !{!"branch_weights", !"expected", i32 1717128, i32 2145766520}
+!310 = !{!311, !18, i64 0}
+!311 = !{!"", !18, i64 0, !18, i64 8, !18, i64 16}
+!312 = !{!311, !18, i64 16}
+!313 = !{!311, !18, i64 8}
+!314 = !{!315}
+!315 = distinct !{!315, !316, !"inBuffer_forEndFlush: argument 0"}
+!316 = distinct !{!316, !"inBuffer_forEndFlush"}
+!317 = !{!318}
+!318 = distinct !{!318, !319, !"inBuffer_forEndFlush: argument 0"}
+!319 = distinct !{!319, !"inBuffer_forEndFlush"}
+!320 = !{!15, !21, i64 208}
+!321 = !{!15, !21, i64 200}
+!322 = !{!19, !5, i64 0}
+!323 = !{!22, !5, i64 60}
+!324 = distinct !{null, null}
+!325 = !{!22, !5, i64 68}
+!326 = !{!14, !5, i64 3536}
+!327 = !{!328, !18, i64 24}
+!328 = !{!"", !5, i64 0, !5, i64 4, !5, i64 8, !18, i64 16, !18, i64 24, !5, i64 32}
+!329 = !{!328, !5, i64 32}
+!330 = !{!328, !5, i64 0}
+!331 = !{!328, !18, i64 16}
+!332 = !{!328, !5, i64 4}
+!333 = !{!328, !5, i64 8}
+!334 = !{!31, !5, i64 32}
+!335 = !{!34, !5, i64 140}
+!336 = distinct !{!336, !166}
+!337 = !{!14, !5, i64 260}
+!338 = !{!34, !21, i64 232}
+!339 = !{!14, !5, i64 312}
+!340 = !{!34, !5, i64 240}
+!341 = !{!34, !29, i64 8}
+!342 = !{!14, !18, i64 3192}
+!343 = !{!14, !5, i64 400}
+!344 = !{!14, !21, i64 3168}
+!345 = !{!32, !21, i64 0}
+!346 = !{!14, !18, i64 3176}
+!347 = !{!32, !18, i64 32}
+!348 = !{!14, !21, i64 440}
+!349 = !{!14, !21, i64 5264}
+!350 = !{!14, !18, i64 5272}
+!351 = !{!14, !5, i64 284}
+!352 = distinct !{!352, !166}
+!353 = !{!14, !5, i64 456}
+!354 = !{!34, !21, i64 288}
+!355 = !{!14, !5, i64 436}
+!356 = !{!357, !5, i64 0}
+!357 = !{!"", !5, i64 0, !5, i64 4, !18, i64 8}
+!358 = !{!14, !5, i64 376}
+!359 = !{!357, !18, i64 8}
+!360 = distinct !{!360, !166}
+!361 = distinct !{!361, !166, !238, !237}
+!362 = !{!"branch_weights", i32 4, i32 28}
+!363 = distinct !{!363, !166, !238, !237}
+!364 = distinct !{!364, !365}
+!365 = !{!"llvm.loop.unroll.disable"}
+!366 = distinct !{!366, !166, !238}
+!367 = !{!"branch_weights", !"expected", i32 1717128, i32 2145766520}
+!368 = distinct !{!368, !166}
 !369 = distinct !{!369, !166}
-!370 = distinct !{!370, !166}
-!371 = !{i64 0, i64 12, !164}
-!372 = distinct !{!372, !166}
-!373 = !{!"branch_weights", i32 127, i32 134217473}
-!374 = !{!43, !5, i64 0}
-!375 = !{!44, !18, i64 136}
-!376 = !{!45, !5, i64 4}
-!377 = distinct !{!377, !166}
-!378 = !{!45, !5, i64 0}
-!379 = !{!45, !18, i64 152}
-!380 = !{!26, !18, i64 16}
-!381 = !{!26, !21, i64 8}
-!382 = !{!26, !18, i64 24}
-!383 = !{!184, !5, i64 12}
-!384 = distinct !{!384, !166}
-!385 = !{!30, !29, i64 8}
-!386 = !{!30, !5, i64 48}
+!370 = !{i64 0, i64 12, !164}
+!371 = distinct !{!371, !166}
+!372 = !{!"branch_weights", i32 127, i32 134217473}
+!373 = !{!43, !5, i64 0}
+!374 = !{!44, !18, i64 136}
+!375 = !{!45, !5, i64 4}
+!376 = distinct !{!376, !166}
+!377 = !{!45, !5, i64 0}
+!378 = !{!45, !18, i64 152}
+!379 = !{!26, !18, i64 16}
+!380 = !{!26, !21, i64 8}
+!381 = !{!26, !18, i64 24}
+!382 = !{!182, !5, i64 12}
+!383 = distinct !{!383, !166}
+!384 = !{!30, !29, i64 8}
+!385 = !{!30, !5, i64 48}
