@@ -1,0 +1,7 @@
+--- STRICT BASELINE (With Traps) ---
+Completed 100 iterations.
+Total CPU Time: 0.129978 seconds
+
+--- PERFECT ORACLE (Trap-Free) ---
+Completed 100 iterations.
+Total CPU Time: 0.101336 seconds
